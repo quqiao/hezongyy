@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__author__ = 'liuquan'
+__author__ = 'quqiao'
 
 import unittest
 from selenium.webdriver.common.by import By
@@ -9,6 +9,7 @@ from time import sleep
 from common.public import host
 
 class TestLogin(unittest.TestCase):
+    "safsafd"
 
     @classmethod
     def setUpClass(cls):
