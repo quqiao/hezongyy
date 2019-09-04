@@ -51,7 +51,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # URL: http://tungwaiyip.info/software/HTMLTestRunner.html
 
-__author__ = "Wai Yip Tung,  Findyou"
+__author__ = "quqiao"
 __version__ = "0.8.2.2"
 
 
@@ -164,9 +164,9 @@ class Template_mixin(object):
     2: '错误',
     }
 
-    DEFAULT_TITLE = '单元测试报告'
+    DEFAULT_TITLE = '回归测试报告'
     DEFAULT_DESCRIPTION = ''
-    DEFAULT_TESTER='刘权'
+    DEFAULT_TESTER = '屈桥'
 
     # ------------------------------------------------------------------------
     # HTML Template

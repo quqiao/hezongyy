@@ -19,8 +19,8 @@ def send_mail(filename):
     mail_body = f.read()
     att = MIMEText(mail_body, 'base64', 'utf-8')
     att["Content-Type"] = 'application/octet-stream'
-    att.add_header('Content-Disposition', 'attachment', filename= os.path.basename(filename))
-    #encoders.encode_base64(att) 加密
+    att.add_header('Content-Disposition', 'attachment', filename=os.path.basename(filename))
+    # encoders.encode_base64(att) 加密
     message.attach(att)
     f.close()
 
@@ -31,8 +31,8 @@ def send_mail(filename):
     message["To"] =','.join(receivers)
     message['Subject'] = Header("情况分析自动化测试报告","utf-8")
     smtp = smtplib.SMTP_SSL("smtp.qq.com", 465)
-    smtp.login(mail_user,mail_pass)
-    smtp.sendmail(mail_user,receivers,message.as_string())
+    smtp.login(mail_user, mail_pass)
+    smtp.sendmail(mail_user, receivers, message.as_string())
     smtp.quit()
 
     #查找最新的测试报告
@@ -41,5 +41,5 @@ def report(testreport):
     lists.sort(key=lambda fn: os.path.getatime(testreport + "/" + fn))  # 通过sort()方法按时间排序
     lists.reverse()
     filename = os.path.join(testreport, lists[0])
-    print(filename,"发送成功")
+    print(filename, "发送成功")
     return filename

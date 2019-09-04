@@ -2,7 +2,7 @@
 __author__ = 'quqiao'
 
 import unittest
-from pages.LoginPage import LoginPage
+from pages.FeedbackPage import FeedbackPage
 from selenium import webdriver
 from time import sleep
 from common.public import host
@@ -15,26 +15,30 @@ class TestLogin(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
         cls.url = host + "/auth/login"
-        cls.username = "测试24"
+        cls.phone = "测试24"
         cls.password = "123456"
-
         # 声明LoginPage类对象
-        cls.login_page = LoginPage(cls.driver, cls.url, u"合纵易购登录界面")
-        cls.login_page.open()
+        cls.feedback_page = FeedbackPage(cls.driver, cls.url, u"合纵易购反馈界面")
+        cls.feedback_page.open()
 
-    #不输入用户名和密码
-    def test_1_login_noUserAndPwd(self):
-        # 调用点击登录按钮组件
-        self.login_page.click_submit()
+    #不输入手机和内容
+    def test_1_login_noPhoneAndContent(self):
+        # 关掉广告
+        self.feedback_page.click_ad()
+        # 进入反馈界面
+        self.feedback_page.click_feedback()
+        # 调用点击输入框
+        self.feedback_page.click_phone()
+        self.feedback_page.click_submit()
         sleep(0.5)
-        self.assertEqual(self.login_page.show_errorMsg1(), "请输入用户名或手机号")
+        self.assertEqual(self.feedback_page.show_errorMsg1(), "电话/邮箱至少填写一项")
 
-    #只输入用户名
+    #只输入手机号
     def test_2_login_noPwd(self):
-        self.login_page.input_username(self.username)
-        self.login_page.click_submit()
+        self.feedback_page.input_phone(self.phone)
+        self.feedback_page.click_submit()
         sleep(0.5)
-        self.assertEqual(self.login_page.show_errorMsg1(), "请输入用户名或手机号")
+        self.assertEqual(self.feedback_page.show_errorMsg1(), "请输入用户名或手机号")
 
     #只输入密码
     def test_3_login_noUser(self):

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__author__ = 'liuquan'
+__author__ = 'quqiao'
 
 from selenium.webdriver.common.by import By
 from pages.basePage import BasePage
@@ -9,11 +9,12 @@ from pages.basePage import BasePage
 class LoginPage(BasePage):
 
     # 定位器，通过元素属性定位元素对象
-    usernameloc = (By.XPATH, "//input[@placeholder='请输入用户名']")
-    passwordloc = (By.XPATH, "//input[@placeholder='请输入密码']")
-    submit = (By.XPATH, "//button/span")
-    errorMsg = (By.CLASS_NAME,"login-error")
-    loginuser = (By.CLASS_NAME,"el-dropdown-link")
+    usernameloc = (By.XPATH, "//*[@id='username']")
+    passwordloc = (By.XPATH, "//*[@id='password']")
+    submit = (By.XPATH, "//*[@id='right_1']/a")
+    errorMsg1 = (By.CLASS_NAME, "prompt2")  # 用户名出现的提示
+    errorMsg2 = (By.XPATH, "//*[@id='right_1']/p[2]/span[2]")  # 密码错误出现的提示
+    loginuser = (By.XPATH, "//*[@id='app']/div/div[3]/div[1]/div/ul[1]/li[4]/a")
 
 
     # Action
@@ -33,9 +34,12 @@ class LoginPage(BasePage):
     def click_submit(self):
         self.find_element(*self.submit).click()
 
-    # 用户名或密码不合理是Tip框内容展示
-    def show_errorMsg(self):
-        return self.find_element(*self.errorMsg).text
+    # 用户名不合理是Tip框内容展示
+    def show_errorMsg1(self):
+        return self.find_element(*self.errorMsg1).text
+
+    def show_errorMsg2(self):
+        return self.find_element(*self.errorMsg2).text
 
     # 登录成功检查
     def is_login_success(self):
