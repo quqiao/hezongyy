@@ -14,7 +14,7 @@ class LoginPage(BasePage):
     submit = (By.XPATH, "//*[@id='right_1']/a")
     errorMsg1 = (By.CLASS_NAME, "prompt2")  # 用户名出现的提示
     errorMsg2 = (By.XPATH, "//*[@id='right_1']/p[2]/span[2]")  # 密码错误出现的提示
-    loginuser = (By.XPATH, "//*[@id='app']/div/div[3]/div[1]/div/ul[1]/li[4]/a")
+    loginuser = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")
 
 
     # Action

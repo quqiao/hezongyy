@@ -16,9 +16,9 @@ class FeedbackPage(BasePage):
     radio3 = (By.XPATH, "//*[@id='radio']/label[3]/input")  # 反馈类型：服务投诉s
     radio4 = (By.XPATH, "//*[@id='radio']/label[4]/input")  # 反馈类型：服务表扬
     radio5 = (By.XPATH, "//*[@id='radio']/label[5]/input")  # 反馈类型：问题报告
-    phone = (By.XPATH, "//*[@id='celORmail']")  # 手机/邮箱输入框
-    content = (By.XPATH, "//*[@id='content']")  # 内容输入框
-    submit = (By.XPATH, "//*[@id='content']")  # 提交按钮
+    phone = (By.ID, "celORmail")  # 手机/邮箱输入框
+    content = (By.ID, "content")  # 内容输入框
+    submit = (By.XPATH, "//*[@id='body']/div[2]/div[2]/div[2]/div/form/div[3]/div/input")  # 提交按钮
     errorMsg1 = (By.XPATH, "//*[@id='body']/div[2]/div[2]/div[2]/div/form/div[2]/p")  # 手机/邮箱填写错误提示
     errorMsg2 = (By.XPATH, "//*[@id='body']/div[2]/div[2]/div[2]/div/form/div[3]/div/p")  # 内容填写错误提示
     submitSuccess = (By.CLASS_NAME, "tip_text")  # 提交成功后的提示
@@ -46,6 +46,10 @@ class FeedbackPage(BasePage):
     def click_phone(self):
         self.find_element(*self.phone).click()
 
+    # 调用click对象，点击content输入框
+    def click_content(self):
+        self.find_element(*self.content).click()
+
     # 调用click对象，点击提交
     def click_submit(self):
         self.find_element(*self.submit).click()
@@ -53,6 +57,7 @@ class FeedbackPage(BasePage):
     # 调用click，关掉广告
     def click_ad(self):
         self.find_element(*self.ad).click()
+
 
     # 调用click对象，选择反馈类型
     def click_radio1(self):

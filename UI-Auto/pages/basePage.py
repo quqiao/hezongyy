@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 
+
 class BasePage(object):
     """
      BasePage封装所有页面都公用的方法，例如driver, url ，FindElement等
