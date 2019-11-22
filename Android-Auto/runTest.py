@@ -1,5 +1,6 @@
-#coding:utf-8
-import time,os,sys
+# coding:utf-8
+__author__ = 'quqiao'
+import time, os, sys
 from common.HTMLTestRunner import HTMLTestRunner
 # from common.email import send_mail,report
 import unittest
