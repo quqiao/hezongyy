@@ -21,8 +21,8 @@ class TestLogin(unittest.TestCase):
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购反馈界面")
         cls.home_page.open()
 
-    # 全部商品分类检查
-    def test_1_home_sort(self):
+    def test_home_01(self):
+        """全部商品分类检查"""
         # 关掉广告
         # self.home_page.click_ad()
         # 点击呼吸系统用药列表
@@ -34,8 +34,8 @@ class TestLogin(unittest.TestCase):
         # 检查清热消炎列表
         self.assertEqual(self.home_page.check_list2(), "清热、消炎类")
 
-    # 进入本周精选检查
-    def test_2_home_week(self):
+    def test_home_02(self):
+        """进入本周精选检查"""
         # 下滑到本周精选页面显示
         target = self.driver.find_element_by_xpath("//*[@id='mzjx']/div/div[1]/span[1]")
         self.driver.execute_script("arguments[0].scrollIntoView();", target)

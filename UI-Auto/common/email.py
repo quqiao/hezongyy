@@ -1,35 +1,37 @@
+# -*- coding: utf-8 -*-
+__author__ = 'quqiao'
+
 import time,os,sys
 from email.mime.text import MIMEText #定义邮件内容
-from email.header import Header #邮件主题
-from email.mime.multipart import MIMEMultipart #附件
+from email.header import Header  # 邮件主题
+from email.mime.multipart import MIMEMultipart  # 附件
 import smtplib
 #from email import encoders
 
 def send_mail(filename):
     mail_host = 'stmp.qq.com'
-    mail_user = "1483265434@qq.com"
-    #mail_pass = "okqwiahiuvwjhdig"
-    mail_pass= "zvtqwungfqixjahh"
-    sender = "selenium自动化" #发送邮箱别名（用户名）
-    receivers=['542605150@qq.com'] #收件人列表
+    mail_user = "553248560@qq.com"
+    mail_pass = "worqlzmlixklbdgi"   # 在邮箱界面获取的授权码
+    sender = "seleniumWeb自动化测试"  # 发送邮箱别名（用户名）
+    receivers = ['542605150@qq.com'] #收件人列表
     message = MIMEMultipart('related') #采用related定义内嵌资源的邮件体 （附件）
 
     #发送内容
     f = open(filename, 'rb')
     mail_body = f.read()
     att = MIMEText(mail_body, 'base64', 'utf-8')
-    att["Content-Type"] = 'application/octet-stream'
+    att["Content-Type"] = 'application/octet-stream'  # 附件格式
     att.add_header('Content-Disposition', 'attachment', filename=os.path.basename(filename))
     # encoders.encode_base64(att) 加密
-    message.attach(att)
+    message.attach(att)  # 发送附件
     f.close()
 
 
     msg=MIMEText(mail_body,_subtype='html',_charset='utf-8')
     message.attach(msg)
-    message['From']=sender
-    message["To"] =','.join(receivers)
-    message['Subject'] = Header("情况分析自动化测试报告","utf-8")
+    message['From'] = sender
+    message["To"] = ','.join(receivers)
+    message['Subject'] = Header("药易购web测试报告","utf-8")
     smtp = smtplib.SMTP_SSL("smtp.qq.com", 465)
     smtp.login(mail_user, mail_pass)
     smtp.sendmail(mail_user, receivers, message.as_string())

@@ -15,29 +15,30 @@ class TestLogin(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
         cls.url = host + "/auth/login"
-        cls.username = "测试24"
+        cls.username = "测试05"
         cls.password = "123456"
 
         # 声明LoginPage类对象
         cls.login_page = LoginPage(cls.driver, cls.url, u"合纵易购登录界面")
         cls.login_page.open()
 
-    #不输入用户名和密码
-    def test_1_login_noUserAndPwd(self):
+
+    def test_login_01(self):
+        """不输入用户名和密码"""
         # 调用点击登录按钮组件
         self.login_page.click_submit()
         sleep(0.5)
         self.assertEqual(self.login_page.show_errorMsg1(), "请输入用户名或手机号")
 
-    #只输入用户名
-    def test_2_login_noPwd(self):
+    def test_login_02(self):
+        """只输入用户名"""
         self.login_page.input_username(self.username)
         self.login_page.click_submit()
         sleep(0.5)
         self.assertEqual(self.login_page.show_errorMsg1(), "请输入用户名或手机号")
 
-    #只输入密码
-    def test_3_login_noUser(self):
+    def test_login_03(self):
+        """只输入密码"""
         sleep(3)
         self.login_page.clear_text(self.login_page.usernameloc)
         self.login_page.input_password(self.password)
@@ -45,8 +46,8 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.assertEqual(self.login_page.show_errorMsg1(), "请输入用户名或手机号")
 
-    #输入错误密码
-    def test_4_login_errorPwd(self):
+    def test_login_04(self):
+        """输入错误密码"""
         self.login_page.input_username(self.username)
         self.login_page.clear_text(self.login_page.passwordloc)
         self.login_page.input_password("xxxx")
@@ -54,8 +55,8 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.assertEqual((self.login_page.show_errorMsg2()), "用户名或密码错误。")
 
-     #输入不存在的用户
-    def test_5_login_errorPwd(self):
+    def test_login_05(self):
+        """输入不存在的用户"""
         self.login_page.clear_text(self.login_page.usernameloc)
         self.login_page.clear_text(self.login_page.passwordloc)
         self.login_page.input_username("xxxx")
@@ -64,8 +65,8 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.assertEqual(self.login_page.show_errorMsg2(), "用户名或密码错误。")
 
-    # 输入正确的用户名密码
-    def test_6_login_success(self):
+    def test_login_06(self):
+        """输入正确的用户名密码"""
         self.login_page.clear_text(self.login_page.usernameloc)
         self.login_page.clear_text(self.login_page.passwordloc)
         self.login_page.input_username(self.username)
@@ -74,7 +75,6 @@ class TestLogin(unittest.TestCase):
         # 调用点击登录按钮组件
         self.login_page.click_submit()
         self.assertEqual(self.login_page.is_login_success(), "[退出]")
-
 
     @classmethod
     def tearDownClass(cls):

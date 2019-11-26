@@ -299,7 +299,7 @@ table       { font-size: 100%; }
 .failCase   { color: #d9534f; font-weight: bold; }
 .errorCase  { color: #f0ad4e; font-weight: bold; }
 .hiddenRow  { display: none; }
-.testcase   { margin-left: 2em; }
+.testcase_android   { margin-left: 2em; }
 </style>
 """
 
@@ -373,7 +373,7 @@ table       { font-size: 100%; }
     #失败 的样式，去掉原来JS效果，美化展示效果  -Findyou
     REPORT_TEST_WITH_OUTPUT_TMPL = r"""
 <tr id='%(tid)s' class='%(Class)s'>
-    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
+    <td class='%(style)s'><div class='testcase_android'>%(desc)s</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_%(tid)s' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_%(tid)s'>%(status)s</button>
@@ -392,7 +392,7 @@ table       { font-size: 100%; }
     # 通过 的样式，加标签效果  -Findyou
     REPORT_TEST_NO_OUTPUT_TMPL = r"""
 <tr id='%(tid)s' class='%(Class)s'>
-    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
+    <td class='%(style)s'><div class='testcase_android'>%(desc)s</div></td>
     <td colspan='5' align='center'><span class="label label-success success">%(status)s</span></td>
 </tr>
 """ # variables: (tid, Class, style, desc, status)
@@ -432,7 +432,7 @@ class _TestResult(TestResult):
         # result is a list of result in 4 tuple
         # (
         #   result code (0: success; 1: fail; 2: error),
-        #   TestCase object,
+        #   testcase_android object,
         #   Test output (byte string),
         #   stack trace,
         # )
@@ -515,7 +515,7 @@ class _TestResult(TestResult):
 class HTMLTestRunner(Template_mixin):
     """
     """
-    def __init__(self, stream=sys.stdout, verbosity=1,title=None,description=None,tester=None):
+    def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None, tester=None):
         self.stream = stream
         self.verbosity = verbosity
         if title is None:
@@ -578,9 +578,9 @@ class HTMLTestRunner(Template_mixin):
             status = 'none'
         return [
             ('测试人员', self.tester),
-            ('开始时间',startTime),
-            ('合计耗时',duration),
-            ('测试结果',status + "，通过率= "+self.passrate),
+            ('开始时间', startTime),
+            ('合计耗时', duration),
+            ('测试结果', status + "，通过率= "+self.passrate),
         ]
 
 
@@ -610,13 +610,13 @@ class HTMLTestRunner(Template_mixin):
         a_lines = []
         for name, value in report_attrs:
             line = self.HEADING_ATTRIBUTE_TMPL % dict(
-                    name = saxutils.escape(name),
-                    value = saxutils.escape(value),
+                    name=saxutils.escape(name),
+                    value=saxutils.escape(value),
                 )
             a_lines.append(line)
         heading = self.HEADING_TMPL % dict(
-            title = saxutils.escape(self.title),
-            parameters = ''.join(a_lines),
+            title=saxutils.escape(self.title),
+            parameters=''.join(a_lines),
             description = saxutils.escape(self.description),
             tester= saxutils.escape(self.tester),
         )
