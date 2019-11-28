@@ -9,12 +9,12 @@ from pages.basePage import BasePage
 class LoginPage(BasePage):
 
     # 定位器，通过元素属性定位元素对象
-    usernameloc = (By.XPATH, "//*[@id='username']")
-    passwordloc = (By.XPATH, "//*[@id='password']")
-    submit = (By.XPATH, "//*[@id='right_1']/a")
-    errorMsg1 = (By.CLASS_NAME, "prompt2")  # 用户名出现的提示
+    usernameloc = (By.XPATH, "//*[@id='username']")  # 登录界面用户名输入框
+    passwordloc = (By.XPATH, "//*[@id='password']")  # 登录界面密码输入框
+    submit = (By.XPATH, "//*[@id='right_1']/a")  # 登录界面提交按钮
+    errorMsg1 = (By.CLASS_NAME, "prompt2")  # 用户名错误出现的提示
     errorMsg2 = (By.XPATH, "//*[@id='right_1']/p[2]/span[2]")  # 密码错误出现的提示
-    loginuser = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")
+    loginuser = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")  # 登录成功提示
 
 
     # Action

@@ -27,7 +27,8 @@ class BasePage(object):
             self.driver.maximize_window()
             sleep(2)
         else:
-            self.login("测试24", "123456")
+            self.login("测试05", "123456")
+            self.driver.maximize_window()
             self.driver.get(url)
 
         # self.driver.delete_all_cookies()
@@ -62,9 +63,12 @@ class BasePage(object):
         return pagetitle in self.driver.title
 
 
-    # 定义script方法，用于执行js脚本，范围执行结果
-    def script(self, src):
+    # 定义script方法，用于执行js脚本，范围执行结果,第一种方式
+    def script1(self, src):
         self.driver.execute_script(src)
+
+    def script2(self, src1, src2):
+        self.driver.execute_script(src1, src2)
 
 
     # 重写定义send_keys方法

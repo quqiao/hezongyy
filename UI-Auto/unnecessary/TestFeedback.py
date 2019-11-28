@@ -2,7 +2,7 @@
 __author__ = 'quqiao'
 
 import unittest
-from pages.FeedbackPage import FeedbackPage
+from unnecessary.FeedbackPage import FeedbackPage
 from selenium import webdriver
 from time import sleep
 from common.public import host
