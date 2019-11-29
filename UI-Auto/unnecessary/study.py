@@ -7,3 +7,7 @@ from selenium import webdriver
 # 元素聚焦
 # target = driver.find_element_by_xxxx()
 # driver.execute_script("arguments[0].scrollIntoView();", target)
+
+# *self._args 表示接受元组类参数
+# **kwargs 标识接受字典类参数
+
