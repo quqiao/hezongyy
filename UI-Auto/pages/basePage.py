@@ -6,6 +6,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium import webdriver
+
 
 
 class BasePage(object):
@@ -19,17 +21,19 @@ class BasePage(object):
         self.pagetitle = pagetitle
         self.driver = selenium_driver
 
+
     # 打开页面，校验页面链接是否加载正确
     def _open(self, url, pagetitle):
-        # 使用get打开访问链接地址
-        if (url == "http://47.97.73.102:9521/auth/login"):
-            self.driver.get(url)
-            self.driver.maximize_window()
-            sleep(2)
-        else:
-            self.login("测试05", "123456")
-            self.driver.maximize_window()
-            self.driver.get(url)
+        self.login("测试06", "123456")
+        # # 使用get打开访问链接地址
+        # if (url == "http://47.97.73.102:9521/auth/login"):
+        #     self.driver.get(url)
+        #     self.driver.maximize_window()
+        #     sleep(2)
+        # else:
+        #     self.login("测试06", "123456")
+        #     self.driver.maximize_window()
+        #     self.driver.get(url)
 
         # self.driver.delete_all_cookies()
         # self.driver.add_cookie({'name': 'token', 'value': '13A7E9249EA392A52EC2871FBCBD881A'})
@@ -99,4 +103,5 @@ class BasePage(object):
         self.find_element(By.XPATH, "//*[@id='password']").send_keys(pwd)
         self.find_element(By.XPATH, "//*[@id='right_1']/a").click()
         sleep(2)
+
 
