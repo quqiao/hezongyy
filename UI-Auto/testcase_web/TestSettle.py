@@ -30,13 +30,11 @@ class TestLogin(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    # def test_settle_01(self):
-    #     """不满200元时返回购物车"""
-    #     sleep(1)
-    #     self.public_method.click_ad()  # 关掉广告
-    #     sleep(0.5)
-    #     self.categories_page.click_py()  # 点击进入普药列表
-    #     sleep(0.5)
-    #     self.driver.back()  # 点击回到首页
-    #     sleep(1)
-    #     self.public_method.click_ad()  # 关掉广告
+    def test_settle_01(self):
+        """不满200元时返回购物车"""
+        sleep(0.5)
+        self.categories_page.click_py()  # 点击进入普药列表
+        sleep(0.5)
+        self.driver.back()  # 点击回到首页
+        sleep(1)
+        self.public_method.click_ad()  # 关掉广告
