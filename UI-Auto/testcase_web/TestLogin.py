@@ -9,6 +9,7 @@ from common.public import host
 
 class TestLogin(unittest.TestCase):
 
+
     @classmethod
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
@@ -21,6 +22,10 @@ class TestLogin(unittest.TestCase):
         # 声明LoginPage类对象
         cls.login_page = LoginPage(cls.driver, cls.url, u"合纵易购登录界面")
         cls.login_page.open()
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
 
 
     def test_login_01(self):
@@ -76,9 +81,7 @@ class TestLogin(unittest.TestCase):
         self.login_page.click_submit()
         self.assertEqual(self.login_page.is_login_success(), "[退出]")
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
+
 
 
 if __name__ == "__main__":

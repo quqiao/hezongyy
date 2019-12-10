@@ -29,5 +29,9 @@ class SettlePage(BasePage):
 
     # 调用input， 订单备注中输入一些内容
     def input_ddbz(self, bz):
-        self.find_element(*self.ddbz).click(bz)
+        self.find_element(*self.ddbz).send_keys(bz)
+
+    # 调用click，提交订单
+    def click_tjdd(self):
+        self.find_element(*self.tjdd).click()
 

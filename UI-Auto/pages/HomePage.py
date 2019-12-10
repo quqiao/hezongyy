@@ -9,6 +9,8 @@ from time import sleep
 # 继承BasePage类
 class HomePage(BasePage):
     # 定位器，通过元素属性定位元素对象
+    my = (By.XPATH, "//*[@id='carousel']/div/div/div[1]/div[2]/span/a")  # 点击进入我的药易购
+    gwc = (By.XPATH, "//*[@id='app']/div/div[1]/div[2]/div/div[3]/a[2]/div")  # 购物车按钮
     ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
     mzjxTitle = (By.XPATH, "//*[@id='mzjx']/div/div[1]/span[1]")  # 每周精选标题
     WeekContent = (By.XPATH, "//*[@id='mzjx']/div/div[2]/div[1]")  # 每周精选大图1
@@ -151,10 +153,21 @@ class HomePage(BasePage):
     def click_wntjdt1(self):
         self.find_element(*self.wntjdt1).click()
 
+    # 调用click，点击进入我的药易购
+    def click_my(self):
+        self.find_element(*self.my).click()
+
+    # 调用script，点击进入购物车界面
+    def check_script(self):
+        page = self.find_element(*self.gwc)
+        self.script2("arguments[0].click();", page)
+
     # 调用windows_handles进行切换页面后的重定位
     def locate(self):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[-1])
+
+
 
 
 
