@@ -25,7 +25,7 @@ def send_mail(filename):
 
     msg = MIMEText(mail_body, _subtype='html', _charset='utf-8')
     message.attach(msg)
-    message['From']=sender
+    message['From'] = sender
     message["To"] =','.join(receivers)
     message['Subject'] = Header("android自动化测试报告","utf-8")
     smtp = smtplib.SMTP_SSL("smtp.qq.com", 465)

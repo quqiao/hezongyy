@@ -28,10 +28,11 @@ class TestLogin(unittest.TestCase):
         cls.driver.implicitly_wait(30)
         cls.username = "测试05"
         cls.password = "123456"
+        cls.ddbz = "订单备注"
         cls.public_method.get_url(cls.url)
         cls.public_method.login(cls.username, cls.password)
         # 关掉广告
-        cls.public_method.click_ad()
+        # cls.public_method.click_ad()
 
     @classmethod
     def tearDownClass(cls):
@@ -61,8 +62,30 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.settle_page.click_fhgwc()  # 返回首页
         sleep(0.5)
+        self.public_method.click_ad()  # 关闭广告
 
     def test_settle_03(self):
-        """满200元后进入结算界面"""
+        """结算界面返回购物车"""
+        sleep(0.5)
+        self.categories_page.click_py()  # 点击进入普药列表
+        sleep(0.5)
+        self.puyao_page.click_addcart1()  # 第一件商品加入购物车
+        sleep(2)
+        self.puyao_page.click_addcart2()  # 第二件商品加入购物车
+        sleep(0.5)
+        self.home_page.check_script()  # 进入购物车界面
+        sleep(0.5)
+        self.cart_page.click_jiesuan()  # 进入结算界面
+        sleep(0.5)
+        self.settle_page.click_jsfhgwc()  # 结算界面返回购物车
+
+    def test_settle_04(self):
+        """输入备注，提交订单"""
+        sleep(0.5)
+        self.cart_page.click_jiesuan()  # 进入结算界面
+        sleep(0.5)
+        self.settle_page.input_ddbz(self.ddbz)  # 订单备注中输入内容
+        sleep(0.5)
+        self.settle_page.click_tjdd()  # 提交订单
 
 

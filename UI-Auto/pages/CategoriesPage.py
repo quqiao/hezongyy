@@ -9,8 +9,8 @@ from time import sleep
 # 继承BasePage类
 class CategoriesPage(BasePage):
     # 定位器，通过元素属性定位元素对象
-    py = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
-    zszq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[3]/a")  # 商品列表中的诊所专区
+    py = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
+    zszq = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[2]/ul/li[3]/a")  # 商品列表中的诊所专区
     qx = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[4]/a")  # 商品列表中的器械
     zyzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[5]/a")  # 商品列表中的中药专区
     ppzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[6]/a")  # 商品列表中的品牌专区

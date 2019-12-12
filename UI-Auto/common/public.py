@@ -4,6 +4,7 @@ from time import sleep
 
 home_url = "http://47.97.73.102:9521"
 login_url = "http://47.97.73.102:9521/auth/login"
+xianshang_login_url = "https://www.hezongyy.com/auth/login"
 
 
 class PublicMethod(BasePage):
