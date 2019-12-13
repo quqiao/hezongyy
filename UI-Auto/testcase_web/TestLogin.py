@@ -5,7 +5,7 @@ import unittest
 from pages.LoginPage import LoginPage
 from selenium import webdriver
 from time import sleep
-from common.public import host
+from common.public import login_url, PublicMethod
 
 class TestLogin(unittest.TestCase):
 
@@ -15,13 +15,12 @@ class TestLogin(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
-        cls.url = host + "/auth/login"
+        cls.url = login_url
         cls.username = "测试05"
         cls.password = "123456"
-
-        # 声明LoginPage类对象
-        cls.login_page = LoginPage(cls.driver, cls.url, u"合纵易购登录界面")
-        cls.login_page.open()
+        cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购登录界面")  # 声明publicMethod类对象
+        cls.login_page = LoginPage(cls.driver, cls.url, u"合纵易购登录界面")  # 声明LoginPage类对象
+        cls.public_page.get_url(cls.url)  # 调用打开url
 
     @classmethod
     def tearDownClass(cls):
@@ -80,9 +79,6 @@ class TestLogin(unittest.TestCase):
         # 调用点击登录按钮组件
         self.login_page.click_submit()
         self.assertEqual(self.login_page.is_login_success(), "[退出]")
-
-
-
 
 if __name__ == "__main__":
     unittest.main()

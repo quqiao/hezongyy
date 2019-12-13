@@ -38,16 +38,6 @@ class HomePage(BasePage):
     wntjyh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[2]/i")  # 为你推荐右滑
     wntjdt1 = (By.XPATH, "//*[@id='wntj-carousel']/ul[1]/li[2]/div/a[1]/div")  # 为你推荐大图1
 
-
-    # Action
-    def open(self):
-        # 调用page中的_open打开连接
-        self._open(self.base_url, self.pagetitle)
-
-    # 调用click，关掉广告
-    def click_ad(self):
-        self.find_element(*self.ad).click()
-
     # 调用click对象，点击每周精选
     def click_week(self):
         self.find_element(*self.WeekContent).click()
@@ -161,11 +151,6 @@ class HomePage(BasePage):
     def check_script(self):
         page = self.find_element(*self.gwc)
         self.script2("arguments[0].click();", page)
-
-    # 调用windows_handles进行切换页面后的重定位
-    def locate(self):
-        windows = self.driver.window_handles
-        self.driver.switch_to.window(windows[-1])
 
 
 

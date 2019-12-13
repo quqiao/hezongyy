@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/pages/OrderPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hezongyy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hezongyy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Auto/common/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/common/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Auto/common/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/common/email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Auto/testcase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/testcase_android/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Auto/testcase/testLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/testcase_android/testLogin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android-Auto/testcase/testSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/testcase_android/testSearch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/common/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/CategoriesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/CategoriesPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/LoginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/basePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/basePage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/not-zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/pbr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2-2.0.0-py3.7.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/ext/aircv/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/ext/aircv/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/ext/xpath/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/ext/xpath/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Lib/site-packages/uiautomator2/xpath.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv1/Scripts/uiautomator2-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv1/Scripts/uiautomator2-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestLogin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -267,6 +240,8 @@
       <workItem from="1576024812064" duration="5425000" />
       <workItem from="1576111863699" duration="23086000" />
       <workItem from="1576143521846" duration="140000" />
+      <workItem from="1576143691237" duration="48000" />
+      <workItem from="1576197989291" duration="20351000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567401485422</created>
@@ -415,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575971633237</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="20191212提交">
+      <created>1576143711047</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1576143711047</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -459,10 +441,11 @@
     <MESSAGE value="20191205提交" />
     <MESSAGE value="20191209提交" />
     <MESSAGE value="20191210提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20191210提交" />
+    <MESSAGE value="20191212提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20191212提交" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1576143546137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
+    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1576223983211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1573713268514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Android-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestLogin_TestLogin_test_06_login.coverage" NAME="Unittests for TestLogin.TestLogin.test_06_login Coverage Results" MODIFIED="1574750160359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />
     <SUITE FILE_PATH="coverage/hezongyy$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1573715338249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Android-Auto" />

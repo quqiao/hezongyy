@@ -16,12 +16,6 @@ class LoginPage(BasePage):
     errorMsg2 = (By.XPATH, "//*[@id='right_1']/p[2]/span[2]")  # 密码错误出现的提示
     loginuser = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")  # 登录成功提示
 
-
-    # Action
-    def open(self):
-        # 调用page中的_open打开连接
-        self._open(self.base_url, self.pagetitle)
-
     # 调用send_keys对象，输入用户名
     def input_username(self, username):
         self.find_element(*self.usernameloc).send_keys(username)

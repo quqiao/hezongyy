@@ -97,6 +97,7 @@ class BasePage(object):
         self.driver.get(base_url)
         self.driver.maximize_window()
 
+
     # def login(self, uname, pwd):
     #     self.find_element(By.XPATH, "//*[@id='username']").send_keys(uname)
     #     self.find_element(By.XPATH, "//*[@id='password']").send_keys(pwd)
