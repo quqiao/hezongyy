@@ -57,6 +57,14 @@ class BasePage(object):
         except:
             print(u"%s 页面中未能找到 %s 元素" % (self, loc))
 
+    # 重写元素定位方法，非display的依然可以点击
+    def find_element2(self, *loc):
+        try:
+            WebDriverWait(self.driver, 10).until(lambda driver: driver.find_element(*loc))
+            return self.driver.find_element(*loc)
+        except:
+            print(u"%s 页面中未能找到 %s 元素" % (self, loc))
+
     # 重写switch_frame方法
     def switch_frame(self, loc):
         return self.driver.switch_to_frame(loc)

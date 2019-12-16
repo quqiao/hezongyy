@@ -17,6 +17,7 @@ class TestLogin(unittest.TestCase):
         cls.url = home_url
         cls.username = "测试05"
         cls.password = "123456"
+        cls.ssnr = "感冒灵"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购首页界面")  # 声明publicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购首页界面")  # 声明LoginPage类对象
         cls.public_page.get_url(cls.url)
@@ -85,7 +86,7 @@ class TestLogin(unittest.TestCase):
         """进入每周精选页面检查"""
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.public_page.scroll_position(self.target)  # 下滑到本周精选页面显示
+        self.home_page.scroll_mzjx()  # 下滑到本周精选页面显示
         sleep(0.5)
         # 点击精选内容
         self.home_page.click_week()
@@ -193,6 +194,38 @@ class TestLogin(unittest.TestCase):
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(0.5)
         self.driver.close()
+
+    def test_home_15(self):
+        """搜索框输入搜索没有的内容查询"""
+        self.home_page.input_ssk("ssss")  # 搜索框中输入内容
+        sleep(0.5)
+        self.home_page.click_ssButton()  # 点击搜索按钮
+        sleep(1)
+        self.driver.back()
+        sleep(0.5)
+
+    def test_home_16(self):
+        """搜索框输入搜索正确的内容查询"""
+        self.public_page.click_ad()
+        sleep(1)
+        self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+        sleep(0.5)
+        self.home_page.click_ssButton()  # 点击搜索按钮
+        sleep(0.5)
+        self.driver.back()
+        sleep(0.5)
+
+    def test_home_17(self):
+        """搜索框联想的内容查询"""
+        self.public_page.click_ad()
+        sleep(2)
+        self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+        sleep(2)
+        self.home_page.click_ssList1()  # 点击搜索列表第一个
+        sleep(2)
+        self.driver.back()
+        sleep(0.5)
+
 
 
 

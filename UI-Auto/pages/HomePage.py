@@ -37,6 +37,9 @@ class HomePage(BasePage):
     wntjzh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[1]/i")  # 为你推荐左滑
     wntjyh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[2]/i")  # 为你推荐右滑
     wntjdt1 = (By.XPATH, "//*[@id='wntj-carousel']/ul[1]/li[2]/div/a[1]/div")  # 为你推荐大图1
+    ssk = (By.XPATH, "//*[@id='app']/div/div[3]/div[2]/div/div[2]/div[1]/input")  # 搜索框
+    ssButton = (By.CLASS_NAME, "search-btn")  # 搜索按钮
+    ssList1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[2]/div/div[2]/div[1]/ul/li[8]")  # 搜索列表第一个
 
     # 调用click对象，点击每周精选
     def click_week(self):
@@ -153,22 +156,17 @@ class HomePage(BasePage):
         self.script2("arguments[0].click();", page)
 
 
+    def click_ssk(self):
+        self.find_element(*self.ssk).click()
 
+    # 调用click，点击搜索框
+    def input_ssk(self, ssnr):
+        self.find_element(*self.ssk).send_keys(ssnr)
 
+    # 调用click,点击搜索按钮
+    def click_ssButton(self):
+        self.find_element(*self.ssButton).click()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # 调用click,点击搜索列表第一个
+    def click_ssList1(self):
+        self.find_element2(*self.ssList1).click()

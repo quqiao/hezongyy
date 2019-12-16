@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 from pages.basePage import BasePage
 from time import sleep
 
@@ -13,6 +14,7 @@ class PublicMethod(BasePage):
     username = (By.XPATH, "//*[@id='username']")  # 用户名
     password = (By.XPATH, "//*[@id='password']")  # 密码
     submit = (By.XPATH, "//*[@id='right_1']/a")  # 登录
+    xlsrk = (By.CLASS_NAME, "search-list")  # 下拉输入框列表
 
     # Action
     def open(self):
@@ -48,6 +50,12 @@ class PublicMethod(BasePage):
     # 调用script，向下滚动对应像素
     def scroll_down(self, xiangsu):
         self.script1(xiangsu)
+
+    # 定义select 选择框中的内容
+    def select_list1(self):
+        s1 = Select(self.driver.find_element(*self.xlsrk))
+        s1.select_by_index("2")
+
 
 
 

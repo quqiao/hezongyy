@@ -55,48 +55,46 @@ class TestLogin(unittest.TestCase):
 
     def test_OrderProcess_01(self):
         """在普药中选择商品进行下单"""
-        print("test1")
-        # sleep(10)
-        # self.categories_page.click_py()  # 点击普药进入普药列表
-        # sleep(0.5)
-        # self.puyao_page.click_addcart1()  # 点击第一个商品加入购物车
-        # sleep(2)
-        # self.puyao_page.click_addcart2()  # 点击第二个商品加入购物车
-        # sleep(2)
-        # self.puyao_page.click_addcart3()  # 点击第三个商品加入购物车
-        # sleep(2)
-        # self.home_page.check_script()  # 进入购物车界面
-        # sleep(0.5)
-        # self.cart_page.click_jiesuan()  # 点击结算按钮
-        # sleep(0.5)
-        # self.settle_page.click_tjdd()  # 点击提交订单
-        # sleep(0.5)
-        # self.assertEqual(self.order_page.cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
+        sleep(10)
+        self.categories_page.click_py()  # 点击普药进入普药列表
+        sleep(0.5)
+        self.puyao_page.click_addcart1()  # 点击第一个商品加入购物车
+        sleep(2)
+        self.puyao_page.click_addcart2()  # 点击第二个商品加入购物车
+        sleep(2)
+        self.puyao_page.click_addcart3()  # 点击第三个商品加入购物车
+        sleep(2)
+        self.home_page.check_script()  # 进入购物车界面
+        sleep(0.5)
+        self.cart_page.click_jiesuan()  # 点击结算按钮
+        sleep(0.5)
+        self.settle_page.click_tjdd()  # 点击提交订单
+        sleep(0.5)
+        self.assertEqual(self.order_page.cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
     def test_OrderProcess_02(self):
         """在精品专区中选择商品进行下单"""
-        print("test2")
-        # self.categories_page.click_jpzq()  # 点击精品专区进入精品列表
-        # sleep(0.5)
-        # self.jpzq_page.input_number1(self.shuliang)  # 输入第一个商品加入购物车的数量
-        # sleep(0.5)
-        # self.jpzq_page.click_addcart1()  # 第一个商品加入购物车
-        # sleep(2)
-        # self.jpzq_page.input_number2(self.shuliang)  # 输入第二个商品加入购物车的数量
-        # sleep(0.5)
-        # self.jpzq_page.click_addcart2()  # 第二个商品加入购物车
-        # sleep(2)
-        # self.jpzq_page.input_number3(self.shuliang)  # 输入第三个商品加入购物车的数量
-        # sleep(0.5)
-        # self.jpzq_page.click_addcart3()  # 第三个商品加入购物车
-        # sleep(2)
-        # self.home_page.check_script()  # 进入购物车界面
-        # sleep(0.5)
-        # self.cart_page.click_jiesuan()  # 点击结算按钮
-        # sleep(0.5)
-        # self.settle_page.click_tjdd()  # 点击提交订单
-        # sleep(0.5)
-        # self.assertEqual(self.order_page.cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
+        self.categories_page.click_jpzq()  # 点击精品专区进入精品列表
+        sleep(0.5)
+        self.jpzq_page.input_number1(self.shuliang)  # 输入第一个商品加入购物车的数量
+        sleep(0.5)
+        self.jpzq_page.click_addcart1()  # 第一个商品加入购物车
+        sleep(2)
+        self.jpzq_page.input_number2(self.shuliang)  # 输入第二个商品加入购物车的数量
+        sleep(0.5)
+        self.jpzq_page.click_addcart2()  # 第二个商品加入购物车
+        sleep(2)
+        self.jpzq_page.input_number3(self.shuliang)  # 输入第三个商品加入购物车的数量
+        sleep(0.5)
+        self.jpzq_page.click_addcart3()  # 第三个商品加入购物车
+        sleep(2)
+        self.home_page.check_script()  # 进入购物车界面
+        sleep(0.5)
+        self.cart_page.click_jiesuan()  # 点击结算按钮
+        sleep(0.5)
+        self.settle_page.click_tjdd()  # 点击提交订单
+        sleep(0.5)
+        self.assertEqual(self.order_page.cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
 
 
