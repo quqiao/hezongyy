@@ -40,6 +40,16 @@ class HomePage(BasePage):
     ssk = (By.XPATH, "//*[@id='app']/div/div[3]/div[2]/div/div[2]/div[1]/input")  # 搜索框
     ssButton = (By.CLASS_NAME, "search-btn")  # 搜索按钮
     ssList1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[2]/div/div[2]/div[1]/ul/li[8]")  # 搜索列表第一个
+    sswk = (By.XPATH, "//*[@id='none']/div/div/div[2]/p[1]/text()[1]")  # 搜索为空
+    spmz = (By.CLASS_NAME, "datu-mingzi")  # 商品大图名字
+
+    # 调用text对象，检查搜索为空时
+    def text_sswk(self):
+        return self.find_element(*self.sswk).text
+
+    # 调用text对象，检查搜索相应商品的名字
+    def text_spmz(self):
+        return self.find_element(*self.spmz).text
 
     # 调用click对象，点击每周精选
     def click_week(self):
@@ -151,10 +161,9 @@ class HomePage(BasePage):
         self.find_element(*self.my).click()
 
     # 调用script，点击进入购物车界面
-    def check_script(self):
+    def script_gwc(self):
         page = self.find_element(*self.gwc)
         self.script2("arguments[0].click();", page)
-
 
     def click_ssk(self):
         self.find_element(*self.ssk).click()

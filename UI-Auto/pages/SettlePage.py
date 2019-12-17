@@ -14,6 +14,11 @@ class SettlePage(BasePage):
     jsfhgwc = (By.XPATH, "//*[@id='app']/div/div[3]/div[1]/a")  # 结算界面返回购物车
     ddbz = (By.XPATH, "//*[@id='app']/div/div[3]/div[6]/div[2]/textarea")  # 结算界面，订单备注输入框
     tjdd = (By.XPATH, "//*[@id='btn']")  # 结算界面，提交订单
+    wm200 = (By.XPATH, "//*[@id='app']/div/div[3]/p")  # 未满200元时的提示
+
+    # 调用text，金额不满200元时的提示
+    def text_wm200(self):
+        return self.find_element(*self.wm200).text
 
     # 调用click，金额不足200元时，点击返回首页
     def click_fhsy(self):
@@ -34,4 +39,8 @@ class SettlePage(BasePage):
     # 调用click，提交订单
     def click_tjdd(self):
         self.find_element(*self.tjdd).click()
+
+    # 调用text,获取提交订单文本
+    def text_tjdd(self):
+        return self.find_element(*self.tjdd).text
 

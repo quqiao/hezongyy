@@ -31,3 +31,8 @@ from selenium import webdriver
 # 解决方法：
 # 增加sleep时间
 
+# 问题8：部分弹出框过段时间就会消失，不好定位
+# 解决方法：
+# 定位时通过网页的source ---> debugger开始按钮，等弹出框出现后暂停起来调试
+
+

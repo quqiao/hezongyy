@@ -9,48 +9,53 @@ from pages.basePage import BasePage
 class CartPage(BasePage):
 
     # 定位器，通过元素属性定位元素对象
-    ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
-    """test01"""
-    puyao = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
-
     jiesuan = (By.XPATH, "//*[@id='jiesuan-btn']")  # 购物车界面结算按钮
-    """test02"""
+    jiage = (By.CLASS_NAME, "tb2_td11 subtotal")  # 购物车界面，第一个商品单个价格
+    yxspsl = (By.XPATH, "//*[@id='count']")  # 已选中商品数量
+    sccg = (By.XPATH, "//*[@id='layui-layer8']/div/text()")  # 删除成功后的提示
+    ydsccg = (By.XPATH, "//*[@id='layui-layer10']/div/text()")  # 移到收藏后的提示
+    gwcwk = (By.XPATH, "//*[@id='form']/div/div[2]/div/p[1]")  # 购物车为空时的提示
+    xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示
     addNumber = (By.CLASS_NAME, "add")  # 购物车界面增加数量
     minNumber = (By.CLASS_NAME, "min")  # 购物车界面减少数量
     inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量
-    """test03"""
     qxk = (By.XPATH, "//*[@id='form']/div/div[2]/table[1]/tbody/tr/td[1]/input")  # 购物车界面全选框（上面一个）
-    """test04"""
     sc = (By.CLASS_NAME, "del")  # 购物车界面删除指定
     sctsksc = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")  # 删除提示框删除
-    """test05"""
     ydsc = (By.CLASS_NAME, "collect")  # 购物车界面移到收藏
     sctskqd = (By.XPATH, "//*[@id='layui-layer7']/div[3]/a[1]")  # 收藏提示框确定框
-    """test06"""
     scxz = (By.XPATH, "//*[@id='form']/div/div[2]/table[3]/tbody/tr/td[1]/p[2]/a")  # 购物车界面删除选中
     shctskqd = (By.XPATH, "//*[@id='layui-layer11']/div[3]/a[1]")  # 购物车界面删除提示框确定
-    """test07"""
     scxj = (By.XPATH, "//*[@id='form']/div/div[2]/table[3]/tbody/tr/td[1]/p[3]/a/text()")  # 购物车界面删除无库存和下架商品
     scxjtskqd = (By.XPATH, "//*[@id='layui-layer12']/div[3]/a[1]")  # 购物车界面删除下架提示框确定
-    """test08"""
-
-
-    # Action
-    def open(self):
-        # 调用page中的_open打开连接
-        self._open(self.base_url, self.pagetitle)
-
-    # 调用click，关掉广告
-    def click_ad(self):
-        self.find_element(*self.ad).click()
-
-    # 调用click对象，点击普药
-    def click_puyao(self):
-        self.find_element(*self.puyao).click()
 
     # 调用text对象，检查是否进入购物车界面
     def text_jiesuan(self):
         return self.find_element(*self.jiesuan).text
+
+    # 调用text对象，检查数量变化后，价格发生变化
+    def text_jiage(self):
+        return self.find_element(*self.jiage).text
+
+    # 调用text对象，检查选中与否后数量的变化
+    def text_yxspsl(self):
+        return self.find_element(*self.yxspsl).text
+
+    # 调用text对象，检查删除成功
+    def text_sccg(self):
+        return self.find_element(*self.sccg).text
+
+    # 调用text对象，检查移到收藏成功
+    def text_ydsccg(self):
+        return self.find_element(*self.ydsccg).text
+
+    # 调用text对象，检查购物车为空时
+    def text_gwcwk(self):
+        return self.find_element(*self.gwcwk).text
+
+    # 调用text对象，检查删除无下架商品时
+    def text_xjspwk(self):
+        return self.find_element(*self.xjspwk).text
 
     # 调用click对象，点击添加数量
     def click_addNumber(self):

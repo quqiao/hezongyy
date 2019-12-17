@@ -3,6 +3,7 @@ __author__ = 'quqiao'
 
 import unittest
 from pages.HomePage import HomePage
+from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
 from common.public import home_url, PublicMethod
@@ -20,6 +21,7 @@ class TestLogin(unittest.TestCase):
         cls.ssnr = "感冒灵"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购首页界面")  # 声明publicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购首页界面")  # 声明LoginPage类对象
+        cls.goodsDetail_page = GoodsDetailPage(cls.driver, cls.url, "合纵易购首页界面")  # 声明GoodsDetailPage类对象
         cls.public_page.get_url(cls.url)
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.click_ad()  # 关闭广告
@@ -33,8 +35,11 @@ class TestLogin(unittest.TestCase):
         sleep(2)
         self.home_page.script_zyzq()  # 进入中药专区
         sleep(0.5)
-        # self.assertEqual(self.home_page.check_zyzq(), "配方中药饮片")  # 检查中药专区
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"中药专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
 
@@ -46,6 +51,10 @@ class TestLogin(unittest.TestCase):
         self.home_page.script_yxzq()  # 点击院线专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"院线专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
 
@@ -57,6 +66,10 @@ class TestLogin(unittest.TestCase):
         self.home_page.click_vip()  # 点击VIP专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"vip专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
 
@@ -65,10 +78,12 @@ class TestLogin(unittest.TestCase):
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
         self.home_page.click_cxzq()  # 点击促销专区
-        # sleep(0.5)
-        # self.assertEqual(self.home_page.check_week(), "加入购物车")  # 检查促销专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"促销专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
 
@@ -79,6 +94,10 @@ class TestLogin(unittest.TestCase):
         self.home_page.click_bjpzq()
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"保健专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
 
@@ -88,11 +107,13 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.home_page.scroll_mzjx()  # 下滑到本周精选页面显示
         sleep(0.5)
-        # 点击精选内容
-        self.home_page.click_week()
-        # 跳转到新页面后需重新定位
+        self.home_page.click_week()  # 点击精选内容
         sleep(1)
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"保健专区" in title)  # 判断标题中包含有普药
         # 关闭当前页面
         self.driver.close()
 
@@ -107,6 +128,10 @@ class TestLogin(unittest.TestCase):
         self.home_page.click_ppzqckqb()  # 点击进入查看
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
+        sleep(1)
+        title = self.driver.title
+        sleep(1)
+        self.assertTrue(u"品牌专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
 
@@ -193,13 +218,17 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(0.5)
+        self.assertEqual(self.goodsDetail_page.text_rhgm(), "如何购买", msg="没有进入商品详情页面")  # 判断是否进入商品详情页
+        sleep(1)
         self.driver.close()
 
     def test_home_15(self):
         """搜索框输入搜索没有的内容查询"""
-        self.home_page.input_ssk("ssss")  # 搜索框中输入内容
+        self.home_page.input_ssk("sssssss")  # 搜索框中输入内容
         sleep(0.5)
         self.home_page.click_ssButton()  # 点击搜索按钮
+        sleep(1)
+        self.assertEqual(self.home_page.text_sswk(), "抱歉！没有找到", msg="搜索没有的内容错误")  # 判断没有的内容搜索查询时
         sleep(1)
         self.driver.back()
         sleep(0.5)
@@ -212,6 +241,10 @@ class TestLogin(unittest.TestCase):
         sleep(0.5)
         self.home_page.click_ssButton()  # 点击搜索按钮
         sleep(0.5)
+        mingzi = self.home_page.text_spmz()
+        sleep(1)
+        self.assertTrue(u"感冒灵" in mingzi)
+        sleep(1)
         self.driver.back()
         sleep(0.5)
 
@@ -223,6 +256,10 @@ class TestLogin(unittest.TestCase):
         sleep(2)
         self.home_page.click_ssList1()  # 点击搜索列表第一个
         sleep(2)
+        mingzi = self.home_page.text_spmz()
+        sleep(1)
+        self.assertTrue(u"感冒灵" in mingzi)
+        sleep(1)
         self.driver.back()
         sleep(0.5)
 

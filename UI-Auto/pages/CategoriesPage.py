@@ -9,8 +9,8 @@ from time import sleep
 # 继承BasePage类
 class CategoriesPage(BasePage):
     # 定位器，通过元素属性定位元素对象
-    py = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
-    zszq = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[2]/ul/li[3]/a")  # 商品列表中的诊所专区
+    py = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
+    zszq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[3]/a")  # 商品列表中的诊所专区
     qx = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[4]/a")  # 商品列表中的器械
     zyzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[5]/a")  # 商品列表中的中药专区
     ppzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[6]/a")  # 商品列表中的品牌专区
@@ -36,7 +36,7 @@ class CategoriesPage(BasePage):
     list5_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[5]/div[2]/div[2]/div/a[1]")  # 调节免疫力类
 
     list6 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[6]/div[1]/div[2]")  #  妇，儿科列表
-    list6_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[6]/div[1]/div[2]/div/a[1]")  # 避孕类
+    list6_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[6]/div[2]/div[2]/div/a[1]")  # 避孕类
 
     list7 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[7]/div[1]/div[2]")  # 心脑血管及神经类用药列表
     list7_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[7]/div[1]/div[2]/div/a[1]")  # 促白细胞增生类
