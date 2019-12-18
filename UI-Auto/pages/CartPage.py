@@ -15,7 +15,7 @@ class CartPage(BasePage):
     sccg = (By.XPATH, "//*[@id='layui-layer8']/div/text()")  # 删除成功后的提示
     ydsccg = (By.XPATH, "//*[@id='layui-layer10']/div/text()")  # 移到收藏后的提示
     gwcwk = (By.XPATH, "//*[@id='form']/div/div[2]/div/p[1]")  # 购物车为空时的提示
-    xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示
+    xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示s
     addNumber = (By.CLASS_NAME, "add")  # 购物车界面增加数量
     minNumber = (By.CLASS_NAME, "min")  # 购物车界面减少数量
     inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量

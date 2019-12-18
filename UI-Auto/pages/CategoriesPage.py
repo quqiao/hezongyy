@@ -9,52 +9,50 @@ from time import sleep
 # 继承BasePage类
 class CategoriesPage(BasePage):
     # 定位器，通过元素属性定位元素对象
-    py = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
-    zszq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[3]/a")  # 商品列表中的诊所专区
-    qx = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[4]/a")  # 商品列表中的器械
-    zyzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[5]/a")  # 商品列表中的中药专区
-    ppzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[6]/a")  # 商品列表中的品牌专区
-    cxzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[7]/a")  # 商品列表中的促销专区
-    jpzq = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[8]/a")  # 商品列表中的精品专区
-    jfsc = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[2]/ul/li[9]/a")  # 商品列表中的积分商城
+    py = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
+    zszq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(3) > a")  # 商品列表中的诊所专区
+    qx = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(4) > a")  # 商品列表中的器械
+    zyzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(5) > a")  # 商品列表中的中药专区
+    ppzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(6) > a")  # 商品列表中的品牌专区
+    cxzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(7) > a")  # 商品列表中的促销专区
+    jpzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(8) > a")  # 商品列表中的精品专区
+    jfsc = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(9) > a")  # 商品列表中的积分商城
 
-    list1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[1]/div[1]/div[2]")  # 呼吸系统用药列表
-    list1_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[1]/div[2]/div[2]/div/a[1]")  # 抗感冒类
-    CheckList1 = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[1]/div[2]/div/div[1]/div[2]/div[1]")    # 检查呼吸系统用药检查
+    list1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(1) > div.text > div.menu_title")  # 呼吸系统用药列表
+    list1_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(1) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 抗感冒类
 
-    list2 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[2]/div[1]/div[2]")  # 清热消炎列表
-    list2_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[2]/div[2]/div[2]/div/a[1]")  # 青霉素及头孢
-    CheckList2 = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[1]/div[2]/div/div[2]/div[2]/div[1]")  # 检查清热消炎检查
+    list2 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(2) > div.text > div.menu_title")  # 清热消炎列表
+    list2_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(2) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 青霉素及头孢
 
-    list3 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[3]/div[1]/div[2]")  # 五官皮肤及外用列表
-    list3_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[3]/div[2]/div[2]/div/a[1]")  # 眼科类
+    list3 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(3) > div.text > div.menu_title")  # 五官皮肤及外用列表
+    list3_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(3) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 眼科类
 
-    list4 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[4]/div[1]/div[2]")  # 消化肝胆系统列表
-    list4_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[4]/div[2]/div[2]/div/a[1]")  # 解痉阵痛类
+    list4 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(4) > div.text > div.menu_title")  # 消化肝胆系统列表
+    list4_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(4) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 解痉阵痛类
 
-    list5 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[5]/div[1]/div[2]")  # 补益安神及维矿类列表
-    list5_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[5]/div[2]/div[2]/div/a[1]")  # 调节免疫力类
+    list5 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(5) > div.text > div.menu_title")  # 补益安神及维矿类列表
+    list5_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(5) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 调节免疫力类
 
-    list6 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[6]/div[1]/div[2]")  #  妇，儿科列表
-    list6_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[6]/div[2]/div[2]/div/a[1]")  # 避孕类
+    list6 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(6) > div.text > div.menu_title")  #  妇，儿科列表
+    list6_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(6) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 避孕类
 
-    list7 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[7]/div[1]/div[2]")  # 心脑血管及神经类用药列表
-    list7_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[7]/div[1]/div[2]/div/a[1]")  # 促白细胞增生类
+    list7 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(7) > div.text > div.menu_title")  # 心脑血管及神经类用药列表
+    list7_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(7) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 促白细胞增生类
 
-    list8 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[8]/div[1]/div[2]")  # 内分泌系统列表
-    list8_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[8]/div[1]/div[2]/div/a[1]")  # 甾体激素类
+    list8 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(8) > div.text > div.menu_title")  # 内分泌系统列表
+    list8_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(8) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 甾体激素类
 
-    list9 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[9]/div[1]/div[2]")  # 风湿骨伤及其他药品列表
-    list9_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[9]/div[1]/div[2]/div/a[1]")  # 抗风湿类
+    list9 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(9) > div.text > div.menu_title")  # 风湿骨伤及其他药品列表
+    list9_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(9) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 抗风湿类
 
-    list10 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[10]/div[1]/div[2]")  # 特殊复方制剂，生物制品列表
-    list10_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[10]/div[1]/div[2]/div/a[1]")  # 血液制品
+    list10 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(10) > div.text > div.menu_title")  # 特殊复方制剂，生物制品列表
+    list10_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(10) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 血液制品
 
-    list11 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[11]/div[1]/div[2]")  # 中药饮片列表
-    list11_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[11]/div[1]/div[2]/div/a[1]")  # 配方中药饮片
+    list11 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(11) > div.text > div.menu_title")  # 中药饮片列表
+    list11_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(11) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 配方中药饮片
 
-    list12 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[12]/div[1]/div[2]")  # 非药品列表
-    list12_1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[3]/div/ul/li[1]/div[2]/div/div[12]/div[1]/div[2]/div/a[1]")  # 功能性贴膏
+    list12 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(12) > div.text > div.menu_title")  # 非药品列表
+    list12_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(12) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 功能性贴膏
 
 
 
@@ -69,7 +67,7 @@ class CategoriesPage(BasePage):
 
     # 调用click,点击进入普药列表
     def click_py(self):
-        self.find_element(*self.py).click()
+        self.find_element2(*self.py).click()
 
     # 调用click,点击诊所专区列表
     def click_zszq(self):

@@ -7,7 +7,7 @@ from pages.MyPage import MyPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import host
+from common.public import home_url
 
 class TestLogin(unittest.TestCase):
 
@@ -16,8 +16,9 @@ class TestLogin(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
-        cls.url = host
+        cls.url = home_url
         cls.ddbj = "18056558899"
+        cls.username = "测试05"
         cls.password = "123456"
         cls.xiangsu = "window.scrollBy(0, 700)"
         # 声明HomePage类对象
@@ -26,9 +27,10 @@ class TestLogin(unittest.TestCase):
         cls.my_page = MyPage(cls.driver, cls.url, u"合纵药易购我的界面")
         # 声明publicMethod类对象
         cls.public_method = PublicMethod(cls.driver, cls.url, u"合纵药易购我的界面")
-        cls.public_method.open()
+        cls.public_method.get_url(cls.url)
+        cls.public_method.login(cls.username, cls.password)
         # 关掉广告
-        cls.public_method.click_ad()
+        # cls.public_method.click_ad()
         sleep(0.5)
         cls.home_page.click_my()
 
@@ -36,14 +38,14 @@ class TestLogin(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    def test_my_01(self):
-        """进入我的订单"""
-        self.my_page.click_wddd()  # 点击我的订单
-        sleep(0.5)
-        self.assertEqual(self.my_page.text_wdddbt(), "我的订单", msg="没有进入我的订单界面")  # 判断是否进入我的订单界面
-        sleep(1)
-        self.driver.back()  # 返回我的药易购界面
-        sleep(0.5)
+    # def test_my_01(self):
+    #     """进入我的订单"""
+    #     self.my_page.click_wddd()  # 点击我的订单
+    #     sleep(0.5)
+    #     self.assertEqual(self.my_page.text_wdddbt(), "我的订单", msg="没有进入我的订单界面")  # 判断是否进入我的订单界面
+    #     sleep(1)
+    #     self.driver.back()  # 返回我的药易购界面
+    #     sleep(0.5)
 
     def test_my_02(self):
         """进入积分订单"""

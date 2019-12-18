@@ -25,119 +25,119 @@ class TestLogin(unittest.TestCase):
         cls.public_method.get_url(cls.url)
         cls.public_method.login(cls.username, cls.password)
         # 关掉广告
-        cls.public_method.click_ad()
+        # cls.public_method.click_ad()
 
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
 
-    def test_Categories_01(self):
-        """进入普药列表"""
-        sleep(2)
-        self.categories_page.click_py()  # 点击进入普药列表
-        sleep(1)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.back()  # 点击回到首页
-
-
-    def test_Categories_02(self):
-        """进入诊所专区"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(2)
-        self.categories_page.click_zszq()  # 点击进入诊所专区
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"诊所专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
-    def test_Categories_03(self):
-        """进入器械"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(1.5)
-        self.categories_page.click_qx()  # 点击进入器械专区
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"器械专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
-    def test_Categories_04(self):
-        """进入中药专区"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(0.5)
-        self.categories_page.click_zyzq()  # 点击进入中药专区
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"中药专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
-
-    def test_Categories_05(self):
-        """进入品牌专区"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(0.5)
-        self.categories_page.click_ppzq()  # 点击进入品牌专区
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"品牌专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
-
-    def test_Categories_06(self):
-        """进入促销专区"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(0.5)
-        self.categories_page.click_cxzq()  # 点击进入促销专区
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"促销专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
-
-    def test_Categories_07(self):
-        """进入精品专区"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(0.5)
-        self.categories_page.click_jpzq()  # 点击进入精品专区
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"精品专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
-    def test_Categories_08(self):
-        """进入积分商城"""
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
-        sleep(0.5)
-        self.categories_page.click_jfsc()  # 点击进入积分商城
-        sleep(0.5)
-        title = self.driver.title
-        sleep(1)
-        self.assertTrue(u"积分商城" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-        sleep(1)
-        self.public_method.click_ad()  # 关掉广告
+    # def test_Categories_01(self):
+    #     """进入普药列表"""
+    #     sleep(2)
+    #     self.categories_page.click_py()  # 点击进入普药列表
+    #     sleep(1)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+    #     sleep(0.5)
+    #     self.driver.back()  # 点击回到首页
+    #
+    #
+    # def test_Categories_02(self):
+    #     """进入诊所专区"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(2)
+    #     self.categories_page.click_zszq()  # 点击进入诊所专区
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"诊所专区" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #
+    # def test_Categories_03(self):
+    #     """进入器械"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(1.5)
+    #     self.categories_page.click_qx()  # 点击进入器械专区
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"器械专区" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #
+    # def test_Categories_04(self):
+    #     """进入中药专区"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(0.5)
+    #     self.categories_page.click_zyzq()  # 点击进入中药专区
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"中药专区" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #
+    #
+    # def test_Categories_05(self):
+    #     """进入品牌专区"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(0.5)
+    #     self.categories_page.click_ppzq()  # 点击进入品牌专区
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"品牌专区" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #
+    #
+    # def test_Categories_06(self):
+    #     """进入促销专区"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(0.5)
+    #     self.categories_page.click_cxzq()  # 点击进入促销专区
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"促销专区" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #
+    #
+    # def test_Categories_07(self):
+    #     """进入精品专区"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(0.5)
+    #     self.categories_page.click_jpzq()  # 点击进入精品专区
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"精品专区" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #
+    # def test_Categories_08(self):
+    #     """进入积分商城"""
+    #     # sleep(1)
+    #     # self.public_method.click_ad()  # 关掉广告
+    #     sleep(0.5)
+    #     self.categories_page.click_jfsc()  # 点击进入积分商城
+    #     sleep(0.5)
+    #     title = self.driver.title
+    #     sleep(1)
+    #     self.assertTrue(u"积分商城" in title)
+    #     sleep(1)
+    #     self.driver.back()  # 点击返回首页
+    #     sleep(1)
+        # self.public_method.click_ad()  # 关掉广告
 
     def test_Categories_09(self):
         """商品分类——呼吸系统列表"""
@@ -320,7 +320,7 @@ class TestLogin(unittest.TestCase):
         sleep(1)
         title = self.driver.title
         sleep(1)
-        self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+        self.assertTrue(u"中药专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)

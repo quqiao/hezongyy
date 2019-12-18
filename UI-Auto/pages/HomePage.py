@@ -13,14 +13,12 @@ class HomePage(BasePage):
     gwc = (By.XPATH, "//*[@id='app']/div/div[1]/div[2]/div/div[3]/a[2]/div")  # 购物车按钮
     ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
     mzjxTitle = (By.XPATH, "//*[@id='mzjx']/div/div[1]/span[1]")  # 每周精选标题
-    WeekContent = (By.XPATH, "//*[@id='mzjx']/div/div[2]/div[1]")  # 每周精选大图1
-    CheckWeek = (By.XPATH, "//*[@id='jrgwc']")  # 检查每周精选
-    zyzq = (By.XPATH, "//*[@id='app']/div/div[6]/div/ul/li[1]/a/img")  # 中药专区入口
-    zyzq_check = (By.XPATH, "//*[@id='body']/div[4]/div[2]/ul/li[1]/a")  # 检查中药专区
-    yxzq = (By.XPATH, "//*[@id='app']/div/div[6]/div/ul/li[2]/a/img")  # 院线专区入口
-    Vipzq = (By.XPATH, "//*[@id='app']/div/div[6]/div/ul/li[3]/a/img")  # VIP专区入口
-    cxzq = (By.XPATH, "//*[@id='app']/div/div[6]/div/ul/li[4]/a/img")  # 促销专区入口
-    bjpzq = (By.XPATH, "//*[@id='app']/div/div[6]/div/ul/li[5]/a/img")  # 保健品专区入口
+    WeekContent = (By.XPATH, "//*[@id='mzjx']/div/div[1]/a/i")  # 每周精选查看更多
+    zyzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[1]/a/img")  # 中药专区入口
+    yxzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[2]/a/img")  # 院线专区入口
+    Vipzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[3]/a/img")  # VIP专区入口
+    cxzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[4]/a/img")  # 促销专区入口
+    bjpzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[5]/a/img")  # 保健品专区入口
     ppzqtitle = (By.XPATH, "//*[@id='ppzq']/div/div[1]/span")  # 品牌专区标题
     ppzqhyh = (By.XPATH, "//*[@id='ppzq']/div/div[2]/ul/li[12]/img")  # 品牌专区换一换
     ppzqckqb = (By.XPATH, "//*[@id='ppzq']/div/div[1]/a/i")  # 品牌专区查看全部
@@ -36,12 +34,17 @@ class HomePage(BasePage):
     wntjtitle = (By.XPATH, "//*[@id='wntj-carousel']/div/span")  # 为你推荐标题
     wntjzh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[1]/i")  # 为你推荐左滑
     wntjyh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[2]/i")  # 为你推荐右滑
-    wntjdt1 = (By.XPATH, "//*[@id='wntj-carousel']/ul[1]/li[2]/div/a[1]/div")  # 为你推荐大图1
-    ssk = (By.XPATH, "//*[@id='app']/div/div[3]/div[2]/div/div[2]/div[1]/input")  # 搜索框
+    wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li:nth-child(1) > div > a:nth-child(5) > div")  # 为你推荐大图1
+    ssk = (By.CLASS_NAME, "search-input")  # 搜索框
     ssButton = (By.CLASS_NAME, "search-btn")  # 搜索按钮
-    ssList1 = (By.XPATH, "//*[@id='app']/div/div[3]/div[2]/div/div[2]/div[1]/ul/li[8]")  # 搜索列表第一个
-    sswk = (By.XPATH, "//*[@id='none']/div/div/div[2]/p[1]/text()[1]")  # 搜索为空
+    ssList1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > ul > li:nth-child(8)")  # 搜索列表第一个
+    sswk = (By.CLASS_NAME, "link")  # 搜索为空
     spmz = (By.CLASS_NAME, "datu-mingzi")  # 商品大图名字
+    syts = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")  # 首页的标识
+
+    # 调用text对象，检查返回首页
+    def text_syts(self):
+        return self.find_element(*self.syts).text
 
     # 调用text对象，检查搜索为空时
     def text_sswk(self):
@@ -60,19 +63,11 @@ class HomePage(BasePage):
         target = self.driver.find_element(*self.mzjxTitle)
         self.driver.execute_script("arguments[0].scrollIntoView();", target)
 
-    # 调用text文本，检查每周精选
-    def check_week(self):
-        return self.find_element(*self.CheckWeek).text
-
     # 调用click对象，点击中药专区
     def script_zyzq(self):
         # self.find_element(*self.zyzq).click()
         zyzq = self.find_element(*self.zyzq)
         self.script2("arguments[0].click();", zyzq)
-
-    # 调用text文本，检查中药专区
-    def check_zyzq(self):
-        return self.find_element(*self.zyzq_check).text
 
     # 调用click对象，点击院线专区
     def script_yxzq(self):
