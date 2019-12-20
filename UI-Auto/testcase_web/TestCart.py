@@ -52,7 +52,7 @@ class TestCart(unittest.TestCase):
         sleep(0.5)
         self.puyao_page.click_addcart1()  # 商品1加入购物车
         sleep(2)
-        self.home_page.script_gwc()  # 调用进入购物车界面按钮
+        self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(0.5)
         self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")  # 通过显示的结算判断是否进入购物车界面
 

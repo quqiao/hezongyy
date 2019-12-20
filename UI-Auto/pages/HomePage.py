@@ -10,7 +10,7 @@ from time import sleep
 class HomePage(BasePage):
     # 定位器，通过元素属性定位元素对象
     my = (By.XPATH, "//*[@id='carousel']/div/div/div[1]/div[2]/span/a")  # 点击进入我的药易购
-    gwc = (By.XPATH, "//*[@id='app']/div/div[1]/div[2]/div/div[3]/a[2]/div")  # 购物车按钮
+    gwc = (By.CLASS_NAME, "gwc")  # 购物车按钮
     ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
     mzjxTitle = (By.XPATH, "//*[@id='mzjx']/div/div[1]/span[1]")  # 每周精选标题
     WeekContent = (By.XPATH, "//*[@id='mzjx']/div/div[1]/a/i")  # 每周精选查看更多
@@ -156,9 +156,8 @@ class HomePage(BasePage):
         self.find_element(*self.my).click()
 
     # 调用script，点击进入购物车界面
-    def script_gwc(self):
-        page = self.find_element(*self.gwc)
-        self.script2("arguments[0].click();", page)
+    def click_gwc(self):
+        self.find_element(*self.gwc).click()
 
     def click_ssk(self):
         self.find_element(*self.ssk).click()

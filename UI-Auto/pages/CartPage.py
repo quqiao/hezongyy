@@ -18,7 +18,9 @@ class CartPage(BasePage):
     xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示s
     addNumber = (By.CLASS_NAME, "add")  # 购物车界面增加数量
     minNumber = (By.CLASS_NAME, "min")  # 购物车界面减少数量
-    inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量
+    # inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量
+    # inputNumber = (By.ID, "goods-number23650994")  #
+    inputNumber = (By.TAG_NAME, "input")  #
     qxk = (By.XPATH, "//*[@id='form']/div/div[2]/table[1]/tbody/tr/td[1]/input")  # 购物车界面全选框（上面一个）
     sc = (By.CLASS_NAME, "del")  # 购物车界面删除指定
     sctsksc = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")  # 删除提示框删除
@@ -28,6 +30,13 @@ class CartPage(BasePage):
     shctskqd = (By.XPATH, "//*[@id='layui-layer11']/div[3]/a[1]")  # 购物车界面删除提示框确定
     scxj = (By.XPATH, "//*[@id='form']/div/div[2]/table[3]/tbody/tr/td[1]/p[3]/a/text()")  # 购物车界面删除无库存和下架商品
     scxjtskqd = (By.XPATH, "//*[@id='layui-layer12']/div[3]/a[1]")  # 购物车界面删除下架提示框确定
+    dj1 = (By.CLASS_NAME, "tb2_td9")  #
+    dj2 = (By.TAG_NAME, "span")
+
+    # 调用text对象，输出单价文本
+    def text_dj(self):
+        dj = self.find_element(*self.dj1).find_element(*self.dj2)
+        return dj.text
 
     # 调用text对象，检查是否进入购物车界面
     def text_jiesuan(self):
@@ -67,7 +76,11 @@ class CartPage(BasePage):
 
     # 调用click对象，点击输入数量
     def input_number2(self, shuliang):
-        self.find_element(*self.inputNumber).send_keys(shuliang)
+        inputs = self.find_element(*self.inputNumber)
+        # 然后从中过滤出type为checkbox的元素，单击勾选
+        for i in inputs:
+            if i.get_attribute("type") == "text":
+                i.click()
 
     # 调用click对象，点击全选框
     def click_qxk(self):
