@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium import webdriver
+
 
 
 
@@ -48,6 +48,14 @@ class BasePage(object):
 
         # 使用assert进行校验，打开的链接地址是否与配置的地址一致。调用on_page()方法
         assert self.on_page(pagetitle), u"打开开页面失败 %s" % url
+
+    def find_elements(self, *loc):
+        try:
+            WebDriverWait(self.driver, 10).until(lambda driver: driver.find_elements(*loc))
+            return self.driver.find_elements(*loc)
+        except:
+            print(u"%s 页面中未能找到 %s 元素" % (self, loc))
+
 
     # 重写元素定位方法
     def find_element(self, *loc):
@@ -92,7 +100,7 @@ class BasePage(object):
         except AttributeError:
             print(u"%s 页面中未能找到 %s 元素" % (self, loc))
 
-    def clear_text(self, loc):
+    def clear_text(self, *loc):
         self.find_element(*loc).click()
         self.find_element(*loc).send_keys(Keys.CONTROL, "a")
         self.find_element(*loc).send_keys(Keys.DELETE)

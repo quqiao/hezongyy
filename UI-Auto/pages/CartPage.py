@@ -10,7 +10,7 @@ class CartPage(BasePage):
 
     # 定位器，通过元素属性定位元素对象
     jiesuan = (By.XPATH, "//*[@id='jiesuan-btn']")  # 购物车界面结算按钮
-    jiage = (By.CLASS_NAME, "tb2_td11 subtotal")  # 购物车界面，第一个商品单个价格
+    jiage = (By.CLASS_NAME, "tb2_td11.subtotal")  # 购物车界面，第一个商品总价
     yxspsl = (By.XPATH, "//*[@id='count']")  # 已选中商品数量
     sccg = (By.XPATH, "//*[@id='layui-layer8']/div/text()")  # 删除成功后的提示
     ydsccg = (By.XPATH, "//*[@id='layui-layer10']/div/text()")  # 移到收藏后的提示
@@ -20,7 +20,8 @@ class CartPage(BasePage):
     minNumber = (By.CLASS_NAME, "min")  # 购物车界面减少数量
     # inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量
     # inputNumber = (By.ID, "goods-number23650994")  #
-    inputNumber = (By.TAG_NAME, "input")  #
+    # inputNumber = (By.TAG_NAME, "input")  # 通过tagName来进行定位
+    inputNumber = (By.CLASS_NAME, "com_text.goods-number")  # 通过className进行定位
     qxk = (By.XPATH, "//*[@id='form']/div/div[2]/table[1]/tbody/tr/td[1]/input")  # 购物车界面全选框（上面一个）
     sc = (By.CLASS_NAME, "del")  # 购物车界面删除指定
     sctsksc = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")  # 删除提示框删除
@@ -45,6 +46,10 @@ class CartPage(BasePage):
     # 调用text对象，检查数量变化后，价格发生变化
     def text_jiage(self):
         return self.find_element(*self.jiage).text
+
+    # 调用click,点击切换出输入框
+    def click_jiage(self):
+        self.find_element(*self.jiage).click()
 
     # 调用text对象，检查选中与否后数量的变化
     def text_yxspsl(self):
@@ -74,13 +79,19 @@ class CartPage(BasePage):
     def click_minNumber(self):
         self.find_element(*self.minNumber).click()
 
+
     # 调用click对象，点击输入数量
     def input_number2(self, shuliang):
-        inputs = self.find_element(*self.inputNumber)
-        # 然后从中过滤出type为checkbox的元素，单击勾选
-        for i in inputs:
-            if i.get_attribute("type") == "text":
-                i.click()
+        '''通过tagName找到一个列表后查询所有'''
+        # inputs = self.find_elements(*self.inputNumber)
+        # # 然后从中过滤出type为checkbox的元素，单击勾选
+        # for i in inputs:
+        #     if i.get_attribute("type") == "text":
+        #         self.clear_text(*self.inputNumber)
+        #         i.send_keys(shuliang)
+        """通过ClassName来定位"""
+        self.clear_text(*self.inputNumber)
+        self.find_element(*self.inputNumber).send_keys(shuliang)
 
     # 调用click对象，点击全选框
     def click_qxk(self):

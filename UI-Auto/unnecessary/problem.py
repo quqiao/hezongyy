@@ -35,4 +35,8 @@ from selenium import webdriver
 # 解决方法：
 # 定位时通过网页的source ---> debugger开始按钮，等弹出框出现后暂停起来调试
 
+# 问题9：通过className定位时，不好定位
+# 解决方法：
+# 元素复制和定位的不一致。例如：复制一个className:tb2_td11 subtotal要写成"tb2_td11.subtotal"
+
 
