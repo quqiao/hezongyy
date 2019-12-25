@@ -44,7 +44,7 @@ class TestLogin(unittest.TestCase):
     def test_login_03(self):
         """只输入密码"""
         sleep(3)
-        self.login_page.clear_text(self.login_page.usernameloc)
+        self.login_page.clear_text(*self.login_page.usernameloc)
         self.login_page.input_password(self.password)
         self.login_page.click_submit()
         sleep(0.5)
@@ -53,7 +53,7 @@ class TestLogin(unittest.TestCase):
     def test_login_04(self):
         """输入错误密码"""
         self.login_page.input_username(self.username)
-        self.login_page.clear_text(self.login_page.passwordloc)
+        self.login_page.clear_text(*self.login_page.passwordloc)
         self.login_page.input_password("xxxx")
         self.login_page.click_submit()
         sleep(0.5)
@@ -61,8 +61,8 @@ class TestLogin(unittest.TestCase):
 
     def test_login_05(self):
         """输入不存在的用户"""
-        self.login_page.clear_text(self.login_page.usernameloc)
-        self.login_page.clear_text(self.login_page.passwordloc)
+        self.login_page.clear_text(*self.login_page.usernameloc)
+        self.login_page.clear_text(*self.login_page.passwordloc)
         self.login_page.input_username("xxxx")
         self.login_page.input_password(self.password)
         self.login_page.click_submit()
@@ -71,14 +71,11 @@ class TestLogin(unittest.TestCase):
 
     def test_login_06(self):
         """输入正确的用户名密码"""
-        self.login_page.clear_text(self.login_page.usernameloc)
-        self.login_page.clear_text(self.login_page.passwordloc)
+        self.login_page.clear_text(*self.login_page.usernameloc)
+        self.login_page.clear_text(*self.login_page.passwordloc)
         self.login_page.input_username(self.username)
         # 调用密码输入组件
         self.login_page.input_password(self.password)
         # 调用点击登录按钮组件
         self.login_page.click_submit()
         self.assertEqual(self.login_page.is_login_success(), "[退出]")
-
-if __name__ == "__main__":
-    unittest.main()

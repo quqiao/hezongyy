@@ -22,6 +22,9 @@ class GoodsDetailPage(BasePage):
     def text_tj(self):
         return self.find_element(*self.tj).text
 
+    def text_jrgwc(self):
+        return self.find_element(*self.jrgwc).text
+
     def click_jrgwc(self):
         self.find_element(*self.jrgwc).click()
 

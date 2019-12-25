@@ -32,9 +32,9 @@ class HomePage(BasePage):
     zyypdt = (By.XPATH, "//*[@id='zyyp']/div[2]/div[1]/ul[1]/li/a/img")  # 中药饮片大图
     zstgdt = (By.XPATH, "//*[@id='zstg']/div[2]/div[1]/ul[1]/li/a/img")  # 诊所特供大图
     wntjtitle = (By.XPATH, "//*[@id='wntj-carousel']/div/span")  # 为你推荐标题
-    wntjzh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[1]/i")  # 为你推荐左滑
-    wntjyh = (By.XPATH, "//*[@id='wntj-carousel']/ul[3]/li[2]/i")  # 为你推荐右滑
-    wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li:nth-child(1) > div > a:nth-child(5) > div")  # 为你推荐大图1
+    wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
+    wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
+    wntjdt1 = (By.XPATH, "//*[@id='wntj-carousel']/ul[1]/li[1]/div/a[1]/div")  # 为你推荐大图
     ssk = (By.CLASS_NAME, "search-input")  # 搜索框
     ssButton = (By.CLASS_NAME, "search-btn")  # 搜索按钮
     ssList1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > ul > li:nth-child(8)")  # 搜索列表第一个

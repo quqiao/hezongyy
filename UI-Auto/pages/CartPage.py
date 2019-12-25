@@ -12,10 +12,10 @@ class CartPage(BasePage):
     jiesuan = (By.XPATH, "//*[@id='jiesuan-btn']")  # 购物车界面结算按钮
     jiage = (By.CLASS_NAME, "tb2_td11.subtotal")  # 购物车界面，第一个商品总价
     yxspsl = (By.XPATH, "//*[@id='count']")  # 已选中商品数量
-    sccg = (By.XPATH, "//*[@id='layui-layer8']/div/text()")  # 删除成功后的提示
-    ydsccg = (By.XPATH, "//*[@id='layui-layer10']/div/text()")  # 移到收藏后的提示
+    sccg = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")  # 删除成功后的提示
+    ydsccg = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")  # 移到收藏后的提示
     gwcwk = (By.XPATH, "//*[@id='form']/div/div[2]/div/p[1]")  # 购物车为空时的提示
-    xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示s
+    xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示
     addNumber = (By.CLASS_NAME, "add")  # 购物车界面增加数量
     minNumber = (By.CLASS_NAME, "min")  # 购物车界面减少数量
     # inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量
@@ -26,13 +26,16 @@ class CartPage(BasePage):
     sc = (By.CLASS_NAME, "del")  # 购物车界面删除指定
     sctsksc = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")  # 删除提示框删除
     ydsc = (By.CLASS_NAME, "collect")  # 购物车界面移到收藏
-    sctskqd = (By.XPATH, "//*[@id='layui-layer7']/div[3]/a[1]")  # 收藏提示框确定框
+    sctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 收藏提示框确定框
     scxz = (By.XPATH, "//*[@id='form']/div/div[2]/table[3]/tbody/tr/td[1]/p[2]/a")  # 购物车界面删除选中
-    shctskqd = (By.XPATH, "//*[@id='layui-layer11']/div[3]/a[1]")  # 购物车界面删除提示框确定
-    scxj = (By.XPATH, "//*[@id='form']/div/div[2]/table[3]/tbody/tr/td[1]/p[3]/a/text()")  # 购物车界面删除无库存和下架商品
-    scxjtskqd = (By.XPATH, "//*[@id='layui-layer12']/div[3]/a[1]")  # 购物车界面删除下架提示框确定
-    dj1 = (By.CLASS_NAME, "tb2_td9")  #
-    dj2 = (By.TAG_NAME, "span")
+    shctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除提示框确定
+    scxj = (By.CLASS_NAME, "ico.del_all")  # 购物车界面删除无库存和下架商品
+    scxjtskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除下架提示框确定
+    dj1 = (By.CLASS_NAME, "tb2_td9")  # 单价
+    dj2 = (By.TAG_NAME, "span")  # 单价
+    wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
+    wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
+    wntjdt1 = (By.CLASS_NAME, "wntj-cp")  # 为你推荐大图
 
     # 调用text对象，输出单价文本
     def text_dj(self):
@@ -123,7 +126,7 @@ class CartPage(BasePage):
 
     # 调用click对象，点击删除下架和无库存
     def click_scxj(self):
-        self.find_element(*self.scxj).click()
+        self.find_elements(*self.scxj)[1].click()
 
     # 调用click对象，点击删除下架和无库存提示框
     def click_scxjtskqd(self):
@@ -132,3 +135,15 @@ class CartPage(BasePage):
     # 调用click对象，点击结算按钮
     def click_jiesuan(self):
         self.find_element(*self.jiesuan).click()
+
+    # 调用click对象，点击为你推荐左滑
+    def click_wntjzh(self):
+        self.find_element(*self.wntjzh).click()
+
+    # 调用click对象，点击为你推荐右滑
+    def click_wntjyh(self):
+        self.find_element(*self.wntjyh).click()
+
+    # 调用click对象，点击为你推荐大图
+    def click_wntjdt1(self):
+        self.find_element(*self.wntjdt1).click()
