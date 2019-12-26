@@ -11,6 +11,7 @@ class GoodsDetailPage(BasePage):
     hyj = (By.CSS_SELECTOR, "#xiangqing > div > div.xq_main > div.xq_main_top > div.mid > div.price-box > div.right > p.cx-tips > s")  # 会员价
     tj = (By.CSS_SELECTOR, "#xiangqing > div > div.xq_main > div.xq_main_top > div.mid > div.price-box > div.right > p.cx-tips")  # 特价
     jrgwc = (By.ID, "jrgwc")  # 加入购物车
+    gwc = (By.CLASS_NAME, "gwc")  # 购物车
 
     # 调用text，获取如何购买文本
     def text_bt(self):
@@ -28,3 +29,5 @@ class GoodsDetailPage(BasePage):
     def click_jrgwc(self):
         self.find_element(*self.jrgwc).click()
 
+    def click_gwc(self):
+        self.find_element(*self.gwc).click()

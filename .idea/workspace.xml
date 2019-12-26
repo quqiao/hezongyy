@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/CartPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/CartPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/GoodsDetailPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/GoodsDetailPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/basePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/basePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2019-12-25.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCategories.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCategories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestLogin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -250,7 +249,8 @@
       <workItem from="1577149619630" duration="97000" />
       <workItem from="1577150028592" duration="250000" />
       <workItem from="1577151532441" duration="18435000" />
-      <workItem from="1577234122062" duration="21955000" />
+      <workItem from="1577234122062" duration="22171000" />
+      <workItem from="1577321328775" duration="21384000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567401485422</created>
@@ -448,7 +448,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577095050161</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="20191225提交">
+      <created>1577266381491</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1577266381491</updated>
+    </task>
+    <task id="LOCAL-00030" summary="20191225提交">
+      <created>1577266448643</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1577266448643</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -499,10 +513,11 @@
     <MESSAGE value="20191218提交" />
     <MESSAGE value="20191220提交" />
     <MESSAGE value="20191223提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20191223提交" />
+    <MESSAGE value="20191225提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20191225提交" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1577262826646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
+    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1577353087551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1573713268514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Android-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestLogin_TestLogin_test_06_login.coverage" NAME="Unittests for TestLogin.TestLogin.test_06_login Coverage Results" MODIFIED="1574750160359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestHome_TestLogin_test_home_15.coverage" NAME="Unittests for TestHome.TestLogin.test_home_15 Coverage Results" MODIFIED="1576465743505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />

@@ -100,11 +100,19 @@ class BasePage(object):
         except AttributeError:
             print(u"%s 页面中未能找到 %s 元素" % (self, loc))
 
+    # 删除文本
     def clear_text(self, *loc):
         self.find_element(*loc).click()
         self.find_element(*loc).send_keys(Keys.CONTROL, "a")
         self.find_element(*loc).send_keys(Keys.DELETE)
         self.find_element(*loc).clear()
+
+    # 从列表中删除文本
+    def clear_list(self, *loc, listNumber):
+        self.find_element(*loc)[listNumber].click()
+        self.find_element(*loc)[listNumber].send_keys(Keys.CONTROL, "a")
+        self.find_element(*loc)[listNumber].send_keys(Keys.DELETE)
+        self.find_element(*loc)[listNumber].clear()
 
     def move_to_element(self, loc):
         ActionChains(self.driver).move_to_element(loc).perform()

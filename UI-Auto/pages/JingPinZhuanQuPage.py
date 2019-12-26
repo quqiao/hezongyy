@@ -40,4 +40,4 @@ class JingPinZhuanQuPage(BasePage):
 
     # 调用click对象，第三件商品加入购物车
     def click_addcart3(self):
-        self.find_element(*self.addCart2).click()
+        self.find_element(*self.addCart3).click()

@@ -32,8 +32,7 @@ class TestLogin(unittest.TestCase):
         cls.ddbz = "订单备注"
         cls.public_method.get_url(cls.url)
         cls.public_method.login(cls.username, cls.password)
-        # 关掉广告
-        # cls.public_method.click_ad()
+        # cls.public_method.click_ad()  # 关掉广告
 
     @classmethod
     def tearDownClass(cls):

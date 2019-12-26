@@ -3,6 +3,7 @@ __author__ = 'quqiao'
 
 from selenium.webdriver.common.by import By
 from pages.basePage import BasePage
+from selenium.webdriver.common.keys import Keys
 
 
 # 继承BasePage类
@@ -83,7 +84,7 @@ class CartPage(BasePage):
         self.find_element(*self.minNumber).click()
 
 
-    # 调用click对象，点击输入数量
+    # 调用click对象，点击第一个商品输入数量
     def input_number2(self, shuliang):
         '''通过tagName找到一个列表后查询所有'''
         # inputs = self.find_elements(*self.inputNumber)
@@ -95,6 +96,15 @@ class CartPage(BasePage):
         """通过ClassName来定位"""
         self.clear_text(*self.inputNumber)
         self.find_element(*self.inputNumber).send_keys(shuliang)
+
+    def input_number1(self, shuliang, listNumber):
+        self.find_elements(*self.inputNumber)[listNumber].click()
+        self.find_elements(*self.inputNumber)[listNumber].send_keys(Keys.CONTROL, "a")
+        self.find_elements(*self.inputNumber)[listNumber].send_keys(Keys.DELETE)
+        self.find_elements(*self.inputNumber)[listNumber].clear()
+        self.find_elements(*self.inputNumber)[listNumber].send_keys(shuliang)
+
+
 
     # 调用click对象，点击全选框
     def click_qxk(self):
