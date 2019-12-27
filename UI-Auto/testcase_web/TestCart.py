@@ -20,19 +20,18 @@ class TestCart(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
         cls.url = xianshang_url
-        cls.shuliang = 10
         cls.username = "测试05"
         cls.password = "123456"
-        cls.public_method = PublicMethod(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明PublicMethod类对象
+        cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明PublicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明homePage类对象
         cls.cart_page = CartPage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明cartPage类对象
         cls.categories_page = CategoriesPage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明categoriesPage类对象
         cls.puyao_page = PuYaoPage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明puyaoPage类对象
         cls.settle_page = SettlePage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明settlePage类对象
         cls.goodsdetail_page = GoodsDetailPage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明goodsDetailPage类对象
-        cls.public_method.get_url(cls.url)
-        cls.public_method.login(cls.username, cls.password)
-        # cls.public_method.click_ad()  # 关闭广告
+        cls.public_page.get_url(cls.url)
+        cls.public_page.login(cls.username, cls.password)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
     @classmethod
     def tearDownClass(cls):
@@ -69,7 +68,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_minNumber()  # 调用减少数量
         sleep(1)
-        self.cart_page.input_number2(self.shuliang)  # 调用输入数量
+        self.cart_page.input_number1(10, 0)
         sleep(2)
         self.cart_page.click_jiage()  # 调用点击价格， 退出输入框
         sleep(1)
@@ -132,10 +131,6 @@ class TestCart(unittest.TestCase):
         self.driver.back()  # 返回普药界面
         sleep(1)
         self.puyao_page.click_addcart1()  # 商品1加入购物车
-        sleep(1)
-        self.puyao_page.click_addcart2()  # 商品2加入购物车
-        sleep(1)
-        self.puyao_page.click_addcart3()  # 商品3加入购物车
         sleep(5)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
@@ -151,7 +146,47 @@ class TestCart(unittest.TestCase):
         self.assertEqual(self.cart_page.text_xjspwk(), "没有需要删除的商品！", msg="删除无库存和下架商品错误")  # 判断删除下架商品是否错误
 
     def test_cart_10(self):
+        """进入结算界面,商品不满200元时"""
+        sleep(1)
+        self.cart_page.click_jiesuan()  # 调用点击结算按钮
+        sleep(1)
+        self.assertEqual(self.settle_page.text_wm200(), "您购买的商品总价没有达到本店的最低起购金额￥200元的要求", msg="不满200元时出现错误")  # 判断不满200结算
+
+    def test_cart_11(self):
+        """加入满200的商品进入购物车界面"""
+        sleep(1)
+        self.settle_page.click_fhsy()  # 返回首页
+        sleep(1)
+        self.categories_page.click_py()  # 进入普药
+        sleep(1)
+        self.puyao_page.click_addcart1()  # 商品1加入购物车
+        sleep(1)
+        self.puyao_page.click_addcart2()  # 商品2加入购物车
+        sleep(1)
+        self.puyao_page.click_addcart3()  # 商品3加入购物车
+        sleep(1)
+        self.home_page.click_gwc()  # 进入购物车按钮
+        sleep(1)
+        self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")
+
+    def test_cart_12(self):
+        """进入结算界面，商品满200元时"""
+        sleep(1)
+        self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
+        sleep(1)
+        self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
+        sleep(1)
+        self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
+        sleep(1)
+        self.cart_page.click_jiesuan()  # 调用点击结算
+        sleep(1)
+        self.assertEqual(self.settle_page.text_tjdd(), "提交订单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
+
+
+    def test_cart_13(self):
         """为你推荐商品检查"""
+        sleep(1)
+        self.driver.back()
         sleep(1)
         self.cart_page.click_wntjyh()  # 为你推荐右滑
         sleep(1)
@@ -159,40 +194,17 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_wntjdt1()  # 为你推荐第一个大图
         sleep(1)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页
+        self.public_page.switch_secendPage()  # 句柄切换到第二页
         sleep(1)
         self.assertEqual(self.goodsdetail_page.text_jrgwc(), "加入购物车", msg="没有进入商品详情页")  # 判断是否进入商品详情页
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_method.switch_home()
 
-    # def test_cart_10(self):
-    #     """进入结算界面,商品不满200元时"""
-    #     sleep(1)
-    #     self.cart_page.click_jiesuan()  # 调用点击结算按钮
-    #     sleep(1)
-    #     self.assertEqual(self.settle_page.text_wm200(), "您购买的商品总价没有达到本店的最低起购金额￥200元的要求", msg="不满200元时出现错误")  # 判断不满200结算
-    #     sleep(1)
-    #     self.driver.back()
-
-    # def test_cart_11(self):
-    #     """进入结算界面，商品满200元时"""
-    #     sleep(1)
-    #     self.cart_page.input_number2(self.shuliang)  # 输入数量
-    #     sleep(1)
-    #     self.cart_page.click_jiesuan()  # 调用点击结算
-    #     sleep(1)
-    #     self.assertEqual(self.settle_page.text_tjdd(), "提交订单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
-    #     sleep(1)
-    #     self.driver.back()
-    #
     # def test_cart_12(self):
     #     """有这类商品时，删除无库存和下架商品"""
     #     sleep(0.5)
     #     self.cart_page.click_scxj()  # 调用删除无库存和下架商品
     #     sleep(0.5)
     #     self.cart_page.click_scxjtskqd()  # 调用删除无库存和下架提示框确定
+
 
 
 

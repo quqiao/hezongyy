@@ -19,7 +19,7 @@ class TestLogin(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.url = home_url
-        cls.public_method = PublicMethod(cls.driver, cls.url, u"合纵药易购商品分类界面")  # 声明publicMethod类对象
+        cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵药易购商品分类界面")  # 声明publicMethod类对象
         cls.categories_page = CategoriesPage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明categoriesPage类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明homepage类对象
         cls.puyao_page = PuYaoPage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明puyaopage类对象
@@ -30,9 +30,9 @@ class TestLogin(unittest.TestCase):
         cls.username = "测试05"
         cls.password = "123456"
         cls.ddbz = "订单备注"
-        cls.public_method.get_url(cls.url)
-        cls.public_method.login(cls.username, cls.password)
-        # cls.public_method.click_ad()  # 关掉广告
+        cls.public_page.get_url(cls.url)
+        cls.public_page.login(cls.username, cls.password)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
     @classmethod
     def tearDownClass(cls):
@@ -66,8 +66,8 @@ class TestLogin(unittest.TestCase):
         self.cart_page.click_jiesuan()  # 点击结算按钮
         sleep(0.5)
         self.settle_page.click_fhsy()  # 返回首页
-        # sleep(0.5)
-        # self.public_method.click_ad()  # 关闭广告
+        sleep(0.5)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.assertEqual(self.home_page.text_syts(), "[退出]", msg="返回首页界面失败")  # 判断是否返回首页界面
 

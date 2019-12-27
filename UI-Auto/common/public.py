@@ -11,7 +11,8 @@ tejia_url = "http://47.97.73.102:9521/hdcx/#/tj"
 
 
 class PublicMethod(BasePage):
-    ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
+    ad = (By.CLASS_NAME, "close")  # 点击关掉广告
+    adk = (By.CLASS_NAME, "content_tj")  # 广告框弹出
     sydl = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[3]/a")  # 首页登录按钮
     username = (By.XPATH, "//*[@id='username']")  # 用户名
     password = (By.XPATH, "//*[@id='password']")  # 密码
@@ -57,6 +58,17 @@ class PublicMethod(BasePage):
     def select_list1(self):
         s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_index("2")
+
+    def is_element_exist(self):
+        list = self.driver.find_elements(*self.adk)
+        if len(list) == 0:
+            print('没有该元素')
+            return 0
+        elif len(list) >= 0:
+            print('共找到' + str(len(list)) + '个元素')
+            self.find_element(*self.ad).click()
+
+
 
 
 

@@ -26,7 +26,7 @@ class TestHome(unittest.TestCase):
         cls.goodsDetail_page = GoodsDetailPage(cls.driver, cls.url, "合纵易购首页界面")  # 声明GoodsDetailPage类对象
         cls.public_page.get_url(cls.url)
         cls.public_page.login(cls.username, cls.password)
-        # cls.public_page.click_ad()  # 关闭广告
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
     @classmethod
     def tearDownClass(cls):
@@ -240,7 +240,7 @@ class TestHome(unittest.TestCase):
 
     def test_home_16(self):
         """搜索框输入搜索正确的内容查询"""
-        # self.public_page.click_ad()
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
         sleep(0.5)
@@ -255,7 +255,7 @@ class TestHome(unittest.TestCase):
 
     def test_home_17(self):
         """搜索框联想的内容查询"""
-        # self.public_page.click_ad()
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(2)
         self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
         sleep(2)

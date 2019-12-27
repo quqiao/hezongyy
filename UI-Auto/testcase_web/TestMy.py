@@ -29,8 +29,7 @@ class TestLogin(unittest.TestCase):
         cls.public_method = PublicMethod(cls.driver, cls.url, u"合纵药易购我的界面")
         cls.public_method.get_url(cls.url)
         cls.public_method.login(cls.username, cls.password)
-        # 关掉广告
-        # cls.public_method.click_ad()
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
         cls.home_page.click_my()
 
