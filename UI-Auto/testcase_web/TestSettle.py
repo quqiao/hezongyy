@@ -11,7 +11,7 @@ from pages.OrderPage import OrderPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import home_url
+from common.public import home_url, xianshang_url
 
 class TestLogin(unittest.TestCase):
     @classmethod
@@ -86,7 +86,7 @@ class TestLogin(unittest.TestCase):
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         sleep(1)
-        self.assertEqual(self.settle_page.text_tjdd(), "提交订单", msg="没有进入结算界面")
+        self.assertEqual(self.settle_page.text_info(), "提交订单", msg="没有进入结算界面")
 
     def test_settle_05(self):
         """结算界面返回购物车"""

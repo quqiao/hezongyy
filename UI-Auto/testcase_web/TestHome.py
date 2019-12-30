@@ -6,7 +6,7 @@ from pages.HomePage import HomePage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import home_url, PublicMethod
+from common.public import home_url, PublicMethod,xianshang_url
 
 class TestHome(unittest.TestCase):
 

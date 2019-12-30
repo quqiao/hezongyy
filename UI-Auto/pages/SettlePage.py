@@ -41,9 +41,9 @@ class SettlePage(BasePage):
     def click_tjdd(self):
         self.find_element(*self.tjdd).click()
 
-    # 调用text,获取提交订单文本
-    def text_tjdd(self):
-        return self.find_element(*self.tjdd).text
+    # 调用text,获取订单信息列表
+    def text_info(self, listNumber):
+        return self.find_elements(*self.tjdd)[listNumber].text
 
     # 调用text，获取单价文本
     def text_dj(self):

@@ -16,7 +16,7 @@ class CartPage(BasePage):
     sccg = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")  # 删除成功后的提示
     ydsccg = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")  # 移到收藏后的提示
     gwcwk = (By.XPATH, "//*[@id='form']/div/div[2]/div/p[1]")  # 购物车为空时的提示
-    xjspwk = (By.XPATH, "//*[@id='layui-layer6']/div/text()")  # 下架商品为空时的提示
+    xjspwk = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")  # 下架商品为空时的提示
     addNumber = (By.CLASS_NAME, "add")  # 购物车界面增加数量
     minNumber = (By.CLASS_NAME, "min")  # 购物车界面减少数量
     # inputNumber = (By.CLASS_NAME, "com_text goods-number")  # 购物车界面输入数量
@@ -34,8 +34,8 @@ class CartPage(BasePage):
     scxjtskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除下架提示框确定
     dj1 = (By.CLASS_NAME, "tb2_td9")  # 单价
     dj2 = (By.TAG_NAME, "span")  # 单价
-    wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
-    wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
+    wntjzh = (By.CLASS_NAME, "myicon.lb_left_icon")  # 为你推荐左滑
+    wntjyh = (By.CLASS_NAME, "myicon.lb_right_icon")  # 为你推荐右滑
     wntjdt1 = (By.CLASS_NAME, "wntj-cp")  # 为你推荐大图
 
     # 调用text对象，输出单价文本
@@ -135,8 +135,8 @@ class CartPage(BasePage):
         self.find_element(*self.shctskqd).click()
 
     # 调用click对象，点击删除下架和无库存
-    def click_scxj(self):
-        self.find_elements(*self.scxj)[1].click()
+    def click_scxj(self, listNumber):
+        self.find_elements(*self.scxj)[listNumber].click()
 
     # 调用click对象，点击删除下架和无库存提示框
     def click_scxjtskqd(self):

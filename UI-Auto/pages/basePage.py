@@ -53,6 +53,7 @@ class BasePage(object):
         try:
             WebDriverWait(self.driver, 10).until(lambda driver: driver.find_elements(*loc))
             return self.driver.find_elements(*loc)
+
         except:
             print(u"%s 页面中未能找到 %s 元素" % (self, loc))
 

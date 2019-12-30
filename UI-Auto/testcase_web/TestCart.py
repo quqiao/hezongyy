@@ -10,7 +10,7 @@ from pages.PuYaoPage import PuYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, PublicMethod
+from common.public import xianshang_url, PublicMethod, home_url
 
 class TestCart(unittest.TestCase):
 
@@ -19,7 +19,7 @@ class TestCart(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
-        cls.url = xianshang_url
+        cls.url = home_url
         cls.username = "测试05"
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明PublicMethod类对象
@@ -48,13 +48,13 @@ class TestCart(unittest.TestCase):
         """进入购物车界面"""
         sleep(2)
         self.categories_page.click_py()  # 调用点击普药列表
-        sleep(0.5)
+        sleep(2)
         self.puyao_page.click_addcart1()  # 商品1加入购物车
-        sleep(1)
+        sleep(2)
         self.puyao_page.click_addcart2()  # 商品2加入购物车
-        sleep(1)
+        sleep(2)
         self.puyao_page.click_addcart3()  # 商品3加入购物车
-        sleep(5)
+        sleep(3)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(0.5)
         self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")  # 通过显示的结算判断是否进入购物车界面
@@ -68,7 +68,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_minNumber()  # 调用减少数量
         sleep(1)
-        self.cart_page.input_number1(10, 0)
+        self.cart_page.input_number1(7, 0)
         sleep(2)
         self.cart_page.click_jiage()  # 调用点击价格， 退出输入框
         sleep(1)
@@ -139,7 +139,7 @@ class TestCart(unittest.TestCase):
     def test_cart_09(self):
         """没有这类商品时，删除无库存和下架商品"""
         sleep(0.5)
-        self.cart_page.click_scxj()  # 调用删除无库存和下架商品
+        self.cart_page.click_scxj(1)  # 调用删除无库存和下架商品
         sleep(0.5)
         self.cart_page.click_scxjtskqd()  # 调用删除无库存和下架提示框确定
         sleep(1)
@@ -156,6 +156,8 @@ class TestCart(unittest.TestCase):
         """加入满200的商品进入购物车界面"""
         sleep(1)
         self.settle_page.click_fhsy()  # 返回首页
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.categories_page.click_py()  # 进入普药
         sleep(1)
@@ -174,13 +176,13 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
         sleep(1)
-        self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
+        self.cart_page.input_number1(20, 1)  # 第一个商品输入数量
         sleep(1)
-        self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
+        self.cart_page.input_number1(20, 2)  # 第一个商品输入数量
         sleep(1)
         self.cart_page.click_jiesuan()  # 调用点击结算
-        sleep(1)
-        self.assertEqual(self.settle_page.text_tjdd(), "提交订单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
+        sleep(2)
+        self.assertEqual(self.settle_page.text_info(0), "提交订单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
 
 
     def test_cart_13(self):

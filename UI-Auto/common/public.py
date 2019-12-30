@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from pages.basePage import BasePage
+from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
 
 home_url = "http://47.97.73.102:9521"
@@ -62,13 +63,11 @@ class PublicMethod(BasePage):
     def is_element_exist(self):
         list = self.driver.find_elements(*self.adk)
         if len(list) == 0:
-            print('没有该元素')
+            # print('没有该元素')
             return 0
         elif len(list) >= 0:
-            print('共找到' + str(len(list)) + '个元素')
+            # print('共找到' + str(len(list)) + '个元素')
             self.find_element(*self.ad).click()
-
-
 
 
 

@@ -6,7 +6,7 @@ from pages.CategoriesPage import CategoriesPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url
+from common.public import xianshang_url, home_url
 
 class TestCategories(unittest.TestCase):
 
@@ -14,8 +14,8 @@ class TestCategories(unittest.TestCase):
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
-        cls.driver.implicitly_wait(30)
-        cls.url = xianshang_url
+        cls.driver.implicitly_wait(5)
+        cls.url = home_url
         cls.username = "测试05"
         cls.password = "123456"
         # 声明categoriesPage类对象
@@ -196,7 +196,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list4_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -204,7 +204,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_13(self):
         """商品分类——补益安神及维矿类列表"""
@@ -213,7 +213,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list5_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -221,7 +221,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_14(self):
         """商品分类——妇、儿科列表"""
@@ -230,7 +230,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list6_1()  # 点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -238,7 +238,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_15(self):
         """商品分类——心脑血管及神经类用药列表"""
@@ -247,7 +247,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list7_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -255,7 +255,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_16(self):
         """商品分类——内分泌系统（含糖尿病）列表"""
@@ -264,7 +264,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list8_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -272,7 +272,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_17(self):
         """商品分类——风湿骨伤及其他药品列表"""
@@ -281,7 +281,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list9_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -289,7 +289,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_18(self):
         """商品分类——特殊复方制剂、生物制品列表"""
@@ -298,7 +298,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list10_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -306,7 +306,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_19(self):
         """商品分类——中药饮片列表"""
@@ -315,7 +315,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list11_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -323,7 +323,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_20(self):
         """商品分类——非药品列表"""
@@ -332,7 +332,7 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.categories_page.click_list12_1()  #点击进入抗感冒类界面
         sleep(0.5)
-        self.public_method.switch_secendPage()  # 句柄切换到第二页上
+        self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
@@ -340,4 +340,4 @@ class TestCategories(unittest.TestCase):
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.public_method.switch_home()  # 句柄切换回首页
+        self.public_page.switch_home()  # 句柄切换回首页

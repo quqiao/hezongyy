@@ -7,9 +7,9 @@ from pages.MyPage import MyPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import home_url
+from common.public import home_url,xianshang_url
 
-class TestLogin(unittest.TestCase):
+class TestMy(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -26,9 +26,9 @@ class TestLogin(unittest.TestCase):
         # 声明MyPage类对象
         cls.my_page = MyPage(cls.driver, cls.url, u"合纵药易购我的界面")
         # 声明publicMethod类对象
-        cls.public_method = PublicMethod(cls.driver, cls.url, u"合纵药易购我的界面")
-        cls.public_method.get_url(cls.url)
-        cls.public_method.login(cls.username, cls.password)
+        cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵药易购我的界面")
+        cls.public_page.get_url(cls.url)
+        cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
         cls.home_page.click_my()
