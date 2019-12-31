@@ -4,6 +4,7 @@ __author__ = 'quqiao'
 from selenium.webdriver.common.by import By
 from pages.basePage import BasePage
 from selenium.webdriver.common.keys import Keys
+from time import sleep
 
 
 # 继承BasePage类
@@ -28,7 +29,6 @@ class CartPage(BasePage):
     sctsksc = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")  # 删除提示框删除
     ydsc = (By.CLASS_NAME, "collect")  # 购物车界面移到收藏
     sctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 收藏提示框确定框
-    scxz = (By.XPATH, "//*[@id='form']/div/div[2]/table[3]/tbody/tr/td[1]/p[2]/a")  # 购物车界面删除选中
     shctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除提示框确定
     scxj = (By.CLASS_NAME, "ico.del_all")  # 购物车界面删除无库存和下架商品
     scxjtskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除下架提示框确定
@@ -104,8 +104,6 @@ class CartPage(BasePage):
         self.find_elements(*self.inputNumber)[listNumber].clear()
         self.find_elements(*self.inputNumber)[listNumber].send_keys(shuliang)
 
-
-
     # 调用click对象，点击全选框
     def click_qxk(self):
         self.find_element(*self.qxk).click()
@@ -126,17 +124,29 @@ class CartPage(BasePage):
     def click_ydsc(self):
         self.find_element(*self.ydsc).click()
 
-    # 调用click对象，点击删除选中
-    def click_scxz(self):
-        self.find_element(*self.scxz).click()
-
     # 调用click对象，点击删除提示框确定
     def click_shctskqd(self):
         self.find_element(*self.shctskqd).click()
 
-    # 调用click对象，点击删除下架和无库存
+    # 调用click对象，点击删除下架和无库存1，删除选中0
     def click_scxj(self, listNumber):
         self.find_elements(*self.scxj)[listNumber].click()
+
+    # 检查是否存在删除选中商品和删除无库存商品
+    def is_scsp_exist(self):
+        list = self.driver.find_elements(*self.scxj)
+        if len(list) == 0:
+            # print('没有该元素')
+            self.driver.back()
+        elif len(list) >= 0:
+            # print('共找到' + str(len(list)) + '个元素')
+            self.find_elements(*self.scxj)[0].click()
+            sleep(1)
+            self.find_element(*self.shctskqd).click()
+            sleep(1)
+            self.driver.back()
+
+
 
     # 调用click对象，点击删除下架和无库存提示框
     def click_scxjtskqd(self):
@@ -157,3 +167,4 @@ class CartPage(BasePage):
     # 调用click对象，点击为你推荐大图
     def click_wntjdt1(self):
         self.find_element(*self.wntjdt1).click()
+

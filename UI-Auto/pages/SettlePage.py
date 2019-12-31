@@ -14,6 +14,7 @@ class SettlePage(BasePage):
     jsfhgwc = (By.XPATH, "//*[@id='app']/div/div[3]/div[1]/a")  # 结算界面返回购物车
     ddbz = (By.XPATH, "//*[@id='app']/div/div[3]/div[6]/div[2]/textarea")  # 结算界面，订单备注输入框
     tjdd = (By.XPATH, "//*[@id='btn']")  # 结算界面，提交订单
+    ddxx = (By.CLASS_NAME, "weight")  # 订单信息列表
     wm200 = (By.XPATH, "//*[@id='app']/div/div[3]/p")  # 未满200元时的提示
     dj = (By.CLASS_NAME, "dj")  # 单价
 
@@ -43,7 +44,7 @@ class SettlePage(BasePage):
 
     # 调用text,获取订单信息列表
     def text_info(self, listNumber):
-        return self.find_elements(*self.tjdd)[listNumber].text
+        return self.find_elements(*self.ddxx)[listNumber].text
 
     # 调用text，获取单价文本
     def text_dj(self):

@@ -15,7 +15,7 @@ class TestMy(unittest.TestCase):
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
-        cls.driver.implicitly_wait(30)
+        cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
         cls.ddbj = "18056558899"
         cls.username = "测试05"
@@ -148,7 +148,7 @@ class TestMy(unittest.TestCase):
     def test_my_13(self):
         """进入我的消息"""
         sleep(0.5)
-        self.public_method.scroll_down(self.xiangsu)
+        self.public_page.scroll_down(self.xiangsu)
         sleep(0.5)
         self.my_page.click_wdxx()  # 点击我的消息"
         sleep(0.5)

@@ -8,8 +8,12 @@ from time import sleep
 
 # 继承BasePage类
 class HomePage(BasePage):
-    # 定位器，通过元素属性定位元素对象
-    my = (By.XPATH, "//*[@id='carousel']/div/div/div[1]/div[2]/span/a")  # 点击进入我的药易购
+    "我的药易购"
+    my = (By.XPATH, "//*[@id='carousel']/div/div/div[1]/div[2]/span/a")
+    "调用click，点击进入我的药易购"
+    def click_my(self):
+        self.find_element(*self.my).click()
+
     gwc = (By.CLASS_NAME, "gwc")  # 购物车按钮
     ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
     mzjxTitle = (By.XPATH, "//*[@id='mzjx']/div/div[1]/span[1]")  # 每周精选标题
@@ -34,28 +38,53 @@ class HomePage(BasePage):
     wntjtitle = (By.XPATH, "//*[@id='wntj-carousel']/div/span")  # 为你推荐标题
     wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
     wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
-    wntjdt1 = (By.XPATH, "//*[@id='wntj-carousel']/ul[1]/li[1]/div/a[1]/div")  # 为你推荐大图
+    wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li.cur > div > a:nth-child(1) > div > div")  # 为你推荐大图
     ssk = (By.CLASS_NAME, "search-input")  # 搜索框
     ssButton = (By.CLASS_NAME, "search-btn")  # 搜索按钮
-    # ssList1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > ul > li:nth-child(1)")  # 搜索列表第一个
-    ssList1 = (By.CLASS_NAME, "search-list")  # 模糊查找列表
-    sswk = (By.CLASS_NAME, "link")  # 搜索为空
-    spmz = (By.CLASS_NAME, "datu-mingzi")  # 商品大图名字
-    syts = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")  # 首页的标识
-    jrgwc_ej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart8290")  # 搜索出阿胶加入购物车
-    jrgwc_hqej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart42835")  # 搜索出阿胶加入购物车
 
-    # 调用text对象，检查返回首页
-    def text_syts(self):
-        return self.find_element(*self.syts).text
+    "搜索列表第一个"
+    # ssList1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > ul > li:nth-child(1)")  #
+    ssList1 = (By.CLASS_NAME, "search-list")
+    "调用click,点击搜索列表第一个"
+    def click_ssList1(self, listNumber):
+        self.find_elements(*self.ssList1)[listNumber].click()
 
-    # 调用text对象，检查搜索为空时
+    "搜索为空"
+    sswk = (By.CLASS_NAME, "link")
+    "调用text对象，检查搜索为空时"
     def text_sswk(self):
         return self.find_element(*self.sswk).text
 
-    # 调用text对象，检查搜索相应商品的名字
+    "商品大图名字"
+    spmz = (By.CLASS_NAME, "datu-mingzi")  #
+    "调用text对象，检查搜索相应商品的名字"
     def text_spmz(self):
         return self.find_element(*self.spmz).text
+
+    "首页的标识，"
+    syts = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")
+    "调用text对象，检查返回首页"
+    def text_syts(self):
+        return self.find_element(*self.syts).text
+
+    "搜索出阿胶加入购物车"
+    jrgwc_ej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart8290")
+    "调用click,点击加入购物车"
+    def click_jrgwc_ej(self):
+        self.find_element(*self.jrgwc_ej).click()
+
+    "搜索出黄芪阿胶加入购物车"
+    jrgwc_hqej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart42835")  #
+    "调用click,点击加入购物车"
+    def click_jrgwc_hqej(self):
+        self.find_element(*self.jrgwc_hqej).click()
+
+    "我的收藏按钮"
+    wdsc = (By.CSS_SELECTOR, "#carousel > div > div > div.user.user-yes > p:nth-child(3) > a:nth-child(3)")
+    "调用click,点击我的收藏按钮"
+    def click_wdsc(self):
+        self.find_element(*self.wdsc).click()
+
 
     # 调用click对象，点击每周精选
     def click_week(self):
@@ -154,9 +183,7 @@ class HomePage(BasePage):
     def click_wntjdt1(self):
         self.find_element(*self.wntjdt1).click()
 
-    # 调用click，点击进入我的药易购
-    def click_my(self):
-        self.find_element(*self.my).click()
+
 
     # 调用script，点击进入购物车界面
     def click_gwc(self):
@@ -173,14 +200,7 @@ class HomePage(BasePage):
     def click_ssButton(self):
         self.find_element(*self.ssButton).click()
 
-    # 调用click,点击搜索列表第一个
-    def click_ssList1(self, listNumber):
-        self.find_elements(*self.ssList1)[listNumber].click()
 
-    # 调用click,点击加入购物车
-    def click_jrgwc_ej(self):
-        self.find_element(*self.jrgwc_ej).click()
 
-    # 调用click,点击加入购物车
-    def click_jrgwc_hqej(self):
-        self.find_element(*self.jrgwc_hqej).click()
+
+

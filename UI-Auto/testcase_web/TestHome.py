@@ -14,7 +14,7 @@ class TestHome(unittest.TestCase):
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
-        cls.driver.implicitly_wait(30)
+        cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
         cls.username = "测试05"
         cls.password = "123456"
@@ -72,11 +72,12 @@ class TestHome(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"vip专区" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()
 
     def test_home_04(self):
         """进入促销专区"""
+        sleep(0.5)
+        self.driver.close()
+        sleep(1)
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
         self.home_page.click_cxzq()  # 点击促销专区
@@ -253,17 +254,17 @@ class TestHome(unittest.TestCase):
         self.driver.back()
         sleep(0.5)
 
-    def test_home_17(self):
-        """搜索框联想的内容查询"""
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
-        sleep(2)
-        self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
-        sleep(2)
-        self.home_page.click_ssList1()  # 点击搜索列表第一个
-        sleep(2)
-        mingzi = self.home_page.text_spmz()
-        sleep(1)
-        self.assertTrue(u"感冒灵" in mingzi)
-        sleep(1)
-        self.driver.back()
-        sleep(0.5)
+    # def test_home_17(self):
+    #     """搜索框联想的内容查询"""
+    #     self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+    #     sleep(2)
+    #     self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+    #     sleep(2)
+    #     self.home_page.click_ssList1(1)  # 点击搜索列表第一个
+    #     sleep(2)
+    #     mingzi = self.home_page.text_spmz()
+    #     sleep(1)
+    #     self.assertTrue(u"感冒灵" in mingzi)
+    #     sleep(1)
+    #     self.driver.back()
+    #     sleep(0.5)

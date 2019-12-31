@@ -14,7 +14,7 @@ class TestCategories(unittest.TestCase):
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
-        cls.driver.implicitly_wait(5)
+        cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
         cls.username = "测试05"
         cls.password = "123456"

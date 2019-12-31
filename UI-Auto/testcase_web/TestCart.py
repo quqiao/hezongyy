@@ -18,7 +18,7 @@ class TestCart(unittest.TestCase):
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
-        cls.driver.implicitly_wait(30)
+        cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
         cls.username = "测试05"
         cls.password = "123456"
@@ -68,7 +68,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_minNumber()  # 调用减少数量
         sleep(1)
-        self.cart_page.input_number1(7, 0)
+        self.cart_page.input_number1(50, 0)
         sleep(2)
         self.cart_page.click_jiage()  # 调用点击价格， 退出输入框
         sleep(1)
@@ -119,7 +119,7 @@ class TestCart(unittest.TestCase):
     def test_cart_07(self):
         """删除选中商品"""
         sleep(1)
-        self.cart_page.click_scxz()  # 调用删除选中商品
+        self.cart_page.click_scxj(0)   # 调用删除选中商品
         sleep(1)
         self.cart_page.click_sctskqd()  # 调用删除提示框确定按钮
         sleep(1)
@@ -182,7 +182,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_jiesuan()  # 调用点击结算
         sleep(2)
-        self.assertEqual(self.settle_page.text_info(0), "提交订单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
+        self.assertEqual(self.settle_page.text_info(0), "商品清单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
 
 
     def test_cart_13(self):

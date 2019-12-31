@@ -60,6 +60,7 @@ class PublicMethod(BasePage):
         s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_index("2")
 
+    # 检查是否存在广告弹出框
     def is_element_exist(self):
         list = self.driver.find_elements(*self.adk)
         if len(list) == 0:
@@ -68,8 +69,3 @@ class PublicMethod(BasePage):
         elif len(list) >= 0:
             # print('共找到' + str(len(list)) + '个元素')
             self.find_element(*self.ad).click()
-
-
-
-
-
