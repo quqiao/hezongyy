@@ -39,27 +39,9 @@ class HomePage(BasePage):
     wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
     wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
     wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li.cur > div > a:nth-child(1) > div > div")  # 为你推荐大图
-    ssk = (By.CLASS_NAME, "search-input")  # 搜索框
-    ssButton = (By.CLASS_NAME, "search-btn")  # 搜索按钮
 
-    "搜索列表第一个"
-    # ssList1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > ul > li:nth-child(1)")  #
-    ssList1 = (By.CLASS_NAME, "search-list")
-    "调用click,点击搜索列表第一个"
-    def click_ssList1(self, listNumber):
-        self.find_elements(*self.ssList1)[listNumber].click()
 
-    "搜索为空"
-    sswk = (By.CLASS_NAME, "link")
-    "调用text对象，检查搜索为空时"
-    def text_sswk(self):
-        return self.find_element(*self.sswk).text
 
-    "商品大图名字"
-    spmz = (By.CLASS_NAME, "datu-mingzi")  #
-    "调用text对象，检查搜索相应商品的名字"
-    def text_spmz(self):
-        return self.find_element(*self.spmz).text
 
     "首页的标识，"
     syts = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")
@@ -183,22 +165,9 @@ class HomePage(BasePage):
     def click_wntjdt1(self):
         self.find_element(*self.wntjdt1).click()
 
-
-
     # 调用script，点击进入购物车界面
     def click_gwc(self):
         self.find_element(*self.gwc).click()
-
-    def click_ssk(self):
-        self.find_element(*self.ssk).click()
-
-    # 调用click，点击搜索框
-    def input_ssk(self, ssnr):
-        self.find_element(*self.ssk).send_keys(ssnr)
-
-    # 调用click,点击搜索按钮
-    def click_ssButton(self):
-        self.find_element(*self.ssButton).click()
 
 
 

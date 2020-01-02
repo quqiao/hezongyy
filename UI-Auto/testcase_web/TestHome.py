@@ -223,48 +223,4 @@ class TestHome(unittest.TestCase):
         sleep(0.5)
         self.assertEqual(self.goodsDetail_page.text_bt(), "为您推荐", msg="没有进入商品详情页面")  # 判断是否进入商品详情页
 
-    def test_home_15(self):
-        """搜索框输入搜索没有的内容查询"""
-        sleep(1)
-        self.driver.close()
-        sleep(1)
-        self.public_page.switch_home()
-        sleep(1)
-        self.home_page.input_ssk("@#$%^")  # 搜索框中输入内容
-        sleep(0.5)
-        self.home_page.click_ssButton()  # 点击搜索按钮
-        sleep(1)
-        self.assertEqual(self.home_page.text_sswk(), "发布求购", msg="搜索没有的内容错误")  # 判断没有的内容搜索查询时
-        sleep(1)
-        self.driver.back()
-        sleep(0.5)
 
-    def test_home_16(self):
-        """搜索框输入搜索正确的内容查询"""
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
-        sleep(1)
-        self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
-        sleep(0.5)
-        self.home_page.click_ssButton()  # 点击搜索按钮
-        sleep(0.5)
-        mingzi = self.home_page.text_spmz()
-        sleep(1)
-        self.assertTrue(u"感冒灵" in mingzi)
-        sleep(1)
-        self.driver.back()
-        sleep(0.5)
-
-    # def test_home_17(self):
-    #     """搜索框联想的内容查询"""
-    #     self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
-    #     sleep(2)
-    #     self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
-    #     sleep(2)
-    #     self.home_page.click_ssList1(1)  # 点击搜索列表第一个
-    #     sleep(2)
-    #     mingzi = self.home_page.text_spmz()
-    #     sleep(1)
-    #     self.assertTrue(u"感冒灵" in mingzi)
-    #     sleep(1)
-    #     self.driver.back()
-    #     sleep(0.5)
