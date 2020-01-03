@@ -9,17 +9,17 @@ from time import sleep
 # 继承BasePage类
 class ZhongYaoPage(BasePage):
     # 定位器，通过元素属性定位元素对象
-    gwc = (By.CLASS_NAME, "gwc.fl")  # 购物车按钮
-    ljqg = (By.CLASS_NAME, "btn")  # 立即抢购
 
+    "购物车按钮"
+    gwc = (By.CLASS_NAME, "gwc.fl")
     def click_gwc(self):
         self.find_element(*self.gwc).click()
 
-    def click_ljqg1(self):
-        self.find_elements(*self.ljqg)[0].click()
+    "立即抢购"
+    ljqg = (By.CLASS_NAME, "btn")
+    def click_ljqg1(self, ljqgList):
+        self.find_elements(*self.ljqg)[ljqgList].click()
 
-    def click_ljqg2(self):
-        self.find_elements(*self.ljqg)[1].click()
 
 
 

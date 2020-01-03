@@ -69,3 +69,8 @@ class PublicMethod(BasePage):
         elif len(list) >= 0:
             # print('共找到' + str(len(list)) + '个元素')
             self.find_element(*self.ad).click()
+
+    """加入收藏夹"""
+    jrsc = (By.CLASS_NAME, "datu-shoucang")
+    def click_jrsc(self, sclist):
+        self.find_elements(*self.jrsc)[sclist].click()

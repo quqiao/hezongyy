@@ -14,7 +14,10 @@ class PuYaoPage(BasePage):
     addCart2 = (By.XPATH, "//*[@id='datu']/div/ul/li[2]/div[8]/div[1]")  # 普药列表中第二个商品加入购物车
     addCart3 = (By.XPATH, "//*[@id='datu']/div/ul/li[3]/div[8]/div[1]")  # 普药列表中第三个商品加入购物车
 
-
+    """查看收藏夹"""
+    cksc = (By.CLASS_NAME, "layui-layer-btn0")
+    def click_cksc(self):
+        self.find_element(*self.cksc).click()
 
     # 调用send_keys对象，输入购买数量
     def input_number1(self, shuliang):
