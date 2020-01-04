@@ -20,10 +20,15 @@ class CollectionPage(BasePage):
     def click_lbsc(self):
         self.find_element(*self.lbsc).click()
 
+    """列表购物车"""
+    lbgwc = (By.CSS_SELECTOR, "#pl_buy > table > tbody > tr:nth-child(2) > td.cz > img.jrgwc.fly_to_cart18059")
+    def click_lbgwc(self):
+        self.find_element(*self.lbgwc).click()
+
     """加入购物车"""
     jrgwc = (By.CLASS_NAME, "jrgwc")
-    def click_jrgwc(self):
-        self.find_element(*self.jrgwc).click()
+    def click_jrgwc(self, gwcList):
+        self.find_elements(*self.jrgwc)[gwcList].click()
     def text_jrgwc(self):
         return self.find_element(*self.jrgwc).text
 
@@ -39,7 +44,8 @@ class CollectionPage(BasePage):
     def click_dx(self, dxlist):
         self.find_elements(*self.dx)[dxlist].click()
 
-    "检查是否存在删除选中商品和删除无库存商品"
+    """检查是否存在删除选中商品和删除无库存商品"""
+    shctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除提示框确定
     def is_sc_exist(self):
         list = self.driver.find_elements(*self.jrgwc)
         if len(list) == 0:
@@ -50,6 +56,9 @@ class CollectionPage(BasePage):
             self.find_element(*self.qx).click()
             sleep(1)
             self.find_element(*self.qxsc).click()
+            sleep(1)
+            self.find_element(*self.shctskqd).click()
+
 
     """去逛逛"""
     qqq = (By.PARTIAL_LINK_TEXT, "去逛逛")
@@ -77,3 +86,11 @@ class CollectionPage(BasePage):
     zyyp = (By.CSS_SELECTOR, "#sc1 > div.right_title > ul > a:nth-child(4) > li")
     def click_zyyp(self):
         self.find_element(*self.zyyp).click()
+
+    """前往购物车结算"""
+    jrcg = (By.LINK_TEXT, "前往购物车结算")
+    def text_jrcg(self):
+        return self.find_element(*self.jrcg).text
+
+
+

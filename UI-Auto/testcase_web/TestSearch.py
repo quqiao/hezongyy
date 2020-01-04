@@ -33,7 +33,7 @@ class TestSearch(unittest.TestCase):
         cls.search_page = SearchPage(cls.driver, cls.url, u"合纵易购搜索界面")  # 声明SearchPage类对象
         cls.public_page.get_url(cls.url)
         cls.public_page.login(cls.username, cls.password)
-        # cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
     @classmethod
     def tearDownClass(cls):
@@ -52,8 +52,8 @@ class TestSearch(unittest.TestCase):
         """搜索厂家没有的内容查询"""
         sleep(1)
         self.driver.back()
-        # sleep(1)
-        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -69,8 +69,8 @@ class TestSearch(unittest.TestCase):
         """搜索框药名正确查询"""
         sleep(1)
         self.driver.back()
-        # sleep(1)
-        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(2)
         self.search_page.input_ssk("感冒灵")  # 搜索框中输入内容
         sleep(2)
@@ -84,8 +84,8 @@ class TestSearch(unittest.TestCase):
         """搜索框厂家正确查询"""
         sleep(1)
         self.driver.back()
-        # sleep(1)
-        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)

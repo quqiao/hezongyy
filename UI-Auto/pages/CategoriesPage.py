@@ -11,13 +11,13 @@ class CategoriesPage(BasePage):
     # 定位器，通过元素属性定位元素对象
     # py = (By.XPATH, "//*[@id='app']/div/div[1]/div[3]/div/ul/li[2]/ul/li[2]/a,,,,//*[@id="app"]/div/div[3]/div[3]/div/ul/li[2]/ul/li[2]/a")  # 商品列表中的普药
     py = (By.LINK_TEXT, "普药")  # 商品列表普药
-    zszq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(3) > a")  # 商品列表中的诊所专区
-    qx = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(4) > a")  # 商品列表中的器械
-    zyzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(5) > a")  # 商品列表中的中药专区
-    ppzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(6) > a")  # 商品列表中的品牌专区
-    cxzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(7) > a")  # 商品列表中的促销专区
-    jpzq = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(8) > a")  # 商品列表中的精品专区
-    jfsc = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.nav > ul > li:nth-child(9) > a")  # 商品列表中的积分商城
+    zszq = (By.LINK_TEXT, "诊所专区")  # 商品列表中的诊所专区
+    qx = (By.LINK_TEXT, "器械")  # 商品列表中的器械
+    zyzq = (By.LINK_TEXT, "中药专区")  # 商品列表中的中药专区
+    ppzq = (By.LINK_TEXT, "品牌专区")  # 商品列表中的品牌专区
+    cxzq = (By.LINK_TEXT, "促销专区")  # 商品列表中的促销专区
+    jpzq = (By.LINK_TEXT, "精品专区")  # 商品列表中的精品专区
+    jfsc = (By.CSS_SELECTOR, "积分商城")  # 商品列表中的积分商城
 
     list1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(1) > div.text > div.menu_title")  # 呼吸系统用药列表
     list1_1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.classify-nav > div > ul > li.all.all-hover > div.site_content > div > div:nth-child(1) > div.category_list > div:nth-child(2) > div > a:nth-child(1)")  # 抗感冒类

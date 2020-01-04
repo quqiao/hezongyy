@@ -21,7 +21,7 @@ class TestCollection(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = home_url
+        cls.url = xianshang_url
         cls.username = "测试05"
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明PublicMethod类对象
@@ -42,6 +42,17 @@ class TestCollection(unittest.TestCase):
         cls.driver.quit()
 
     def test_collection_01(self):
+        """检查清除购物车商品"""
+        sleep(1)
+        self.categories_page.click_py()  # 点击进入普药列表
+        sleep(2)
+        self.home_page.click_gwc()  # 进入购物车界面
+        sleep(1)
+        self.cart_page.is_scsp_exist()  # 判断是否存在商品
+        sleep(1)
+        self.driver.back()  # 返回首页
+
+    def test_collection_02(self):
         """检查收藏列表中全部为空"""
         sleep(1)
         self.home_page.click_wdsc()  # 进入我的收藏
@@ -50,28 +61,28 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.assertEqual(self.collection_page.text_qqq(), "去逛逛", msg="全部没有为空")  # 判断收藏栏是否为空了
 
-    def test_collection_02(self):
+    def test_collection_03(self):
         """检查精品专区为空"""
         sleep(1)
         self.collection_page.click_jpzq()  # 进入精品专区
         sleep(1)
         self.assertEqual(self.collection_page.text_qqq(), "去逛逛", msg="精品专区没有为空")
 
-    def test_collection_03(self):
+    def test_collection_04(self):
         """检查普药为空"""
         sleep(1)
         self.collection_page.click_py()  # 进入普药列表
         sleep(1)
         self.assertEqual(self.collection_page.text_qqq(), "去逛逛", msg="普药列表为空")
 
-    def test_collection_04(self):
+    def test_collection_05(self):
         """检查中药饮片为空"""
         sleep(1)
         self.collection_page.click_zyyp()  # 进入中药列表
         sleep(1)
         self.assertEqual(self.collection_page.text_qqq(), "去逛逛")
 
-    def test_collection_05(self):
+    def test_collection_06(self):
         """普药加入收藏"""
         sleep(1)
         self.categories_page.click_py()  # 点击普药
@@ -84,7 +95,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.assertEqual(self.collection_page.text_qxsc(), "取消收藏", msg="普药中没有收藏成功")
 
-    def test_collection_06(self):
+    def test_collection_07(self):
         """精品专区加入收藏"""
         sleep(1)
         self.categories_page.click_jpzq()  # 点击精品专区
@@ -97,7 +108,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.assertEqual(self.collection_page.text_qxsc(), "取消收藏", msg="精品专区中没有收藏成功")
 
-    def test_collection_07(self):
+    def test_collection_08(self):
         """中药饮片加入收藏"""
         sleep(1)
         self.categories_page.click_zyzq()  # 点击中药饮片
@@ -108,29 +119,74 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.goodsdetail_page.click_jrsc()  # 点击加入收藏
         sleep(1)
+        self.cart_page.click_sctskqd()  # 提示框确定删除
+        sleep(1)
         self.collection_page.click_zyyp()  # 点击中药饮片列表
         sleep(1)
         self.assertEqual(self.collection_page.text_qxsc(), "取消收藏", msg="中药饮片没有收藏成功")
 
-    def test_collection_08(self):
+    def test_collection_09(self):
         """列表加入购物车"""
         sleep(1)
         self.collection_page.click_qb()  # 点击全部列表
         sleep(1)
+        self.collection_page.click_jrgwc(0)  # 点击列表加入购物车
+        sleep(1)
 
-    def test_collection_09(self):
-        """列表删除"""
 
     def test_collection_10(self):
-        """单选加入购物车"""
+        """列表删除"""
+        sleep(1)
+        self.collection_page.click_qb()  # 点击全部
+        sleep(1)
+        self.collection_page.click_lbsc()  # 点击列表删除
+        sleep(1)
+        self.cart_page.click_sctskqd()  # 提示框确定删除
+        sleep(1)
+        self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功
 
     def test_collection_11(self):
-        """单选删除"""
+        """单选加入购物车"""
+        sleep(1)
+        self.collection_page.click_dx(0)  # 单选一个商品
+        sleep(1)
+        self.collection_page.click_jrgwc(2)  # 加入购物车
+        # sleep(1)
+        # self.cart_page.click_sctskqd()  # 提示框确定删除
+        sleep(1)
+        self.assertEqual(self.collection_page.text_jrcg(), "前往购物车结算", msg="加入购物车失败！")
 
     def test_collection_12(self):
-        """全选加入购物车"""
+        """单选删除"""
+        sleep(6)
+        self.home_page.click_wdsc()  # 进入我的购物车
+        sleep(1)
+        self.collection_page.click_dx(0)  # 单选一个商品
+        sleep(1)
+        self.collection_page.click_qxsc()  # 取消收藏
+        sleep(1)
+        self.cart_page.click_sctskqd()  # 提示框确定删除
+        sleep(1)
+        self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功
 
     def test_collection_13(self):
+        """全选加入购物车"""
+        sleep(1)
+        self.collection_page.click_qx()
+        sleep(1)
+        self.collection_page.click_jrgwc(1)
+        sleep(1)
+        self.assertEqual(self.collection_page.text_jrcg(), "前往购物车结算", msg="加入购物车失败！")
+
+    def test_collection_14(self):
         """全选取消收藏"""
-
-
+        sleep(8)
+        self.home_page.click_wdsc()  # 进入我的购物车
+        sleep(1)
+        self.collection_page.click_qx()  # 全选商品
+        sleep(1)
+        self.collection_page.click_qxsc()  # 取消收藏
+        sleep(1)
+        self.cart_page.click_sctskqd()  # 提示框确定删除
+        sleep(1)
+        self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功

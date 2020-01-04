@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/common/public.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/CategoriesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/CategoriesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/CollectionPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/CollectionPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/GoodsDetailPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/GoodsDetailPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSearch.py" afterDir="false" />
     </list>
@@ -254,7 +251,12 @@
       <workItem from="1577753788040" duration="21155000" />
       <workItem from="1577927075141" duration="5730000" />
       <workItem from="1577947989301" duration="9666000" />
-      <workItem from="1578012798780" duration="18942000" />
+      <workItem from="1578012798780" duration="19013000" />
+      <workItem from="1578098424038" duration="165000" />
+      <workItem from="1578098613557" duration="27000" />
+      <workItem from="1578098929629" duration="201000" />
+      <workItem from="1578099443577" duration="9085000" />
+      <workItem from="1578109520705" duration="11275000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567401485422</created>
@@ -501,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577957629194</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="20200103提交">
+      <created>1578044659315</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1578044659315</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -533,7 +542,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20190903提交的内容" />
     <MESSAGE value="补充提交" />
     <MESSAGE value="性能demo提交" />
     <MESSAGE value="test" />
@@ -558,10 +566,11 @@
     <MESSAGE value="20191230提交" />
     <MESSAGE value="20191231提交" />
     <MESSAGE value="20200102提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200102提交" />
+    <MESSAGE value="20200103提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200103提交" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1577937000727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
+    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1578129675440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1573713268514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Android-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestLogin_TestLogin_test_06_login.coverage" NAME="Unittests for TestLogin.TestLogin.test_06_login Coverage Results" MODIFIED="1574750160359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestHome_TestLogin_test_home_15.coverage" NAME="Unittests for TestHome.TestLogin.test_home_15 Coverage Results" MODIFIED="1576465743505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />
