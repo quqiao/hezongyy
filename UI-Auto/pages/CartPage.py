@@ -26,12 +26,8 @@ class CartPage(BasePage):
     inputNumber = (By.CLASS_NAME, "com_text.goods-number")  # 通过className进行定位
     qxk = (By.XPATH, "//*[@id='form']/div/div[2]/table[1]/tbody/tr/td[1]/input")  # 购物车界面全选框（上面一个）
     sc = (By.CLASS_NAME, "del")  # 购物车界面删除指定
-    sctsksc = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")  # 删除提示框删除
     ydsc = (By.CLASS_NAME, "collect")  # 购物车界面移到收藏
-    sctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 收藏提示框确定框
-    shctskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除提示框确定
     scxj = (By.CLASS_NAME, "ico.del_all")  # 购物车界面删除无库存和下架商品
-    scxjtskqd = (By.CLASS_NAME, "layui-layer-btn0")  # 购物车界面删除下架提示框确定
     dj1 = (By.CLASS_NAME, "tb2_td9")  # 单价
     dj2 = (By.TAG_NAME, "span")  # 单价
     wntjzh = (By.CLASS_NAME, "myicon.lb_left_icon")  # 为你推荐左滑
@@ -83,7 +79,6 @@ class CartPage(BasePage):
     def click_minNumber(self):
         self.find_element(*self.minNumber).click()
 
-
     # 调用click对象，点击第一个商品输入数量
     def input_number2(self, shuliang):
         '''通过tagName找到一个列表后查询所有'''
@@ -112,27 +107,16 @@ class CartPage(BasePage):
     def click_sc(self):
         self.find_element(*self.sc).click()
 
-    # 调用click对象，点击删除提示框确认删除
-    def click_sctsksc(self):
-        self.find_element(*self.sctsksc).click()
-
-    # 调用click对象，点击收藏提示框确认
-    def click_sctskqd(self):
-        self.find_element(*self.sctskqd).click()
-
     # 调用click对象，点击移到收藏
     def click_ydsc(self):
         self.find_element(*self.ydsc).click()
-
-    # 调用click对象，点击删除提示框确定
-    def click_shctskqd(self):
-        self.find_element(*self.shctskqd).click()
 
     # 调用click对象，点击删除下架和无库存1，删除选中0
     def click_scxj(self, listNumber):
         self.find_elements(*self.scxj)[listNumber].click()
 
     # 检查是否存在删除选中商品和删除无库存商品
+    shctskqd = (By.CLASS_NAME, "layui-layer-btn0")
     def is_scsp_exist(self):
         list = self.driver.find_elements(*self.scxj)
         if len(list) == 0:
@@ -145,12 +129,6 @@ class CartPage(BasePage):
             self.find_element(*self.shctskqd).click()
             sleep(1)
             self.driver.back()
-
-
-
-    # 调用click对象，点击删除下架和无库存提示框
-    def click_scxjtskqd(self):
-        self.find_element(*self.scxjtskqd).click()
 
     # 调用click对象，点击结算按钮
     def click_jiesuan(self):

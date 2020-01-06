@@ -4,27 +4,25 @@ from pages.basePage import BasePage
 from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
 
-home_url = "http://47.97.73.102:9521"
-login_url = "http://47.97.73.102:9521/auth/login"
-xianshang_login_url = "https://www.hezongyy.com/auth/login"
-xianshang_url = "https://www.hezongyy.com/"
-tejia_url = "http://47.97.73.102:9521/hdcx/#/tj"
+home_url = "http://47.97.73.102:9521"  # 测试环境首页url
+login_url = "http://47.97.73.102:9521/auth/login"  # 测试环境登录url
+xianshang_login_url = "https://www.hezongyy.com/auth/login"  # 线上环境登录url
+xianshang_url = "https://www.hezongyy.com/"  # 线上环境首页url
+tejia_url = "http://47.97.73.102:9521/hdcx/#/tj"  # 测试环境特价页面url
+username ="测试06"
 
 
 class PublicMethod(BasePage):
-    ad = (By.CLASS_NAME, "close")  # 点击关掉广告
-    adk = (By.CLASS_NAME, "content_tj")  # 广告框弹出
-    sydl = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[3]/a")  # 首页登录按钮
-    username = (By.XPATH, "//*[@id='username']")  # 用户名
-    password = (By.XPATH, "//*[@id='password']")  # 密码
-    submit = (By.XPATH, "//*[@id='right_1']/a")  # 登录
-    xlsrk = (By.CLASS_NAME, "search-list")  # 下拉输入框列表
-
     # Action
     def open(self):
         # 调用page中的_open打开连接
         self._open(self.base_url, self.pagetitle)
 
+    """登录操作"""
+    sydl = (By.LINK_TEXT, "请登录")  # 首页登录按钮
+    username = (By.XPATH, "//*[@id='username']")  # 用户名
+    password = (By.XPATH, "//*[@id='password']")  # 密码
+    submit = (By.XPATH, "//*[@id='right_1']/a")  # 登录
     def login(self, uname, pwd):
         self.find_element(*self.sydl).click()
         self.find_element(*self.username).send_keys(uname)
@@ -47,20 +45,19 @@ class PublicMethod(BasePage):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[1])
 
-    # 调用click，关掉广告
-    def click_ad(self):
-        self.find_element(*self.ad).click()
-
     # 调用script，向下滚动对应像素
     def scroll_down(self, xiangsu):
         self.script1(xiangsu)
 
     # 定义select 选择框中的内容
+    xlsrk = (By.CLASS_NAME, "search-list")  # 下拉输入框列表
     def select_list1(self):
         s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_index("2")
 
-    # 检查是否存在广告弹出框
+    """检查是否存在广告弹出框"""
+    ad = (By.CLASS_NAME, "close")  # 点击关掉广告
+    adk = (By.CLASS_NAME, "content_tj")  # 广告框弹出
     def is_element_exist(self):
         list = self.driver.find_elements(*self.adk)
         if len(list) == 0:
@@ -70,7 +67,17 @@ class PublicMethod(BasePage):
             # print('共找到' + str(len(list)) + '个元素')
             self.find_element(*self.ad).click()
 
-    """加入收藏夹"""
+    """加入收藏夹，普药列表界面心形图标处"""
     jrsc = (By.CLASS_NAME, "datu-shoucang")
     def click_jrsc(self, sclist):
         self.find_elements(*self.jrsc)[sclist].click()
+
+    """弹出框的左边按钮（确定，删除等）"""
+    tckLeft = (By.CLASS_NAME, "layui-layer-btn0")
+    def click_tckLeft(self):
+        self.find_element(*self.tckLeft).click()
+
+    """弹出框的右边按钮"""
+    tckRight = (By.CLASS_NAME, "layui-layer-btn1")
+    def click_tckRight(self):
+        self.find_element(*self.tckRight).click()

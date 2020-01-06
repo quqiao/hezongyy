@@ -10,14 +10,14 @@ from time import sleep
 class ZhongYaoPage(BasePage):
     # 定位器，通过元素属性定位元素对象
 
-    "购物车按钮"
+    """购物车按钮"""
     gwc = (By.CLASS_NAME, "gwc.fl")
     def click_gwc(self):
         self.find_element(*self.gwc).click()
 
-    "立即抢购"
+    """立即抢购"""
     ljqg = (By.CLASS_NAME, "btn")
-    def click_ljqg1(self, ljqgList):
+    def click_ljqg(self, ljqgList):
         self.find_elements(*self.ljqg)[ljqgList].click()
 
 

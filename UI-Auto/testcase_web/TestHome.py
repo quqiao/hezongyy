@@ -6,7 +6,7 @@ from pages.HomePage import HomePage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import home_url, PublicMethod,xianshang_url
+from common.public import home_url, PublicMethod,xianshang_url, username
 
 class TestHome(unittest.TestCase):
 
@@ -16,7 +16,7 @@ class TestHome(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         cls.ssnr = "感冒灵"
         cls.xiangsu1 = "window.scrollBy(0, 800)"
@@ -35,7 +35,7 @@ class TestHome(unittest.TestCase):
     def test_home_01(self):
         """进入中药专区"""
         sleep(2)
-        self.home_page.script_zyzq()  # 进入中药专区
+        self.home_page.click_zqlist(0)  # 进入中药专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(1)
@@ -50,7 +50,7 @@ class TestHome(unittest.TestCase):
         sleep(0.5)
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.home_page.script_yxzq()  # 点击院线专区
+        self.home_page.click_zqlist(1)  # 点击院线专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(1)
@@ -65,7 +65,7 @@ class TestHome(unittest.TestCase):
         sleep(0.5)
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.home_page.click_vip()  # 点击VIP专区
+        self.home_page.click_zqlist(2)  # 点击VIP专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(1)
@@ -80,7 +80,7 @@ class TestHome(unittest.TestCase):
         sleep(1)
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.home_page.click_cxzq()  # 点击促销专区
+        self.home_page.click_zqlist(3)  # 点击促销专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(1)
@@ -94,7 +94,7 @@ class TestHome(unittest.TestCase):
         """进入保健品专区"""
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.home_page.click_bjpzq()
+        self.home_page.click_zqlist(4)
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(1)

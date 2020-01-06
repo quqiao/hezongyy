@@ -44,11 +44,20 @@ class SearchPage(BasePage):
     "搜索列表第N个"
     # ssList1 = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > ul > li:nth-child(1)")  #
     ssList1 = (By.CLASS_NAME, "search-list")
+    sstag = (By.TAG_NAME, "li")
     "调用click,点击搜索列表第一个"
     def click_ssList1(self, listNumber):
-        self.find_elements(*self.ssList1)[listNumber].click()
+        li = self.find_element(*self.ssList1)
+        li.find_elements(*self.sstag)[listNumber].click()
 
     "搜索出商品的大图名字"
-    spmz = (By.CLASS_NAME, "datu-mingzi")  #
+    spmz = (By.CLASS_NAME, "datu-mingzi")
     def text_spmz(self):
         return self.find_element(*self.spmz).text
+
+    """搜索出商品的大图公司"""
+    spgs = (By.CLASS_NAME, "datu-compamy")
+    def text_spgs(self):
+        return self.find_element(*self.spgs).text
+
+

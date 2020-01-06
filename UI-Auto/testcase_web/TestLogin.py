@@ -5,7 +5,7 @@ import unittest
 from pages.LoginPage import LoginPage
 from selenium import webdriver
 from time import sleep
-from common.public import login_url, PublicMethod
+from common.public import login_url, PublicMethod, username
 
 class TestLogin(unittest.TestCase):
 
@@ -16,7 +16,7 @@ class TestLogin(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = login_url
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购登录界面")  # 声明publicMethod类对象
         cls.login_page = LoginPage(cls.driver, cls.url, u"合纵易购登录界面")  # 声明LoginPage类对象

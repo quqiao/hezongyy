@@ -8,21 +8,25 @@ from time import sleep
 
 # 继承BasePage类
 class HomePage(BasePage):
-    "我的药易购"
+    """我的药易购"""
     my = (By.XPATH, "//*[@id='carousel']/div/div/div[1]/div[2]/span/a")
-    "调用click，点击进入我的药易购"
     def click_my(self):
         self.find_element(*self.my).click()
 
-    gwc = (By.CLASS_NAME, "gwc")  # 购物车按钮
-    ad = (By.XPATH, "//*[@id='app']/div/div[1]/div/span/img")  # 点击关掉广告
+    """购物车按钮"""
+    gwc = (By.CLASS_NAME, "gwc")
+    def click_gwc(self):
+        self.find_element(*self.gwc).click()
+
+    """专区列表，中药,院线,VIP,促销,保健品专区"""
+    zqlist = (By.CLASS_NAME, "zq-list")
+    zqtag = (By.TAG_NAME, "li")
+    def click_zqlist(self, list):
+        li = self.find_element(*self.zqlist)
+        li.find_elements(*self.zqtag)[list].click()
+
     mzjxTitle = (By.XPATH, "//*[@id='mzjx']/div/div[1]/span[1]")  # 每周精选标题
     WeekContent = (By.XPATH, "//*[@id='mzjx']/div/div[1]/a/i")  # 每周精选查看更多
-    zyzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[1]/a/img")  # 中药专区入口
-    yxzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[2]/a/img")  # 院线专区入口
-    Vipzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[3]/a/img")  # VIP专区入口
-    cxzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[4]/a/img")  # 促销专区入口
-    bjpzq = (By.XPATH, "//*[@id='app']/div/div[4]/div/ul/li[5]/a/img")  # 保健品专区入口
     ppzqtitle = (By.XPATH, "//*[@id='ppzq']/div/div[1]/span")  # 品牌专区标题
     ppzqhyh = (By.XPATH, "//*[@id='ppzq']/div/div[2]/ul/li[12]/img")  # 品牌专区换一换
     ppzqckqb = (By.XPATH, "//*[@id='ppzq']/div/div[1]/a/i")  # 品牌专区查看全部
@@ -39,9 +43,6 @@ class HomePage(BasePage):
     wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
     wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
     wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li.cur > div > a:nth-child(1) > div > div")  # 为你推荐大图
-
-
-
 
     "首页的标识，"
     syts = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")
@@ -62,7 +63,7 @@ class HomePage(BasePage):
         self.find_element(*self.jrgwc_hqej).click()
 
     "我的收藏按钮"
-    wdsc = (By.CSS_SELECTOR, "#carousel > div > div > div.user.user-yes > p:nth-child(3) > a:nth-child(3)")
+    wdsc = (By.LINK_TEXT, "我的收藏")
     "调用click,点击我的收藏按钮"
     def click_wdsc(self):
         self.find_element(*self.wdsc).click()
@@ -76,29 +77,6 @@ class HomePage(BasePage):
     def scroll_mzjx(self):
         target = self.driver.find_element(*self.mzjxTitle)
         self.driver.execute_script("arguments[0].scrollIntoView();", target)
-
-    # 调用click对象，点击中药专区
-    def script_zyzq(self):
-        # self.find_element(*self.zyzq).click()
-        zyzq = self.find_element(*self.zyzq)
-        self.script2("arguments[0].click();", zyzq)
-
-    # 调用click对象，点击院线专区
-    def script_yxzq(self):
-        yxzq = self.find_element(*self.yxzq)
-        self.script2("arguments[0].click();", yxzq)
-
-    # 调用click对象，点击VIP专区
-    def click_vip(self):
-        self.find_element(*self.Vipzq).click()
-
-    # 调用click对象，点击促销专区
-    def click_cxzq(self):
-        self.find_element(*self.cxzq).click()
-
-    # 调用click对象，点击保健品专区
-    def click_bjpzq(self):
-        self.find_element(*self.bjpzq).click()
 
     # 调用execute_script对象，滚动到品牌专区
     def scroll_ppzq(self):
@@ -165,9 +143,6 @@ class HomePage(BasePage):
     def click_wntjdt1(self):
         self.find_element(*self.wntjdt1).click()
 
-    # 调用script，点击进入购物车界面
-    def click_gwc(self):
-        self.find_element(*self.gwc).click()
 
 
 

@@ -12,7 +12,7 @@ from pages.CollectionPage import CollectionPage
 from pages.ZhongYaoPage import ZhongYaoPage
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, PublicMethod, home_url
+from common.public import xianshang_url, PublicMethod, home_url, username
 
 class TestCollection(unittest.TestCase):
 
@@ -21,8 +21,8 @@ class TestCollection(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = xianshang_url
-        cls.username = "测试05"
+        cls.url = home_url
+        cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明PublicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明homePage类对象
@@ -51,6 +51,8 @@ class TestCollection(unittest.TestCase):
         self.cart_page.is_scsp_exist()  # 判断是否存在商品
         sleep(1)
         self.driver.back()  # 返回首页
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告也是否弹出，弹出自动关闭
 
     def test_collection_02(self):
         """检查收藏列表中全部为空"""
@@ -113,13 +115,13 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.categories_page.click_zyzq()  # 点击中药饮片
         sleep(1)
-        self.zhongyao_page.click_ljqg1(0)  # 点击立即抢购
+        self.zhongyao_page.click_ljqg(0)  # 点击立即抢购
         sleep(1)
         self.public_page.switch_secendPage()  # 切换到当前页
         sleep(1)
         self.goodsdetail_page.click_jrsc()  # 点击加入收藏
         sleep(1)
-        self.cart_page.click_sctskqd()  # 提示框确定删除
+        self.public_page.click_tckLeft()  # 提示框确定删除
         sleep(1)
         self.collection_page.click_zyyp()  # 点击中药饮片列表
         sleep(1)
@@ -141,7 +143,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.collection_page.click_lbsc()  # 点击列表删除
         sleep(1)
-        self.cart_page.click_sctskqd()  # 提示框确定删除
+        self.public_page.click_tckLeft()  # 提示框确定删除
         sleep(1)
         self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功
 
@@ -165,7 +167,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.collection_page.click_qxsc()  # 取消收藏
         sleep(1)
-        self.cart_page.click_sctskqd()  # 提示框确定删除
+        self.public_page.click_tckLeft()  # 提示框确定删除
         sleep(1)
         self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功
 
@@ -187,6 +189,6 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.collection_page.click_qxsc()  # 取消收藏
         sleep(1)
-        self.cart_page.click_sctskqd()  # 提示框确定删除
+        self.public_page.click_tckLeft()  # 提示框确定删除
         sleep(1)
         self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功

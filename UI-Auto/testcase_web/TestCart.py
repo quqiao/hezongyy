@@ -10,7 +10,7 @@ from pages.PuYaoPage import PuYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, PublicMethod, home_url
+from common.public import xianshang_url, PublicMethod, home_url, username
 
 class TestCart(unittest.TestCase):
 
@@ -20,7 +20,7 @@ class TestCart(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明PublicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明homePage类对象
@@ -88,7 +88,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_sc()  # 调用删除指定商品
         sleep(1)
-        self.cart_page.click_sctsksc()  # 调用删除提示框中的删除
+        self.public_page.click_tckLeft()  # 调用删除提示框中的删除
         sleep(1)
         self.assertEqual(self.cart_page.text_sccg(), "删除成功！", msg="删除失败")  # 判断删除是否成功
 
@@ -97,7 +97,7 @@ class TestCart(unittest.TestCase):
         sleep(0.5)
         self.cart_page.click_ydsc()  # 调用移到收藏
         sleep(0.5)
-        self.cart_page.click_sctskqd()  # 调用收藏提示框收藏
+        self.public_page.click_tckLeft()  # 调用收藏提示框收藏
         sleep(1)
         self.assertEqual(self.cart_page.text_ydsccg(), "移到我的收藏成功！", msg="移到收藏失败")  # 判断移到收藏是否成功
 
@@ -121,7 +121,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_scxj(0)   # 调用删除选中商品
         sleep(1)
-        self.cart_page.click_sctskqd()  # 调用删除提示框确定按钮
+        self.public_page.click_tckLeft()  # 调用删除提示框确定按钮
         sleep(1)
         self.assertEqual(self.cart_page.text_gwcwk(), "购物车空空的哦~，去看看心仪的商品吧~", msg="购物车未为空")  # 判断购物车是否为空
 
@@ -141,7 +141,7 @@ class TestCart(unittest.TestCase):
         sleep(0.5)
         self.cart_page.click_scxj(1)  # 调用删除无库存和下架商品
         sleep(0.5)
-        self.cart_page.click_scxjtskqd()  # 调用删除无库存和下架提示框确定
+        self.public_page.click_tckLeft()  # 调用删除无库存和下架提示框确定
         sleep(1)
         self.assertEqual(self.cart_page.text_xjspwk(), "没有需要删除的商品！", msg="删除无库存和下架商品错误")  # 判断删除下架商品是否错误
 

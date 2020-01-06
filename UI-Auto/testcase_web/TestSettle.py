@@ -11,7 +11,7 @@ from pages.OrderPage import OrderPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import home_url, xianshang_url
+from common.public import home_url, xianshang_url, username
 
 class TestSettle(unittest.TestCase):
     @classmethod
@@ -27,7 +27,7 @@ class TestSettle(unittest.TestCase):
         cls.cart_page = CartPage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明cartpage类对象
         cls.order_page = OrderPage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明orderpage类对象
         cls.driver.implicitly_wait(5)
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         cls.ddbz = "订单备注"
         cls.public_page.get_url(cls.url)

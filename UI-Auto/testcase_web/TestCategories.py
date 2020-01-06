@@ -6,7 +6,7 @@ from pages.CategoriesPage import CategoriesPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, home_url
+from common.public import xianshang_url, home_url, username
 
 class TestCategories(unittest.TestCase):
 
@@ -16,7 +16,7 @@ class TestCategories(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         # 声明categoriesPage类对象
         cls.categories_page = CategoriesPage(cls.driver,cls.url, u"合纵药易购商品分类界面")
@@ -38,12 +38,11 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.back()  # 点击回到首页
-
 
     def test_Categories_02(self):
         """进入诊所专区"""
+        sleep(1)
+        self.driver.back()  # 点击回到首页
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(2)
@@ -52,11 +51,11 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"诊所专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
 
     def test_Categories_03(self):
         """进入器械"""
+        sleep(1)
+        self.driver.back()  # 点击返回首页
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1.5)
@@ -65,11 +64,11 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"器械专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
 
     def test_Categories_04(self):
         """进入中药专区"""
+        sleep(1)
+        self.driver.back()  # 点击返回首页
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
@@ -78,40 +77,37 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"中药专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
 
     def test_Categories_05(self):
         """进入品牌专区"""
         sleep(1)
+        self.driver.back()  # 点击返回首页
+        sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
-        self.categories_page.click_ppzq()  # 点击进入品牌专区
+        self.categories_page.click_ppzq(1)  # 点击进入品牌专区
         sleep(0.5)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"品牌专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
 
     def test_Categories_06(self):
         """进入促销专区"""
         sleep(1)
+        self.driver.back()  # 点击返回首页
+        sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
-        self.categories_page.click_cxzq()  # 点击进入促销专区
+        self.categories_page.click_cxzq(1)  # 点击进入促销专区
         sleep(0.5)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"促销专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
-
 
     def test_Categories_07(self):
         """进入精品专区"""
+        sleep(1)
+        self.driver.back()  # 点击返回首页
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
@@ -120,11 +116,11 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"精品专区" in title)
-        sleep(1)
-        self.driver.back()  # 点击返回首页
 
     def test_Categories_08(self):
         """进入积分商城"""
+        sleep(1)
+        self.driver.back()  # 点击返回首页
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
@@ -133,15 +129,15 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"积分商城" in title)
+
+    def test_Categories_09(self):
+        """商品分类——呼吸系统列表"""
         sleep(1)
         self.driver.back()  # 点击返回首页
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
-
-    def test_Categories_09(self):
-        """商品分类——呼吸系统列表"""
         sleep(2)
-        self.categories_page.click_list1()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(0)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list1_1()  #点击进入抗感冒类界面
         sleep(1)
@@ -158,7 +154,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_10(self):
         """商品分类——清热，消炎列表"""
         sleep(0.5)
-        self.categories_page.click_list2()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(1)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list2_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -175,7 +171,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_11(self):
         """商品分类——五官，皮肤及外用列表"""
         sleep(0.5)
-        self.categories_page.click_list3()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(2)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list3_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -192,7 +188,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_12(self):
         """商品分类——消化，肝胆系统列表"""
         sleep(0.5)
-        self.categories_page.click_list4()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(3)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list4_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -209,7 +205,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_13(self):
         """商品分类——补益安神及维矿类列表"""
         sleep(0.5)
-        self.categories_page.click_list5()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(4)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list5_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -226,7 +222,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_14(self):
         """商品分类——妇、儿科列表"""
         sleep(0.5)
-        self.categories_page.click_list6()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(5)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list6_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -243,7 +239,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_15(self):
         """商品分类——心脑血管及神经类用药列表"""
         sleep(0.5)
-        self.categories_page.click_list7()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(6)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list7_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -260,7 +256,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_16(self):
         """商品分类——内分泌系统（含糖尿病）列表"""
         sleep(0.5)
-        self.categories_page.click_list8()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(7)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list8_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -277,7 +273,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_17(self):
         """商品分类——风湿骨伤及其他药品列表"""
         sleep(0.5)
-        self.categories_page.click_list9()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(8)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list9_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -294,7 +290,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_18(self):
         """商品分类——特殊复方制剂、生物制品列表"""
         sleep(0.5)
-        self.categories_page.click_list10()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(9)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list10_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -311,7 +307,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_19(self):
         """商品分类——中药饮片列表"""
         sleep(0.5)
-        self.categories_page.click_list11()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(10)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list11_1()  #点击进入抗感冒类界面
         sleep(0.5)
@@ -328,7 +324,7 @@ class TestCategories(unittest.TestCase):
     def test_Categories_20(self):
         """商品分类——非药品列表"""
         sleep(0.5)
-        self.categories_page.click_list12()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(11)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list12_1()  #点击进入抗感冒类界面
         sleep(0.5)

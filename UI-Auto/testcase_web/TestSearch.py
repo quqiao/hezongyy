@@ -11,7 +11,7 @@ from pages.PuYaoPage import PuYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, PublicMethod, home_url
+from common.public import xianshang_url, PublicMethod, home_url,username
 
 class TestSearch(unittest.TestCase):
 
@@ -21,7 +21,7 @@ class TestSearch(unittest.TestCase):
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购搜索界面")  # 声明PublicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购搜索界面")  # 声明homePage类对象
@@ -91,18 +91,20 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_cj()  # 点击厂家
         sleep(2)
-        self.search_page.input_ssk("感冒灵")  # 搜索框中输入内容
+        self.search_page.input_ssk("科伦")  # 搜索框中输入内容
         sleep(2)
         self.search_page.click_ssButton()  # 点击搜索按钮
         sleep(2)
-        mingzi = self.search_page.text_spmz()
+        mingzi = self.search_page.text_spgs()
         sleep(1)
-        self.assertTrue(u"感冒灵" in mingzi)
+        self.assertTrue(u"科伦" in mingzi)
 
     def test_search_05(self):
         """品种名称首字母搜索"""
         sleep(1)
         self.driver.back()
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.input_ssk("amxl")  # 搜索框中输入内容
         sleep(1)
@@ -115,6 +117,8 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.driver.back()
         sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
         self.search_page.input_ssk("amoxilin")  # 搜索框中输入内容
         sleep(1)
         self.search_page.click_ssList1(1)  # 点击模糊查找的第一个商品
@@ -125,6 +129,8 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.driver.back()
         sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
         self.search_page.input_ssk("阿莫")  # 搜索框输入内容
         sleep(1)
         self.search_page.click_ssList1(1)  # 点击模糊查找的第一个商品
@@ -134,6 +140,8 @@ class TestSearch(unittest.TestCase):
         """厂家名称首字母"""
         sleep(1)
         self.driver.back()
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -149,6 +157,8 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.driver.back()
         sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
         self.search_page.click_cj()  # 点击厂家
@@ -162,6 +172,8 @@ class TestSearch(unittest.TestCase):
         """厂家名称"""
         sleep(1)
         self.driver.back()
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -177,6 +189,8 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.driver.back()
         sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
         self.search_page.input_ssk("哈药")  # 搜索框输入内容
         sleep(1)
         self.search_page.click_ssList1(1)  # 点击模糊查找的第一个商品
@@ -186,6 +200,8 @@ class TestSearch(unittest.TestCase):
         """厂家中输入药品名"""
         sleep(1)
         self.driver.back()
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)

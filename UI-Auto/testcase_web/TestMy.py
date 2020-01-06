@@ -7,7 +7,7 @@ from pages.MyPage import MyPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import home_url,xianshang_url
+from common.public import home_url, xianshang_url, username
 
 class TestMy(unittest.TestCase):
 
@@ -18,7 +18,7 @@ class TestMy(unittest.TestCase):
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = home_url
         cls.ddbj = "18056558899"
-        cls.username = "测试05"
+        cls.username = username
         cls.password = "123456"
         cls.xiangsu = "window.scrollBy(0, 700)"
         # 声明HomePage类对象

@@ -11,10 +11,11 @@ from pages.CartPage import CartPage
 from pages.OrderPage import OrderPage
 from pages.ZhongYaoPage import ZhongYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
+from pages.SearchPage import SearchPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, home_url
+from common.public import xianshang_url, home_url, username
 
 class TestOrderProcess(unittest.TestCase):
 
@@ -37,9 +38,10 @@ class TestOrderProcess(unittest.TestCase):
         self.order_page = OrderPage(self.driver, self.url, u"合纵药易购订单界面")  # 声明orderpage类对象
         self.zhongyao_page = ZhongYaoPage(self.driver, self.url, u"合纵药易购订单界面")  # 声明zhongyaoPage类对象
         self.goodsDetail_Page = GoodsDetailPage(self.driver, self.url, u"合纵药易购订单界面")  # 声明GoodsDetailPage类对象
+        self.search_page = SearchPage(self.driver, self.url, u"合纵药易购订单界面")  # 声明SearchPage类对象
         self.driver.implicitly_wait(5)
         self.ssnr = "阿胶"
-        self.username = "测试05"
+        self.username = username
         self.password = "123456"
         self.ddbz = "订单备注"
         self.shuliang = 20
@@ -109,7 +111,7 @@ class TestOrderProcess(unittest.TestCase):
         sleep(1)
         self.categories_page.click_zyzq()  # 点击进入中药专区
         sleep(1)
-        self.zhongyao_page.click_ljqg1()  # 点击第一个商品立即抢购
+        self.zhongyao_page.click_ljqg(0)  # 点击第一个商品立即抢购
         sleep(1)
         self.public_page.switch_secendPage()  # 句柄切换到第二页中
         sleep(1)
@@ -119,7 +121,7 @@ class TestOrderProcess(unittest.TestCase):
         sleep(1)
         self.public_page.switch_home()  # 句柄切换到首页
         sleep(1)
-        self.zhongyao_page.click_ljqg2()  # 点击第二个商品立即抢购
+        self.zhongyao_page.click_ljqg(1)  # 点击第二个商品立即抢购
         sleep(1)
         self.public_page.switch_secendPage()  # 句柄切换到第二页
         sleep(1)
@@ -142,7 +144,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_04(self):
         """呼吸系统用药商品下单"""
         sleep(2)
-        self.categories_page.click_list1()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(0)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list1_1()  # 点击进入抗感冒类界面
         sleep(1)
@@ -167,7 +169,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_05(self):
         """清热消炎商品下单"""
         sleep(0.5)
-        self.categories_page.click_list2()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(1)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list2_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -196,7 +198,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_06(self):
         """五官皮肤及外用商品下单"""
         sleep(0.5)
-        self.categories_page.click_list3()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(2)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list3_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -223,7 +225,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_07(self):
         """补益安神及维矿类商品下单"""
         sleep(0.5)
-        self.categories_page.click_list5()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(4)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list5_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -252,7 +254,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_08(self):
         """商品分类——妇、儿科列表"""
         sleep(0.5)
-        self.categories_page.click_list6()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(5)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list6_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -281,7 +283,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_09(self):
         """商品分类——心脑血管及神经类用药列表"""
         sleep(0.5)
-        self.categories_page.click_list7()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(6)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list7_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -308,7 +310,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_10(self):
         """商品分类——风湿骨伤及其他药品列表"""
         sleep(0.5)
-        self.categories_page.click_list9()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(8)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list9_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -335,7 +337,7 @@ class TestOrderProcess(unittest.TestCase):
     def test_OrderProcess_11(self):
         """商品分类——非药品列表"""
         sleep(0.5)
-        self.categories_page.click_list12()  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(11)  # 点击进入呼吸系统分类选择
         sleep(0.5)
         self.categories_page.click_list12_1()  # 点击进入抗感冒类界面
         sleep(0.5)
@@ -363,9 +365,9 @@ class TestOrderProcess(unittest.TestCase):
         """搜索内容进行下单"""
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
-        self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+        self.search_page.input_ssk(self.ssnr)  # 搜索框中输入内容
         sleep(1)
-        self.home_page.click_ssButton()  # 点击搜索按钮
+        self.search_page.click_ssButton()  # 点击搜索按钮
         sleep(1)
         self.home_page.click_jrgwc_ej()  # 点击商品加入购物车
         sleep(1)
@@ -381,9 +383,9 @@ class TestOrderProcess(unittest.TestCase):
         """搜索框联想的内容进行下单"""
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(2)
-        self.home_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+        self.search_page.input_ssk(self.ssnr)  # 搜索框中输入内容
         sleep(2)
-        self.home_page.click_ssList1(0)  # 点击搜索列表第一个
+        self.search_page.click_ssList1(0)  # 点击搜索列表第一个
         sleep(2)
         self.home_page.click_jrgwc_hqej()  # 点击商品加入购物车
         sleep(1)

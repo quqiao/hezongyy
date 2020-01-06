@@ -39,4 +39,7 @@ from selenium import webdriver
 # 解决方法：
 # 元素复制和定位的不一致。例如：复制一个className:tb2_td11 subtotal要写成"tb2_td11.subtotal"
 
+# 问题10：ClassName定位问题，class.xxx定位，
+# 解决方法：
+# class.xxx后面相同的内容可以根据find_elements 列表来读取
 
