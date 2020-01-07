@@ -44,11 +44,11 @@ class HomePage(BasePage):
     wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
     wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li.cur > div > a:nth-child(1) > div > div")  # 为你推荐大图
 
-    "首页的标识，"
-    syts = (By.XPATH, "//*[@id='app']/div/div[1]/div[1]/div/ul[1]/li[4]/a")
+    "退出按钮"
+    tc = (By.LINK_TEXT, "[退出]")
     "调用text对象，检查返回首页"
-    def text_syts(self):
-        return self.find_element(*self.syts).text
+    def text_tc(self):
+        return self.find_element(*self.tc).text
 
     "搜索出阿胶加入购物车"
     jrgwc_ej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart8290")

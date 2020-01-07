@@ -77,7 +77,7 @@ class TestSettle(unittest.TestCase):
         sleep(0.5)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
-        self.assertEqual(self.home_page.text_syts(), "[退出]", msg="返回首页界面失败")  # 判断是否返回首页界面
+        self.assertEqual(self.home_page.text_tc(), "[退出]", msg="返回首页界面失败")  # 判断是否返回首页界面
 
     def test_settle_05(self):
         """检查进入结算界面"""
@@ -113,4 +113,3 @@ class TestSettle(unittest.TestCase):
         self.settle_page.click_tjdd()  # 提交订单
         sleep(1)
         self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！", msg="提交订单失败")  # 判断是否进入订单界面
-

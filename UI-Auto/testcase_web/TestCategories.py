@@ -146,115 +146,116 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+
+    def test_Categories_10(self):
+        """商品分类——清热，消炎列表"""
         sleep(1)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
         self.public_page.switch_home()  # 句柄切换回首页
-
-    def test_Categories_10(self):
-        """商品分类——清热，消炎列表"""
         sleep(0.5)
-        self.categories_page.click_qbspfl(1)  # 点击进入呼吸系统分类选择
+        self.categories_page.click_qbspfl(1)  # 点击进入清热，消炎
         sleep(0.5)
-        self.categories_page.click_list2_1()  #点击进入抗感冒类界面
+        self.categories_page.click_list2_1()  # 点击进入青霉素及头孢类
         sleep(0.5)
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()  # 退出当前页面
-        sleep(0.5)
-        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_11(self):
         """商品分类——五官，皮肤及外用列表"""
         sleep(0.5)
-        self.categories_page.click_qbspfl(2)  # 点击进入呼吸系统分类选择
+        self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.categories_page.click_list3_1()  # 点击进入抗感冒类界面
+        self.public_page.switch_home()  # 句柄切换回首页
+        sleep(0.5)
+        self.categories_page.click_qbspfl(2)  # 点击进入五官皮肤及外用
+        sleep(0.5)
+        self.categories_page.click_list3_1()  # 点击进入眼科类
         sleep(0.5)
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()  # 退出当前页面
-        sleep(0.5)
-        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_12(self):
         """商品分类——消化，肝胆系统列表"""
         sleep(0.5)
-        self.categories_page.click_qbspfl(3)  # 点击进入呼吸系统分类选择
+        self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.categories_page.click_list4_1()  #点击进入抗感冒类界面
+        self.public_page.switch_home()  # 句柄切换回首页
+        sleep(0.5)
+        self.categories_page.click_qbspfl(3)  # 点击进入消化，肝胆系统
+        sleep(0.5)
+        self.categories_page.click_list4_1()  # 点击进入解痉镇痛类
         sleep(0.5)
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()  # 退出当前页面
-        sleep(0.5)
-        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_13(self):
         """商品分类——补益安神及维矿类列表"""
         sleep(0.5)
-        self.categories_page.click_qbspfl(4)  # 点击进入呼吸系统分类选择
+        self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.categories_page.click_list5_1()  #点击进入抗感冒类界面
+        self.public_page.switch_home()  # 句柄切换回首页
+        sleep(0.5)
+        self.categories_page.click_qbspfl(4)  # 点击进入补益安神及维矿类
+        sleep(0.5)
+        self.categories_page.click_list5_1()  # 点击进入调节免疫力类
         sleep(0.5)
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()  # 退出当前页面
-        sleep(0.5)
-        self.public_page.switch_home()  # 句柄切换回首页
+
 
     def test_Categories_14(self):
         """商品分类——妇、儿科列表"""
         sleep(0.5)
-        self.categories_page.click_qbspfl(5)  # 点击进入呼吸系统分类选择
+        self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.categories_page.click_list6_1()  # 点击进入抗感冒类界面
+        self.public_page.switch_home()  # 句柄切换回首页
+        sleep(0.5)
+        self.categories_page.click_qbspfl(5)  # 点击进入妇，儿科类
+        sleep(0.5)
+        self.categories_page.click_list6_1()  # 点击进入避孕类界面
         sleep(0.5)
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()  # 退出当前页面
-        sleep(0.5)
-        self.public_page.switch_home()  # 句柄切换回首页
 
     def test_Categories_15(self):
         """商品分类——心脑血管及神经类用药列表"""
         sleep(0.5)
-        self.categories_page.click_qbspfl(6)  # 点击进入呼吸系统分类选择
+        self.driver.close()  # 退出当前页面
         sleep(0.5)
-        self.categories_page.click_list7_1()  #点击进入抗感冒类界面
+        self.public_page.switch_home()  # 句柄切换回首页
+        sleep(0.5)
+        self.categories_page.click_qbspfl(6)  # 点击进入心脑血管及神经类用药
+        sleep(0.5)
+        self.categories_page.click_list7_1()  # 点击促白细胞增生类
         sleep(0.5)
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+
+    def test_Categories_16(self):
+        """商品分类——内分泌系统（含糖尿病）列表"""
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
         self.public_page.switch_home()  # 句柄切换回首页
-
-    def test_Categories_16(self):
-        """商品分类——内分泌系统（含糖尿病）列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(7)  # 点击进入呼吸系统分类选择
         sleep(0.5)
@@ -265,13 +266,13 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+
+    def test_Categories_17(self):
+        """商品分类——风湿骨伤及其他药品列表"""
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
         self.public_page.switch_home()  # 句柄切换回首页
-
-    def test_Categories_17(self):
-        """商品分类——风湿骨伤及其他药品列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(8)  # 点击进入呼吸系统分类选择
         sleep(0.5)
@@ -282,13 +283,13 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+
+    def test_Categories_18(self):
+        """商品分类——特殊复方制剂、生物制品列表"""
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
         self.public_page.switch_home()  # 句柄切换回首页
-
-    def test_Categories_18(self):
-        """商品分类——特殊复方制剂、生物制品列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(9)  # 点击进入呼吸系统分类选择
         sleep(0.5)
@@ -299,13 +300,13 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
+
+    def test_Categories_19(self):
+        """商品分类——中药饮片列表"""
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
         self.public_page.switch_home()  # 句柄切换回首页
-
-    def test_Categories_19(self):
-        """商品分类——中药饮片列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(10)  # 点击进入呼吸系统分类选择
         sleep(0.5)
@@ -316,13 +317,13 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"中药专区" in title)  # 判断标题中包含有普药
+
+    def test_Categories_20(self):
+        """商品分类——非药品列表"""
         sleep(0.5)
         self.driver.close()  # 退出当前页面
         sleep(0.5)
         self.public_page.switch_home()  # 句柄切换回首页
-
-    def test_Categories_20(self):
-        """商品分类——非药品列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(11)  # 点击进入呼吸系统分类选择
         sleep(0.5)
@@ -333,7 +334,3 @@ class TestCategories(unittest.TestCase):
         title = self.driver.title
         sleep(1)
         self.assertTrue(u"普药" in title)  # 判断标题中包含有普药
-        sleep(0.5)
-        self.driver.close()  # 退出当前页面
-        sleep(0.5)
-        self.public_page.switch_home()  # 句柄切换回首页

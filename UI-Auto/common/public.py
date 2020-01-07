@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 from pages.basePage import BasePage
 from selenium.webdriver.support.wait import WebDriverWait
@@ -13,7 +15,6 @@ username ="测试06"
 
 
 class PublicMethod(BasePage):
-    # Action
     def open(self):
         # 调用page中的_open打开连接
         self._open(self.base_url, self.pagetitle)
@@ -23,6 +24,7 @@ class PublicMethod(BasePage):
     username = (By.XPATH, "//*[@id='username']")  # 用户名
     password = (By.XPATH, "//*[@id='password']")  # 密码
     submit = (By.XPATH, "//*[@id='right_1']/a")  # 登录
+
     def login(self, uname, pwd):
         self.find_element(*self.sydl).click()
         self.find_element(*self.username).send_keys(uname)
@@ -81,3 +83,7 @@ class PublicMethod(BasePage):
     tckRight = (By.CLASS_NAME, "layui-layer-btn1")
     def click_tckRight(self):
         self.find_element(*self.tckRight).click()
+
+    """F5+ctrl组合键刷新"""
+    def refresh(self):
+        ActionChains(self.driver).key_down(Keys.CONTROL).send_keys(Keys.F5).key_up(Keys.CONTROL).perform()

@@ -12,8 +12,8 @@ if __name__ == "__main__":
     """用例构造及选择"""
     # 指定测试用例为当前文件夹下的test_case目录
     test_dir = './testcase_web'
-    discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='Test*.py')  # 执行所有Test的测试用例
-    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestHome.py')  # 执行指定的测试用例
+    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='Test*.py')  # 执行所有Test的测试用例
+    discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestLogin.py')  # 执行指定的测试用例
 
     # 使用testsuit进行用例选择
     # suite = unittest.TestSuite()
@@ -43,3 +43,4 @@ if __name__ == "__main__":
     # test_report = './report'  # 定义报告文件目录
     # rep = report(test_report)
     # send_mail(rep)
+
