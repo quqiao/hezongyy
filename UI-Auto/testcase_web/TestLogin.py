@@ -82,13 +82,29 @@ class TestLogin(unittest.TestCase):
     def test_login_07(self):
         """忘记密码"""
         sleep(1)
-        self.login_page.click_register()
+        self.login_page.click_forget()
         sleep(1)
+        self.assertEqual(self.login_page.text_zhmm(), "找回密码", msg="找回密码页面进入失败")
 
     def test_login_08(self):
-        """"""
+        """快速注册界面"""
+        sleep(1)
+        self.login_page.click_fhsyy()  # 返回上一页
+        sleep(1)
+        self.login_page.click_register()  # 进入注册页面
+        sleep(1)
+        self.assertEqual(self.login_page.text_zhmm(), "会员注册", msg="没有进入注册界面")
 
     def test_login_09(self):
+        """记住账号"""
+        sleep(1)
+        self.driver.back()
+        sleep(1)
+        self.login_page.click_remember()  # 记住账号
+        sleep(1)
+
+
+    def test_login_10(self):
         """输入正确的用户名密码"""
         self.public_page.refresh()
         sleep(1)

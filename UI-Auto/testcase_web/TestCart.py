@@ -117,6 +117,15 @@ class TestCart(unittest.TestCase):
         self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")  # 通过显示的结算判断是否进入购物车界面
 
     def test_cart_07(self):
+        """没有这类商品时，删除无库存和下架商品"""
+        sleep(0.5)
+        self.cart_page.click_scxj(1)  # 调用删除无库存和下架商品
+        sleep(0.5)
+        self.public_page.click_tckLeft()  # 调用删除无库存和下架提示框确定
+        sleep(1)
+        self.assertEqual(self.cart_page.text_xjspwk(), "没有需要删除的商品！" or "删除成功!", msg="删除无库存和下架商品错误")  # 判断删除下架商品是否错误
+
+    def test_cart_08(self):
         """删除选中商品"""
         sleep(1)
         self.cart_page.click_scxj(0)   # 调用删除选中商品
@@ -125,7 +134,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.assertEqual(self.cart_page.text_gwcwk(), "购物车空空的哦~，去看看心仪的商品吧~", msg="购物车未为空")  # 判断购物车是否为空
 
-    def test_cart_08(self):
+    def test_cart_09(self):
         """删除选中商品后返回普药界面再加入商品"""
         sleep(1)
         self.driver.back()  # 返回普药界面
@@ -135,15 +144,6 @@ class TestCart(unittest.TestCase):
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
         self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")  # 通过显示的结算判断是否进入购物车界面
-
-    def test_cart_09(self):
-        """没有这类商品时，删除无库存和下架商品"""
-        sleep(0.5)
-        self.cart_page.click_scxj(1)  # 调用删除无库存和下架商品
-        sleep(0.5)
-        self.public_page.click_tckLeft()  # 调用删除无库存和下架提示框确定
-        sleep(1)
-        self.assertEqual(self.cart_page.text_xjspwk(), "没有需要删除的商品！", msg="删除无库存和下架商品错误")  # 判断删除下架商品是否错误
 
     def test_cart_10(self):
         """进入结算界面,商品不满200元时"""
@@ -183,7 +183,6 @@ class TestCart(unittest.TestCase):
         self.cart_page.click_jiesuan()  # 调用点击结算
         sleep(2)
         self.assertEqual(self.settle_page.text_info(0), "商品清单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
-
 
     def test_cart_13(self):
         """为你推荐商品检查"""

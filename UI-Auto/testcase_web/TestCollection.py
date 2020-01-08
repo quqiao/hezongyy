@@ -21,7 +21,7 @@ class TestCollection(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = home_url
+        cls.url = xianshang_url
         cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明PublicMethod类对象
@@ -135,7 +135,6 @@ class TestCollection(unittest.TestCase):
         self.collection_page.click_jrgwc(0)  # 点击列表加入购物车
         sleep(1)
 
-
     def test_collection_10(self):
         """列表删除"""
         sleep(1)
@@ -161,6 +160,8 @@ class TestCollection(unittest.TestCase):
     def test_collection_12(self):
         """单选删除"""
         sleep(6)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        sleep(1)
         self.home_page.click_wdsc()  # 进入我的购物车
         sleep(1)
         self.collection_page.click_dx(0)  # 单选一个商品

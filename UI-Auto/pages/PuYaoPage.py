@@ -9,10 +9,8 @@ from time import sleep
 # 继承BasePage类
 class PuYaoPage(BasePage):
     # 定位器，通过元素属性定位元素对象
-    addShuliang = (By.XPATH, "//*[@id='goods_number_2190_0']")  # 商品列表中添加数量
-    addCart1 = (By.XPATH, "//*[@id='datu']/div/ul/li[1]/div[8]/div[1]")  # 普药列表中第一个商品加入购物车
-    addCart2 = (By.XPATH, "//*[@id='datu']/div/ul/li[2]/div[8]/div[1]")  # 普药列表中第二个商品加入购物车
-    addCart3 = (By.XPATH, "//*[@id='datu']/div/ul/li[3]/div[8]/div[1]")  # 普药列表中第三个商品加入购物车
+    addNumber = (By.CLASS_NAME, "input_val")  # 商品列表中添加数量
+    addCart = (By.CLASS_NAME, "datu-jrgwc")  # 普药列表中将商品加入购物车
 
     """查看收藏夹"""
     cksc = (By.CLASS_NAME, "layui-layer-btn0")
@@ -20,17 +18,10 @@ class PuYaoPage(BasePage):
         self.find_element(*self.cksc).click()
 
     # 调用send_keys对象，输入购买数量
-    def input_number1(self, shuliang):
-        self.find_element(*self.addShuliang).send_keys(shuliang)
+    def input_number(self, sp, shuliang):
+        self.find_elements(*self.addNumber)[sp].send_keys(shuliang)
 
-    # 调用click对象，第一件商品加入购物车
-    def click_addcart1(self):
-        self.find_element(*self.addCart1).click()
-
-    # 调用click对象，第二件商品加入购物车
-    def click_addcart2(self):
-        self.find_element(*self.addCart2).click()
-
-    # 调用click对象，第三件商品加入购物车
-    def click_addcart3(self):
-        self.find_element(*self.addCart3).click()
+    # 调用click对象，第N件商品加入购物车
+    def click_addcart(self, shuliang):
+        jrgwc = self.find_elements(*self.addCart)[shuliang]
+        self.script2("arguments[0].click();", jrgwc)

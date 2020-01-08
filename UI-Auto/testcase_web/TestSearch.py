@@ -209,6 +209,6 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.input_ssk("阿莫西林")  # 搜索框输入内容
         sleep(1)
-        self.search_page.click_ssList1(1)  # 点击模糊查找的第一个商品
+        self.search_page.click_ssk()  # 点击模糊查找的第一个商品
         sleep(1)
 

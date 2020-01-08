@@ -28,6 +28,17 @@ class LoginPage(BasePage):
     def click_forget(self):
         self.find_element(*self.forget).click()
 
+    """找回密码,会员注册"""
+    zhmm = (By.CLASS_NAME, "text")
+
+    def text_zhmm(self):
+        return self.find_element(*self.zhmm).text
+
+    """返回上一页"""
+    fhsyy = (By.CLASS_NAME, "back")
+    def click_fhsyy(self):
+        self.find_element(*self.fhsyy).click()
+
     """记住账号"""
     remember = (By.ID, "remember")
 
