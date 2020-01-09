@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-07.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-08.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-09.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/测试前准备.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestMy.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestMy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/FeedbackPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/FeedbackPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/TestFeedback.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/TestFeedback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/MyPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/MyPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/FeedbackPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/TestFeedback.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -302,7 +288,7 @@
       <workItem from="1578271540622" duration="22473000" />
       <workItem from="1578358899492" duration="16426000" />
       <workItem from="1578443765306" duration="18422000" />
-      <workItem from="1578530819562" duration="11091000" />
+      <workItem from="1578530819562" duration="16943000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567401485422</created>
@@ -584,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578476054814</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="20200109,第一次全部跑通的一版">
+      <created>1578548951475</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1578548951475</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -616,7 +609,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20191126提交" />
     <MESSAGE value="20191128提交" />
     <MESSAGE value="20191129提交" />
     <MESSAGE value="20191204提交" />
@@ -641,7 +633,8 @@
     <MESSAGE value="20200106提交" />
     <MESSAGE value="20200107提交" />
     <MESSAGE value="20200108提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200108提交" />
+    <MESSAGE value="20200109,第一次全部跑通的一版" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200109,第一次全部跑通的一版" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1578541699071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />

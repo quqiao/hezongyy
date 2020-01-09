@@ -42,6 +42,11 @@ class MyPage(BasePage):
     pswl = (By.XPATH, "//*[@id='user_center']/div/div[2]/ul[3]/li[11]/a")  # 配送物流
     pswlbt = (By.XPATH, "//*[@id='user_center']/div/div[3]/div[1]/span")  # 配送物流标题
 
+    """我要反馈"""
+    wyfk = (By.CLASS_NAME, "add_liuyan")
+    def click_wyfk(self):
+        self.find_element(*self.wyfk).click()
+
     # 定义点击我的订单
     def click_wddd(self):
         self.find_element(*self.wddd).click()
