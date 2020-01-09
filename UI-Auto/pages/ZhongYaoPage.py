@@ -18,7 +18,8 @@ class ZhongYaoPage(BasePage):
     """立即抢购"""
     ljqg = (By.CLASS_NAME, "btn")
     def click_ljqg(self, ljqgList):
-        self.find_elements(*self.ljqg)[ljqgList].click()
+        ljqg = self.find_elements(*self.ljqg)[ljqgList]
+        self.script2("arguments[0].click();", ljqg)
 
 
 

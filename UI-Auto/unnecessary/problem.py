@@ -43,3 +43,8 @@ from selenium import webdriver
 # 解决方法：
 # class.xxx后面相同的内容可以根据find_elements 列表来读取
 
+# 问题11：assert判断时，判断错误后，后面的步骤不再执行
+# 解决方法：
+# 每条case中assert后面不再添加步骤
+
+

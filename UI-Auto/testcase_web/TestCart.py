@@ -49,11 +49,9 @@ class TestCart(unittest.TestCase):
         sleep(2)
         self.categories_page.click_py()  # 调用点击普药列表
         sleep(2)
-        self.puyao_page.click_addcart1()  # 商品1加入购物车
-        sleep(2)
-        self.puyao_page.click_addcart2()  # 商品2加入购物车
-        sleep(2)
-        self.puyao_page.click_addcart3()  # 商品3加入购物车
+        for i in range(3):
+            self.puyao_page.click_addcart(i)  # 商品循环加入购物车
+            sleep(2)
         sleep(3)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(0.5)
@@ -106,12 +104,9 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.driver.back()  # 返回普药界面
         sleep(1)
-        self.puyao_page.click_addcart1()  # 商品1加入购物车
-        sleep(1)
-        self.puyao_page.click_addcart2()  # 商品2加入购物车
-        sleep(1)
-        self.puyao_page.click_addcart3()  # 商品3加入购物车
-        sleep(3)
+        for i in range(3):
+            self.puyao_page.click_addcart(i)  # 商品循环加入购物车
+            sleep(1)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
         self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")  # 通过显示的结算判断是否进入购物车界面
@@ -139,7 +134,7 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.driver.back()  # 返回普药界面
         sleep(1)
-        self.puyao_page.click_addcart1()  # 商品1加入购物车
+        self.puyao_page.click_addcart(0)  # 商品1加入购物车
         sleep(5)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
@@ -161,24 +156,18 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.categories_page.click_py()  # 进入普药
         sleep(1)
-        self.puyao_page.click_addcart1()  # 商品1加入购物车
-        sleep(1)
-        self.puyao_page.click_addcart2()  # 商品2加入购物车
-        sleep(1)
-        self.puyao_page.click_addcart3()  # 商品3加入购物车
-        sleep(1)
+        for i in range(3):
+            self.puyao_page.click_addcart(i)  # 商品1加入购物车
+            sleep(1)
         self.home_page.click_gwc()  # 进入购物车按钮
         sleep(1)
         self.assertEqual(self.cart_page.text_jiesuan(), "结算", msg="没有进入结算界面")
 
     def test_cart_12(self):
         """进入结算界面，商品满200元时"""
-        sleep(1)
-        self.cart_page.input_number1(20, 0)  # 第一个商品输入数量
-        sleep(1)
-        self.cart_page.input_number1(20, 1)  # 第一个商品输入数量
-        sleep(1)
-        self.cart_page.input_number1(20, 2)  # 第一个商品输入数量
+        for i in range(3):
+            sleep(1)
+            self.cart_page.input_number1(20, i)  # 第一个商品输入数量
         sleep(1)
         self.cart_page.click_jiesuan()  # 调用点击结算
         sleep(2)

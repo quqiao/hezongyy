@@ -183,7 +183,9 @@ class TestCollection(unittest.TestCase):
 
     def test_collection_14(self):
         """全选取消收藏"""
-        sleep(8)
+        sleep(5)
+        self.public_page.is_element_exist()
+        sleep(1)
         self.home_page.click_wdsc()  # 进入我的购物车
         sleep(1)
         self.collection_page.click_qx()  # 全选商品

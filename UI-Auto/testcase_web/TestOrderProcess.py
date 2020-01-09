@@ -82,7 +82,7 @@ class TestOrderProcess(unittest.TestCase):
         self.categories_page.click_jpzq()  # 点击精品专区进入精品列表
         for i in range(3):
             sleep(2)
-            self.jpzq_page.click_addcart()  # 输入第一个商品加入购物车
+            self.jpzq_page.click_addcart(i)  # 输入第一个商品加入购物车
         sleep(1)
         self.home_page.click_gwc()  # 进入购物车界面
         sleep(2)
@@ -166,7 +166,7 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         for i in range(3):
             sleep(1)
-            self.puyao_page.click_addcart()  # 商品1加入购物车
+            self.puyao_page.click_addcart(i)  # 商品1加入购物车
         sleep(5)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         for i in range(3):
@@ -189,7 +189,7 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         for i in range(3):
             sleep(1)
-            self.puyao_page.click_addcart()  # 商品1加入购物车
+            self.puyao_page.click_addcart(i)  # 商品1加入购物车
         sleep(2)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
@@ -212,7 +212,7 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         for i in range(3):
             sleep(1)
-            self.puyao_page.click_addcart()  # 商品1加入购物车
+            self.puyao_page.click_addcart(i)  # 商品1加入购物车
         sleep(2)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
@@ -235,7 +235,7 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         sleep(1)
         for i in range(3):
-            self.puyao_page.click_addcart()  # 商品1加入购物车
+            self.puyao_page.click_addcart(i)  # 商品1加入购物车
             sleep(1)
         sleep(1)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
@@ -259,12 +259,12 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         for i in range(2):
             sleep(1)
-            self.puyao_page.click_addcart2()  # 商品2加入购物车
+            self.puyao_page.click_addcart(i)  # 商品2加入购物车
         sleep(5)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
         for i in range(3):
-            self.cart_page.input_number1(self.shuliang, 0)  # 输入第一个商品的数量
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第一个商品的数量
             sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         # sleep(0.5)
@@ -282,12 +282,12 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         for i in range(2):
             sleep(1)
-            self.puyao_page.click_addcart()  # 商品2加入购物车
+            self.puyao_page.click_addcart(i)  # 商品2加入购物车
         sleep(2)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
         for i in range(3):
-            self.cart_page.input_number1(self.shuliang, 0)  # 输入第一个商品的数量
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第一个商品的数量
             sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         # sleep(0.5)
@@ -305,12 +305,12 @@ class TestOrderProcess(unittest.TestCase):
         self.public_page.switch_secendPage()  # 句柄切换到第二页上
         for i in range(2):
             sleep(1)
-            self.puyao_page.click_addcart()  # 商品2加入购物车
+            self.puyao_page.click_addcart(i)  # 商品2加入购物车
         sleep(2)
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(0.5)
         for i in range(3):
-            self.cart_page.input_number1(self.shuliang, 0)  # 输入第一个商品的数量
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第一个商品的数量
             sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         # sleep(0.5)
@@ -320,7 +320,6 @@ class TestOrderProcess(unittest.TestCase):
 
     def test_OrderProcess_12(self):
         """搜索内容进行下单"""
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(1)
         self.search_page.input_ssk(self.ssnr)  # 搜索框中输入内容
         sleep(1)
@@ -338,13 +337,12 @@ class TestOrderProcess(unittest.TestCase):
 
     def test_OrderProcess_13(self):
         """搜索框联想的内容进行下单"""
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(2)
         self.search_page.input_ssk(self.ssnr)  # 搜索框中输入内容
         sleep(2)
         self.search_page.click_ssList1(0)  # 点击搜索列表第一个
         sleep(2)
-        self.home_page.click_jrgwc_hqej()  # 点击商品加入购物车
+        self.home_page.click_jrgwc_hqej(0)  # 点击第一个商品加入购物车
         sleep(1)
         self.home_page.click_gwc()  # 购物车按钮
         sleep(1)

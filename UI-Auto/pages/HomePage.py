@@ -56,11 +56,11 @@ class HomePage(BasePage):
     def click_jrgwc_ej(self):
         self.find_element(*self.jrgwc_ej).click()
 
-    "搜索出黄芪阿胶加入购物车"
-    jrgwc_hqej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart42835")  #
+    "搜索出商品，将商品加入购物车"
+    jrgwc_hqej = (By.CLASS_NAME, "datu-jrgwc")  #
     "调用click,点击加入购物车"
-    def click_jrgwc_hqej(self):
-        self.find_element(*self.jrgwc_hqej).click()
+    def click_jrgwc_hqej(self, sp):
+        self.find_elements(*self.jrgwc_hqej)[sp].click()
 
     "我的收藏按钮"
     wdsc = (By.LINK_TEXT, "我的收藏")

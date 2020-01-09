@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/测试前准备.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/HomePage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JingPinZhuanQuPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/ZhongYaoPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestLogin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestMy.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestMy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/FeedbackPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/FeedbackPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/TestFeedback.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/TestFeedback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/problem.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +97,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.runTest">
+    <configuration name="PuYaoPage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hezongyy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI-Auto/pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="public" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,28 +222,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for TestLogin.TestLogin.test_06_login" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="hezongyy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI-Auto/testcase_web" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestLogin.TestLogin.test_06_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PuYaoPage" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.public" />
         <item itemvalue="Python tests.Unittests for TestHome.TestLogin.test_home_15" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python tests.Unittests for TestLogin.TestLogin.test_06_login" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +301,8 @@
       <workItem from="1578109520705" duration="12246000" />
       <workItem from="1578271540622" duration="22473000" />
       <workItem from="1578358899492" duration="16426000" />
-      <workItem from="1578443765306" duration="18300000" />
+      <workItem from="1578443765306" duration="18422000" />
+      <workItem from="1578530819562" duration="11091000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1567401485422</created>
@@ -562,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578389689399</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="20200108提交">
+      <created>1578476054814</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1578476054814</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -594,7 +616,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20191102提交Android两个示例" />
     <MESSAGE value="20191126提交" />
     <MESSAGE value="20191128提交" />
     <MESSAGE value="20191129提交" />
@@ -619,11 +640,13 @@
     <MESSAGE value="20200104提交" />
     <MESSAGE value="20200106提交" />
     <MESSAGE value="20200107提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200107提交" />
+    <MESSAGE value="20200108提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200108提交" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1578475718989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
+    <SUITE FILE_PATH="coverage/hezongyy$runTest.coverage" NAME="runTest Coverage Results" MODIFIED="1578541699071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto" />
     <SUITE FILE_PATH="coverage/hezongyy$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1573713268514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Android-Auto" />
+    <SUITE FILE_PATH="coverage/hezongyy$PuYaoPage.coverage" NAME="PuYaoPage Coverage Results" MODIFIED="1578532400752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/pages" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestLogin_TestLogin_test_06_login.coverage" NAME="Unittests for TestLogin.TestLogin.test_06_login Coverage Results" MODIFIED="1574750160359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />
     <SUITE FILE_PATH="coverage/hezongyy$Unittests_for_TestHome_TestLogin_test_home_15.coverage" NAME="Unittests for TestHome.TestLogin.test_home_15 Coverage Results" MODIFIED="1576465743505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/testcase_web" />
     <SUITE FILE_PATH="coverage/hezongyy$public.coverage" NAME="public Coverage Results" MODIFIED="1577688107945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI-Auto/common" />

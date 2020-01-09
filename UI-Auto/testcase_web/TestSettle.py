@@ -53,7 +53,7 @@ class TestSettle(unittest.TestCase):
     def test_settle_02(self):
         """进入未满200元提示界面"""
         sleep(1)
-        self.puyao_page.click_addcart1()  # 第一件商品加入购物车
+        self.puyao_page.click_addcart(0)  # 第一件商品加入购物车
         sleep(2)
         self.home_page.click_gwc()  # 进入购物车界面
         sleep(0.5)
@@ -84,12 +84,9 @@ class TestSettle(unittest.TestCase):
         sleep(1)
         self.categories_page.click_py()  # 点击进入普药列表
         sleep(1)
-        self.puyao_page.click_addcart1()  # 第一件商品加入购物车
-        sleep(2)
-        self.puyao_page.click_addcart2()  # 第二件商品加入购物车
-        sleep(2)
-        self.puyao_page.click_addcart3()  # 第三件商品加入购物车
-        sleep(2)
+        for i in range(3):
+            self.puyao_page.click_addcart(i)  # 第一件商品加入购物车
+            sleep(2)
         self.home_page.click_gwc()  # 进入购物车界面
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮

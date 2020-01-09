@@ -23,4 +23,4 @@ class JingPinZhuanQuPage(BasePage):
     addCart = (By.CLASS_NAME, "datu-jrgwc")
     def click_addcart(self, shuliang):
         jrgwc = self.find_elements(*self.addCart)[shuliang]
-        self.driver.execute_script2("arguments[0].click();", jrgwc)
+        self.script2("arguments[0].click();", jrgwc)

@@ -13,7 +13,7 @@ class FeedbackPage(BasePage):
     feedback = (By.XPATH, "//*[@id='fixed-right']/div[1]/div[7]/a/img")    # 进入反馈界面
     radio1 = (By.XPATH, "//*[@id='radio']/label[1]/input")  # 反馈类型：药品咨询
     radio2 = (By.XPATH, "//*[@id='radio']/label[2]/input")  # 反馈类型：首页意见建议
-    radio3 = (By.XPATH, "//*[@id='radio']/label[3]/input")  # 反馈类型：服务投诉s
+    radio3 = (By.XPATH, "//*[@id='radio']/label[3]/input")  # 反馈类型：服务投诉
     radio4 = (By.XPATH, "//*[@id='radio']/label[4]/input")  # 反馈类型：服务表扬
     radio5 = (By.XPATH, "//*[@id='radio']/label[5]/input")  # 反馈类型：问题报告
     phone = (By.ID, "celORmail")  # 手机/邮箱输入框

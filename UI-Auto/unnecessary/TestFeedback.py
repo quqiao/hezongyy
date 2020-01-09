@@ -21,6 +21,10 @@ class TestLogin(unittest.TestCase):
         cls.feedback_page = FeedbackPage(cls.driver, cls.url, u"合纵易购反馈界面")
         cls.feedback_page.open()
 
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
+
     # 不输入手机和内容
     def test_1_login_noPhoneAndContent(self):
         # 关掉广告
@@ -83,12 +87,6 @@ class TestLogin(unittest.TestCase):
     #     # 调用点击登录按钮组件
     #     self.login_page.click_submit()
     #     self.assertEqual(self.login_page.is_login_success(), "[退出]")
-
-
-    @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
-
 
 if __name__ == "__main__":
     unittest.main()
