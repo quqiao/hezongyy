@@ -217,7 +217,7 @@ class TestOrderProcess(unittest.TestCase):
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
         for i in range(3):
-            self.cart_page.input_number1(self.shuliang, 0)  # 输入第一个商品的数量
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第一个商品的数量
             sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         # sleep(0.5)
@@ -241,7 +241,7 @@ class TestOrderProcess(unittest.TestCase):
         self.home_page.click_gwc()  # 调用进入购物车界面按钮
         sleep(1)
         for i in range(3):
-            self.cart_page.input_number1(self.shuliang, 0)  # 输入第N个商品的数量
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第N个商品的数量
             sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         # sleep(0.5)

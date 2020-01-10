@@ -8,7 +8,7 @@ from pages.basePage import BasePage
 # 继承BasePage类
 class FeedbackPage(BasePage):
     """反馈类型选择按钮"""
-    radio = (By.ID, "type")
+    radio = (By.NAME, "type")
     def click_radio(self, radioList):
         self.find_elements(*self.radio)[radioList].click()
 
@@ -16,8 +16,10 @@ class FeedbackPage(BasePage):
     phone = (By.ID, "celORmail")
     def clear_phone(self):
         self.clear_text(*self.phone)
-    def input_phone(self, phone):
-        self.find_element(*self.phone).send_keys(phone)
+
+    def input_phone(self, phone1):
+        self.find_element(*self.phone).send_keys(phone1)
+
     def click_phone(self):
         self.find_element(*self.phone).click()
 
@@ -26,8 +28,10 @@ class FeedbackPage(BasePage):
     content = (By.ID, "content")
     def clear_content(self):
         self.clear_text(*self.content)
-    def input_content(self, content):
-        self.find_element(*self.content).send_keys(content)
+
+    def input_content(self, content1):
+        self.find_element(*self.content).send_keys(content1)
+
     def click_content(self):
         self.find_element(*self.content).click()
 
