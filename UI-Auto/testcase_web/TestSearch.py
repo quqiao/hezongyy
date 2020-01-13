@@ -20,7 +20,7 @@ class TestSearch(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = home_url
+        cls.url = xianshang_url
         cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购搜索界面")  # 声明PublicMethod类对象
@@ -41,6 +41,7 @@ class TestSearch(unittest.TestCase):
 
     def test_search_01(self):
         """搜索药名没有的内容查询"""
+        self.categories_page.click_py()  # 点击进入普药
         sleep(1)
         self.search_page.input_ssk("@#$%^")  # 搜索框中输入内容
         sleep(0.5)
@@ -50,10 +51,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_02(self):
         """搜索厂家没有的内容查询"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -67,10 +69,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_03(self):
         """搜索框药名正确查询"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(2)
         self.search_page.input_ssk("感冒灵")  # 搜索框中输入内容
         sleep(2)
@@ -82,10 +85,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_04(self):
         """搜索框厂家正确查询"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -101,10 +105,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_05(self):
         """品种名称首字母搜索"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.input_ssk("amxl")  # 搜索框中输入内容
         sleep(1)
@@ -114,10 +119,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_06(self):
         """品种名称拼音"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.input_ssk("amoxilin")  # 搜索框中输入内容
         sleep(1)
@@ -126,10 +132,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_07(self):
         """品种名称"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.input_ssk("阿莫")  # 搜索框输入内容
         sleep(1)
@@ -138,10 +145,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_08(self):
         """厂家名称首字母"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -154,10 +162,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_09(self):
         """厂家名称拼音"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()  # 点击进入普药
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -170,10 +179,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_10(self):
         """厂家名称"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
@@ -186,10 +196,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_11(self):
         """药品中输入厂家名"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()  # 点击进入普药
         sleep(1)
         self.search_page.input_ssk("哈药")  # 搜索框输入内容
         sleep(1)
@@ -198,10 +209,11 @@ class TestSearch(unittest.TestCase):
 
     def test_search_12(self):
         """厂家中输入药品名"""
-        sleep(1)
-        self.driver.back()
-        sleep(1)
-        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        # sleep(1)
+        # self.driver.back()
+        # sleep(1)
+        # self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
+        self.categories_page.click_py()  # 点击进入普药
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)

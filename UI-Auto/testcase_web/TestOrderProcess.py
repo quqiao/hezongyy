@@ -27,7 +27,7 @@ class TestOrderProcess(unittest.TestCase):
     def setUp(self):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         self.driver = webdriver.Chrome(executable_path=chromedriver)
-        self.url = home_url
+        self.url = xianshang_url
         self.public_page = PublicMethod(self.driver, self.url, u"合纵药易购订单界面")  # 声明publicMethod类对象
         self.categories_page = CategoriesPage(self.driver, self.url, u"合纵药易购订单界面")  # 声明categoriesPage类对象
         self.home_page = HomePage(self.driver, self.url, u"合纵药易购订单界面")  # 声明homepage类对象

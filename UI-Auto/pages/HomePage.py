@@ -16,7 +16,8 @@ class HomePage(BasePage):
     """购物车按钮"""
     gwc = (By.CLASS_NAME, "gwc")
     def click_gwc(self):
-        self.find_element(*self.gwc).click()
+        button = self.find_element(*self.gwc)
+        self.script2("arguments[0].click();", button)
 
     """专区列表，中药,院线,VIP,促销,保健品专区"""
     zqlist = (By.CLASS_NAME, "zq-list")
@@ -58,7 +59,6 @@ class HomePage(BasePage):
 
     "搜索出商品，将商品加入购物车"
     jrgwc_hqej = (By.CLASS_NAME, "datu-jrgwc")  #
-    "调用click,点击加入购物车"
     def click_jrgwc_hqej(self, sp):
         self.find_elements(*self.jrgwc_hqej)[sp].click()
 

@@ -7,7 +7,7 @@ from pages.HomePage import HomePage
 from pages.MyPage import MyPage
 from selenium import webdriver
 from time import sleep
-from common.public import home_url, PublicMethod, username
+from common.public import home_url, PublicMethod, username, xianshang_url
 
 class TestLogin(unittest.TestCase):
     pass
@@ -17,7 +17,7 @@ class TestLogin(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)
-        cls.url = home_url
+        cls.url = xianshang_url
         cls.username = username
         cls.password = "123456"
         # 声明LoginPage类对象

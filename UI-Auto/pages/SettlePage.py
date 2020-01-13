@@ -12,8 +12,8 @@ class SettlePage(BasePage):
     fhsy = (By.XPATH, "//*[@id='app']/div/div[3]/a[1]")  # 金额不足200元时返回首页
     fhgwc = (By.XPATH, "//*[@id='app']/div/div[3]/a[2]")  # 金额不足200元时，返回购物车
     jsfhgwc = (By.XPATH, "//*[@id='app']/div/div[3]/div[1]/a")  # 结算界面返回购物车
-    ddbz = (By.XPATH, "//*[@id='app']/div/div[3]/div[6]/div[2]/textarea")  # 结算界面，订单备注输入框
-    tjdd = (By.XPATH, "//*[@id='btn']")  # 结算界面，提交订单
+    ddbz = (By.NAME, "postscript")  # 结算界面，订单备注输入框
+    tjdd = (By.ID, "btn")  # 结算界面，提交订单
     ddxx = (By.CLASS_NAME, "weight")  # 订单信息列表
     wm200 = (By.XPATH, "//*[@id='app']/div/div[3]/p")  # 未满200元时的提示
     dj = (By.CLASS_NAME, "dj")  # 单价

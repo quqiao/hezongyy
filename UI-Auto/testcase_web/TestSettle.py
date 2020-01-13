@@ -18,7 +18,7 @@ class TestSettle(unittest.TestCase):
     def setUpClass(cls):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
-        cls.url = home_url
+        cls.url = xianshang_url
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵药易购商品分类界面")  # 声明publicMethod类对象
         cls.categories_page = CategoriesPage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明categoriesPage类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵药易购结算界面")  # 声明homepage类对象
