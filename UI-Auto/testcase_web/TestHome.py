@@ -15,7 +15,7 @@ class TestHome(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = xianshang_url
+        cls.url = home_url
         cls.username = username
         cls.password = "123456"
         cls.ssnr = "感冒灵"

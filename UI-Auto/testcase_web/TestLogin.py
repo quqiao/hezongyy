@@ -15,7 +15,7 @@ class TestLogin(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = xianshang_login_url
+        cls.url = login_url
         cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购登录界面")  # 声明publicMethod类对象

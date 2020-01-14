@@ -65,7 +65,7 @@ class JiFenShangChengPage(BasePage):
     """数量减少"""
     sljian = (By.CLASS_NAME, "jian")  # 数量减
     def click_sljian(self, sp):
-        self.find_element(*self.sljian)[sp].click()
+        self.find_elements(*self.sljian)[sp].click()
 
     """数量输入"""
     slInput = (By.CLASS_NAME, "input_val.goods_num")
@@ -133,6 +133,42 @@ class JiFenShangChengPage(BasePage):
         self.find_elements(*self.spjrgwc)[splist].click()
 
     """礼品车"""
-    lpc= (By.CLASS_NAME, "lp_cart")
+    lpc = (By.CLASS_NAME, "lp_cart")
     def click_lpc(self):
         self.find_element(*self.lpc).click()
+
+    """兑换成功提示"""
+    dhcg = (By.CLASS_NAME, "success_title")
+    def text_dhcg(self):
+        return self.find_element(*self.dhcg).text
+
+    """确认提交"""
+    submit = (By.ID, "btn")
+    def click_submit(self):
+        self.find_element(*self.submit).click()
+
+    """订单详情"""
+    ddxq = (By.LINK_TEXT, "订单详情")
+    def click_ddxq(self):
+        self.find_element(*self.ddxq).click()
+
+    """我的积分"""
+    wdjf = (By.LINK_TEXT, "我的积分")
+    def click_wdjf(self):
+        self.find_element(*self.wdjf).click()
+
+    """为你推荐"""
+    wntj = (By.CLASS_NAME, "wntj-cp")
+    def click_wntj(self,list):
+        self.find_elements(*self.wntj)[list].click()
+
+    """立即兑换"""
+    dh = (By.CLASS_NAME, "dh")
+    def click_dh(self):
+        self.find_element(*self.dh).click()
+
+    """加入礼品车"""
+    jrlpc = (By.CLASS_NAME, "jr")
+    def click_jr(self):
+        self.find_element(*self.jrlpc).click()
+
