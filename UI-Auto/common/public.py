@@ -11,6 +11,9 @@ login_url = "http://47.97.73.102:9521/auth/login"  # 测试环境登录url
 xianshang_login_url = "https://www.hezongyy.com/auth/login"  # 线上环境登录url
 xianshang_url = "https://www.hezongyy.com/"  # 线上环境首页url
 tejia_url = "http://47.97.73.102:9521/hdcx/#/tj"  # 测试环境特价页面url
+
+test_url = "https://www.hezongyy.com/"
+test_login_url = "https://www.hezongyy.com/auth/login"
 username ="测试05"
 
 

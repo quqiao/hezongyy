@@ -6,7 +6,7 @@ from pages.HomePage import HomePage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import home_url, PublicMethod,xianshang_url, username
+from common.public import test_url, PublicMethod, username
 
 class TestHome(unittest.TestCase):
 
@@ -15,7 +15,7 @@ class TestHome(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = home_url
+        cls.url = test_url
         cls.username = username
         cls.password = "123456"
         cls.ssnr = "感冒灵"

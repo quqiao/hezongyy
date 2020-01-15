@@ -12,7 +12,7 @@ from pages.CollectionPage import CollectionPage
 from pages.ZhongYaoPage import ZhongYaoPage
 from selenium import webdriver
 from time import sleep
-from common.public import xianshang_url, PublicMethod, home_url, username
+from common.public import PublicMethod, test_url, username
 
 class TestCollection(unittest.TestCase):
 
@@ -21,7 +21,7 @@ class TestCollection(unittest.TestCase):
         chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
-        cls.url = home_url
+        cls.url = test_url
         cls.username = username
         cls.password = "123456"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明PublicMethod类对象
