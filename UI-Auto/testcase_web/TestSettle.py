@@ -41,7 +41,7 @@ class TestSettle(unittest.TestCase):
         cls.driver.quit()
 
     def test_settle_01(self):
-        """检查清除购物车商品"""
+        """测试结算时检查清除购物车商品"""
         sleep(1)
         self.categories_page.click_py()  # 点击进入普药列表
         sleep(2)
@@ -88,6 +88,10 @@ class TestSettle(unittest.TestCase):
             self.puyao_page.click_addcart(i)  # 第一件商品加入购物车
             sleep(2)
         self.home_page.click_gwc()  # 进入购物车界面
+        sleep(1)
+        for i in range(3):
+            sleep(1)
+            self.cart_page.input_number1(20, i)  # 第一个商品输入数量
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         sleep(1)

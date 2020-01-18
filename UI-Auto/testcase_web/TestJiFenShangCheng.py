@@ -112,7 +112,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_submit()  # 确认提交
         sleep(1)
-        self.assertEqual(self.jfsc_page.text_qdcgts(), "恭喜您，您的礼品已兑换成功！", msg="兑换成功")
+        self.assertEqual(self.jfsc_page.text_dhcg(), "恭喜您，您的礼品已兑换成功！", msg="兑换成功")
 
 
     def test_jfsc_08(self):
@@ -124,6 +124,8 @@ class TestJiFenShangCheng(unittest.TestCase):
         """我的积分"""
         self.jfsc_page.click_wdjf()  # 点击我的积分
         sleep(1)
+        self.public_page.switch_secendPage()  # 句柄到第二页
+        sleep(1)
 
     def test_jfsc_10(self):
         """为你推荐---立即兑换"""
@@ -134,7 +136,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         self.jfsc_page.click_dh()  # 立即兑换
         sleep(1)
 
-    def test_jrsc_11(self):
+    def test_jfsc_11(self):
         """为你推荐---加入礼品车"""
         self.driver.back()
         sleep(1)
@@ -142,7 +144,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.public_page.click_tckRight()  # 去结算
 
-    def test_jrsc_12(self):
+    def test_jfsc_12(self):
         """返回药易购"""
         self.jfsc_page.click_fhyyg()  # 返回药易购
         sleep(1)

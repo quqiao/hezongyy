@@ -42,7 +42,7 @@ class TestCollection(unittest.TestCase):
         cls.driver.quit()
 
     def test_collection_01(self):
-        """检查清除购物车商品"""
+        """测试收藏时检查清除购物车商品"""
         sleep(1)
         self.categories_page.click_py()  # 点击进入普药列表
         sleep(2)

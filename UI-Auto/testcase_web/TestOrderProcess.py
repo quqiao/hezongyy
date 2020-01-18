@@ -61,6 +61,19 @@ class TestOrderProcess(unittest.TestCase):
         pass
 
     def test_OrderProcess_01(self):
+        """测试下单前检查清除购物车商品"""
+        sleep(1)
+        self.categories_page.click_py()  # 点击进入普药列表
+        sleep(2)
+        self.home_page.click_gwc()  # 进入购物车界面
+        sleep(1)
+        self.cart_page.is_scsp_exist()  # 判断是否存在商品
+        sleep(1)
+        self.driver.back()  # 返回首页
+        sleep(1)
+        self.public_page.is_element_exist()  # 判断广告也是否弹出，弹出自动关闭
+
+    def test_OrderProcess_02(self):
         """在普药中选择商品进行下单"""
         sleep(2)
         self.categories_page.click_py()  # 点击普药进入普药列表
@@ -68,15 +81,19 @@ class TestOrderProcess(unittest.TestCase):
         for i in range(3):
             sleep(1)
             self.puyao_page.click_addcart(i)  # 点击第一个商品加入购物车
+        sleep(2)
         self.home_page.click_gwc()  # 进入购物车界面
-        sleep(0.5)
+        for i in range(3):
+            sleep(1)
+            self.cart_page.input_number1(self.shuliang, i)
+        sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
-        # self.settle_page.click_tjdd()  # 点击提交订单
-        # sleep(0.5)
-        # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
+        sleep(1)
+        self.settle_page.click_tjdd()  # 点击提交订单
+        sleep(1)
+        self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_02(self):
+    def test_OrderProcess_03(self):
         """在精品专区中选择商品进行下单"""
         sleep(2)
         self.categories_page.click_jpzq()  # 点击精品专区进入精品列表
@@ -93,12 +110,12 @@ class TestOrderProcess(unittest.TestCase):
         self.cart_page.click_jiage()
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        # sleep(0.5)
         # self.settle_page.click_tjdd()  # 点击提交订单
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_03(self):
+    def test_OrderProcess_04(self):
         """在中药专区选择商品进行下单"""
         sleep(1)
         self.categories_page.click_zyzq()  # 点击进入中药专区
@@ -132,7 +149,7 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_04(self):
+    def test_OrderProcess_05(self):
         """呼吸系统用药商品下单"""
         sleep(2)
         self.categories_page.click_qbspfl(0)  # 点击进入呼吸系统分类选择
@@ -151,12 +168,12 @@ class TestOrderProcess(unittest.TestCase):
         self.cart_page.input_number1(self.shuliang, 1)  # 输入第二个商品的数量
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        # sleep(0.5)
         # self.settle_page.click_tjdd()  # 点击提交订单
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_05(self):
+    def test_OrderProcess_06(self):
         """清热消炎商品下单"""
         sleep(0.5)
         self.categories_page.click_qbspfl(1)  # 点击进入呼吸系统分类选择
@@ -174,12 +191,12 @@ class TestOrderProcess(unittest.TestCase):
             self.cart_page.input_number1(self.shuliang, i)  # 给一二三个商品添加数量
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        # sleep(0.5)
         # self.settle_page.click_tjdd()  # 点击提交订单
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_06(self):
+    def test_OrderProcess_07(self):
         """五官皮肤及外用商品下单"""
         sleep(0.5)
         self.categories_page.click_qbspfl(2)  # 点击进入呼吸系统分类选择
@@ -202,7 +219,7 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_07(self):
+    def test_OrderProcess_08(self):
         """补益安神及维矿类商品下单"""
         sleep(0.5)
         self.categories_page.click_qbspfl(4)  # 点击进入呼吸系统分类选择
@@ -225,7 +242,7 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_08(self):
+    def test_OrderProcess_09(self):
         """商品分类——妇、儿科列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(5)  # 点击进入呼吸系统分类选择
@@ -249,7 +266,7 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_09(self):
+    def test_OrderProcess_10(self):
         """商品分类——心脑血管及神经类用药列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(6)  # 点击进入呼吸系统分类选择
@@ -272,7 +289,7 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_10(self):
+    def test_OrderProcess_11(self):
         """商品分类——风湿骨伤及其他药品列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(8)  # 点击进入呼吸系统分类选择
@@ -295,7 +312,7 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_11(self):
+    def test_OrderProcess_12(self):
         """商品分类——非药品列表"""
         sleep(0.5)
         self.categories_page.click_qbspfl(11)  # 点击进入呼吸系统分类选择
@@ -318,36 +335,48 @@ class TestOrderProcess(unittest.TestCase):
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_12(self):
+    def test_OrderProcess_13(self):
         """搜索内容进行下单"""
         sleep(1)
-        self.search_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+        self.search_page.input_ssk("阿胶")  # 搜索框中输入内容
         sleep(1)
         self.search_page.click_ssButton()  # 点击搜索按钮
         sleep(1)
-        self.home_page.click_jrgwc_ej()  # 点击商品加入购物车
-        sleep(1)
-        self.home_page.click_gwc()  # 购物车按钮
+        for i in range(2):
+            sleep(1)
+            self.puyao_page.click_addcart(i)  # 商品2加入购物车
+            sleep(2)
+        self.home_page.click_gwc()  # 调用进入购物车界面按钮
+        sleep(0.5)
+        for i in range(2):
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第一个商品的数量
+            sleep(1)
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        # sleep(0.5)
         # self.settle_page.click_tjdd()  # 点击提交订单
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
-    def test_OrderProcess_13(self):
+    def test_OrderProcess_14(self):
         """搜索框联想的内容进行下单"""
         sleep(2)
-        self.search_page.input_ssk(self.ssnr)  # 搜索框中输入内容
+        self.search_page.input_ssk("阿胶")  # 搜索框中输入内容
         sleep(2)
         self.search_page.click_ssList1(0)  # 点击搜索列表第一个
         sleep(2)
-        self.home_page.click_jrgwc_hqej(0)  # 点击第一个商品加入购物车
-        sleep(1)
-        self.home_page.click_gwc()  # 购物车按钮
+        for i in range(2):
+            sleep(1)
+            self.puyao_page.click_addcart(i)  # 商品2加入购物车
+            sleep(2)
+        self.home_page.click_gwc()  # 调用进入购物车界面按钮
+        sleep(0.5)
+        for i in range(2):
+            self.cart_page.input_number1(self.shuliang, i)  # 输入第一个商品的数量
+            sleep(1)
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        # sleep(0.5)
         # self.settle_page.click_tjdd()  # 点击提交订单
         # sleep(0.5)
         # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")

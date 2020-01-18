@@ -51,16 +51,11 @@ class HomePage(BasePage):
     def text_tc(self):
         return self.find_element(*self.tc).text
 
-    "搜索出阿胶加入购物车"
-    jrgwc_ej = (By.CLASS_NAME, "datu-jrgwc.fly_to_cart8290")
-    "调用click,点击加入购物车"
-    def click_jrgwc_ej(self):
-        self.find_element(*self.jrgwc_ej).click()
 
     "搜索出商品，将商品加入购物车"
-    jrgwc_hqej = (By.CLASS_NAME, "datu-jrgwc")  #
-    def click_jrgwc_hqej(self, sp):
-        self.find_elements(*self.jrgwc_hqej)[sp].click()
+    jrgwc_dt = (By.CLASS_NAME, "datu-jrgwc")  #
+    def click_jrgwc_dt(self, sp):
+        self.find_elements(*self.jrgwc_dt)[sp].click()
 
     "我的收藏按钮"
     wdsc = (By.LINK_TEXT, "我的收藏")

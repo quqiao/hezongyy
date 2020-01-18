@@ -920,7 +920,8 @@ class _TestResult(TestResult):
         _, _exc_str = self.errors[-1]
         output = self.complete_output()
         self.result.append((2, test, output, _exc_str))
-        if not getattr(test, "driver",""):
+        """源代码"""
+        if not getattr(test, "driver", ""):
             pass
         else:
             try:
@@ -934,6 +935,18 @@ class _TestResult(TestResult):
             sys.stderr.write('\n')
         else:
             sys.stderr.write('E')
+        # """修改后代码"""
+        # try:
+        #     driver = getattr(test, "driver")
+        #     test.img = driver.get_screenshot_as_base64()
+        # except AttributeError:
+        #     test.img = ""
+        # if self.verbosity > 1:
+        #     sys.stderr.write('E  ')
+        #     sys.stderr.write(str(test))
+        #     sys.stderr.write('\n')
+        # else:
+        #     sys.stderr.write('E')
 
     def addSkip(self, test, reason):
         self.skip_count += 1

@@ -87,8 +87,7 @@ class JiFenShangChengPage(BasePage):
         self.find_elements(*self.qx)[qxk].click()
 
     """删除"""
-    sc = (By.CLASS_NAME, "delete")
-    def click_sc(self,sc):
+    def click_sc(self, sc):
         self.find_elements(*self.sc)[sc].click()
 
     """结算"""
@@ -168,7 +167,7 @@ class JiFenShangChengPage(BasePage):
         self.find_element(*self.dh).click()
 
     """加入礼品车"""
-    jrlpc = (By.CLASS_NAME, "jr")
+    jrlpc = (By.CLASS_NAME, "txt")
     def click_jr(self):
         self.find_element(*self.jrlpc).click()
 

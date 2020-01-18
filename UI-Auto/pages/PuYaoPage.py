@@ -10,7 +10,7 @@ from time import sleep
 class PuYaoPage(BasePage):
     # 定位器，通过元素属性定位元素对象
     addNumber = (By.CLASS_NAME, "input_val")  # 商品列表中添加数量
-    addCart = (By.CLASS_NAME, "datu-jrgwc")  # 普药列表中将商品加入购物车
+
 
     """查看收藏夹"""
     cksc = (By.CLASS_NAME, "layui-layer-btn0")
@@ -21,7 +21,8 @@ class PuYaoPage(BasePage):
     def input_number(self, sp, shuliang):
         self.find_elements(*self.addNumber)[sp].send_keys(shuliang)
 
-    # 调用click对象，第N件商品加入购物车
+    # 调用click对象，第N件商品加入购物车,适用于精品专区，搜索等页面商品列表
+    addCart = (By.CLASS_NAME, "datu-jrgwc")
     def click_addcart(self, shuliang):
         jrgwc = self.find_elements(*self.addCart)[shuliang]
         self.script2("arguments[0].click();", jrgwc)

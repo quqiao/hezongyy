@@ -47,4 +47,8 @@ from selenium import webdriver
 # 解决方法：
 # 每条case中assert后面不再添加步骤
 
+# 问题12：生成的报告，错误的内容有时会出现无截图的情况
+#
+
+
 

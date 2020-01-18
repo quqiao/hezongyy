@@ -37,14 +37,14 @@ class TestMy(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    # def test_my_01(self):
-    #     """进入我的订单"""
-    #     self.my_page.click_wddd()  # 点击我的订单
-    #     sleep(0.5)
-    #     self.assertEqual(self.my_page.text_wdddbt(), "我的订单", msg="没有进入我的订单界面")  # 判断是否进入我的订单界面
-    #     sleep(1)
-    #     self.driver.back()  # 返回我的药易购界面
-    #     sleep(0.5)
+    def test_my_01(self):
+        """进入我的订单"""
+        self.my_page.click_wddd()  # 点击我的订单
+        sleep(0.5)
+        self.assertEqual(self.my_page.text_wdddbt(), "我的订单", msg="没有进入我的订单界面")  # 判断是否进入我的订单界面
+        sleep(1)
+        self.driver.back()  # 返回我的药易购界面
+        sleep(0.5)
 
     def test_my_02(self):
         """进入积分订单"""
