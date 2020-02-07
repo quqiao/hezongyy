@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""收藏界面"""
 
 import unittest
 from pages.CartPage import CartPage
@@ -12,13 +13,13 @@ from pages.CollectionPage import CollectionPage
 from pages.ZhongYaoPage import ZhongYaoPage
 from selenium import webdriver
 from time import sleep
-from common.public import PublicMethod, test_url, username
+from common.public import PublicMethod, test_url, username, chromedriver
 
 class TestCollection(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = test_url

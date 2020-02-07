@@ -15,11 +15,6 @@ class JiFenShangChengPage(BasePage):
     def click_qd(self):
         self.find_element(*self.qd).click()
 
-    """"签到成功/失败提示文本"""
-    qdcgts = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")
-    def text_qdcgts(self):
-        return self.find_element(*self.qdcgts).text
-
     """礼品车去逛逛"""
     qgg = (By.LINK_TEXT, "去逛逛")
     def click_qgg(self):
@@ -95,10 +90,6 @@ class JiFenShangChengPage(BasePage):
     def click_jiesuan(self):
         self.find_element(*self.jiesuan).click()
 
-    """已签到/签到按钮"""
-    qdButton = (By.ID, "qiandao")
-    def click_qdButton(self):
-        self.find_element(*self.qdButton).click()
 
     """积分订单"""
     jfdd = (By.LINK_TEXT, "[积分订单]")

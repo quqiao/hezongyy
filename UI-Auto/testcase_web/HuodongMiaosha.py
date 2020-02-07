@@ -6,13 +6,12 @@ from pages.HomePage import HomePage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import home_url, PublicMethod
+from common.public import home_url, PublicMethod, chromedriver
 
 class TestLogin(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(30)
         cls.url = home_url

@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""登录界面"""
 
 import unittest
 from pages.LoginPage import LoginPage
 from selenium import webdriver
 from time import sleep
-from common.public import test_login_url, PublicMethod, username
+from common.public import test_login_url, PublicMethod, username, chromedriver
 
 class TestLogin(unittest.TestCase):
 
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = test_login_url

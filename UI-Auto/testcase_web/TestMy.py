@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""我的界面"""
 
 import unittest
 from pages.HomePage import HomePage
@@ -7,13 +8,13 @@ from pages.MyPage import MyPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import test_url, username
+from common.public import test_url, username, chromedriver
 
 class TestMy(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = test_url

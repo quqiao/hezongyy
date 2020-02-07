@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""下单界面"""
 
 import unittest
 from pages.CategoriesPage import CategoriesPage
@@ -15,7 +16,7 @@ from pages.SearchPage import SearchPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import test_url , username
+from common.public import test_url, username, chromedriver
 
 class TestOrderProcess(unittest.TestCase):
 
@@ -25,7 +26,7 @@ class TestOrderProcess(unittest.TestCase):
 
 
     def setUp(self):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         self.driver = webdriver.Chrome(executable_path=chromedriver)
         self.url = test_url
         self.public_page = PublicMethod(self.driver, self.url, u"合纵药易购订单界面")  # 声明publicMethod类对象
@@ -46,6 +47,7 @@ class TestOrderProcess(unittest.TestCase):
         self.ddbz = "订单备注"
         self.shuliang = 20
         self.public_page.get_url(self.url)
+        self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         self.public_page.login(self.username, self.password)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 

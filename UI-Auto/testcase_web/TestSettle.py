@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""结算界面"""
 
 import unittest
 from pages.CategoriesPage import CategoriesPage
@@ -11,12 +12,12 @@ from pages.OrderPage import OrderPage
 from common.public import PublicMethod
 from selenium import webdriver
 from time import sleep
-from common.public import test_url, username
+from common.public import test_url, username, chromedriver
 
 class TestSettle(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.url = test_url
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵药易购商品分类界面")  # 声明publicMethod类对象

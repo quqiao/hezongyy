@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""反馈界面"""
 
 import unittest
 from pages.FeedbackPage import FeedbackPage
@@ -7,14 +8,14 @@ from pages.HomePage import HomePage
 from pages.MyPage import MyPage
 from selenium import webdriver
 from time import sleep
-from common.public import test_url, PublicMethod, username
+from common.public import test_url, PublicMethod, username, chromedriver
 
 class TestLogin(unittest.TestCase):
     pass
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)
         cls.url = test_url

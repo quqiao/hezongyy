@@ -10,12 +10,12 @@ from pages.CartPage import CartPage
 from pages.SettlePage import SettlePage
 from selenium import webdriver
 from time import sleep
-from common.public import login_url, PublicMethod, tejia_url
+from common.public import login_url, PublicMethod, tejia_url, chromedriver
 
 class TestLogin(unittest.TestCase):
 
     def setUp(self):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         self.driver = webdriver.Chrome(executable_path=chromedriver)
         self.driver.implicitly_wait(30)
         self.url1 = login_url

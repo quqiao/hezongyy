@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""积分商城首页界面"""
 
 import unittest
 from pages.CartPage import CartPage
@@ -9,15 +10,16 @@ from pages.SettlePage import SettlePage
 from pages.PuYaoPage import PuYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
 from pages.JiFenShangChengPage import JiFenShangChengPage
+from pages.JiFenShangCheng_qiandaoPage import JiFenShangCheng_qiandaoPage
 from selenium import webdriver
 from time import sleep
-from common.public import  PublicMethod, test_url, username
+from common.public import  PublicMethod, test_url, username, chromedriver
 
 class TestJiFenShangCheng(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = test_url
@@ -31,6 +33,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         cls.settle_page = SettlePage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明settlePage类对象
         cls.goodsdetail_page = GoodsDetailPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明goodsDetailPage类对象
         cls.jfsc_page = JiFenShangChengPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明jifenshangchengPage类对象
+        cls.jfscqd_page = JiFenShangCheng_qiandaoPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明JiFenShangCheng_qiandaoPage类对象
         cls.public_page.get_url(cls.url)
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
@@ -40,15 +43,22 @@ class TestJiFenShangCheng(unittest.TestCase):
         cls.driver.quit()
 
     def test_jfsc_01(self):
-        """签到"""
+        """进入签到界面"""
         self.categories_page.click_jfsc()  # 进入积分商城
         sleep(1)
         self.jfsc_page.click_qd()  # 点击签到
         sleep(1)
         self.jfsc_page.click_qdButton()  # 点击签到
         sleep(1)
-        self.assertEqual(self.jfsc_page.text_qdcgts(), "签到成功,，获得积分+50", msg="签到成功")
+        self.assertEqual(self.jfscqd_page.getValue_qdButton(), "签到成功,，获得积分+50", msg="签到成功")
         # self.assertEqual(self.jfsc_page.text_qdcgts(), "您今天已经签到过了", msg="已签到")
+
+    def test_jfsc_02(self):
+        """积分订单"""
+        self.driver.back()  # 返回积分商城首页
+        sleep(1)
+        self.jfsc_page.click_jfdd()
+
 
     def test_jfsc_02(self):
         """检查礼品车"""

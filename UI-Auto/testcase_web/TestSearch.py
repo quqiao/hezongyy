@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
+"""搜索流程"""
 
 import unittest
 from pages.SearchPage import SearchPage
@@ -11,13 +12,13 @@ from pages.PuYaoPage import PuYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
 from selenium import webdriver
 from time import sleep
-from common.public import PublicMethod, test_url,username
+from common.public import PublicMethod, test_url, username, chromedriver
 
 class TestSearch(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = test_url
