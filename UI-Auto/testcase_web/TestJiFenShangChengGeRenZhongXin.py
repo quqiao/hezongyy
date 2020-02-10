@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'quqiao'
-"""积分商城签到界面"""
+"""积分商城个人中心界面"""
 
 import unittest
 from pages.CartPage import CartPage
@@ -13,7 +13,7 @@ from pages.JiFenShangChengPage import JiFenShangChengPage
 from pages.JiFenShangCheng_qiandaoPage import JiFenShangCheng_qiandaoPage
 from selenium import webdriver
 from time import sleep
-from common.public import PublicMethod, test_url, username, chromedriver
+from common.public import  PublicMethod, test_url, username, chromedriver
 
 class TestJiFenShangCheng(unittest.TestCase):
 
@@ -42,22 +42,37 @@ class TestJiFenShangCheng(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    def test_jfscqd_01(self):
-        """签到成功"""
-        self.categories_page.click_jfsc()  # 进入积分商城
+    def test_jfsc_08(self):
+        """订单详情"""
+        self.jfsc_page.click_ddxq()  # 点击订单详情
         sleep(1)
-        self.jfsc_page.click_qd()  # 点击签到
-        sleep(1)
-        self.jfscqd_page.click_qdButton()  # 点击签到按钮
-        sleep(1)
-        self.assertEqual(self.jfscqd_page.text_qdcgts(), "签到成功,，获得积分+50", msg="签到成功")
 
+    def test_jfsc_09(self):
+        """我的积分"""
+        self.jfsc_page.click_wdjf()  # 点击我的积分
+        sleep(1)
+        self.public_page.switch_secendPage()  # 句柄到第二页
+        sleep(1)
 
-    def test_jfscqd_02(self):
-        """已签到"""
+    def test_jfsc_10(self):
+        """为你推荐---立即兑换"""
+        self.public_page.scroll_down("window.scrollBy(0, 700)")  # 下滑
         sleep(1)
-        self.public_page.click_tckLeft()  # 签到成功确认提示
+        self.jfsc_page.click_wntj(6)  # 点击为你推荐
         sleep(1)
-        self.jfscqd_page.click_qdButton()  # 点击签到按钮
+        self.jfsc_page.click_dh()  # 立即兑换
         sleep(1)
-        self.assertEqual(self.jfsc_page.text_qdcgts(), "您今天已经签到过了", msg="已签到")
+
+    def test_jfsc_11(self):
+        """为你推荐---加入礼品车"""
+        self.driver.back()
+        sleep(1)
+        self.jfsc_page.click_jr()  # 加入礼品购物车
+        sleep(1)
+        self.public_page.click_tckRight()  # 去结算
+
+    def test_jfsc_12(self):
+        """返回药易购"""
+        self.jfsc_page.click_fhyyg()  # 返回药易购
+        sleep(1)
+        self.public_page.is_element_exist()

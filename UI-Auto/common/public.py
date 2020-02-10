@@ -57,6 +57,17 @@ class PublicMethod(BasePage):
     def scroll_down(self, xiangsu):
         self.script1(xiangsu)
 
+    # 调用script,向上滚动到顶部
+    def scroll_top(self):
+        js_top = "var q=document.documentElement.scrollTop=0"
+        self.script1(js_top)
+
+    # 调用script,向下滚动到底部
+    def scroll_bottom(self):
+        js_bottom1 = "var q=document.documentElement.scrollTop=10000"
+        js_bottom2 = "window.scrollTo(0,document.body.scrollHeight)"
+        self.script1(js_bottom1)
+
     # 定义select 选择框中的内容
     xlsrk = (By.CLASS_NAME, "search-list")  # 下拉输入框列表
     def select_list1(self):
