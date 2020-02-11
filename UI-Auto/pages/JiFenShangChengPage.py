@@ -75,14 +75,10 @@ class JiFenShangChengPage(BasePage):
     def text_jrlpc(self):
         return self.find_element(*self.jrlpc).text
 
+    """商品大图"""
+    spdt = (By.CLASS_NAME, "img_box")
 
-    """立即兑换"""
-    dh = (By.CLASS_NAME, "dh")
-    def click_dh(self):
-        self.find_element(*self.dh).click()
+    def click_spdt(self, tupian):
+        self.find_elements(*self.spdt)[tupian].click()
 
-    """加入礼品车"""
-    jrlpc = (By.CLASS_NAME, "txt")
-    def click_jr(self):
-        self.find_element(*self.jrlpc).click()
 

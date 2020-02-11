@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 # 继承BasePage类
-class JiFenShangCheng_qiandaoPage(BasePage):
+class JiFenShangCheng_jiesuanPage(BasePage):
     """兑换成功提示"""
     dhcg = (By.CLASS_NAME, "success_title")
     def text_dhcg(self):

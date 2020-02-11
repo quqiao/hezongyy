@@ -20,6 +20,21 @@ class JiFenShangCheng_gerenzhongxinPage(BasePage):
     def click_wdjf(self):
         self.find_element(*self.wdjf).click()
 
+    """去兑换礼品"""
+    dhlp = (By.LINK_TEXT, "去兑换礼品")
+    def click_dhlp(self):
+        self.find_element(*self.dhlp).click()
+
+    """去赚取积分"""
+    zqjf = (By.LINK_TEXT, "去赚取积分")
+    def click_zqjf(self):
+        self.find_element(*self.zqjf).click()
+
+    """我的地址"""
+    wddd = (By.LINK_TEXT, "我的积分")
+    def click_wddd(self):
+        self.find_element(*self.wddd).click()
+
     """为你推荐"""
     wntj = (By.CLASS_NAME, "wntj-cp")
     def click_wntj(self, list):

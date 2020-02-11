@@ -12,6 +12,7 @@ from pages.GoodsDetailPage import GoodsDetailPage
 from pages.JiFenShangChengPage import JiFenShangChengPage
 from pages.JiFenShangCheng_qiandaoPage import JiFenShangCheng_qiandaoPage
 from pages.JiFenShangCheng_gerenzhonginPage import JiFenShangCheng_gerenzhongxinPage
+from pages.JiFenShangCheng_lipinchePage import JiFenShangCheng_lipinchePage
 from selenium import webdriver
 from time import sleep
 from common.public import  PublicMethod, test_url, username, chromedriver
@@ -37,7 +38,9 @@ class TestJiFenShangCheng(unittest.TestCase):
         cls.jfscqd_page = JiFenShangCheng_qiandaoPage(cls.driver, cls.url,
                                                       u"合纵易购积分商城界面")  # 声明JiFenShangCheng_qiandaoPage类对象
         cls.jfscgrzx_page = JiFenShangCheng_gerenzhongxinPage(cls.driver, cls.url,
-                                                     u"合纵易购积分商城界面")  # 声明JiFenShangCheng_qiandaoPage类对象
+                                                     u"合纵易购积分商城界面")  # 声明JiFenShangCheng_grzxPage类对象
+        cls.jfsclpc_page = JiFenShangCheng_lipinchePage(cls.driver, cls.url,
+                                                        u"合纵易购积分商城界面")  # 声明JiFenShangCheng_lpcPage类对象
         cls.public_page.get_url(cls.url)
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
@@ -123,6 +126,25 @@ class TestJiFenShangCheng(unittest.TestCase):
         self.jfsc_page.click_grzx()  # 点击进入个人中心
         sleep(1)
         self.assertEqual(self.jfscgrzx_page.text_grzx(), "个人中心", msg="进入个人中心失败")
+
+    def test_jfsc_09(self):
+        """返回药易购"""
+        self.driver.back()  # 返回积分商城
+        sleep(1)
+        self.jfsc_page.click_fhyyg()  # 返回药易购
+        sleep(1)
+        self.assertEqual(self.home_page.text_tc(), "退出", msg="返回药易购失败")
+
+    def test_jfsc_10(self):
+        """礼品车"""
+        self.driver.back()  # 返回积分商城
+        sleep(1)
+        self.jfsc_page.click_lpc()  # 进入礼品车
+        sleep(1)
+        self.assertEqual(self.jfsclpc_page.get_jsButton(), "结算", msg="进入礼品车失败")
+
+
+
 
 
 

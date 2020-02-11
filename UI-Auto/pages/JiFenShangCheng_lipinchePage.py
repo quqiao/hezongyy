@@ -9,7 +9,12 @@ from selenium.webdriver.common.keys import Keys
 
 
 # 继承BasePage类
-class JiFenShangCheng_qiandaoPage(BasePage):
+class JiFenShangCheng_lipinchePage(BasePage):
+    """结算"""
+    jsButton = (By.ID, "jiesuan")
+    def get_jsButton(self):
+        return self.find_element(*self.jsButton).get_attribute("value")
+
     """礼品车去逛逛"""
     qgg = (By.LINK_TEXT, "去逛逛")
     def click_qgg(self):
@@ -84,3 +89,8 @@ class JiFenShangCheng_qiandaoPage(BasePage):
     jiesuan = (By.ID, "jiesuan")
     def click_jiesuan(self):
         self.find_element(*self.jiesuan).click()
+
+    """提示请选择要购买的商品"""
+    tsgmsp = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")
+    def text_tsgmsp(self):
+        return self.find_element(*self.tsgmsp).text
