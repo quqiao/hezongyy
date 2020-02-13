@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_ddxqPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_spPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangChengPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangChengPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_gerenzhonginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_gerenzhonginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_jiesuanPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_jiesuanPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_lipinchePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_lipinchePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangCheng.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangCheng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengGeRenZhongXin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengGeRenZhongXin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengLiPinChe.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengLiPinChe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_spPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_spPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,8 +205,8 @@
     <list>
       <item itemvalue="Python.runTest" />
       <item itemvalue="Python.MyPage" />
-      <item itemvalue="Python.public" />
       <item itemvalue="Python.PuYaoPage" />
+      <item itemvalue="Python.public" />
       <item itemvalue="Python.test (1)" />
       <item itemvalue="Python tests.Unittests for TestHome.TestLogin.test_home_15" />
     </list>
@@ -641,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581329333608</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="20200211提交">
+      <created>1581416839891</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1581416839891</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -673,7 +674,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20191213提交" />
     <MESSAGE value="20191215提交" />
     <MESSAGE value="20191217提交" />
     <MESSAGE value="20191218提交" />
@@ -698,7 +698,8 @@
     <MESSAGE value="20200115提交" />
     <MESSAGE value="20200207提交" />
     <MESSAGE value="20200210提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200210提交" />
+    <MESSAGE value="20200211提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200211提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581038019280">
@@ -709,10 +710,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
-    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1581329327518">
+    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1581416838148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581329327518" />
+    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581416838148" />
     <state width="844" height="195" key="GridCell.Tab.0.bottom" timestamp="1581072193697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -733,13 +734,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581039419079" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581329346410">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581416854010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581329346410" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581381718286">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581416854010" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581557138377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581381718286" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581557138377" />
   </component>
 </project>

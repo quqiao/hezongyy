@@ -77,7 +77,6 @@ class JiFenShangChengPage(BasePage):
 
     """商品大图"""
     spdt = (By.CLASS_NAME, "img_box")
-
     def click_spdt(self, tupian):
         self.find_elements(*self.spdt)[tupian].click()
 

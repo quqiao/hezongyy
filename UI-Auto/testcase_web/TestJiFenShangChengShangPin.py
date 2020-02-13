@@ -11,6 +11,9 @@ from pages.PuYaoPage import PuYaoPage
 from pages.GoodsDetailPage import GoodsDetailPage
 from pages.JiFenShangChengPage import JiFenShangChengPage
 from pages.JiFenShangCheng_qiandaoPage import JiFenShangCheng_qiandaoPage
+from pages.JiFenShangCheng_spPage import JiFenShangCheng_spPage
+from pages.JiFenShangCheng_jiesuanPage import JiFenShangCheng_jiesuanPage
+from pages.JiFenShangCheng_gerenzhonginPage import JiFenShangCheng_gerenzhongxinPage
 from selenium import webdriver
 from time import sleep
 from common.public import PublicMethod, test_url, username, chromedriver
@@ -34,6 +37,9 @@ class TestJiFenShangChengQianDao(unittest.TestCase):
         cls.goodsdetail_page = GoodsDetailPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明goodsDetailPage类对象
         cls.jfsc_page = JiFenShangChengPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明jifenshangchengPage类对象
         cls.jfscqd_page = JiFenShangCheng_qiandaoPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明JiFenShangCheng_qiandaoPage类对象
+        cls.jfscsp_page = JiFenShangCheng_spPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明商品页面类对象
+        cls.jfscjs_page = JiFenShangCheng_jiesuanPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明结算页面类对象
+        cls.jfscgrzx_page = JiFenShangCheng_gerenzhongxinPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明个人中心页面类对象
         cls.public_page.get_url(cls.url)
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
@@ -43,7 +49,119 @@ class TestJiFenShangChengQianDao(unittest.TestCase):
         cls.driver.quit()
 
     def test_jfscsp_01(self):
-        """首页商品进入"""
+        """首页商品进入商品详情"""
         self.categories_page.click_jfsc()  # 点击进入积分商城
         sleep(1)
-        self.jfsc_page.click_sp
+        self.jfsc_page.click_spdt(3)  # 点击商品大图
+        sleep(1)
+        self.assertEqual(self.jfscsp_page.text_lpxq(), "礼品详情", msg="没有进入礼品详情")
+
+    def test_jfscsp_02(self):
+        """增加数量"""
+        for i in range(8):
+            sleep(1)
+            self.jfscsp_page.click_jia()
+        sleep(1)
+
+    def test_jfscsp_03(self):
+        """增加减少"""
+        for i in range(6):
+            sleep(1)
+            self.jfscsp_page.click_jia()
+        sleep(1)
+
+    def test_jfscsp_04(self):
+        """正常兑换"""
+        self.jfscsp_page.click_ljdh()  # 点击立即兑换
+        sleep(1)
+        self.assertEqual(self.jfscjs_page.text_submit(), "确认提交", msg="没有跳转到结算页面")
+
+    def test_jfscsp_05(self):
+        """输入正常库存"""
+        sleep(1)
+        self.jfscsp_page.input_srsl(5)  # 输入正常的库存
+        sleep(1)
+        self.assertEqual(self.jfscsp_page.text_srsl(), 5, msg="库存不一致")
+
+    def test_jfscsp_06(self):
+        """输入超过的库存"""
+        sleep(1)
+        self.jfscsp_page.input_srsl(100)  # 输入正常的库存
+        sleep(1)
+        self.assertEqual(self.jfscsp_page.text_srsl(), self.jfscsp_page.text_kc(), msg="库存不一致")
+
+    def test_jfscsp_07(self):
+        """积分不足立即兑换"""
+        self.jfscsp_page.click_ljdh()  # 点击立即兑换
+        sleep(1)
+        self.assertEqual(self.jfscjs_page.text_fhlpc(), "返回礼品车", msg="没有进入结算页面")
+
+    def test_jfscsp_08(self):
+        """加入礼品车"""
+        self.driver.back()  # 返回商品详情页
+        sleep(1)
+        self.jfscsp_page.click_jrlpc()  # 加入礼品车
+        sleep(1)
+        self.assertEqual(self.jfsc_page.text_jrlpc(), "加入礼品车成功", msg="没有加入礼品车")
+
+    def test_jfscsp_09(self):
+        """从推荐商品进入商品详情"""
+        self.public_page.click_tckLeft()  # 点击继续兑换
+        sleep(1)
+        self.jfsc_page.click_grzx()  # 点击个人中心
+        sleep(1)
+        self.public_page.scroll_bottom()  # 滚动到底部
+        sleep(1)
+        self.jfscgrzx_page.click_wntj(3)  # 点击为你推荐商品
+        sleep(1)
+        self.assertEqual(self.jfscsp_page.text_lpxq(), "礼品详情", msg="没有进入商品详情")
+
+    def test_jfscsp_10(self):
+        """增加数量"""
+        for i in range(8):
+            sleep(1)
+            self.jfscsp_page.click_jia()
+        sleep(1)
+
+    def test_jfscsp_11(self):
+        """增加减少"""
+        for i in range(6):
+            sleep(1)
+            self.jfscsp_page.click_jia()
+        sleep(1)
+
+    def test_jfscsp_12(self):
+        """正常兑换"""
+        self.jfscsp_page.click_ljdh()  # 点击立即兑换
+        sleep(1)
+        self.assertEqual(self.jfscjs_page.text_submit(), "确认提交", msg="没有跳转到结算页面")
+
+    def test_jfscsp_13(self):
+        """输入正常库存"""
+        sleep(1)
+        self.jfscsp_page.input_srsl(5)  # 输入正常的库存
+        sleep(1)
+        self.assertEqual(self.jfscsp_page.text_srsl(), 5, msg="库存不一致")
+
+    def test_jfscsp_14(self):
+        """输入超过的库存"""
+        sleep(1)
+        self.jfscsp_page.input_srsl(100)  # 输入正常的库存
+        sleep(1)
+        self.assertEqual(self.jfscsp_page.text_srsl(), self.jfscsp_page.text_kc(), msg="库存不一致")
+
+    def test_jfscsp_15(self):
+        """积分不足立即兑换"""
+        self.jfscsp_page.click_ljdh()  # 点击立即兑换
+        sleep(1)
+        self.assertEqual(self.jfscjs_page.text_fhlpc(), "返回礼品车", msg="没有进入结算页面")
+
+    def test_jfscsp_16(self):
+        """加入礼品车"""
+        self.driver.back()  # 返回商品详情页
+        sleep(1)
+        self.jfscsp_page.click_jrlpc()  # 加入礼品车
+        sleep(1)
+        self.assertEqual(self.jfsc_page.text_jrlpc(), "加入礼品车成功", msg="没有加入礼品车")
+
+
