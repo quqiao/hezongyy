@@ -49,4 +49,4 @@ class JiFenShangCheng_spPage(BasePage):
     kc1 = (By.CLASS_NAME, "kucun")
     kc2 = (By.TAG_NAME, "span")
     def text_kc(self):
-        return self.find_element(*self.kc1).find_element(*self.ku2).text
+        return self.find_element(*self.kc1).find_element(*self.kc2).text

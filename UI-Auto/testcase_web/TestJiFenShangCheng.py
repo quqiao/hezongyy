@@ -13,6 +13,7 @@ from pages.JiFenShangChengPage import JiFenShangChengPage
 from pages.JiFenShangCheng_qiandaoPage import JiFenShangCheng_qiandaoPage
 from pages.JiFenShangCheng_gerenzhonginPage import JiFenShangCheng_gerenzhongxinPage
 from pages.JiFenShangCheng_lipinchePage import JiFenShangCheng_lipinchePage
+from pages.JiFenShangCheng_ddxqPage import JiFenShangCheng_ddxqPage
 from selenium import webdriver
 from time import sleep
 from common.public import  PublicMethod, test_url, username, chromedriver
@@ -41,7 +42,10 @@ class TestJiFenShangCheng(unittest.TestCase):
                                                      u"合纵易购积分商城界面")  # 声明JiFenShangCheng_grzxPage类对象
         cls.jfsclpc_page = JiFenShangCheng_lipinchePage(cls.driver, cls.url,
                                                         u"合纵易购积分商城界面")  # 声明JiFenShangCheng_lpcPage类对象
+        cls.jfscddxq_page = JiFenShangCheng_ddxqPage(cls.driver, cls.url,
+                                                     u"合纵易购积分商城界面")  # 声明积分商城订单界面类对象
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
@@ -55,7 +59,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_qd()  # 点击签到
         sleep(1)
-        self.assertEqual(self.jfscqd_page.getValue_qdButton(), "立即签到", msg="签到成功")
+        self.assertEqual(self.jfscqd_page.getValue_qdButton(), "点击签到", msg="签到成功")
 
     def test_jfsc_02(self):
         """积分订单"""
@@ -63,6 +67,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_jfdd()  # 点击积分订单
         sleep(1)
+        self.assertEqual(self.jfscddxq_page.text_ddxq(), "积分订单", msg="积分订单界面没有进入成功")
 
     def test_jfsc_03(self):
         """去赚取积分"""
@@ -70,10 +75,11 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_qzqjf()  # 点击去赚取积分
         sleep(1)
+        self.assertEqual(self.home_page.text_tc(), "[退出]", msg="返回药易购失败")
 
     def test_jfsc_04(self):
         """礼品分类-热门兑换加入礼品车"""
-        self.dirver.back()  # 返回积分商城首页
+        self.driver.back()  # 返回积分商城首页
         sleep(1)
         self.jfsc_page.click_rmdh()  # 点击热门兑换
         sleep(1)
@@ -133,7 +139,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_fhyyg()  # 返回药易购
         sleep(1)
-        self.assertEqual(self.home_page.text_tc(), "退出", msg="返回药易购失败")
+        self.assertEqual(self.home_page.text_tc(), "[退出]", msg="返回药易购失败")
 
     def test_jfsc_10(self):
         """礼品车"""

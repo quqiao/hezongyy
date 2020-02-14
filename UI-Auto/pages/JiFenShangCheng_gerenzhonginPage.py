@@ -31,7 +31,7 @@ class JiFenShangCheng_gerenzhongxinPage(BasePage):
         self.find_element(*self.zqjf).click()
 
     """我的地址"""
-    wddd = (By.LINK_TEXT, "我的积分")
+    wddd = (By.LINK_TEXT, "收货地址")
     def click_wddd(self):
         self.find_element(*self.wddd).click()
 

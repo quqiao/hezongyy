@@ -29,7 +29,7 @@ class TestJiFenShangChengGeRenZhongXin(unittest.TestCase):
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购积分商城界面")
         cls.jfsc_page = JiFenShangChengPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明jifenshangchengPage类对象
         cls.jfscqd_page = JiFenShangCheng_qiandaoPage(cls.driver, cls.url,
-                                                      u"合纵易购积分商城界面")  # 声明JiFenShangCheng_qiandaoPage类对象
+                                                      u"合纵易购积分商城界面")  # 声明JiFenShangChennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng_qiandaoPage类对象
         cls.jfscgrzx_page = JiFenShangCheng_gerenzhongxinPage(cls.driver, cls.url,
                                                              u"合纵易购积分商城界面")  # 声明JiFenShangCheng_grzxPage类对象
         cls.jfscddxq_page = JiFenShangCheng_ddxqPage(cls.driver, cls.url,
@@ -38,6 +38,7 @@ class TestJiFenShangChengGeRenZhongXin(unittest.TestCase):
                                                         u"合纵易购积分商城界面")  # 声明JiFenShangCheng_lipinchePage类对象
 
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
@@ -65,7 +66,7 @@ class TestJiFenShangChengGeRenZhongXin(unittest.TestCase):
         """去兑换礼品"""
         self.jfscgrzx_page.click_dhlp()  # 点击兑换礼品
         sleep(1)
-        self.assertEqual(self.jfsc_page.text_jrlpc(), "加入礼品车", msg="回到积分商城首页失败")
+        self.assertEqual(self.jfsc_page.text_lpc(), "礼品车", msg="回到积分商城首页失败")
 
     def test_jfscgrzx_04(self):
         """去赚取积分"""
@@ -73,7 +74,7 @@ class TestJiFenShangChengGeRenZhongXin(unittest.TestCase):
         sleep(1)
         self.jfscgrzx_page.click_zqjf()  # 加入礼品购物车
         sleep(1)
-        self.assertEqual(self.home_page.text_tc(), "退出", msg="去赚取积分失败")
+        self.assertEqual(self.home_page.text_tc(), "[退出]", msg="去赚取积分失败")
 
     def test_jfscgrzx_05(self):
         """我的地址"""

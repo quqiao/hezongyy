@@ -26,15 +26,16 @@ class JiFenShangCheng_lipinchePage(BasePage):
     sc = (By.CLASS_NAME, "delete")  # 礼品列表删除
     tsk = (By.CLASS_NAME, "layui-layer-btn0")  # 提示框确定
     def is_element_exist(self):
-        list = self.driver.find_elements(*self.gwclb)
-        if len(list) == 0:
-            # print('没有该元素')
-            return 0
-        elif len(list) >= 0:
-            # print('共找到' + str(len(list)) + '个元素')
-            self.find_element(*self.sc).click()
-            sleep(1)
-            self.find_element(*self.tsk).click()
+        for i in range(100):
+            list = self.driver.find_elements(*self.gwclb)
+            if len(list) == 0:
+                # print('没有该元素')
+                break
+            elif len(list) >= 0:
+                # print('共找到' + str(len(list)) + '个元素')
+                self.find_element(*self.sc).click()
+                sleep(1)
+                self.find_element(*self.tsk).click()
 
     """判断购物车列表是否存在"""
     gwclb = (By.CLASS_NAME, "cart_list")

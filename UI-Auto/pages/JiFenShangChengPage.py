@@ -69,6 +69,9 @@ class JiFenShangChengPage(BasePage):
     lpc = (By.CLASS_NAME, "lp_cart")
     def click_lpc(self):
         self.find_element(*self.lpc).click()
+    lpctext = (By.CLASS_NAME, "txt")
+    def text_lpc(self):
+        return self.find_element(*self.lpctext).text
 
     """加入礼品车成功提示"""
     jrlpc = (By.CLASS_NAME, "layui-layer-content.layui-layer-padding")

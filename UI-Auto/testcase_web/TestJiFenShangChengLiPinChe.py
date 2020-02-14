@@ -42,6 +42,7 @@ class TestJiFenShangChengLiPinChe(unittest.TestCase):
         cls.jfscjs_page = JiFenShangCheng_jiesuanPage(cls.driver, cls.url,
                                                       u"合纵易购积分商城界面")  # 声明JiFenShangCheng_jiesuanPage类对象
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
@@ -51,11 +52,9 @@ class TestJiFenShangChengLiPinChe(unittest.TestCase):
 
     def test_jfsclpc_01(self):
         """检查礼品车"""
-        self.public_page.click_tckLeft()  # 提示框确定
+        self.categories_page.click_jfsc()  # 进入积分商城
         sleep(1)
-        self.driver.back()  # 回到积分商城首页
-        sleep(1)
-        self.jfsc_page.click_lpc()  # 点击礼品车
+        self.jfsc_page.click_lpc()
         sleep(1)
         self.jfsclpc_page.is_element_exist()  # 判断商品是否存在
         sleep(1)
