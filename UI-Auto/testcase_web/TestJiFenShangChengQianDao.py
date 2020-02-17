@@ -35,6 +35,7 @@ class TestJiFenShangChengQianDao(unittest.TestCase):
         cls.jfsc_page = JiFenShangChengPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明jifenshangchengPage类对象
         cls.jfscqd_page = JiFenShangCheng_qiandaoPage(cls.driver, cls.url, u"合纵易购积分商城界面")  # 声明JiFenShangCheng_qiandaoPage类对象
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 
@@ -57,7 +58,7 @@ class TestJiFenShangChengQianDao(unittest.TestCase):
         """已签到"""
         sleep(1)
         self.public_page.click_tckLeft()  # 签到成功确认提示
-        sleep(1)
+        sleep(5)
         self.jfscqd_page.click_qdButton()  # 点击签到按钮
         sleep(1)
         self.assertEqual(self.jfscqd_page.text_qdcgts(), "您今天已经签到过了", msg="已签到")

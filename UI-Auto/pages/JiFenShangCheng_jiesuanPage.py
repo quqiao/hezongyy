@@ -19,8 +19,8 @@ class JiFenShangCheng_jiesuanPage(BasePage):
     submit = (By.ID, "btn")
     def click_submit(self):
         self.find_element(*self.submit).click()
-    def text_submit(self):
-        return self.find_element(*self.submit).text
+    def get_submit(self):
+        return self.find_element(*self.submit).get_attribute("value")
 
     """返回礼品车"""
     fhlpc = (By.LINK_TEXT, "返回礼品车")

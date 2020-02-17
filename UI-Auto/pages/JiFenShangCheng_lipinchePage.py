@@ -36,6 +36,7 @@ class JiFenShangCheng_lipinchePage(BasePage):
                 self.find_element(*self.sc).click()
                 sleep(1)
                 self.find_element(*self.tsk).click()
+                sleep(5)
 
     """判断购物车列表是否存在"""
     gwclb = (By.CLASS_NAME, "cart_list")
@@ -79,8 +80,8 @@ class JiFenShangCheng_lipinchePage(BasePage):
 
     """全选"""
     qx = (By.CLASS_NAME, "quanxuan")
-    def click_qx(self, qxk):
-        self.find_elements(*self.qx)[qxk].click()
+    def click_qx(self):
+        self.find_elements(*self.qx).click()
 
     """删除"""
     def click_sc(self, sc):

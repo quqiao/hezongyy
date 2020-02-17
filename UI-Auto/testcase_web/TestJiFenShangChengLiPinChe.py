@@ -95,25 +95,27 @@ class TestJiFenShangChengLiPinChe(unittest.TestCase):
         """单选一个删除"""
         self.jfsclpc_page.click_dx(0)  # 选择单选
         sleep(1)
-        self.jfsclpc_page.click_sc(1)  # 点击删除
+        self.jfsclpc_page.click_sc(0)  # 点击删除
         sleep(1)
         self.public_page.click_tckLeft()  # 提示框确定删除
 
     def test_jfsclpc_06(self):
         """不选择任意礼品结算"""
+        sleep(5)
         self.jfsclpc_page.click_jiesuan()  # 没有商品选中点击结算
         sleep(1)
         self.assertEqual(self.jfsclpc_page.text_tsgmsp(), "请选择要购买的商品", msg="购买失败")
 
     def test_jfsclpc_07(self):
         """全选结算"""
-        self.jfsclpc_page.click_qx(0)  # 全选
+        sleep(5)
+        self.jfsclpc_page.click_qx()  # 全选
         sleep(1)
         self.jfsclpc_page.click_jiesuan()  # 结算
         sleep(1)
         self.public_page.scroll_down("window.scrollBy(0, 700)")
         sleep(1)
-        self.jfscjs_page.click_submit()  # 确认提交
-        sleep(1)
-        self.assertEqual(self.jfscjs_page.text_dhcg(), "恭喜您，您的礼品已兑换成功！", msg="兑换成功")
+        # self.jfscjs_page.click_submit()  # 确认提交
+        # sleep(1)
+        # self.assertEqual(self.jfscjs_page.text_dhcg(), "恭喜您，您的礼品已兑换成功！", msg="兑换成功")
 
