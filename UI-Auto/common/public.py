@@ -30,7 +30,6 @@ class PublicMethod(BasePage):
     username = (By.XPATH, "//*[@id='username']")  # 用户名
     password = (By.XPATH, "//*[@id='password']")  # 密码
     submit = (By.XPATH, "//*[@id='right_1']/a")  # 登录
-
     def login(self, uname, pwd):
         self.find_element(*self.sydl).click()
         self.find_element(*self.username).send_keys(uname)
@@ -94,12 +93,20 @@ class PublicMethod(BasePage):
     """弹出框的左边按钮（确定，删除等）"""
     tckLeft = (By.CLASS_NAME, "layui-layer-btn0")
     def click_tckLeft(self):
-        self.find_element(*self.tckLeft).click()
+        list = self.find_element(*self.tckLeft)
+        if len(list) == 0:
+            pass
+        elif len(list) >= 0:
+            self.find_element(*self.tckLeft).click()
 
     """弹出框的右边按钮"""
     tckRight = (By.CLASS_NAME, "layui-layer-btn1")
     def click_tckRight(self):
-        self.find_element(*self.tckRight).click()
+        list = self.find_element(*self.tckRight)
+        if len(list) == 0:
+            pass
+        elif len(list) >= 0:
+            self.find_element(*self.tckRight).click()
 
     """F5+ctrl组合键刷新"""
     def refresh(self):

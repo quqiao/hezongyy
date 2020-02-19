@@ -29,6 +29,7 @@ class TestMy(unittest.TestCase):
         # 声明publicMethod类对象
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵药易购我的界面")
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)

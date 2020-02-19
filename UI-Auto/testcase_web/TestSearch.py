@@ -33,6 +33,7 @@ class TestSearch(unittest.TestCase):
         cls.goodsdetail_page = GoodsDetailPage(cls.driver, cls.url, u"合纵易购搜索界面")  # 声明goodsDetailPage类对象
         cls.search_page = SearchPage(cls.driver, cls.url, u"合纵易购搜索界面")  # 声明SearchPage类对象
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 

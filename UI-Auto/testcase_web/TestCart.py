@@ -31,6 +31,7 @@ class TestCart(unittest.TestCase):
         cls.settle_page = SettlePage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明settlePage类对象
         cls.goodsdetail_page = GoodsDetailPage(cls.driver, cls.url, u"合纵易购购物车界面")  # 声明goodsDetailPage类对象
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 

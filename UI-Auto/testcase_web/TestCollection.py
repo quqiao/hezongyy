@@ -35,6 +35,7 @@ class TestCollection(unittest.TestCase):
         cls.collection_page = CollectionPage(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明collectionPage类对象
         cls.zhongyao_page = ZhongYaoPage(cls.driver, cls.url, u"合纵易购收藏界面")  # 声明ZhongYaoPage类对象
         cls.public_page.get_url(cls.url)
+        cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         cls.public_page.login(cls.username, cls.password)
         cls.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
 

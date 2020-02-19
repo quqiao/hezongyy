@@ -82,7 +82,7 @@ class TestJiFenShangChengGeRenZhongXin(unittest.TestCase):
         sleep(1)
         self.jfscgrzx_page.click_wddd()
         sleep(1)
-        self.assertEqual(self.jfscddxq_page.text_ddxq(), "我的地址", msg="进入我的地址页面失败")
+        self.assertEqual(self.jfscddxq_page.text_ddxq(), "收货地址", msg="进入我的地址页面失败")
 
     def test_jfscgrzx_06(self):
         """礼品车"""
