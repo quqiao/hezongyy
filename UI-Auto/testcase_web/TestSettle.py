@@ -58,9 +58,11 @@ class TestSettle(unittest.TestCase):
         self.puyao_page.click_addcart(0)  # 第一件商品加入购物车
         sleep(2)
         self.home_page.click_gwc()  # 进入购物车界面
-        sleep(0.5)
+        sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        sleep(1)
+        self.public_page.click_tckLeft()  # 点击弹出提示框确定
+        sleep(1)
         self.assertEqual(self.settle_page.text_wm200(), "您购买的商品总价没有达到本店的最低起购金额￥200元的要求", msg="没有弹出未满200元提示")
 
 
@@ -72,9 +74,11 @@ class TestSettle(unittest.TestCase):
 
     def test_settle_04(self):
         """不满200元时返回首页"""
-        sleep(0.5)
+        sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
-        sleep(0.5)
+        sleep(1)
+        self.public_page.click_tckLeft()  # 点击弹出提示框确定
+        sleep(1)
         self.settle_page.click_fhsy()  # 返回首页
         sleep(0.5)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
@@ -97,6 +101,8 @@ class TestSettle(unittest.TestCase):
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         sleep(1)
+        self.public_page.click_tckLeft()  # 点击弹出提示框确定
+        sleep(1)
         self.assertEqual(self.settle_page.text_info(0), "商品清单", msg="没有进入结算界面")
 
     def test_settle_06(self):
@@ -110,6 +116,12 @@ class TestSettle(unittest.TestCase):
         """输入备注，提交订单"""
         sleep(0.5)
         self.cart_page.click_jiesuan()  # 进入结算界面
+        sleep(1)
+        self.public_page.click_tckLeft()  # 点击弹出提示框确定
+        sleep(1)
+        self.settle_page.scroll_info(4)  # 滚动到订单备注
+        sleep(1)
+        self.settle_page.click_ddbz()  # 点击备注
         sleep(0.5)
         self.settle_page.input_ddbz(self.ddbz)  # 订单备注中输入内容
         sleep(0.5)

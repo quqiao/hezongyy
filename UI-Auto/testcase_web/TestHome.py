@@ -20,8 +20,6 @@ class TestHome(unittest.TestCase):
         cls.username = username
         cls.password = "123456"
         cls.ssnr = "感冒灵"
-        cls.xiangsu1 = "window.scrollBy(0, 800)"
-        cls.xiangsu2 = "window.scrollBy(0, 200)"
         cls.public_page = PublicMethod(cls.driver, cls.url, u"合纵易购首页界面")  # 声明publicMethod类对象
         cls.home_page = HomePage(cls.driver, cls.url, u"合纵易购首页界面")  # 声明LoginPage类对象
         cls.goodsDetail_page = GoodsDetailPage(cls.driver, cls.url, "合纵易购首页界面")  # 声明GoodsDetailPage类对象
@@ -37,6 +35,8 @@ class TestHome(unittest.TestCase):
     def test_home_01(self):
         """进入中药专区"""
         sleep(2)
+        self.public_page.scroll_down("window.scrollBy(0, 100)")  # 向下滑动100像素
+        sleep(1)
         self.home_page.click_zqlist(0)  # 进入中药专区
         sleep(0.5)
         self.public_page.switch_secendPage()  # 定位到当前页面
@@ -110,7 +110,7 @@ class TestHome(unittest.TestCase):
         """进入每周精选页面检查"""
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.public_page.scroll_down(self.xiangsu1)
+        self.public_page.scroll_down("window.scrollBy(0, 800)")
         sleep(2)
         self.home_page.click_week()  # 点击精选内容
         sleep(1)
@@ -126,7 +126,7 @@ class TestHome(unittest.TestCase):
         """进入品牌专区"""
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.public_page.scroll_down(self.xiangsu2)  # 滚动到品牌专区栏
+        self.public_page.scroll_down("window.scrollBy(0, 200)")  # 滚动到品牌专区栏
         sleep(0.5)
         self.home_page.click_ppzqhyh()  # 点击换一换，切换品牌
         sleep(0.5)

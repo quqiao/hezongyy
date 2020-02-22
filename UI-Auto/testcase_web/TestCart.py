@@ -160,6 +160,8 @@ class TestCart(unittest.TestCase):
         sleep(1)
         self.cart_page.click_jiesuan()  # 调用点击结算按钮
         sleep(1)
+        self.public_page.click_tckLeft()  # 结算前提示框点击
+        sleep(1)
         self.assertEqual(self.settle_page.text_wm200(), "您购买的商品总价没有达到本店的最低起购金额￥200元的要求", msg="不满200元时出现错误")  # 判断不满200结算
 
     def test_cart_12(self):
@@ -185,6 +187,8 @@ class TestCart(unittest.TestCase):
             self.cart_page.input_number1(20, i)  # 第一个商品输入数量
         sleep(1)
         self.cart_page.click_jiesuan()  # 调用点击结算
+        sleep(1)
+        self.public_page.click_tckLeft()  # 结算后的提示框点击
         sleep(2)
         self.assertEqual(self.settle_page.text_info(0), "商品清单", msg="没有进入提交订单界面")  # 判断是否进入提交订单界面
 

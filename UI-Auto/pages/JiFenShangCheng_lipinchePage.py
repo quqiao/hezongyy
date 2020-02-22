@@ -79,9 +79,9 @@ class JiFenShangCheng_lipinchePage(BasePage):
         self.find_elements(*self.dx)[dxk].click()
 
     """全选"""
-    qx = (By.CLASS_NAME, "quanxuan")
+    qx = (By.ID, "qx_1")
     def click_qx(self):
-        self.find_elements(*self.qx).click()
+        self.find_element(*self.qx).click()
 
     """删除"""
     def click_sc(self, sc):

@@ -72,6 +72,8 @@ class PublicMethod(BasePage):
     def select_list1(self):
         s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_index("2")
+        s1.select_by_value("1")
+        s1.select_by_visible_text("2")
 
     """检查是否存在广告弹出框"""
     ad = (By.CLASS_NAME, "close")  # 点击关掉广告
@@ -93,7 +95,7 @@ class PublicMethod(BasePage):
     """弹出框的左边按钮（确定，删除等）"""
     tckLeft = (By.CLASS_NAME, "layui-layer-btn0")
     def click_tckLeft(self):
-        list = self.find_element(*self.tckLeft)
+        list = self.find_elements(*self.tckLeft)
         if len(list) == 0:
             pass
         elif len(list) >= 0:
@@ -102,7 +104,7 @@ class PublicMethod(BasePage):
     """弹出框的右边按钮"""
     tckRight = (By.CLASS_NAME, "layui-layer-btn1")
     def click_tckRight(self):
-        list = self.find_element(*self.tckRight)
+        list = self.find_elements(*self.tckRight)
         if len(list) == 0:
             pass
         elif len(list) >= 0:

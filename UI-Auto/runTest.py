@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # 指定测试用例为当前文件夹下的test_case目录
     test_dir = './testcase_web'
     discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='Test*.py')  # 执行所有Test的测试用例
-    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestCart.py')  # 执行指定的测试用例
+    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestCategories.py')  # 执行指定的测试用例
 
     # 使用testsuit进行用例选择
     # suite = unittest.TestSuite()
@@ -23,15 +23,15 @@ if __name__ == "__main__":
     """测试报告生成"""
     # now = time.strftime("%Y%m%d%H%M%S")
     now = time.strftime("%Y-%m-%d")
-    filename = './report/'+'线上环境各模块UI基本功能测试_' + now+'.html'
+    filename = './report/'+'合纵药易购线上环境基本功能测试_' + now+'.html'
     fp = open(filename, "wb")
     '''一般HTML报告格式'''
     # runner = HTMLTestRunner(stream=fp,
     #                         title="合纵药易购回归测试",
     #                         description="合纵药易购自动化回归测试")
     '''改版后HTML报告格式'''
-    runner = HTMLTestRunner(title="回归测试报告",
-                            description="test",
+    runner = HTMLTestRunner(title="合纵药易购线上环境基本功能测试",
+                            description="目前针对整个web所有模块的基本功能进行测试",
                             stream=fp, verbosity=2, retry=0, save_last_try=True)
 
     """测试用例执行"""

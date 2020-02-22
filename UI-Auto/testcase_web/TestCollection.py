@@ -153,7 +153,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.collection_page.click_dx(0)  # 单选一个商品
         sleep(1)
-        self.collection_page.click_jrgwc(2)  # 加入购物车
+        self.collection_page.click_jrgwc(0)  # 加入购物车
         # sleep(1)
         # self.cart_page.click_sctskqd()  # 提示框确定删除
         sleep(1)
@@ -179,7 +179,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.collection_page.click_qx()
         sleep(1)
-        self.collection_page.click_jrgwc(1)
+        self.collection_page.click_jrgwc(-1)
         sleep(1)
         self.assertEqual(self.collection_page.text_jrcg(), "前往购物车结算", msg="加入购物车失败！")
 

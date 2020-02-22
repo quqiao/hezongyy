@@ -91,9 +91,11 @@ class TestOrderProcess(unittest.TestCase):
         sleep(1)
         self.cart_page.click_jiesuan()  # 点击结算按钮
         sleep(1)
-        self.settle_page.click_tjdd()  # 点击提交订单
+        self.public_page.click_tckLeft()  # 结算后的提示框点击
         sleep(1)
-        self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
+        # self.settle_page.click_tjdd()  # 点击提交订单
+        # sleep(1)
+        # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！")
 
     def test_OrderProcess_03(self):
         """在精品专区中选择商品进行下单"""

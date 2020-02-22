@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
+    <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="20200219提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/common/public.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_lipinchePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_lipinchePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/SettlePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/SettlePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-10.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCategories.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCategories.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestFeedback.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestFeedback.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengGeRenZhongXin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengGeRenZhongXin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestMy.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestMy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,8 +226,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.public" />
         <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.public" />
         <item itemvalue="Python.MyPage" />
         <item itemvalue="Python.PuYaoPage" />
         <item itemvalue="Python tests.Unittests for TestHome.TestLogin.test_home_15" />
@@ -309,13 +312,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00004" summary="test">
-      <created>1567404727772</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1567404727772</updated>
     </task>
     <task id="LOCAL-00005" summary="test">
       <created>1567405615962</created>
@@ -653,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581931617407</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="20200219提交">
+      <created>1582103444782</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1582103444785</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -685,7 +688,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20191220提交" />
     <MESSAGE value="20191223提交" />
     <MESSAGE value="20191225提交" />
     <MESSAGE value="20191226提交" />
@@ -710,7 +712,8 @@
     <MESSAGE value="20200212提交" />
     <MESSAGE value="20200213提交" />
     <MESSAGE value="20200217提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200217提交" />
+    <MESSAGE value="20200219提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200219提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581038019280">
@@ -721,37 +724,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
-    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1581931615470">
+    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1582103679686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581931615470" />
-    <state width="841" height="221" key="GridCell.Tab.0.bottom" timestamp="1582092560467">
+    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582103679686" />
+    <state width="839" height="221" key="GridCell.Tab.0.bottom" timestamp="1582282959073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="841" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582092560467" />
-    <state width="841" height="221" key="GridCell.Tab.0.center" timestamp="1582092560467">
+    <state width="839" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582282959073" />
+    <state width="839" height="221" key="GridCell.Tab.0.center" timestamp="1582282959072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="841" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582092560467" />
-    <state width="841" height="221" key="GridCell.Tab.0.left" timestamp="1582092560466">
+    <state width="839" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582282959072" />
+    <state width="839" height="221" key="GridCell.Tab.0.left" timestamp="1582282959072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="841" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582092560466" />
-    <state width="841" height="221" key="GridCell.Tab.0.right" timestamp="1582092560467">
+    <state width="839" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582282959072" />
+    <state width="839" height="221" key="GridCell.Tab.0.right" timestamp="1582282959072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="841" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582092560467" />
+    <state width="839" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582282959072" />
     <state x="270" y="55" key="SettingsEditor" timestamp="1581039419079">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581039419079" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581931644267">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582103687438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581931644267" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582073691187">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582103687438" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582245455456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582073691187" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582245455456" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582271127576">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582271127576" />
   </component>
 </project>
