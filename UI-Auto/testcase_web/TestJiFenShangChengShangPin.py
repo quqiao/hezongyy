@@ -112,10 +112,9 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
 
     def test_jfscsp_09(self):
         """从推荐商品进入商品详情"""
-        self.categories_page.click_jfsc()  # 点击进入积分商城
-        # self.driver.close()  # 关闭当前页
-        # sleep(1)
-        # self.public_page.switch_home()  # 句柄切换到首页
+        self.driver.close()  # 关闭当前页
+        sleep(1)
+        self.public_page.switch_home()  # 句柄切换到首页
         sleep(1)
         self.jfsc_page.click_grzx()  # 点击个人中心
         sleep(1)

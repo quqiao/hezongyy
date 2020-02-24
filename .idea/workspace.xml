@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="20200219提交">
+    <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-24.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/common/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_lipinchePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/JiFenShangCheng_lipinchePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/SettlePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/SettlePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-06.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-07.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-08.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-09.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购web端UI回归测试_2020-01-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestOrderProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestSettle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,13 +307,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00005" summary="test">
-      <created>1567405615962</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1567405615962</updated>
     </task>
     <task id="LOCAL-00006" summary="test">
       <created>1567405999679</created>
@@ -656,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582103444785</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="20200221提交">
+      <created>1582339933622</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1582339933623</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -688,7 +683,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20191223提交" />
     <MESSAGE value="20191225提交" />
     <MESSAGE value="20191226提交" />
     <MESSAGE value="20191227提交" />
@@ -713,7 +707,8 @@
     <MESSAGE value="20200213提交" />
     <MESSAGE value="20200217提交" />
     <MESSAGE value="20200219提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200219提交" />
+    <MESSAGE value="20200221提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200221提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581038019280">
@@ -724,34 +719,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
-    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1582103679686">
+    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1582339931268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582103679686" />
-    <state width="839" height="221" key="GridCell.Tab.0.bottom" timestamp="1582282959073">
+    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582339931268" />
+    <state width="838" height="222" key="GridCell.Tab.0.bottom" timestamp="1582517971827">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="839" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582282959073" />
-    <state width="839" height="221" key="GridCell.Tab.0.center" timestamp="1582282959072">
+    <state width="838" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582517971827" />
+    <state width="838" height="222" key="GridCell.Tab.0.center" timestamp="1582517971827">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="839" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582282959072" />
-    <state width="839" height="221" key="GridCell.Tab.0.left" timestamp="1582282959072">
+    <state width="838" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582517971827" />
+    <state width="838" height="222" key="GridCell.Tab.0.left" timestamp="1582517971826">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="839" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582282959072" />
-    <state width="839" height="221" key="GridCell.Tab.0.right" timestamp="1582282959072">
+    <state width="838" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582517971826" />
+    <state width="838" height="222" key="GridCell.Tab.0.right" timestamp="1582517971827">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="839" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582282959072" />
+    <state width="838" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582517971827" />
     <state x="270" y="55" key="SettingsEditor" timestamp="1581039419079">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581039419079" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582103687438">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582339958834">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582103687438" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582339958834" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582245455456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

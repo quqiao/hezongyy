@@ -111,7 +111,7 @@ class TestHome(unittest.TestCase):
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
         self.public_page.scroll_down("window.scrollBy(0, 800)")
-        sleep(2)
+        sleep(0.5)
         self.home_page.click_week()  # 点击精选内容
         sleep(1)
         self.public_page.switch_secendPage()  # 定位到当前页面
@@ -212,17 +212,17 @@ class TestHome(unittest.TestCase):
     def test_home_14(self):
         """为你推荐操作"""
         self.public_page.switch_home()   # 定位到首页
-        sleep(0.5)
-        self.home_page.scroll_wntjtitle()  # 滚动到为你推荐的位置
-        sleep(0.5)
+        # sleep(1)
+        # self.home_page.scroll_wntjtitle()  # 滚动到为你推荐的位置
+        sleep(1)
         self.home_page.click_wntjzh()  # 向左滑动
-        sleep(0.5)
+        sleep(1)
         self.home_page.click_wntjyh()  # 向右滑动
         sleep(3)
         self.home_page.click_wntjdt1()  # 点击为你推荐大图
-        sleep(0.5)
+        sleep(1)
         self.public_page.switch_secendPage()  # 定位到当前页面
-        sleep(0.5)
+        sleep(1)
         self.assertEqual(self.goodsDetail_page.text_bt(), "为您推荐", msg="没有进入商品详情页面")  # 判断是否进入商品详情页
 
 

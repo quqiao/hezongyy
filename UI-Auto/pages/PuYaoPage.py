@@ -11,12 +11,6 @@ class PuYaoPage(BasePage):
     # 定位器，通过元素属性定位元素对象
     addNumber = (By.CLASS_NAME, "input_val")  # 商品列表中添加数量
 
-
-    """查看收藏夹"""
-    cksc = (By.CLASS_NAME, "layui-layer-btn0")
-    def click_cksc(self):
-        self.find_element(*self.cksc).click()
-
     # 调用send_keys对象，输入购买数量
     def input_number(self, sp, shuliang):
         self.find_elements(*self.addNumber)[sp].send_keys(shuliang)

@@ -92,7 +92,7 @@ class PublicMethod(BasePage):
     def click_jrsc(self, sclist):
         self.find_elements(*self.jrsc)[sclist].click()
 
-    """弹出框的左边按钮（确定，删除等）"""
+    """弹出框的左边按钮（确定，删除，查看收藏夹等）"""
     tckLeft = (By.CLASS_NAME, "layui-layer-btn0")
     def click_tckLeft(self):
         list = self.find_elements(*self.tckLeft)
@@ -101,7 +101,7 @@ class PublicMethod(BasePage):
         elif len(list) >= 0:
             self.find_element(*self.tckLeft).click()
 
-    """弹出框的右边按钮"""
+    """弹出框的右边按钮(取消）"""
     tckRight = (By.CLASS_NAME, "layui-layer-btn1")
     def click_tckRight(self):
         list = self.find_elements(*self.tckRight)
@@ -109,6 +109,15 @@ class PublicMethod(BasePage):
             pass
         elif len(list) >= 0:
             self.find_element(*self.tckRight).click()
+
+    """弹出框的关闭按钮"""
+    tckClose = (By.CLASS_NAME, "layui-layer-ico.layui-layer-close.layui-layer-close1")
+    def click_tckClose(self):
+        list = self.find_elements(*self.tckClose)
+        if len(list) == 0:
+            pass
+        elif len(list) >= 0:
+            self.find_element(*self.tckClose)
 
     """F5+ctrl组合键刷新"""
     def refresh(self):

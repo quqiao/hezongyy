@@ -93,7 +93,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.public_page.click_jrsc(0)  # 加入收藏夹
         sleep(1)
-        self.puyao_page.click_cksc()  # 查看收藏夹
+        self.public_page.click_tckLeft()  # 查看收藏夹
         sleep(1)
         self.collection_page.click_py()  # 查看普药列表
         sleep(1)
@@ -106,7 +106,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.public_page.click_jrsc(0)  # 加入收藏夹
         sleep(1)
-        self.puyao_page.click_cksc()  # 查看收藏夹
+        self.public_page.click_tckLeft()  # 查看收藏夹
         sleep(1)
         self.collection_page.click_jpzq()  # 查看精品专区列表
         sleep(1)
@@ -153,7 +153,7 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.collection_page.click_dx(0)  # 单选一个商品
         sleep(1)
-        self.collection_page.click_jrgwc(0)  # 加入购物车
+        self.collection_page.click_jrgwc(-1)  # 加入购物车
         # sleep(1)
         # self.cart_page.click_sctskqd()  # 提示框确定删除
         sleep(1)
@@ -175,6 +175,21 @@ class TestCollection(unittest.TestCase):
         self.assertEqual(self.cart_page.text_sccg(), "删除成功", msg="删除失败")  # 判断删除是否成功
 
     def test_collection_13(self):
+        """再加入商品进入收藏"""
+        sleep(1)
+        self.categories_page.click_py()  # 进入普药列表
+        sleep(1)
+        self.public_page.click_jrsc(0)  # 加入收藏夹1
+        sleep(1)
+        self.public_page.click_tckClose()  # 关闭弹出框
+        sleep(1)
+        self.public_page.click_jrsc(1)  # 加入收藏夹2
+        sleep(1)
+        self.public_page.click_tckLeft()  # 查看收藏夹
+        sleep(1)
+        self.assertEqual(self.collection_page.text_qxsc(), "取消收藏", msg="没有进入收藏页面")
+
+    def test_collection_14(self):
         """全选加入购物车"""
         sleep(1)
         self.collection_page.click_qx()
@@ -183,12 +198,12 @@ class TestCollection(unittest.TestCase):
         sleep(1)
         self.assertEqual(self.collection_page.text_jrcg(), "前往购物车结算", msg="加入购物车失败！")
 
-    def test_collection_14(self):
+    def test_collection_15(self):
         """全选取消收藏"""
         sleep(5)
         self.public_page.is_element_exist()
         sleep(1)
-        self.home_page.click_wdsc()  # 进入我的购物车
+        self.home_page.click_wdsc()  # 进入我的收藏
         sleep(1)
         self.collection_page.click_qx()  # 全选商品
         sleep(1)
