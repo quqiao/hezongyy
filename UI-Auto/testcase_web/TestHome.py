@@ -110,7 +110,7 @@ class TestHome(unittest.TestCase):
         """进入每周精选页面检查"""
         self.public_page.switch_home()   # 定位到首页
         sleep(0.5)
-        self.public_page.scroll_down("window.scrollBy(0, 800)")
+        self.public_page.scroll_down("window.scrollBy(0, 600)")
         sleep(0.5)
         self.home_page.click_week()  # 点击精选内容
         sleep(1)
@@ -223,6 +223,6 @@ class TestHome(unittest.TestCase):
         sleep(1)
         self.public_page.switch_secendPage()  # 定位到当前页面
         sleep(1)
-        self.assertEqual(self.goodsDetail_page.text_bt(), "为您推荐", msg="没有进入商品详情页面")  # 判断是否进入商品详情页
+        self.assertEqual(self.goodsDetail_page.text_jrsc(), "加入收藏", msg="没有进入商品详情页面")  # 判断是否进入商品详情页
 
 

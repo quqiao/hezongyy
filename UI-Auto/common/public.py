@@ -111,13 +111,13 @@ class PublicMethod(BasePage):
             self.find_element(*self.tckRight).click()
 
     """弹出框的关闭按钮"""
-    tckClose = (By.CLASS_NAME, "layui-layer-ico.layui-layer-close.layui-layer-close1")
+    tckClose = (By.CLASS_NAME, "layui-layer-setwin")
     def click_tckClose(self):
         list = self.find_elements(*self.tckClose)
         if len(list) == 0:
             pass
         elif len(list) >= 0:
-            self.find_element(*self.tckClose)
+            self.find_element(*self.tckClose).click()
 
     """F5+ctrl组合键刷新"""
     def refresh(self):

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-24.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-24.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/common/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/PuYaoPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCollection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/pages/GoodsDetailPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/pages/GoodsDetailPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestHome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -307,13 +300,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00006" summary="test">
-      <created>1567405999679</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1567405999679</updated>
     </task>
     <task id="LOCAL-00007" summary="test">
       <created>1567474500755</created>
@@ -651,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582339933623</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="20200224提交">
+      <created>1582536185914</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1582536185914</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -683,7 +676,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20191225提交" />
     <MESSAGE value="20191226提交" />
     <MESSAGE value="20191227提交" />
     <MESSAGE value="20191230提交" />
@@ -708,7 +700,8 @@
     <MESSAGE value="20200217提交" />
     <MESSAGE value="20200219提交" />
     <MESSAGE value="20200221提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200221提交" />
+    <MESSAGE value="20200224提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200224提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581038019280">
@@ -719,38 +712,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
-    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1582339931268">
+    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1582536183615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582339931268" />
-    <state width="838" height="222" key="GridCell.Tab.0.bottom" timestamp="1582517971827">
+    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582536183615" />
+    <state width="837" height="222" key="GridCell.Tab.0.bottom" timestamp="1582604609195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="838" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582517971827" />
-    <state width="838" height="222" key="GridCell.Tab.0.center" timestamp="1582517971827">
+    <state width="837" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582604609195" />
+    <state width="837" height="222" key="GridCell.Tab.0.center" timestamp="1582604609195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="838" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582517971827" />
-    <state width="838" height="222" key="GridCell.Tab.0.left" timestamp="1582517971826">
+    <state width="837" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582604609195" />
+    <state width="837" height="222" key="GridCell.Tab.0.left" timestamp="1582604609195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="838" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582517971826" />
-    <state width="838" height="222" key="GridCell.Tab.0.right" timestamp="1582517971827">
+    <state width="837" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582604609195" />
+    <state width="837" height="222" key="GridCell.Tab.0.right" timestamp="1582604609195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="838" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582517971827" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1581039419079">
+    <state width="837" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582604609195" />
+    <state x="270" y="55" key="SettingsEditor" timestamp="1582541229276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581039419079" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582339958834">
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582541229276" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582536224104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582339958834" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582245455456">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582536224104" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582592110997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582245455456" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582592110997" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582271127576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
