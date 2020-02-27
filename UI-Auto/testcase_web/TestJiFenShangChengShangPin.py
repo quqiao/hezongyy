@@ -87,14 +87,14 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
         sleep(1)
         self.jfscsp_page.input_srsl(5)  # 输入正常的库存
         sleep(1)
-        self.assertEqual(self.jfscsp_page.text_srsl(), 5, msg="库存不一致")
+        self.assertEqual(self.jfscsp_page.getValue_srsl(), 5, msg="库存不一致")
 
     def test_jfscsp_06(self):
         """输入超过的库存"""
         sleep(1)
         self.jfscsp_page.input_srsl(100)  # 输入正常的库存
         sleep(1)
-        self.assertEqual(self.jfscsp_page.text_srsl(), self.jfscsp_page.text_kc(), msg="库存不一致")
+        self.assertEqual(self.jfscsp_page.getValue_srsl(), self.jfscsp_page.text_kc(), msg="库存不一致")
 
     def test_jfscsp_07(self):
         """积分不足立即兑换"""
@@ -154,14 +154,14 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
         sleep(1)
         self.jfscsp_page.input_srsl(5)  # 输入正常的库存
         sleep(1)
-        self.assertEqual(self.jfscsp_page.text_srsl(), 5, msg="库存不一致")
+        self.assertEqual(self.jfscsp_page.getValue_srsl(), 5, msg="库存不一致")
 
     def test_jfscsp_14(self):
         """输入超过的库存"""
         sleep(1)
         self.jfscsp_page.input_srsl(100)  # 输入正常的库存
         sleep(1)
-        self.assertEqual(self.jfscsp_page.text_srsl(), self.jfscsp_page.text_kc(), msg="库存不一致")
+        self.assertEqual(self.jfscsp_page.getValue_srsl(), self.jfscsp_page.text_kc(), msg="库存不一致")
 
     def test_jfscsp_15(self):
         """积分不足立即兑换"""

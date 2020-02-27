@@ -125,6 +125,6 @@ class TestSettle(unittest.TestCase):
         sleep(0.5)
         self.settle_page.input_ddbz(self.ddbz)  # 订单备注中输入内容
         sleep(0.5)
-        self.settle_page.click_tjdd()  # 提交订单
-        sleep(1)
-        self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！", msg="提交订单失败")  # 判断是否进入订单界面
+        # self.settle_page.click_tjdd()  # 提交订单
+        # sleep(1)
+        # self.assertEqual(self.order_page.text_cgts(), "感谢您在本网站购买商品，您的订单已成功提交！", msg="提交订单失败")  # 判断是否进入订单界面

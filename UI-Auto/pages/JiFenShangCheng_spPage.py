@@ -26,8 +26,8 @@ class JiFenShangCheng_spPage(BasePage):
     def input_srsl(self, shuliang):
         self.clear_text(*self.srsl)
         self.find_element(*self.srsl).send_keys(shuliang)
-    def text_srsl(self):
-        return self.find_element(*self.srsl).text
+    def getValue_srsl(self):
+        return self.find_element(*self.srsl).get_attribute("value")
 
     """立即兑换"""
     ljdh = (By.CLASS_NAME, "dh")
