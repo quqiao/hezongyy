@@ -54,6 +54,18 @@ from selenium import webdriver
 
 # 问题14：组合识别元素，组合定位
 
+# 问题15：pycharm在git clone项目文件时会出现失败的现象
+# 解决方法：
+# SSL错误
+# 因为服务器的SSL证书没有经过第三方机构的签署，所以才报错。
+# 解决方案如下：
+# 第一步，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令。完整的命令如下：
+#
+# env GIT_SSL_NO_VERIFY=true git clone https://<host_name/git/project.git
+# 第二步，在克隆完毕的仓库中将http.sslVerify设置为”false”。完整的命令如下：
+#
+# git config http.sslVerify "false"
+
 
 
 
