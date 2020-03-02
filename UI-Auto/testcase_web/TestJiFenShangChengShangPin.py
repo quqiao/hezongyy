@@ -87,7 +87,7 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
         sleep(1)
         self.jfscsp_page.input_srsl(5)  # 输入正常的库存
         sleep(1)
-        self.assertEqual(self.jfscsp_page.getValue_srsl(), 5, msg="库存不一致")
+        self.assertEqual(self.jfscsp_page.getValue_srsl(), "5", msg="库存不一致")
 
     def test_jfscsp_06(self):
         """输入超过的库存"""
@@ -154,7 +154,7 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
         sleep(1)
         self.jfscsp_page.input_srsl(5)  # 输入正常的库存
         sleep(1)
-        self.assertEqual(self.jfscsp_page.getValue_srsl(), 5, msg="库存不一致")
+        self.assertEqual(self.jfscsp_page.getValue_srsl(), "5" , msg="库存不一致")
 
     def test_jfscsp_14(self):
         """输入超过的库存"""
@@ -176,5 +176,4 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
         self.jfscsp_page.click_jrlpc()  # 加入礼品车
         sleep(1)
         self.assertEqual(self.jfsc_page.text_jrlpc(), "加入礼品车成功", msg="没有加入礼品车")
-
 
