@@ -69,10 +69,14 @@ class PublicMethod(BasePage):
 
     # 定义select 选择框中的内容
     xlsrk = (By.CLASS_NAME, "search-list")  # 下拉输入框列表
-    def select_list1(self):
+    def select_by_index(self):
         s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_index("2")
+    def select_by_value(self):
+        s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_value("1")
+    def select_by_visible_text(self):
+        s1 = Select(self.driver.find_element(*self.xlsrk))
         s1.select_by_visible_text("2")
 
     """检查是否存在广告弹出框"""
