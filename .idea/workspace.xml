@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-03-03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-03-04.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/common/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/common/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-03-04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-24.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-25.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-26.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能单个模块调试_2020-02-28.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-21.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-24.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-25.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-26.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/report/合纵药易购线上环境基本功能测试_2020-02-27.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCategories.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestCategories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangCheng.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangCheng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/testcase_web/TestJiFenShangChengShangPin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,13 +297,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00013" summary="test">
-      <created>1574324777108</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1574324777108</updated>
     </task>
     <task id="LOCAL-00014" summary="20191102提交Android两个示例">
       <created>1574411254305</created>
@@ -658,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583230616952</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="20200304提交">
+      <created>1583301281128</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1583301281129</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView">
@@ -690,7 +673,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200103提交" />
     <MESSAGE value="20200104提交" />
     <MESSAGE value="20200106提交" />
     <MESSAGE value="20200107提交" />
@@ -715,7 +697,8 @@
     <MESSAGE value="20200227提交" />
     <MESSAGE value="20200228提交" />
     <MESSAGE value="20200303提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200303提交" />
+    <MESSAGE value="20200304提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200304提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581038019280">
@@ -727,10 +710,10 @@
     </state>
     <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
     <state x="596" y="32" key="#runTest/0.0.1920.1040@0.0.1920.1040" timestamp="1583130412876" />
-    <state x="387" y="6" key="CommitChangelistDialog2" timestamp="1583230615589">
+    <state x="358" y="6" key="CommitChangelistDialog2" timestamp="1583301277438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="387" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583230615589" />
+    <state x="358" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583301277438" />
     <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583136392445" />
     <state x="494" y="144" key="FileChooserDialogImpl" timestamp="1583198508347">
       <screen x="0" y="0" width="1536" height="824" />
@@ -762,10 +745,10 @@
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583205597473" />
     <state x="338" y="69" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583133368686" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1583230644726">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1583301294123">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583230644726" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583301294123" />
     <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583136454493" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1583283450518">
       <screen x="0" y="0" width="1536" height="824" />
