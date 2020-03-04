@@ -17,8 +17,8 @@ test_login_url = "https://www.hezongyy.com/auth/login"
 username ="测试05"
 
 """选择不同本地驱动"""
-chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
-# chromedriver = "F:/selenium_webdriver/chromedriver_win32/chromedriver.exe"
+# chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+chromedriver = "F:/selenium_webdriver/chromedriver_win32/chromedriver.exe"
 
 class PublicMethod(BasePage):
     def open(self):

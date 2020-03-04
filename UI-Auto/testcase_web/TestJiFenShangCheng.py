@@ -107,7 +107,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_jydq()  # 点击家用电器
         sleep(1)
-        self.jfsc_page.click_spjrgwc(19)  # 该类第二个商品加入购物车
+        self.jfsc_page.click_spjrgwc(16)  # 该类第二个商品加入购物车
         sleep(1)
         self.assertEqual(self.jfsc_page.text_jrlpc(), "加入礼品车成功", msg="加入礼品车失败")
 
@@ -119,7 +119,7 @@ class TestJiFenShangCheng(unittest.TestCase):
         sleep(1)
         self.jfsc_page.click_jydq()  # 点击家用电器
         sleep(1)
-        self.jfsc_page.click_spjrgwc(24)  # 该类第二个商品加入购物车
+        self.jfsc_page.click_spjrgwc(20)  # 该类第二个商品加入购物车
         sleep(1)
         self.assertEqual(self.jfsc_page.text_jrlpc(), "加入礼品车成功", msg="加入礼品车失败")
 

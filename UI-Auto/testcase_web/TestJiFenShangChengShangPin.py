@@ -120,7 +120,7 @@ class TestJiFenShangChengShangPin(unittest.TestCase):
         sleep(1)
         self.public_page.scroll_bottom()  # 滚动到底部
         sleep(1)
-        self.jfscgrzx_page.click_wntj(2)  # 点击为你推荐商品
+        self.jfscgrzx_page.click_wntj(3)  # 点击为你推荐商品
         sleep(1)
         self.public_page.switch_secendPage()  # 句柄切换到第二页
         sleep(1)

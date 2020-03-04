@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # 指定测试用例为当前文件夹下的test_case目录
     test_dir = './testcase_web'
     discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='Test*.py')  # 执行所有Test的测试用例
-    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestCategories.py')  # 执行指定的测试用例
+    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestJiFenShangChengShangPin.py')  # 执行指定的测试用例
 
     # 使用testsuit进行用例选择
     # suite = unittest.TestSuite()

@@ -87,7 +87,7 @@ class TestCategories(unittest.TestCase):
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
-        self.categories_page.click_ppzq(1)  # 点击进入品牌专区
+        self.categories_page.click_ppzq(0)  # 点击进入品牌专区
         sleep(0.5)
         title = self.driver.title
         sleep(1)
@@ -100,7 +100,7 @@ class TestCategories(unittest.TestCase):
         sleep(1)
         self.public_page.is_element_exist()  # 判断广告页是否弹出，弹出自动关闭
         sleep(0.5)
-        self.categories_page.click_cxzq(1)  # 点击进入促销专区
+        self.categories_page.click_cxzq(0)  # 点击进入促销专区
         sleep(0.5)
         title = self.driver.title
         sleep(1)
