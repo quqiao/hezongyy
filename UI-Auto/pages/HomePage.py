@@ -8,6 +8,16 @@ from time import sleep
 
 # 继承BasePage类
 class HomePage(BasePage):
+    """退出按钮"""
+    tc = (By.LINK_TEXT, "[退出]")
+    def text_tc(self):
+        return self.find_element(*self.tc).text
+
+    """订单查询"""
+    ddcx = (By.CLASS_NAME, "dd")
+    def click_ddcx(self):
+        self.find_element(*self.ddcx).click()
+
     """我的药易购"""
     my = (By.XPATH, "//*[@id='carousel']/div/div/div[1]/div[2]/span/a")
     def click_my(self):
@@ -44,13 +54,6 @@ class HomePage(BasePage):
     wntjzh = (By.CLASS_NAME, "myicon1.lb_left_icon")  # 为你推荐左滑
     wntjyh = (By.CLASS_NAME, "myicon1.lb_right_icon")  # 为你推荐右滑
     wntjdt1 = (By.CSS_SELECTOR, "#wntj-carousel > ul.carousel-list > li.cur > div > a:nth-child(1) > div > div")  # 为你推荐大图
-
-    "退出按钮"
-    tc = (By.LINK_TEXT, "[退出]")
-    "调用text对象，检查返回首页"
-    def text_tc(self):
-        return self.find_element(*self.tc).text
-
 
     "搜索出商品，将商品加入购物车"
     jrgwc_dt = (By.CLASS_NAME, "datu-jrgwc")  #
