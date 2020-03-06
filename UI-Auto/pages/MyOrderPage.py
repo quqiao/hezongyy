@@ -82,6 +82,10 @@ class MyOrderPage(BasePage):
         s1 = self.find_element(*self.ddxq1)
         return s1.find_element(*self.ddxq2).text
 
+    """切换到回执页面"""
+    def switch_frame(self, loc):
+        self.switch_frame(loc)
+
     """回执图片"""
     hztp = (By.CLASS_NAME, "text-r")
     def text_hztp(self):

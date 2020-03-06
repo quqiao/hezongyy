@@ -141,7 +141,9 @@ class TestMyOrder(unittest.TestCase):
         sleep(1)
         self.order_page.click_hz()  # 点击回执
         sleep(1)
-        self.assertEqual(self.order_page.text_hztp(), "回执图片:", msg="没有进入回执图片")
+        self.driver.switch_to.frame(0)
+        sleep(1)
+        self.assertEqual(self.order_page.text_hztp(), "回执图片：", msg="没有进入回执图片")
 
 
 

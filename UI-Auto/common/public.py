@@ -17,8 +17,8 @@ test_login_url = "https://www.hezongyy.com/auth/login"
 username ="测试05"
 
 """选择不同本地驱动"""
-chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
-# chromedriver = "F:/selenium_webdriver/chromedriver_win32/chromedriver.exe"
+# chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
+chromedriver = "F:/selenium_webdriver/chromedriver_win32/chromedriver.exe"
 
 class PublicMethod(BasePage):
     def open(self):
@@ -51,6 +51,9 @@ class PublicMethod(BasePage):
     def switch_secendPage(self):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[1])
+
+    def switch_alert(self):
+        self.driver.switch_to.alert()
 
     # 调用script，向下滚动对应像素
     def scroll_down(self, xiangsu):
