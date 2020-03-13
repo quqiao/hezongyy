@@ -43,4 +43,3 @@ if __name__ == "__main__":
     # test_report = './report'  # 定义报告文件目录
     # rep = report(test_report)
     # send_mail(rep)
-
