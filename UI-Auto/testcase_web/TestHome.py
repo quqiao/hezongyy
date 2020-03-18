@@ -13,7 +13,6 @@ class TestHome(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        # chromedriver = "C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe"
         cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.implicitly_wait(5)  # 隐式等待
         cls.url = test_url
@@ -30,6 +29,7 @@ class TestHome(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
+        cls.driver = webdriver.Chrome(executable_path=chromedriver)
         cls.driver.quit()
 
     def test_home_01(self):
@@ -46,6 +46,7 @@ class TestHome(unittest.TestCase):
         self.assertTrue(u"中药专区" in title)  # 判断标题中包含有普药
         sleep(0.5)
         self.driver.close()
+
 
     def test_home_02(self):
         """进入院线专区"""
