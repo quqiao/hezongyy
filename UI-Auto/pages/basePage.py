@@ -21,6 +21,10 @@ class BasePage(object):
         self.pagetitle = pagetitle
         self.driver = selenium_driver
 
+    # 定义关闭
+    def close_page(self):
+        self.driver.close()
+
     # 定义open方法，调用_open()进行打开链接
     def open(self):
         self._open(self.base_url, self.pagetitle)
