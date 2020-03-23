@@ -21,6 +21,13 @@ class SearchPage(BasePage):
     def input_ssk(self, ssnr):
         self.find_element(*self.ssk).send_keys(ssnr)
 
+    """获取搜索框输入联想词"""
+    list1 = (By.CLASS_NAME, "search-list")
+    list2 = (By.TAG_NAME, "li")
+    def get_searchlist(self):
+        s = self.find_element(*self.list1)
+        s.self.find_elements(*self.list2).get_attribute("data-key")
+
     """搜索按钮"""
     ssButton = (By.CLASS_NAME, "search-btn")
     def click_ssButton(self):

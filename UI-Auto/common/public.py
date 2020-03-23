@@ -42,6 +42,7 @@ class PublicMethod(BasePage):
         self.driver.maximize_window()
         sleep(1)
 
+    """切换句柄操作"""
     # 调用windows_handles,句柄切换到首页
     def switch_home(self):
         windows = self.driver.window_handles
@@ -52,9 +53,28 @@ class PublicMethod(BasePage):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[1])
 
-    def switch_alert(self):
-        self.driver.switch_to.alert()
+    """alert弹窗的"""
+    # 点击确定按钮
+    def switch_alert_accpet(self):
+        al = self.driver.switch_to.alert()
+        al.accept()
 
+    # 点击取消按钮(如有按钮)
+    def switch_alert_dismiss(self):
+        al = self.driver.switch_to.alert()
+        al.dismiss()
+
+    # 点击输入内容（如有输入框）
+    def switch_alert_send_keys(self, content):
+        al = self.driver.switch_to.alert()
+        al.send_keys(content)
+
+    # 自定义弹窗
+    def swithc_alert_customize(self):
+        js = 'document.getElementById("doyoo_monitor").style.display="none";'
+        self.script1(js)
+
+    """页面滚动"""
     # 调用script，向下滚动对应像素
     def scroll_down(self, xiangsu):
         self.script1(xiangsu)

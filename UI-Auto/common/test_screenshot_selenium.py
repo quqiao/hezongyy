@@ -45,7 +45,7 @@ class case_01(unittest.TestCase):
         呵呵呵呵
         """
         print("本次校验没过？")
-        print ("超级长"*66)
+        print("超级长"*66)
         self.driver.get("https://www.baidu.com")
         self.add_img()
         self.driver.find_element_by_id('kw').send_keys(u'百度一下')
@@ -141,8 +141,8 @@ class case_02(unittest.TestCase):
 if __name__ == "__main__":
     suite1 = unittest.TestLoader().loadTestsFromTestCase(case_01)
     suite2 = unittest.TestLoader().loadTestsFromTestCase(case_02)
-    suites =  unittest.TestSuite()
-    suites.addTests([suite2,suite1])
+    suites = unittest.TestSuite()
+    suites.addTests([suite2, suite1])
     runer = HTMLTestRunner(title="带截图的测试报告", description="小试牛刀", stream=open("sample_test_report.html", "wb"), verbosity=2, retry=2, save_last_try=True)
     runer.run(suite1)
     runer.run(suite2)
