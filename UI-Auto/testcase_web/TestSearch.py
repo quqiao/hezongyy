@@ -61,7 +61,7 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
-        self.search_page.click_cj()  # 点击厂家
+        self.search_page.click_select_content(1)  # 点击厂家
         sleep(1)
         self.search_page.input_ssk("@#$%^")  # 搜索框中输入内容
         sleep(1)
@@ -95,7 +95,7 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
-        self.search_page.click_cj()  # 点击厂家
+        self.search_page.click_select_content(1)  # 点击厂家
         sleep(2)
         self.search_page.input_ssk("科伦")  # 搜索框中输入内容
         sleep(2)
@@ -141,7 +141,7 @@ class TestSearch(unittest.TestCase):
         self.categories_page.click_py()   # 点击进入普药
         sleep(1)
         self.search_page.input_ssk("阿莫")  # 搜索框输入内容
-        sleep(1)
+        sleep(2)
         self.search_page.click_ssList1(1)  # 点击模糊查找的第一个商品
         sleep(1)
 
@@ -155,7 +155,7 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
-        self.search_page.click_cj()  # 点击厂家
+        self.search_page.click_select_content(1)  # 点击厂家
         sleep(1)
         self.search_page.input_ssk("hy")  # 搜索框输入内容
         sleep(1)
@@ -172,7 +172,7 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
-        self.search_page.click_cj()  # 点击厂家
+        self.search_page.click_select_content(1)  # 点击厂家
         sleep(1)
         self.search_page.input_ssk("hayao")  # 搜索框输入内容
         sleep(1)
@@ -189,7 +189,7 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
-        self.search_page.click_cj()  # 点击厂家
+        self.search_page.click_select_content(1)  # 点击厂家
         sleep(1)
         self.search_page.input_ssk("哈药")  # 搜索框输入内容
         sleep(1)
@@ -219,7 +219,7 @@ class TestSearch(unittest.TestCase):
         sleep(1)
         self.search_page.click_ssxzk()  # 点击搜索选择框
         sleep(1)
-        self.search_page.click_cj()  # 点击厂家
+        self.search_page.click_select_content(1)  # 点击厂家
         sleep(1)
         self.search_page.input_ssk("阿莫西林")  # 搜索框输入内容
         sleep(1)

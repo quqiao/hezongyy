@@ -33,15 +33,12 @@ class SearchPage(BasePage):
     def click_ssButton(self):
         self.find_element(*self.ssButton).click()
 
-    """药名"""
-    ym = (By.CSS_SELECTOR, "# app > div > div.header-box > div.search-nav > div > div.search-box > div.search > div > ul > li:nth-child(1)")
-    def click_ym(self):
-        self.find_element(*self.ym).click()
-
-    """厂家"""
-    cj = (By.CSS_SELECTOR, "#app > div > div.header-box > div.search-nav > div > div.search-box > div.search > div > ul > li:nth-child(2)")
-    def click_cj(self):
-        self.find_element(*self.cj).click()
+    """药名/厂家选择"""
+    s1 = (By.CLASS_NAME, "search-select-content")
+    s2 = (By.TAG_NAME, "li")
+    def click_select_content(self, li):
+        c1 = self.find_element(*self.s1)
+        c1.find_elements(*self.s2)[li].click()
 
     "搜索为空"
     sswk = (By.CLASS_NAME, "link")

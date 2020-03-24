@@ -79,17 +79,6 @@ class PublicMethod(BasePage):
     def scroll_down(self, xiangsu):
         self.script1(xiangsu)
 
-    # 调用script,向上滚动到顶部
-    def scroll_top(self):
-        js_top = "var q=document.documentElement.scrollTop=0"
-        self.script1(js_top)
-
-    # 调用script,向下滚动到底部
-    def scroll_bottom(self):
-        js_bottom1 = "var q=document.documentElement.scrollTop=10000"
-        js_bottom2 = "window.scrollTo(0,document.body.scrollHeight)"
-        self.script1(js_bottom1)
-
     # 定义select 选择框中的内容
     xlsrk = (By.CLASS_NAME, "search-list")  # 下拉输入框列表
     def select_by_index(self):
@@ -145,6 +134,68 @@ class PublicMethod(BasePage):
             pass
         elif len(list) >= 0:
             self.find_element(*self.tckClose).click()
+
+    """切换到iframe界面"""
+    def switch_iframe(self,loc):
+        self.switch_frame(loc)
+
+    """iframe切换到默认界面"""
+    def switch_default(self):
+        self.driver.switch_to.default_content()
+
+    """js处理多窗口
+        解决让新打开的链接在一个窗口上，且有‘target="_blank"’属性的链接情况
+        示例如下，根据不同定位进行修改"""
+    def modify_dck(self):
+        js = 'document.getElementsByClassName("mnav")[0].target="";'
+        self.script1(js)
+
+    """js整个页面的滚动"""
+    # 向上滚动到顶部
+    def scroll_top(self):
+        js_top = "var q=document.documentElement.scrollTop=0"
+        self.script1(js_top)
+    # 向下滚动到底部
+    def scroll_bottom(self):
+        js_bottom1 = "var q=document.documentElement.scrollTop=10000"
+        js_bottom2 = "window.scrollTo(0,document.body.scrollHeight)"
+        self.script1(js_bottom1)
+    # 向左滚动到底
+    def scroll_left(self):
+        js_left = "var q=document.documentElement.scrollLeft=0"
+        self.script1(js_left)
+    # 向右滚动到底
+    def scroll_right(self):
+        js_right = "var q=document.documentElement.scrollTop=10000"
+        self.script1(js_right)
+
+    """js处理内嵌div滚动条"""
+    # 向上滚动
+    def scroll_div_top(self):
+        js_div = "document.getElementById('xxxx').scrollTop=0"
+        self.script1(js_div)
+    # 向下滚动
+    def scroll_div_bottom(self):
+        js_div = "document.getElementById('xxxx').scrollTop=10000"
+        self.script1(js_div)
+    # 向左滚动
+    def scroll_div_left(self):
+        js_div = "document.getElementById('xxxx').scrollLeft=0"
+        self.script1(js_div)
+    # 向右滚动
+    def scroll_div_right(self):
+        js_div = "document.getElementById('xxxx').scrollLeft=10000"
+        self.script1(js_div)
+
+    """js处理日历控件（修改readonly）属性"""
+    # 去掉readonly属性
+    def remove_atrribute(self):
+        js_atrribute = "document.getElementById('xxxx').removeAttribute('readonly');"
+        self.script1(js_atrribute)
+    # 日历控件输入日期
+    def input_date(self):
+        js_input = "document.getElementById('xxxx').value='2020-03-24'"
+        self.script1(js_input)
 
     """F5+ctrl组合键刷新"""
     def refresh(self):
