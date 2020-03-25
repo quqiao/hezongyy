@@ -197,6 +197,15 @@ class PublicMethod(BasePage):
         js_input = "document.getElementById('xxxx').value='2020-03-24'"
         self.script1(js_input)
 
+    """js处理click失效问题，分识别多个元素或者单个元素"""
+    def js_click(self):
+        js_click = "document.getElementById('xxxx').click()"
+        self.script1(js_click)
+
+    def js_clicks(self):
+        js_clicks = "document.getElementsById('xxxx')[0].click()"
+        self.script1(js_clicks)
+
     """F5+ctrl组合键刷新"""
     def refresh(self):
         ActionChains(self.driver).key_down(Keys.CONTROL).send_keys(Keys.F5).key_up(Keys.CONTROL).perform()

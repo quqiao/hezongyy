@@ -12,8 +12,8 @@ if __name__ == "__main__":
     """用例构造及选择"""
     # 指定测试用例为当前文件夹下的test_case目录
     test_dir = './testcase_web'
-    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='Test*.py')  # 执行所有Test的测试用例
-    discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestJiFenShangChengShangPin.py')  # 执行指定的测试用例
+    discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='Test*.py')  # 执行所有Test的测试用例
+    # discover = unittest.defaultTestLoader.discover(start_dir=test_dir, pattern='TestJiFenShangChengShangPin.py')  # 执行指定的测试用例
 
     # 使用testsuit进行用例选择
     # suite = unittest.TestSuite()
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     """测试报告生成"""
     # now = time.strftime("%Y%m%d%H%M%S")
     now = time.strftime("%Y-%m-%d")
-    filename = './report/'+'合纵药易购线上环境基本功能单个模块调试_' + now+'.html'
+    filename = './report/'+'合纵药易购线上环境基本功能测试_' + now+'.html'
     fp = open(filename, "wb")
     '''一般HTML报告格式'''
     # runner = HTMLTestRunner(stream=fp,
