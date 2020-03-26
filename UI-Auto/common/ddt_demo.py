@@ -16,6 +16,7 @@ import unittest
 testdata = [{'username': 'zhangsan', 'psw': '123456'},
             {'username': 'lisi', 'psw': '345678'},
             {'username': 'wangwu', 'psw': '567890'}]
+
 @ddt.ddt
 class Test(unittest.TestCase):
     def setUp(self):
@@ -25,5 +26,6 @@ class Test(unittest.TestCase):
     @ddt.data(*testdata)
     def test_dd(self, data):
         print(data)
+
 if __name__ == "__main__":
     unittest.main()
