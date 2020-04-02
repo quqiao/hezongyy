@@ -15,10 +15,14 @@
 # list = [1, 2, 3, 4, 5, 6, 7, 8]
 # print(list[1])
 # print(list[-1])
-totle = "sss +/" \
-        "aaa +/" \
-        "ddd"
-
-tt1 = "ss\nddd\nsss"
-print(totle)
-print(tt1)
+# totle = "sss +/" \
+#         "aaa +/" \
+#         "ddd"
+#
+# tt1 = "ss\nddd\nsss"
+# print(totle)
+# print(tt1)
+list = ["a", "b", "c", "d", "e", "f"]
+for i in list:
+        print(i)
+        print(list.index(i))

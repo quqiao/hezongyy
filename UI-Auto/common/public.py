@@ -37,6 +37,8 @@ class PublicMethod(BasePage):
         self.find_element(*self.submit).click()
         sleep(2)
 
+
+
     def get_url(self, base_url):
         self.driver.get(base_url)
         self.driver.maximize_window()
