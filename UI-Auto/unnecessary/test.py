@@ -22,7 +22,11 @@
 # tt1 = "ss\nddd\nsss"
 # print(totle)
 # print(tt1)
-list = ["a", "b", "c", "d", "e", "f"]
-for i in list:
-        print(i)
-        print(list.index(i))
+# list = ["a", "b", "c", "d", "e", "f"]
+# for i in list:
+#         print(i)
+#         print(list.index(i))
+
+title_box = ["281", "299", "300", "301", "302"]
+for i in title_box:
+    print(i)

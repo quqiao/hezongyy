@@ -61,16 +61,16 @@ def get_information(nub):
         price1 = price.string
         print(price1)
         name = soup.find_all(class_="goods-name")
-        name1 = int(name.string)
+        name1 = name.string
         # guige = soup.find_all(text="规格：")
         # print(guige)
         # xiaoqi = soup.find_all(text="效期：")
         workbook = xlwt.Workbook(encoding='utf-8')  # 创建一个workbook 设置编码
         worksheet = workbook.add_sheet('My Worksheet')  # 创建一个worksheet
         for p in price1:
-            worksheet.write(price1.index(p+1), 1, label=p)  # 写入excel,参数对应 行, 列, 值
+            worksheet.write(price1.index(int(p)+1), 1, label=p)  # 写入excel,参数对应 行, 列, 值
         for n in name1:
-            worksheet.write(name1.index(n+1), 2, label=n)  # 写入excel,参数对应 行, 列, 值
+            worksheet.write(name1.index(int(n)+1), 2, label=n)  # 写入excel,参数对应 行, 列, 值
         # for g in guige:
         #     worksheet.write(guige.index(g+1), 3, label=g)  # 写入excel,参数对应 行, 列, 值
         # for x in xiaoqi:
