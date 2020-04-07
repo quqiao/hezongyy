@@ -27,6 +27,8 @@
 #         print(i)
 #         print(list.index(i))
 
-title_box = ["281", "299", "300", "301", "302"]
-for i in title_box:
+# title_box = ["281", "299", "300", "301", "302"]
+# for i in title_box:
+#     print(i)
+for i in range(1, 10):
     print(i)
