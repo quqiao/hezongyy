@@ -8,7 +8,7 @@ import re
 import time
 import xlwt
 import xlrd
-
+"""四川聚创网——院线专区"""
 url = "https://www.scjuchuang.com/"
 driver = webdriver.Chrome(executable_path="C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe")
 """登录后进入院线专区"""

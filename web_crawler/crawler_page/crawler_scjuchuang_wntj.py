@@ -9,6 +9,7 @@ import time
 import xlwt
 import xlrd
 
+"""四川聚创网——为你推荐"""
 url = "https://www.scjuchuang.com/"
 driver = webdriver.Chrome(executable_path="C:/Users/Administrator/AppData/Local/Google/Chrome/Application/chromedriver.exe")
 """进入"""
