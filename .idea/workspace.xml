@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoScrapy/ScrapyProject/crawlerWeb/spiders/hezongyy_py.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoScrapy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_rjyiyao_qbsp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_scjrm_qbsp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_sckxyy_ypzq.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_scytyy_ypzx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_ysbang_zxxd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DjangoScrapy/ScrapyProject/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/hezongyy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hezongyy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_scjuchuang_wntj.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_scjuchuang_wntj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_scjuchuang_yxzq.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_scjuchuang_yxzq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawler/run_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawler/run_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoScrapy/ScrapyProject/crawlerWeb/spiders/hezongyy_py.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoScrapy/ScrapyProject/crawlerWeb/spiders/hezongyy_py.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/django/helloworld" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_crawler" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,16 +71,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\ScrapyProject" />
+      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto\common" />
+      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\pyhcarm\hezongyy\DjangoScrapy" />
       <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\crawlerPage" />
       <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\crawlerPage\crawlerPage" />
       <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\crawlerPage\crawlerPage\spiders" />
       <recent name="F:\pyhcarm\hezongyy\web_crawler\common" />
-      <recent name="F:\pyhcarm\hezongyy\web_crawler\result" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto\common" />
-      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto" />
     </key>
   </component>
   <component name="RunManager" selected="Python.run_crawler">
@@ -223,11 +215,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.runTest" />
-      <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.crawler_longyi_tjzq" />
       <item itemvalue="Python.crawler_scjuchuang_wntj" />
       <item itemvalue="Python.crawler_scjuchuang_yxzq" />
       <item itemvalue="Python.run_crawler" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -317,13 +309,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00031" summary="20191226提交">
-      <created>1577353211725</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1577353211725</updated>
     </task>
     <task id="LOCAL-00032" summary="20191227提交">
       <created>1577439419251</created>
@@ -661,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586252175829</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="20200407提交">
+      <created>1586338881827</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1586338881827</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TodoView">
@@ -730,16 +722,16 @@
     </state>
     <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
     <state x="596" y="32" key="#runTest/0.0.1920.1040@0.0.1920.1040" timestamp="1583130412876" />
-    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1586252167901">
+    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1586338846347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="358" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583477750022" />
-    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586252167901" />
-    <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1585292289491">
+    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586338846347" />
+    <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="494" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583198508347" />
-    <state x="617" y="182" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585292289491" />
+    <state x="617" y="182" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586403125640" />
     <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1586335956568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -776,21 +768,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583466083243" />
-    <state x="337" y="247" key="SettingsEditor" timestamp="1586330713615">
+    <state x="337" y="247" key="SettingsEditor" timestamp="1586403207380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583456214999" />
-    <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586330713615" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1586252191646">
+    <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586403207380" />
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1586338986256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583301294123" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586252191646" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1586336064618">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586338986256" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1586401036613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583283450518" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586336064618" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586401036613" />
     <state x="490" y="204" key="git4idea.merge.GitPullDialog" timestamp="1583205627205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
