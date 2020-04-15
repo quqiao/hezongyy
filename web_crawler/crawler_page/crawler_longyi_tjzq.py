@@ -15,12 +15,15 @@ driver = webdriver.Chrome(executable_path="C:/Users/Administrator/AppData/Local/
 def login():
     driver.get(url)  #
     driver.maximize_window()
+    driver.find_element_by_xpath("/html/body/div[1]/div/div").click()  # 关闭广告
     driver.find_element_by_class_name("login").click()  # 点击首页上方登录
     driver.find_element_by_name("username").send_keys("18030535053")  # 输入账号
     driver.find_element_by_name("userpass").send_keys("123456")  # 输入密码
     driver.find_element_by_class_name("is").click()  # 点击登录按钮
     time.sleep(3)
-    driver.find_element_by_xpath("/html/body/div[5]/div/ul[2]/li[1]/a/img").click()  # 点击特价专区
+    driver.find_element_by_xpath("/html/body/div[1]/div/div").click()  # 关闭广告
+    time.sleep(3)
+    driver.find_element_by_xpath("/html/body/div[7]/div/ul[2]/li[3]/a/img").click()  # 点击特价专区
     time.sleep(5)
     windows = driver.window_handles
     driver.switch_to.window(windows[1])  # 切换到第二页
@@ -33,9 +36,9 @@ def get_information(nub, xunhuan2):
     try:
         # 抓取第一页的数据
         if nub <= 1:
-            url_page = url + "events-filter-527-2-1.html"
+            url_page = url + "events-filter-534-1-1.html"
         else:
-            url_page = url + "events-filter-527-%s-1.html" % str(nub)
+            url_page = url + "events-filter-534-%s-1.html" % str(nub)
         print(u"正在抓取的页面：%s" % url_page)
         driver.get(url_page)
 
@@ -43,7 +46,7 @@ def get_information(nub, xunhuan2):
             """获取药品名称"""
             list_name = []
             for n1 in range(40):
-                name = driver.find_elements_by_class_name("blue")[n1].text
+                name = driver.find_elements_by_class_name("blue.product_name")[n1].text
                 list_name.append(name)
             print(list_name)
             n2_1 = 0
@@ -54,7 +57,7 @@ def get_information(nub, xunhuan2):
             """获取厂家名称"""
             list_cj = []
             for c1 in range(1, 41):
-                cj = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(3)"%c1)[0].text
+                cj = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(4)"%c1)[0].text
                 list_cj.append(cj)
             print(list_cj)
             c2_1 = 0
@@ -65,7 +68,7 @@ def get_information(nub, xunhuan2):
             """获取规格"""
             list_guige = []
             for g1 in range(1, 41):
-                guige = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(4)"%g1)[0].text
+                guige = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(5) > span"%g1)[0].text
                 list_guige.append(guige)
             print(list_guige)
             g2_1 = 0
@@ -76,7 +79,7 @@ def get_information(nub, xunhuan2):
             """获得效期"""
             list_xiaoqi = []
             for x1 in range(1, 41):
-                xiaoqi = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(7)"%x1)[0].text
+                xiaoqi = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(8)"%x1)[0].text
                 list_xiaoqi.append(xiaoqi)
             print(list_xiaoqi)
             x2_1 = 0
@@ -87,7 +90,7 @@ def get_information(nub, xunhuan2):
             """获取价格"""
             list_price1 = []
             for p1 in range(40):
-                price1 = driver.find_elements_by_class_name("red")[p1].text
+                price1 = driver.find_elements_by_class_name("events_red")[p1].text
                 list_price1.append(price1)
             print(list_price1)
             p2_1 = 0
@@ -97,7 +100,7 @@ def get_information(nub, xunhuan2):
 
             list_price2 = []
             for p3 in range(1, 41):
-                price2 = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-1 > ul > li:nth-child(%d) > p:nth-child(8) > span:nth-child(2)"%p3)[0].text
+                price2 = driver.find_elements_by_css_selector("body > div:nth-child(8) > div > div.list_containers.list-3 > ul > li:nth-child(%d) > p:nth-child(9) > span:nth-child(2)"%p3)[0].text
                 list_price2.append(price2)
             p4_1 = 0
             for p4 in list_price2:
@@ -114,7 +117,7 @@ def get_information(nub, xunhuan2):
 if __name__ == "__main__":
     login()
     xh = 0
-    for i in list(range(1, 10)):
+    for i in list(range(1, 12)):
         get_information(i, xh)
         xh = xh + 40
     # save1()
