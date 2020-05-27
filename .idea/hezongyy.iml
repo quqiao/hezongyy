@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Django&amp;Scrapy/crawler_page/crawler_page/spiders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Django&amp;Scrapy/crawler_page/crawler_page" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Django&amp;Scrapy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/API-Auto" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/API-Auto/testFile" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv_python3.7" />
       <excludeFolder url="file://$MODULE_DIR$/venv_python3.8" />

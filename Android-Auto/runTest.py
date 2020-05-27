@@ -2,7 +2,7 @@
 __author__ = 'quqiao'
 import time, os, sys
 from common.HTMLTestRunner import HTMLTestRunner
-# from common.email import send_mail,report
+# from common1.email import send_mail,report
 import unittest
 from testcase_android import testLogin
 

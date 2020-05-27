@@ -2,8 +2,206 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/API-Auto/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/caselist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/common1/HTMLTestRunner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/common1/Log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/common1/configEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/common1/configHttp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/getpathInfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/geturlParams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/readConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/readExcel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/logs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/logs.2018-11-29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/runAll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/test01case.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/testFile/case/userCase.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/test_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Flask-1.1.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Jinja2-2.11.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/MarkupSafe-1.1.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/MarkupSafe-1.1.1.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/MarkupSafe-1.1.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/MarkupSafe-1.1.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/MarkupSafe-1.1.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/MarkupSafe-1.1.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/ParamUnittest-0.2-py3.7.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/ParamUnittest-0.2-py3.7.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/ParamUnittest-0.2-py3.7.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/ParamUnittest-0.2-py3.7.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/ParamUnittest-0.2-py3.7.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Werkzeug-1.0.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Werkzeug-1.0.1.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Werkzeug-1.0.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Werkzeug-1.0.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Werkzeug-1.0.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/Werkzeug-1.0.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click-7.1.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click-7.1.2.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click-7.1.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click-7.1.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click-7.1.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click-7.1.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/_bashcomplete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/_termui_impl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/_textwrap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/_unicodefun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/_winconsole.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/formatting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/globals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/termui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/click/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/blueprints.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/ctx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/debughelpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/globals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/json/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/json/tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/logging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/sessions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/templating.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/flask/wrappers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous-1.1.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous-1.1.0.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous-1.1.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous-1.1.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous-1.1.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous-1.1.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/encoding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/exc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/jws.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/signer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/timed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/itsdangerous/url_safe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/_identifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/asyncfilters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/asyncsupport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/bccache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/compiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/debug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/defaults.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/ext.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/idtracking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/lexer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/loaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/meta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/nativetypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/runtime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/sandbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/jinja2/visitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/markupsafe/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/markupsafe/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/markupsafe/_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/markupsafe/_native.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/markupsafe/_speedups.cp37-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/paramunittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/_internal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/_reloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/datastructures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/console.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/repr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/FONT_LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/console.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/debugger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/less.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/source.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/shared/ubuntu.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/debug/tbtools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/filesystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/formparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/http.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/local.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/dispatcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/http_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/lint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/profiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/proxy_fix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/middleware/shared_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/posixemulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/routing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/serving.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/testapp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/useragents.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/accept.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/base_request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/base_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/common_descriptors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/cors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/etag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wrappers/user_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Lib/site-packages/werkzeug/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_python3.7/Scripts/flask.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hezongyy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hezongyy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_longyi_tjzq.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawler/crawler_page/crawler_longyi_tjzq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android-Auto/runTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/runTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/runTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +281,8 @@
       <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.crawler_longyi_tjzq (1)">
-    <configuration name="crawler_longyi_tjzq (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.runAll">
+    <configuration name="configEmail" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +290,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawler/crawler_page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/common1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawler/crawler_page/crawler_longyi_tjzq.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/common1/configEmail.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +303,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="crawler_longyi_tjzq" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="readExcel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +311,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawler" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\pyhcarm\hezongyy\web_crawler\crawler_page\crawler_longyi_tjzq.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/readExcel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +324,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="crawler_scjuchuang_wntj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="runAll" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +332,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawler" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\pyhcarm\hezongyy\web_crawler\crawler_page\crawler_scjuchuang_wntj.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/runAll.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,27 +367,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hezongyy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawler" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawler/run_crawler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,21 +389,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hezongyy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/test_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.runTest" />
-      <item itemvalue="Python.crawler_longyi_tjzq (1)" />
-      <item itemvalue="Python.crawler_longyi_tjzq" />
-      <item itemvalue="Python.crawler_scjuchuang_wntj" />
-      <item itemvalue="Python.run_crawler" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.readExcel" />
+      <item itemvalue="Python.runAll" />
+      <item itemvalue="Python.configEmail" />
+      <item itemvalue="Python.test_api" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.crawler_longyi_tjzq (1)" />
-        <item itemvalue="Python.run_crawler" />
-        <item itemvalue="Python.crawler_longyi_tjzq" />
+        <item itemvalue="Python.runAll" />
+        <item itemvalue="Python.test_api" />
+        <item itemvalue="Python.configEmail" />
+        <item itemvalue="Python.readExcel" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.crawler_scjuchuang_wntj" />
       </list>
     </recent_temporary>
   </component>
@@ -308,13 +506,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00033" summary="20191230提交">
-      <created>1577698665673</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1577698665673</updated>
     </task>
     <task id="LOCAL-00034" summary="20191231提交">
       <created>1577785275716</created>
@@ -652,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586511544783</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="20200415提交">
+      <created>1586943658829</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1586943658830</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView">
@@ -684,7 +882,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200217提交" />
     <MESSAGE value="20200219提交" />
     <MESSAGE value="20200221提交" />
     <MESSAGE value="20200224提交" />
@@ -709,48 +906,44 @@
     <MESSAGE value="2020040201提交" />
     <MESSAGE value="20200403提交" />
     <MESSAGE value="20200407提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200407提交" />
+    <MESSAGE value="20200415提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200415提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581038019280">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581038019280" />
     <state x="596" y="32" key="#runTest" timestamp="1583130412876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="477" y="25" key="#runTest/0.0.1536.824@0.0.1536.824" timestamp="1580990870569" />
     <state x="596" y="32" key="#runTest/0.0.1920.1040@0.0.1920.1040" timestamp="1583130412876" />
-    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1586511502769">
+    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1590571872656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="358" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583477750022" />
-    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586511502769" />
+    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590571872656" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="494" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583198508347" />
     <state x="617" y="182" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586403125640" />
-    <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1586827931991">
+    <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1590571872687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586827931991" />
-    <state width="949" height="213" key="GridCell.Tab.0.center" timestamp="1586827931991">
+    <state width="949" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590571872687" />
+    <state width="949" height="213" key="GridCell.Tab.0.center" timestamp="1590571872686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586827931991" />
-    <state width="949" height="213" key="GridCell.Tab.0.left" timestamp="1586827931991">
+    <state width="949" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590571872686" />
+    <state width="949" height="213" key="GridCell.Tab.0.left" timestamp="1590571872686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586827931991" />
-    <state width="949" height="213" key="GridCell.Tab.0.right" timestamp="1586827931991">
+    <state width="949" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590571872686" />
+    <state width="949" height="213" key="GridCell.Tab.0.right" timestamp="1590571872687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586827931991" />
+    <state width="949" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590571872687" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1583466083243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -767,21 +960,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583466083243" />
-    <state x="337" y="247" key="SettingsEditor" timestamp="1586403207380">
+    <state x="337" y="247" key="SettingsEditor" timestamp="1590565870318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583456214999" />
-    <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586403207380" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1586511565385">
+    <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590565870318" />
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1586943668033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583301294123" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586511565385" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1586401036613">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586943668033" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1588984915705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583283450518" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586401036613" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588984915705" />
     <state x="490" y="204" key="git4idea.merge.GitPullDialog" timestamp="1583205627205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,6 +1,6 @@
 #coding:utf-8
 import time, os, sys
-# from common.HTMLTestRunner import HTMLTestRunner
+# from common1.HTMLTestRunner import HTMLTestRunner
 from common.HTMLTestRunner_cn import HTMLTestRunner
 from common.email import send_mail, report
 import unittest
