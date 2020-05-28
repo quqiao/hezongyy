@@ -116,18 +116,18 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Test Report</h1>
 <p class='attribute'><strong>测试人员 : </strong> 屈桥</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-05-27 17:25:18</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.017004</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 3，通过 2，失败 1，通过率= 66.67%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-05-28 17:14:49</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.023005</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 3，错误 3，通过率= 0.00%</p>
 
 <p class='description'>Test Description</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 66.67% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 3 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -148,30 +148,62 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='passClass warning'>
+<tr class='errorClass warning'>
     <td>paramunittest.testUserLogin_0</td>
     <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
     <td class="text-center">1</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase_android'>test01case</div></td>
+<tr id='ft1_1' class='none'>
+    <td class='errorCase'><div class='testcase_android'>test01case</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
-    <div id='div_pt1_1' class="collapse">  -->
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
-    <div id='div_pt1_1' class="collapse in">
+    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
+    <div id='div_ft1_1' class="collapse in">
     <pre>
     
-pt1_1: login测试开始前准备
+ft1_1: login测试开始前准备
 测试结束，输出log完结
 
 
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 379, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\urllib3\util\url.py", line 398, in parse_url
+    return six.raise_from(LocationParseError(source_url), None)
+  File "&lt;string&gt;", line 3, in raise_from
+urllib3.exceptions.LocationParseError: Failed to parse: http://192.168.31.93:38080login?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test02case.py", line 45, in test01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test02case.py", line 59, in checkResult
+    info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+  File "F:\pyhcarm\hezongyy\API-Auto\common1\configHttp.py", line 22, in run_main
+    result = self.send_post(url, data)
+  File "F:\pyhcarm\hezongyy\API-Auto\common1\configHttp.py", line 10, in send_post
+    result = requests.post(url=url, data=data).json()  # 因为这里要封装post方法，所以这里的url和data值不能写死
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 381, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: http://192.168.31.93:38080login?
 
 
     </pre>
@@ -179,30 +211,62 @@ pt1_1: login测试开始前准备
     </td>
 </tr>
 
-<tr class='passClass warning'>
+<tr class='errorClass warning'>
     <td>paramunittest.testUserLogin_1</td>
     <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
     <td class="text-center">1</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
     <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
 </tr>
 
-<tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase_android'>test01case</div></td>
+<tr id='ft2_1' class='none'>
+    <td class='errorCase'><div class='testcase_android'>test01case</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
-    <div id='div_pt2_1' class="collapse">  -->
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
-    <div id='div_pt2_1' class="collapse in">
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse in">
     <pre>
     
-pt2_1: login_error测试开始前准备
+ft2_1: login_error测试开始前准备
 测试结束，输出log完结
 
 
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 379, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\urllib3\util\url.py", line 398, in parse_url
+    return six.raise_from(LocationParseError(source_url), None)
+  File "&lt;string&gt;", line 3, in raise_from
+urllib3.exceptions.LocationParseError: Failed to parse: http://192.168.31.93:38080login?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test02case.py", line 45, in test01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test02case.py", line 59, in checkResult
+    info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+  File "F:\pyhcarm\hezongyy\API-Auto\common1\configHttp.py", line 22, in run_main
+    result = self.send_post(url, data)
+  File "F:\pyhcarm\hezongyy\API-Auto\common1\configHttp.py", line 10, in send_post
+    result = requests.post(url=url, data=data).json()  # 因为这里要封装post方法，所以这里的url和data值不能写死
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 381, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: http://192.168.31.93:38080login?
 
 
     </pre>
@@ -210,23 +274,23 @@ pt2_1: login_error测试开始前准备
     </td>
 </tr>
 
-<tr class='failClass warning'>
+<tr class='errorClass warning'>
     <td>paramunittest.testUserLogin_2</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center">1</td>
     <td class="text-center">0</td>
+    <td class="text-center">1</td>
     <td class="text-center"><a href="javascript:showClassDetail('c3',1)" class="detail" id='c3'>详细</a></td>
 </tr>
 
 <tr id='ft3_1' class='none'>
-    <td class='failCase'><div class='testcase_android'>test01case</div></td>
+    <td class='errorCase'><div class='testcase_android'>test01case</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_1'>失败</button>
+    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_1'>错误</button>
     <div id='div_ft3_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_1'>失败</button>
+    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_1'>错误</button>
     <div id='div_ft3_1' class="collapse in">
     <pre>
     
@@ -235,11 +299,37 @@ ft3_1: login_null测试开始前准备
 
 
 Traceback (most recent call last):
-  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test01case.py", line 45, in test01case
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 379, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\urllib3\util\url.py", line 398, in parse_url
+    return six.raise_from(LocationParseError(source_url), None)
+  File "&lt;string&gt;", line 3, in raise_from
+urllib3.exceptions.LocationParseError: Failed to parse: http://192.168.31.93:38080login?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test02case.py", line 45, in test01case
     self.checkResult()
-  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test01case.py", line 65, in checkResult
-    self.assertEqual(ss['code'], 10002)
-AssertionError: 10001 != 10002
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\test02case.py", line 59, in checkResult
+    info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+  File "F:\pyhcarm\hezongyy\API-Auto\common1\configHttp.py", line 22, in run_main
+    result = self.send_post(url, data)
+  File "F:\pyhcarm\hezongyy\API-Auto\common1\configHttp.py", line 10, in send_post
+    result = requests.post(url=url, data=data).json()  # 因为这里要封装post方法，所以这里的url和data值不能写死
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\requests\models.py", line 381, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: http://192.168.31.93:38080login?
 
 
     </pre>
@@ -250,10 +340,10 @@ AssertionError: 10001 != 10002
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>3</td>
-    <td>2</td>
-    <td>1</td>
     <td>0</td>
-    <td>通过率：66.67%</td>
+    <td>0</td>
+    <td>3</td>
+    <td>通过率：0.00%</td>
 </tr>
 </table>
 

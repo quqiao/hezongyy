@@ -92,3 +92,55 @@
   "code": 10001,
   "message": "参数不能为空！"
 }
+2020-05-28 16:52:51,687 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-28 16:52:51,698 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-28 16:52:51,698 - logs… - INFO - caseList[]
+2020-05-28 16:58:03,223 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-28 16:58:03,223 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-28 16:58:03,223 - logs… - INFO - caseList[]
+2020-05-28 16:58:03,461 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/login"
+}
+2020-05-28 16:58:03,615 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/login"
+}
+2020-05-28 16:58:03,621 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/login"
+}
+2020-05-28 17:12:55,427 - logs… - INFO - {
+  "code": "000000",
+  "content": "697f6f45-a0c3-11ea-b9fe-0a0027000008",
+  "message": "操作成功"
+}
+2020-05-28 17:14:48,925 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-28 17:14:48,925 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-28 17:14:48,925 - logs… - INFO - caseList[]
+2020-05-28 17:23:49,397 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/login"
+}
+2020-05-28 17:23:49,537 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/login"
+}
+2020-05-28 17:23:49,544 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/login"
+}
+2020-05-28 17:27:47,630 - logs… - INFO - method值错误！！！
+2020-05-28 17:27:47,636 - logs… - INFO - method值错误！！！
+2020-05-28 17:27:47,638 - logs… - INFO - method值错误！！！
+2020-05-28 17:27:47,801 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}

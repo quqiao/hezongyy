@@ -8,8 +8,8 @@ import urllib.parse
 import readExcel
 # pythoncom.CoInitialize()
 
-url = geturlParams.geturlParams().get_Url()# 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('userCase.xlsx', 'login')
+url = geturlParams.geturlParams().get_Url()  # 调用我们的geturlParams获取我们拼接的URL
+login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '用户')
 
 @paramunittest.parametrized(*login_xls)
 class testUserLogin(unittest.TestCase):
@@ -52,16 +52,21 @@ class testUserLogin(unittest.TestCase):
         check test result
         :return:
         """
-        url1 = "http://www.xxx.com/login?"
-        new_url = url1 + self.query
-        data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}
-        info = RunMain().run_main(self.method, url, data1)# 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+        # url1 = "http://www.xxx.com/login?"
+        # new_url = url1 + self.query
+        # data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}
+        data1 = self.query.encode('utf-8')
+        info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+        print(info)
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == 'login':  # 如果case_name是login，说明合法，返回的code应该为200
-            self.assertEqual(ss['code'], 200)
-        if self.case_name == 'login_error':  # 同上
+        if self.case_name == '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+            self.assertEqual(ss['code'], 000000)
+        if self.case_name == '用户登录用户名为空':  # 同上
             self.assertEqual(ss['code'], -1)
-        if self.case_name == 'login_null':  # 同上
+        if self.case_name == '用户登录密码为空':  # 同上
             self.assertEqual(ss['code'], 10001)
 
+
+if __name__ == '__main__':#测试一下，我们读取配置文件的方法是否可用
+    print(testUserLogin().checkResult())
 

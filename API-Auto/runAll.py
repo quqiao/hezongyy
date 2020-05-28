@@ -15,16 +15,16 @@ report_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common1.Log.logger
 
-class AllTest:#定义一个类AllTest
-    def __init__(self):#初始化一些参数和数据
+class AllTest:  # 定义一个类AllTest
+    def __init__(self):  # 初始化一些参数和数据
         global resultPath
-        resultPath = os.path.join(report_path, "report.html")#result/report.html
-        self.caseListFile = os.path.join(path, "caselist.txt")#配置执行哪些测试文件的配置文件路径
-        self.caseFile = os.path.join(path, "testCase")#真正的测试断言文件路径
+        resultPath = os.path.join(report_path, "report.html")  # result/report.html
+        self.caseListFile = os.path.join(path, "caselist.txt")  # 配置执行哪些测试文件的配置文件路径
+        self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
         self.caseList = []
-        log.info('resultPath'+resultPath)#将resultPath的值输入到日志，方便定位查看问题
-        log.info('caseListFile'+self.caseListFile)#同理
-        log.info('caseList'+str(self.caseList))#同理
+        log.info('resultPath'+resultPath)  # 将resultPath的值输入到日志，方便定位查看问题
+        log.info('caseListFile'+self.caseListFile)  # 同理
+        log.info('caseList'+str(self.caseList))  # 同理
 
     def set_case_list(self):
         """
@@ -87,7 +87,7 @@ class AllTest:#定义一个类AllTest
             print("*********TEST END*********")
             #  log.info("*********TEST END*********")
             fp.close()
-        #判断邮件发送的开关
+        # 判断邮件发送的开关
         # if on_off == 'on':
         #     send_mail.outlook()
         # else:

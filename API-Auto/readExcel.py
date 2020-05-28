@@ -18,7 +18,7 @@ class readExcel():
             if sheet.row_values(i)[0] != u'case_name':#如果这个Excel的这个sheet的第i行的第一列不等于case_name那么我们把这行的数据添加到cls[]
                 cls.append(sheet.row_values(i))
         return cls
-if __name__ == '__main__':#我们执行该文件测试一下是否可以正确获取Excel中的值
-    print(readExcel().get_xls('userCase.xlsx', 'login'))
-    print(readExcel().get_xls('userCase.xlsx', 'login')[0][1])
-    print(readExcel().get_xls('userCase.xlsx', 'login')[1][2])
+if __name__ == '__main__':  # 我们执行该文件测试一下是否可以正确获取Excel中的值
+    print(readExcel().get_xls('用户API.xlsx', '用户'))
+    print(readExcel().get_xls('用户API.xlsx', '用户')[0][1])
+    print(readExcel().get_xls('用户API.xlsx', '用户')[1][2])
