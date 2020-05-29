@@ -144,3 +144,60 @@
   "content": null,
   "message": "URL请求地址错误/"
 }
+2020-05-29 09:18:35,017 - logs… - INFO - {
+  "code": "000000",
+  "content": "51093cc9-a14a-11ea-b9fe-0a0027000008",
+  "message": "操作成功"
+}
+2020-05-29 09:18:35,051 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-05-29 09:18:35,060 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-05-29 09:19:00,853 - logs… - INFO - {
+  "code": "000000",
+  "content": "606f8dbb-a14a-11ea-b9fe-0a0027000008",
+  "message": "操作成功"
+}
+2020-05-29 09:19:00,863 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-05-29 09:19:00,872 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-05-29 09:31:16,763 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-29 09:31:16,763 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-29 09:31:16,763 - logs… - INFO - caseList[]
+2020-05-29 09:31:17,224 - logs… - INFO - {
+  "code": "000000",
+  "content": "175921dc-a14c-11ea-b9fe-0a0027000008",
+  "message": "操作成功"
+}
+2020-05-29 09:31:17,233 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-05-29 09:31:17,240 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-05-29 17:06:27,411 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-29 17:06:27,411 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-29 17:06:27,411 - logs… - INFO - caseList[]
+2020-05-29 17:27:05,135 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-29 17:27:05,136 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-29 17:27:05,136 - logs… - INFO - caseList[]
+2020-05-29 17:27:33,601 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report.html
+2020-05-29 17:27:33,601 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-05-29 17:27:33,601 - logs… - INFO - caseList[]
