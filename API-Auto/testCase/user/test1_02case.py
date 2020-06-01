@@ -8,8 +8,8 @@ import urllib.parse
 import readExcel
 # pythoncom.CoInitialize()
 
-url = geturlParams.geturlParams().get_Url()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '添加商品到购物车')
+url = geturlParams.geturlParams().get_Url1_3()  # 调用我们的geturlParams获取我们拼接的URL
+login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '登录')
 
 @paramunittest.parametrized(*login_xls)
 class testUserLogin(unittest.TestCase):
@@ -41,7 +41,7 @@ class testUserLogin(unittest.TestCase):
         """
         print(self.case_name+"测试开始前准备")
 
-    def test01case(self):
+    def test1_02case(self):
         self.checkResult()
 
     def tearDown(self):
@@ -58,7 +58,7 @@ class testUserLogin(unittest.TestCase):
         data1 = self.query.encode('utf-8')
         info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == 'login':# '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], 000000)
         if self.case_name == '用户登录用户名为空':  # 同上
             self.assertEqual(ss['code'], -1)

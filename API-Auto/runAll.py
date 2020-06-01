@@ -7,6 +7,7 @@ from common1.configEmail import send_email
 # from apscheduler.schedulers.blocking import BlockingScheduler
 import pythoncom
 import common1.Log
+import time
 
 
 send_mail = send_email()
@@ -18,7 +19,8 @@ log = common1.Log.logger
 class AllTest:  # 定义一个类AllTest
     def __init__(self):  # 初始化一些参数和数据
         global resultPath
-        resultPath = os.path.join(report_path, "report.html")  # result/report.html
+        now = time.strftime("%Y-%m-%d")
+        resultPath = os.path.join(report_path, now + "report.html")  # result/report.html
         self.caseListFile = os.path.join(path, "caselist.txt")  # 配置执行哪些测试文件的配置文件路径
         self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
         self.caseList = []
@@ -47,11 +49,10 @@ class AllTest:  # 定义一个类AllTest
         test_suite = unittest.TestSuite()
         suite_module = []
         for case in self.caseList:  # 从caselist元素组中循环取出case
-            # case_name = case.split("/")[-1]  # 通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
-            # print(case_name+".py")  # 打印出取出来的名称
-            print(case + ".py")  # 直接取caseList中的整个路径
+            case_name = case.split("/")[-1]  # 通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
+            print(case_name+".py")  # 打印出取出来的名称
             # 批量加载用例，第一个参数为用例存放路径，第一个参数为路径文件名
-            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case + '.py', top_level_dir=None)
+            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=case_name + '.py', top_level_dir=None)
             suite_module.append(discover)  # 将discover存入suite_module元素组
             print('suite_module:'+str(suite_module))
         if len(suite_module) > 0:  # 判断suite_module元素组是否存在元素

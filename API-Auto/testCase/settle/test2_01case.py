@@ -8,11 +8,11 @@ import urllib.parse
 import readExcel
 # pythoncom.CoInitialize()
 
-url = geturlParams.geturlParams().get_Url()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '登录')
+url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获取我们拼接的URL
+login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '添加商品到购物车')
 
 @paramunittest.parametrized(*login_xls)
-class testUserLogin(unittest.TestCase):
+class testSettleAddGoodsCart(unittest.TestCase):
     def setParameters(self, case_name, path, query, method):
         """
         set params
@@ -41,7 +41,7 @@ class testUserLogin(unittest.TestCase):
         """
         print(self.case_name+"测试开始前准备")
 
-    def test01case(self):
+    def test2_01case(self):
         self.checkResult()
 
     def tearDown(self):

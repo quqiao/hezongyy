@@ -16,10 +16,10 @@ class geturlParams():# 定义一个方法，将从配置文件中读取的进行
         return new_url
 
     """添加商品到购物车"""
-    def get_Url3_1(self):
+    def get_Url2_1(self):
         new_url = readconfig.get_http('scheme') + '://' + readconfig.get_http('baseurl') + ':10070' + '/goodsCart/addGoodsCart'
         # logger.info('new_url'+new_url)
         return new_url
 
 if __name__ == '__main__':# 验证拼接后的正确性
-    print(geturlParams().get_Url3_1())
+    print(geturlParams().get_Url2_1())

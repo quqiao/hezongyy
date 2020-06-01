@@ -53,5 +53,10 @@
 # print(li)
 # # dict = li['name']
 # # print(dict)
-for i in range(25):
-       print(i)
+# for i in range(25):
+#        print(i)
+
+list1 = ("login/case1", "user/case1")
+for case in list1:  # 从caselist元素组中循环取出case
+       case_name = case.split("/")[-1]
+       print(case_name)

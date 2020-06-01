@@ -1,6 +1,6 @@
-user/test01case
-user/test02case
-settle/test01case
+user/test1_01case
+user/test1_02case
+settle/test2_01case
 #user/test04case
 #user/test05case
 #shop/test_shop_list
