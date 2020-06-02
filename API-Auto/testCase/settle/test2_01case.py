@@ -58,11 +58,11 @@ class testSettleAddGoodsCart(unittest.TestCase):
         data1 = self.query.encode('utf-8')
         info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == '添加商品到购物车正确':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], 000000)
-        if self.case_name == '用户登录用户名为空':  # 同上
+        if self.case_name == '添加商品到购物车为空':  # 同上
             self.assertEqual(ss['code'], -1)
-        if self.case_name == '用户登录密码为空':  # 同上
+        if self.case_name == '添加商品到购物车为错误':  # 同上
             self.assertEqual(ss['code'], 10001)
 
 

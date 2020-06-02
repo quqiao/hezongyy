@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API-Auto/result/2020-06-01report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/result/logs.2020-05-29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/common1/HTMLTestRunner_0.8.2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/2020-06-02report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/caselist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/common1/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/common1/HTMLTestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/common1/configHttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/common1/configHttp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/geturlParams.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/geturlParams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/readExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/readExcel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/result/logs" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/result/logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/logs.2018-11-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/logs.2020-05-29" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/runAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/runAll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_01case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/用户API.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/用户API.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/购物车与结算.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/购物车与结算.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI-Auto/unnecessary/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +99,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.runAll">
-    <configuration name="geturlParams" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="configHttp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hezongyy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/common1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/common1/configHttp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readExcel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,7 +132,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/geturlParams.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/readExcel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,49 +205,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testCase.user.test1_02case.testUserLogin" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test1_01case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/testCase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/testCase/user" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testCase.user.test1_02case.testUserLogin&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test1_02case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="hezongyy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/testCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.runTest" />
-      <item itemvalue="Python.geturlParams" />
       <item itemvalue="Python.runAll" />
+      <item itemvalue="Python.readExcel" />
+      <item itemvalue="Python.configHttp" />
+      <item itemvalue="Python tests.Unittests in test1_01case.py" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python tests.Unittests in test1_02case.py" />
-      <item itemvalue="Python tests.Unittests for testCase.user.test1_02case.testUserLogin" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.runAll" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.geturlParams" />
-        <item itemvalue="Python tests.Unittests in test1_02case.py" />
-        <item itemvalue="Python tests.Unittests for testCase.user.test1_02case.testUserLogin" />
+        <item itemvalue="Python tests.Unittests in test1_01case.py" />
+        <item itemvalue="Python.configHttp" />
+        <item itemvalue="Python.readExcel" />
       </list>
     </recent_temporary>
   </component>
@@ -302,13 +315,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00037" summary="20200104提交">
-      <created>1578129904744</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1578129904744</updated>
     </task>
     <task id="LOCAL-00038" summary="20200106提交">
       <created>1578303766945</created>
@@ -646,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590744619112</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="20200601 优化获取测试用例路径需求">
+      <created>1591004466631</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1591004466631</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +682,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200225提交" />
     <MESSAGE value="20200226提交" />
     <MESSAGE value="20200227提交" />
     <MESSAGE value="20200228提交" />
@@ -694,43 +706,44 @@
     <MESSAGE value="20200527 提交接口自动化初步框架" />
     <MESSAGE value="20200527 主要进行登录接口用例添加" />
     <MESSAGE value="20200528 增加用例demo进行尝试" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200528 增加用例demo进行尝试" />
+    <MESSAGE value="20200601 优化获取测试用例路径需求" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200601 优化获取测试用例路径需求" />
   </component>
   <component name="WindowStateProjectService">
     <state x="596" y="32" key="#runTest" timestamp="1583130412876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="596" y="32" key="#runTest/0.0.1920.1040@0.0.1920.1040" timestamp="1583130412876" />
-    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1591004429237">
+    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1591089845740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="358" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583477750022" />
-    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591004429237" />
+    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591089845740" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="494" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583198508347" />
     <state x="617" y="182" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586403125640" />
-    <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1591002259794">
+    <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1591089845770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591002259794" />
-    <state width="949" height="213" key="GridCell.Tab.0.center" timestamp="1591002259794">
+    <state width="949" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591089845770" />
+    <state width="949" height="213" key="GridCell.Tab.0.center" timestamp="1591089845770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591002259794" />
-    <state width="949" height="213" key="GridCell.Tab.0.left" timestamp="1591002259794">
+    <state width="949" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591089845770" />
+    <state width="949" height="213" key="GridCell.Tab.0.left" timestamp="1591089845770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591002259794" />
-    <state width="949" height="213" key="GridCell.Tab.0.right" timestamp="1591002259794">
+    <state width="949" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591089845770" />
+    <state width="949" height="213" key="GridCell.Tab.0.right" timestamp="1591089845770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583475139039" />
-    <state width="949" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591002259794" />
+    <state width="949" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591089845770" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1583466083243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -752,16 +765,16 @@
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583456214999" />
     <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590565870318" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1590744802565">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1591004478101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583301294123" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590744802565" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1590973333404">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591004478101" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1591057862544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583283450518" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590973333404" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591057862544" />
     <state x="490" y="204" key="git4idea.merge.GitPullDialog" timestamp="1583205627205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

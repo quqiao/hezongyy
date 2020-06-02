@@ -19,6 +19,6 @@ class readExcel():
                 cls.append(sheet.row_values(i))
         return cls
 if __name__ == '__main__':  # 我们执行该文件测试一下是否可以正确获取Excel中的值
-    print(readExcel().get_xls('用户API.xlsx', '用户'))
-    print(readExcel().get_xls('用户API.xlsx', '用户')[0][1])
-    print(readExcel().get_xls('用户API.xlsx', '用户')[1][2])
+    print(readExcel().get_xls('用户API.xlsx', '登录'))
+    # print(readExcel().get_xls('用户API.xlsx', '登录')[0][1])
+    # print(readExcel().get_xls('用户API.xlsx', '登录')[1][2])

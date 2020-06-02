@@ -1,5 +1,5 @@
 import os
-import common.HTMLTestRunner as HTMLTestRunner
+import common1.HTMLTestRunner as HTMLTestRunner
 import getpathInfo
 import unittest
 import readConfig

@@ -39,10 +39,12 @@ class testUserFind(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name+"测试开始前准备")
+        print(self.case_name)
 
-    def test1_01case(self):
+    def test1_01(self):
+        """通过票据获取平台用户信息接口"""
         self.checkResult()
+
 
     def tearDown(self):
         print("测试结束，输出log完结\n\n")
@@ -58,14 +60,14 @@ class testUserFind(unittest.TestCase):
         data1 = self.query.encode('utf-8')
         info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == '通过票据获取平台用户信息为正常':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], 000000)
-        if self.case_name == '用户登录用户名为空':  # 同上
+        if self.case_name == '通过票据获取平台用户信息为空':  # 同上
             self.assertEqual(ss['code'], -1)
-        if self.case_name == '用户登录密码为空':  # 同上
+        if self.case_name == '通过票据获取平台用户信息为错误':  # 同上
             self.assertEqual(ss['code'], 10001)
 
 
-# if __name__ == '__main__':#测试一下，我们读取配置文件的方法是否可用
-#     print(testUserLogin().checkResult())
+if __name__ == '__main__':#测试一下，我们读取配置文件的方法是否可用
+    print(testUserFind().description())
 
