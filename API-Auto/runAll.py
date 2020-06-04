@@ -3,11 +3,12 @@ import common1.HTMLTestRunner as HTMLTestRunner
 import getpathInfo
 import unittest
 import readConfig
-from common1.configEmail import send_email
+from common1.configEmail import send_email,qq_report,qq_send_mail
 # from apscheduler.schedulers.blocking import BlockingScheduler
 import pythoncom
 import common1.Log
 import time
+
 
 
 send_mail = send_email()
@@ -15,12 +16,12 @@ path = getpathInfo.get_Path()
 report_path = os.path.join(path, 'result')
 on_off = readConfig.ReadConfig().get_email('on_off')
 log = common1.Log.logger
-
+now = time.strftime("%Y-%m-%d")
 class AllTest:  # 定义一个类AllTest
     def __init__(self):  # 初始化一些参数和数据
         global resultPath
-        now = time.strftime("%Y-%m-%d")
-        resultPath = os.path.join(report_path, now + "report.html")  # result/report.html
+        
+        resultPath = os.path.join(report_path, "report_%s.html" % now)  # result/report.html
         self.caseListFile = os.path.join(path, "caselist.txt")  # 配置执行哪些测试文件的配置文件路径
         self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
         self.caseList = []
@@ -101,5 +102,8 @@ class AllTest:  # 定义一个类AllTest
 
 if __name__ == '__main__':
     AllTest().run()
+    # test_report = './result/'  # 定义报告文件目录
+    # rep = qq_report(test_report)
+    # qq_send_mail(rep)
 
 

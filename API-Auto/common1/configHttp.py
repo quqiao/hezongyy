@@ -7,6 +7,7 @@ class RunMain():
 
     def send_post(self, url, data):  # 定义一个方法，传入需要的参数url和data
         # 参数必须按照url、data顺序传入
+        requests.dele
         result = requests.post(url=url, data=data).json()  # 因为这里要封装post方法，所以这里的url和data值不能写死
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
@@ -29,5 +30,5 @@ class RunMain():
             logger.info("method值错误！！！")
         return result
 if __name__ == '__main__':  # 通过写死参数，来验证我们写的请求是否正确
-    result = RunMain().run_main('get', 'http://192.168.31.93:38080/SingleSignOn/find/', '{"1234567"}'.encode('utf-8'))
+    result = RunMain().run_main('delete', 'http://192.168.31.93:38080/SingleSignOn/find/', '{"1234567"}'.encode('utf-8'))
     print(result)
