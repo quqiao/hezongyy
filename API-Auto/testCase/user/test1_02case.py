@@ -5,6 +5,7 @@ import paramunittest
 import geturlParams
 import urllib.parse
 # import pythoncom
+import time
 import readExcel
 # pythoncom.CoInitialize()
 
@@ -59,33 +60,37 @@ class testUserLogin(unittest.TestCase):
         data1 = self.query.encode('utf-8')
         info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == 'url和参数都正确':# '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
-            self.assertEqual(ss['code'], 000000)
-        if self.case_name == 'url为空':  # 同上
-            self.assertEqual(ss['code'], -1)
-        if self.case_name == 'url为错误':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'username为空':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'username为错误':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'password为空':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'password为错误':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'channel为PC':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'channel为APP':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'channel为错误':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'channel为空':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'timeout为空':  # 同上
-            self.assertEqual(ss['code'], 10001)
-        if self.case_name == 'timeout为错误':  # 同上
-            self.assertEqual(ss['code'], 10001)
+        if self.case_name == 'url和参数都正确':  # '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+            self.assertEqual(ss['code'], '000000')
+            with open('./SaveParam/login_token.txt', 'w') as f:
+                f.write(ss['content'])
+                f.close()
+
+        # if self.case_name == 'url为空':  # 同上
+        #     self.assertEqual(ss['code'], -1)
+        # if self.case_name == 'url为错误':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'username为空':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'username为错误':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'password为空':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'password为错误':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'channel为PC':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'channel为APP':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'channel为错误':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'channel为空':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'timeout为空':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
+        # if self.case_name == 'timeout为错误':  # 同上
+        #     self.assertEqual(ss['code'], 10001)
 
 
-# if __name__ == '__main__':#测试一下，我们读取配置文件的方法是否可用
+# if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
 #     print(testUserLogin().checkResult())

@@ -4,3 +4,1702 @@
   "message": "URL请求地址错误/SingleSignOn/find/"
 }
 2020-06-04 16:39:18,766 - logs… - INFO - method值错误！！！
+2020-06-05 11:30:40,891 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 11:30:40,892 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 11:30:40,892 - logs… - INFO - caseList[]
+2020-06-05 13:18:52,341 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 13:18:52,341 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 13:18:52,341 - logs… - INFO - caseList[]
+2020-06-05 13:18:52,804 - logs… - INFO - {
+  "code": "000000",
+  "content": "0ced08f6-a6ec-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:18:52,823 - logs… - INFO - {
+  "code": "000000",
+  "content": "0cefd6b3-a6ec-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:18:52,837 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 13:18:52,845 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 13:18:52,858 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 13:18:52,888 - logs… - INFO - {
+  "code": "000000",
+  "content": "0cf9b48b-a6ec-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:18:52,894 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 13:18:52,905 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:18:52,911 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 13:18:52,920 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:18:52,928 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:18:52,936 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:18:52,941 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 13:52:09,654 - logs… - INFO - {
+  "code": "000000",
+  "content": "b325b07a-a6f0-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:52:09,672 - logs… - INFO - {
+  "code": "000000",
+  "content": "b3299665-a6f0-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:52:09,682 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 13:52:09,692 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 13:52:09,702 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 13:52:09,712 - logs… - INFO - {
+  "code": "000000",
+  "content": "b33024d2-a6f0-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:52:09,722 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 13:52:09,722 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:52:09,732 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 13:52:09,742 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:52:09,742 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:52:09,752 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:52:09,752 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 13:59:48,217 - logs… - INFO - {
+  "code": "000000",
+  "content": "c4797a9c-a6f1-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:59:48,237 - logs… - INFO - {
+  "code": "000000",
+  "content": "c47dddf5-a6f1-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:59:48,257 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 13:59:48,257 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 13:59:48,267 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 13:59:48,297 - logs… - INFO - {
+  "code": "000000",
+  "content": "c48510a1-a6f1-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 13:59:48,307 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 13:59:48,317 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:59:48,317 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 13:59:48,327 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:59:48,347 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:59:48,357 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 13:59:48,357 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 14:01:15,726 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 14:01:15,726 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 14:01:15,726 - logs… - INFO - caseList[]
+2020-06-05 14:01:16,238 - logs… - INFO - {
+  "code": "000000",
+  "content": "f8ef4d00-a6f1-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 14:01:16,258 - logs… - INFO - {
+  "code": "000000",
+  "content": "f8f389f4-a6f1-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 14:01:16,258 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 14:01:16,268 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 14:01:16,278 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 14:01:16,298 - logs… - INFO - {
+  "code": "000000",
+  "content": "f8f97d58-a6f1-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 14:01:16,298 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 14:01:16,308 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 14:01:16,318 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 14:01:16,328 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 14:01:16,328 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 14:01:16,338 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 14:01:16,348 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 14:21:00,716 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 14:21:00,726 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 14:21:00,726 - logs… - INFO - caseList[]
+2020-06-05 14:21:01,182 - logs… - INFO - {
+  "code": "000000",
+  "content": "bb39e811-a6f4-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:32:23,491 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 15:32:23,491 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 15:32:23,491 - logs… - INFO - caseList[]
+2020-06-05 15:32:23,941 - logs… - INFO - {
+  "code": "000000",
+  "content": "b3f86233-a6fe-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:32:23,961 - logs… - INFO - {
+  "code": "000000",
+  "content": "b3faaa58-a6fe-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:32:23,961 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 15:32:23,971 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 15:32:23,971 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 15:32:23,981 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 15:32:23,991 - logs… - INFO - {
+  "code": "000000",
+  "content": "b4006f86-a6fe-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:32:24,011 - logs… - INFO - {
+  "code": "000000",
+  "content": "b4024c06-a6fe-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:32:24,011 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 15:32:24,021 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:32:24,031 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 15:32:24,031 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:32:24,041 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:32:24,051 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:36:15,322 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 15:36:15,322 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 15:36:15,322 - logs… - INFO - caseList[]
+2020-06-05 15:36:15,750 - logs… - INFO - {
+  "code": "000000",
+  "content": "3e22d41b-a6ff-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:36:15,760 - logs… - INFO - {
+  "code": "000000",
+  "content": "3e253424-a6ff-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:36:15,770 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 15:36:15,770 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 15:36:15,780 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 15:36:15,790 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 15:36:15,810 - logs… - INFO - {
+  "code": "000000",
+  "content": "3e2b9434-a6ff-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:36:15,820 - logs… - INFO - {
+  "code": "000000",
+  "content": "3e2e526e-a6ff-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:36:15,820 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 15:36:15,830 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:36:15,830 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 15:36:15,840 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:36:15,850 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:36:15,854 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:55:59,040 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 15:55:59,040 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 15:55:59,040 - logs… - INFO - caseList[]
+2020-06-05 15:55:59,481 - logs… - INFO - {
+  "code": "000000",
+  "content": "ffb440f1-a701-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:55:59,501 - logs… - INFO - {
+  "code": "000000",
+  "content": "ffb687bc-a701-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:55:59,501 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 15:55:59,511 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 15:55:59,511 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 15:55:59,521 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 15:55:59,531 - logs… - INFO - {
+  "code": "000000",
+  "content": "ffbb274d-a701-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:55:59,541 - logs… - INFO - {
+  "code": "000000",
+  "content": "ffbcc7e7-a701-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 15:55:59,541 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 15:55:59,551 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:55:59,551 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 15:55:59,561 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:55:59,561 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 15:55:59,571 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:11:58,061 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 16:11:58,061 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 16:11:58,061 - logs… - INFO - caseList[]
+2020-06-05 16:11:58,501 - logs… - INFO - {
+  "code": "000000",
+  "content": "3b52d22f-a704-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:11:58,521 - logs… - INFO - {
+  "code": "000000",
+  "content": "3b563f2f-a704-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:11:58,521 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:11:58,531 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:11:58,541 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 16:11:58,541 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 16:11:58,561 - logs… - INFO - {
+  "code": "000000",
+  "content": "3b5c6591-a704-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:11:58,571 - logs… - INFO - {
+  "code": "000000",
+  "content": "3b5eb1e2-a704-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:11:58,581 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 16:11:58,591 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:11:58,591 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 16:11:58,601 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:11:58,601 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:11:58,619 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:24:51,541 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 16:24:51,541 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 16:24:51,541 - logs… - INFO - caseList[]
+2020-06-05 16:24:51,981 - logs… - INFO - {
+  "code": "000000",
+  "content": "085c545d-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:24:52,001 - logs… - INFO - {
+  "code": "000000",
+  "content": "085ee246-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:24:52,011 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:24:52,011 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:24:52,021 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 16:24:52,031 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 16:24:52,051 - logs… - INFO - {
+  "code": "000000",
+  "content": "0865a8b1-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:24:52,061 - logs… - INFO - {
+  "code": "000000",
+  "content": "086841d6-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:24:52,071 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 16:24:52,071 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:24:52,081 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 16:24:52,081 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:24:52,091 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:24:52,101 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:24:52,111 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,111 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,121 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,121 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,131 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,141 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,141 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,151 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,151 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,161 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,171 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,181 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,181 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,191 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,191 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:24:52,201 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:31,752 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 16:27:31,752 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 16:27:31,752 - logs… - INFO - caseList[]
+2020-06-05 16:27:32,201 - logs… - INFO - {
+  "code": "000000",
+  "content": "67db89ac-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:27:32,211 - logs… - INFO - {
+  "code": "000000",
+  "content": "67dddfe6-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:27:32,221 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:27:32,231 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:27:32,231 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 16:27:32,241 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 16:27:32,251 - logs… - INFO - {
+  "code": "000000",
+  "content": "67e36867-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:27:32,261 - logs… - INFO - {
+  "code": "000000",
+  "content": "67e56d0c-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:27:32,271 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 16:27:32,271 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:27:32,281 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 16:27:32,291 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:27:32,291 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:27:32,301 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:27:32,311 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,311 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,321 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,321 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,331 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,331 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,341 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,341 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,341 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,354 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,354 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,354 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,364 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,364 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,374 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:27:32,374 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 16:31:05,765 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 16:31:05,765 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 16:31:05,765 - logs… - INFO - caseList[]
+2020-06-05 16:31:06,200 - logs… - INFO - {
+  "code": "000000",
+  "content": "e7692873-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:31:06,210 - logs… - INFO - {
+  "code": "000000",
+  "content": "e76bb8b1-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:31:06,220 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:31:06,230 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:31:06,230 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 16:31:06,240 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 16:31:06,250 - logs… - INFO - {
+  "code": "000000",
+  "content": "e77161de-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:31:06,260 - logs… - INFO - {
+  "code": "000000",
+  "content": "e773077d-a706-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:31:06,260 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 16:31:06,270 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:31:06,270 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 16:31:06,280 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:31:06,290 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:31:06,290 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:31:06,310 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 16:31:06,330 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 16:31:06,353 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-05 16:31:06,355 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-05 16:31:06,385 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 16:31:06,385 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "商品的数量单次允许不超过5万"
+}
+2020-06-05 16:31:06,399 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 4, column: 12] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"number\"])"
+}
+2020-06-05 16:31:06,406 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-05 16:31:06,422 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 16:31:06,432 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 16:31:06,438 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"wwe123\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"wwe123\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 2, column: 13] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"goodsId\"])"
+}
+2020-06-05 16:31:06,451 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 16:31:06,471 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 16:31:06,471 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-05 16:31:06,491 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 16:31:06,491 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-05 16:56:18,433 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 16:56:18,433 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 16:56:18,433 - logs… - INFO - caseList[]
+2020-06-05 16:56:18,853 - logs… - INFO - {
+  "code": "000000",
+  "content": "6d0749cd-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:56:18,873 - logs… - INFO - {
+  "code": "000000",
+  "content": "6d0a907b-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:56:18,873 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:56:18,883 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:56:18,896 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 16:56:18,902 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 16:56:18,916 - logs… - INFO - {
+  "code": "000000",
+  "content": "6d109f00-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:56:18,931 - logs… - INFO - {
+  "code": "000000",
+  "content": "6d12dfbf-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:56:18,936 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 16:56:18,942 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:56:18,942 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 16:56:18,952 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:56:18,952 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:56:18,962 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:59:17,141 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 16:59:17,141 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 16:59:17,141 - logs… - INFO - caseList[]
+2020-06-05 16:59:17,541 - logs… - INFO - {
+  "code": "000000",
+  "content": "d78a01a7-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:59:17,561 - logs… - INFO - {
+  "code": "000000",
+  "content": "d78ce5aa-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:59:17,571 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:59:17,601 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 16:59:17,601 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 16:59:17,622 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 16:59:17,639 - logs… - INFO - {
+  "code": "000000",
+  "content": "d7975f66-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:59:17,654 - logs… - INFO - {
+  "code": "000000",
+  "content": "d79a573b-a70a-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 16:59:17,655 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 16:59:17,665 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:59:17,665 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 16:59:17,675 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:59:17,685 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 16:59:17,685 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:01:04,461 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 17:01:04,461 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 17:01:04,461 - logs… - INFO - caseList[]
+2020-06-05 17:01:04,910 - logs… - INFO - {
+  "code": "000000",
+  "content": "17878797-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:01:04,925 - logs… - INFO - {
+  "code": "000000",
+  "content": "178a50e9-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:01:04,933 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:01:04,939 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:01:04,941 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 17:01:04,941 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 17:01:04,961 - logs… - INFO - {
+  "code": "000000",
+  "content": "17905df4-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:01:04,971 - logs… - INFO - {
+  "code": "000000",
+  "content": "1792a4e5-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:01:04,981 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 17:01:04,991 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:01:04,991 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 17:01:05,001 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:01:05,011 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:01:05,021 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:02:21,031 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 17:02:21,031 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 17:02:21,031 - logs… - INFO - caseList[]
+2020-06-05 17:02:21,461 - logs… - INFO - {
+  "code": "000000",
+  "content": "4529bc29-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:02:21,481 - logs… - INFO - {
+  "code": "000000",
+  "content": "452d1a49-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:02:21,491 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:02:21,491 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:02:21,501 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 17:02:21,511 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 17:02:21,521 - logs… - INFO - {
+  "code": "000000",
+  "content": "45337f32-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:02:21,541 - logs… - INFO - {
+  "code": "000000",
+  "content": "4535aba6-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:02:21,541 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 17:02:21,551 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:02:21,561 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 17:02:21,561 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:02:21,571 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:02:21,581 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:02:21,653 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 17:02:21,663 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 17:02:21,673 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-05 17:02:21,683 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-05 17:02:21,693 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 17:02:21,703 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "商品的数量单次允许不超过5万"
+}
+2020-06-05 17:02:21,713 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 4, column: 12] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"number\"])"
+}
+2020-06-05 17:02:21,723 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-05 17:02:21,723 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 17:02:21,753 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 17:02:21,753 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"wwe123\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"wwe123\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 2, column: 13] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"goodsId\"])"
+}
+2020-06-05 17:02:21,763 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 17:02:21,773 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-05 17:02:21,783 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-05 17:02:21,793 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "服务器忙,请稍后再试！"
+}
+2020-06-05 17:02:21,793 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-05 17:06:08,613 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 17:06:08,614 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 17:06:08,614 - logs… - INFO - caseList[]
+2020-06-05 17:06:09,061 - logs… - INFO - {
+  "code": "000000",
+  "content": "ccd3630a-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:06:11,091 - logs… - INFO - {
+  "code": "000000",
+  "content": "ce0724de-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:06:11,091 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:06:11,101 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:06:11,101 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 17:06:11,111 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 17:06:11,121 - logs… - INFO - {
+  "code": "000000",
+  "content": "ce0d6a96-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:06:11,131 - logs… - INFO - {
+  "code": "000000",
+  "content": "ce0f6ec8-a70b-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:06:11,141 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 17:06:11,141 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:06:11,151 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 17:06:11,151 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:06:11,171 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:06:11,181 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:07:41,364 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 17:07:41,364 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 17:07:41,364 - logs… - INFO - caseList[]
+2020-06-05 17:07:41,829 - logs… - INFO - {
+  "code": "000000",
+  "content": "041cf78c-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:07:41,839 - logs… - INFO - {
+  "code": "000000",
+  "content": "04206faf-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:07:41,854 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:07:41,855 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:07:41,855 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 17:07:41,865 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 17:07:41,875 - logs… - INFO - {
+  "code": "000000",
+  "content": "0425d1ce-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:07:41,896 - logs… - INFO - {
+  "code": "000000",
+  "content": "0427d871-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:07:41,901 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 17:07:41,907 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:07:41,925 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 17:07:41,931 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:07:41,936 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:07:41,941 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:07:41,941 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,951 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,951 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,951 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,961 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,961 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,971 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,971 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,981 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,981 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,981 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,991 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,991 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:41,991 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:42,001 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:07:42,001 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-05 17:10:45,461 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-05.html
+2020-06-05 17:10:45,461 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-05 17:10:45,461 - logs… - INFO - caseList[]
+2020-06-05 17:10:48,902 - logs… - INFO - {
+  "code": "000000",
+  "content": "739e16bf-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:10:48,931 - logs… - INFO - {
+  "code": "000000",
+  "content": "73a2dedd-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:10:48,941 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:10:48,951 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-05 17:10:48,951 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-05 17:10:48,971 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-05 17:10:49,011 - logs… - INFO - {
+  "code": "000000",
+  "content": "73ace523-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:10:49,021 - logs… - INFO - {
+  "code": "000000",
+  "content": "73b202df-a70c-11ea-858f-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-05 17:10:49,031 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-05 17:10:49,031 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:10:49,041 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-05 17:10:49,051 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:10:49,051 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-05 17:10:49,061 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}

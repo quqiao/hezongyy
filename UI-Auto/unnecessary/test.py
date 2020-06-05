@@ -60,9 +60,13 @@
 # for case in list1:  # 从caselist元素组中循环取出case
 #        case_name = case.split("/")[-1]
 #        print(case_name)
+class A():
+    cc = 55555
+    def funcB(self):
+        ss = 123456
+        return ss
 
-s = "sssss"
 
-s1 = """sdfsaf: %s""" %s
-print(s1)
+a = A().funcB()
 
+print(a)
