@@ -1,6 +1,7 @@
 import requests
 import json
 from common1.Log import logger
+import time
 
 logger = logger
 class RunMain():
@@ -43,6 +44,7 @@ class RunMain():
         else:
             print("method值错误！！！")
             logger.info("method值错误！！！")
+        time. sleep(1)
         return result
 if __name__ == '__main__':  # 通过写死参数，来验证我们写的请求是否正确
     result = RunMain().run_main('delete', 'http://192.168.31.93:38080/SingleSignOn/find/', '{"1234567"}'.encode('utf-8'))
