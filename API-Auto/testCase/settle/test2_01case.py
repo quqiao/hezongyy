@@ -20,7 +20,7 @@ with open('./SaveParam/login_token.txt', 'r', encoding='utf-8') as f:
 
 @paramunittest.parametrized(*login_xls)
 class testSettleAddGoodsCart(unittest.TestCase):
-    def setParameters(self, case_name, path, query, method):
+    def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
         :param case_name:
@@ -30,9 +30,13 @@ class testSettleAddGoodsCart(unittest.TestCase):
         :return:
         """
         self.case_name = str(case_name)
+        self.url = str(url)
+        self.port = str(int(port))
         self.path = str(path)
         self.query = str(query)
         self.method = str(method)
+        self.expected = str(expected)
+        self.result = str(result)
 
     def description(self):
         """
@@ -54,7 +58,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
     def tearDown(self):
         print("测试结束，输出log完结\n\n")
 
-    def checkResult(self):# 断言
+    def checkResult(self):  # 断言
         """
         check test result
         :return:
@@ -68,13 +72,40 @@ class testSettleAddGoodsCart(unittest.TestCase):
         info = RunMain().run_main(self.method, url, data1, hearder)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
         if self.case_name == 'url和参数都正确':  # 如果case_name是login，说明合法，返回的code应该为200
-            self.assertEqual(ss['code'], 000000)
-        if self.case_name == '添加商品到购物车为空':  # 同上
-            self.assertEqual(ss['code'], -1)
-        if self.case_name == '添加商品到购物车为错误':  # 同上
-            self.assertEqual(ss['code'], 10001)
+            self.assertEqual(ss['code'], '000000')
+        if self.case_name == 'url填写错误':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'url为空':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'goodsId为空':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'goodsId填写错误':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'type为普通':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'type为特卖':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'type为秒杀':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'type为阶梯价':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'type填写错误':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'type填写为空':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'number为0':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'number为50000':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'number为50001':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'number为错误':  # 同上
+            self.assertEqual(ss['code'], '111111')
+        if self.case_name == 'number为空':  # 同上
+            self.assertEqual(ss['code'], '111111')
 
 
-# if __name__ == '__main__':#测试一下，我们读取配置文件的方法是否可用
+
+# if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
 #     testUserLogin().checkResult()
 
