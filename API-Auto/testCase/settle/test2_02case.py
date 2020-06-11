@@ -12,7 +12,7 @@ import time
 
 time.sleep(3)
 url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '1添加商品到购物车')
+login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '2修改购物车商品数量')
 with open('./SaveParam/login_token.txt', 'r', encoding='utf-8') as f:
     hesytoken = f.read()  # 获取cookies
     f.close()
@@ -52,7 +52,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
         """
         print(self.case_name+"测试开始前准备")
 
-    def test2_01case(self):
+    def test2_02case(self):
         """修改购物车商品数量接口"""
         self.checkResult()
 
@@ -104,6 +104,18 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], "900006")
         if self.case_name == 'number为空':  # 同上
             self.assertEqual(ss['code'], "200702")
+        if self.case_name == 'oldBasketType为普通':  # 同上
+            self.assertEqual(ss['code'], "000000")
+        if self.case_name == 'oldBasketType为特卖':  # 同上
+            self.assertEqual(ss['code'], "000000")
+        if self.case_name == 'oldBasketType为秒杀':  # 同上
+            self.assertEqual(ss['code'], "000000")
+        if self.case_name == 'oldBasketType为阶梯价':  # 同上
+            self.assertEqual(ss['code'], "000000")
+        if self.case_name == 'oldBasketType填写错误':  # 同上
+            self.assertEqual(ss['code'], "000000")
+        if self.case_name == 'oldBasketType填写为空':  # 同上
+            self.assertEqual(ss['code'], "000000")
 
 
 
