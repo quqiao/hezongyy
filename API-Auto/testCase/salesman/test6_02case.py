@@ -10,7 +10,7 @@ import readExcel
 # pythoncom.CoInitialize()
 
 # url = geturlParams.geturlParams().get_Url1_3()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '用户登录')
+login_xls = readExcel.readExcel().get_xls('业务员APP.xlsx', '用户登录')
 
 @paramunittest.parametrized(*login_xls)
 class testUserLogin(unittest.TestCase):
@@ -67,35 +67,12 @@ class testUserLogin(unittest.TestCase):
         data1 = self.query.encode('utf-8')
         info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == 'url和参数都正确':  # '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == 'id正确':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], '000000')
-            with open('./SaveParam/UserLoginToken.txt', 'w') as f:
-                f.write(ss['content'])
-                f.close()
-        if self.case_name == 'url为错误':  # 同上
-            self.assertEqual(ss['code'], '900004')
-        if self.case_name == 'url为空':  # 同上
-            self.assertEqual(ss['code'], '900004')
-        if self.case_name == 'username为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'username为错误':  # 同上
-            self.assertEqual(ss['code'], '200001')
-        if self.case_name == 'password为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'password为错误':  # 同上
-            self.assertEqual(ss['code'], '200001')
-        if self.case_name == 'channel为PC':  # 同上
-            self.assertEqual(ss['code'], '000000')
-        if self.case_name == 'channel为APP':  # 同上
-            self.assertEqual(ss['code'], '000000')
-        if self.case_name == 'channel为错误':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'channel为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'timeout为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'timeout为错误':  # 同上
-            self.assertEqual(ss['code'], '900006')
+        if self.case_name == 'id错误':  # 同上
+            self.assertEqual(ss['code'], "900004")
+        if self.case_name == 'id为空':  # 同上
+            self.assertEqual(ss['code'], "900004")
 
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
