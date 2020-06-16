@@ -5,15 +5,17 @@ import paramunittest
 import geturlParams
 import urllib.parse
 # import pythoncom
-import time
 import readExcel
 # pythoncom.CoInitialize()
 
-# url = geturlParams.geturlParams().get_Url1_3()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '用户登录')
+# url = geturlParams.geturlParams().get_Url1_1()  # 调用我们的geturlParams获取我们拼接的URL
+login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '获取用户信息')
+with open('./SaveParam/UserLoginToken.txt', 'r', encoding='utf-8') as f:
+    id = f.read()  # 获取cookies
+    f.close()
 
 @paramunittest.parametrized(*login_xls)
-class testUserLogin(unittest.TestCase):
+class testUserFind(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -44,18 +46,17 @@ class testUserLogin(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name+"测试开始前准备")
-        url = 'http://' + self.url + ':' + self.port + self.path
-        print(url)
+        print(self.case_name)
 
-    def test1_02case(self):
-        """用户登录接口"""
+    def test1_01(self):
+        """通过票据获取平台用户信息接口"""
         self.checkResult()
+
 
     def tearDown(self):
         print("测试结束，输出log完结\n\n")
 
-    def checkResult(self):  # 断言
+    def checkResult(self):# 断言
         """
         check test result
         :return:
@@ -63,40 +64,22 @@ class testUserLogin(unittest.TestCase):
         # url1 = "http://www.xxx.com/login?"
         # new_url = url1 + self.query
         # data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}
-        url = 'http://' + self.url + ':' + self.port + self.path
         data1 = self.query.encode('utf-8')
-        info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
+        if self.query == "test":
+            url = 'http://' + self.url + ':' + self.port + self.path + id
+        else:
+            url = 'http://' + self.url + ':' + self.port + self.path + self.query
+        info = RunMain().run_main(self.method, url)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
-        if self.case_name == 'url和参数都正确':  # '用户登录正确':  # 如果case_name是login，说明合法，返回的code应该为200
+        if self.case_name == '用户票据填写正确':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], '000000')
-            with open('./SaveParam/UserLoginToken.txt', 'w') as f:
-                f.write(ss['content'])
-                f.close()
-        if self.case_name == 'url为错误':  # 同上
+        if self.case_name == '用户票据填写错误':  # 同上
             self.assertEqual(ss['code'], '900004')
-        if self.case_name == 'url为空':  # 同上
+        if self.case_name == '用户票据填写无效':  # 同上
+            self.assertEqual(ss['code'], '900024')
+        if self.case_name == '用户票据填写为空':  # 同上
             self.assertEqual(ss['code'], '900004')
-        if self.case_name == 'username为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'username为错误':  # 同上
-            self.assertEqual(ss['code'], '200001')
-        if self.case_name == 'password为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'password为错误':  # 同上
-            self.assertEqual(ss['code'], '200001')
-        if self.case_name == 'channel为PC':  # 同上
-            self.assertEqual(ss['code'], '000000')
-        if self.case_name == 'channel为APP':  # 同上
-            self.assertEqual(ss['code'], '000000')
-        if self.case_name == 'channel为错误':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'channel为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'timeout为空':  # 同上
-            self.assertEqual(ss['code'], '900007')
-        if self.case_name == 'timeout为错误':  # 同上
-            self.assertEqual(ss['code'], '900006')
 
+if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
+    print(testUserFind().description())
 
-# if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
-#     print(testUserLogin().checkResult())

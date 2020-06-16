@@ -6,7 +6,7 @@ import geturlParams
 import urllib.parse
 # import pythoncom
 import readExcel
-from testCase.user import test1_02case
+from testCase.user import test1_01case
 # pythoncom.CoInitialize()
 import time
 
