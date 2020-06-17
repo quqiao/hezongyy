@@ -7,12 +7,11 @@ import urllib.parse
 # import pythoncom
 import readExcel
 # pythoncom.CoInitialize()
+from SaveParam.GetParam import UserLoginToken
 
 # url = geturlParams.geturlParams().get_Url1_1()  # 调用我们的geturlParams获取我们拼接的URL
 login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '获取用户信息')
-with open('./SaveParam/UserLoginToken.txt', 'r', encoding='utf-8') as f:
-    id = f.read()  # 获取cookies
-    f.close()
+
 
 @paramunittest.parametrized(*login_xls)
 class testUserFind(unittest.TestCase):
@@ -65,8 +64,8 @@ class testUserFind(unittest.TestCase):
         # new_url = url1 + self.query
         # data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}
         data1 = self.query.encode('utf-8')
-        if self.query == "test":
-            url = 'http://' + self.url + ':' + self.port + self.path + id
+        if self.query == "hesytoken":
+            url = 'http://' + self.url + ':' + self.port + self.path + UserLoginToken()
         else:
             url = 'http://' + self.url + ':' + self.port + self.path + self.query
         info = RunMain().run_main(self.method, url)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应

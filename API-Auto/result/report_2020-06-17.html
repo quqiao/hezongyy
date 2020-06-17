@@ -1,0 +1,3588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+    <!-- <script type="text/javascript" src="js/echarts.common.min.js"></script> -->
+    
+<style type="text/css" media="screen">
+    body        { font-family: Microsoft YaHei,Consolas,arial,sans-serif; font-size: 80%; }
+    table       { font-size: 100%; }
+    pre         { white-space: pre-wrap;word-wrap: break-word; }
+    /* -- heading ---------------------------------------------------------------------- */
+    h1 {
+        font-size: 16pt;
+        color: gray;
+    }
+    .heading {
+        margin-top: 0ex;
+        margin-bottom: 1ex;
+    }
+    .heading .attribute {
+        margin-top: 1ex;
+        margin-bottom: 0;
+    }
+    .heading .description {
+        margin-top: 2ex;
+        margin-bottom: 3ex;
+    }
+    /* -- css div popup ------------------------------------------------------------------------ */
+    a.popup_link {
+    }
+    a.popup_link:hover {
+        color: red;
+    }
+    .popup_window {
+        display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /*border: solid #627173 1px; */
+        padding: 10px;
+        /*background-color: #E6E6D6; */
+        font-family: "Lucida Console", "Courier New", Courier, monospace;
+        text-align: left;
+        font-size: 8pt;
+        /* width: 500px;*/
+    }
+    }
+    /* -- report ------------------------------------------------------------------------ */
+    #show_detail_line {
+        margin-top: 3ex;
+        margin-bottom: 1ex;
+    }
+    #result_table {
+        width: 99%;
+    }
+    #header_row {
+        font-weight: bold;
+        color: #303641;
+        background-color: #ebebeb;
+    }
+    #total_row  { font-weight: bold; }
+    .passClass  { background-color: #bdedbc; }
+    .failClass  { background-color: #ffefa4; }
+    .errorClass { background-color: #ffc9c9; }
+    .passCase   { color: #6c6; }
+    .failCase   { color: #FF6600; font-weight: bold; }
+    .errorCase  { color: #c00; font-weight: bold; }
+    .hiddenRow  { display: none; }
+    .testcase   { margin-left: 2em; }
+    /* -- ending ---------------------------------------------------------------------- */
+    #ending {
+    }
+    #div_base {
+                position:absolute;
+                top:0%;
+                left:5%;
+                right:5%;
+                width: auto;
+                height: auto;
+                margin: -15px 0 0 0;
+    }
+</style>
+
+</head>
+<body>
+    <script language="javascript" type="text/javascript"><!--
+    output_list = Array();
+    /* level - 0:Summary; 1:Failed; 2:All */
+    function showCase(level) {
+        trs = document.getElementsByTagName("tr");
+        for (var i = 0; i < trs.length; i++) {
+            tr = trs[i];
+            id = tr.id;
+            if (id.substr(0,2) == 'ft') {
+                if (level < 1) {
+                    tr.className = 'hiddenRow';
+                }
+                else {
+                    tr.className = '';
+                }
+            }
+            if (id.substr(0,2) == 'pt') {
+                if (level > 1) {
+                    tr.className = '';
+                }
+                else {
+                    tr.className = 'hiddenRow';
+                }
+            }
+        }
+    }
+    function showClassDetail(cid, count) {
+        var id_list = Array(count);
+        var toHide = 1;
+        for (var i = 0; i < count; i++) {
+            tid0 = 't' + cid.substr(1) + '.' + (i+1);
+            tid = 'f' + tid0;
+            tr = document.getElementById(tid);
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+            id_list[i] = tid;
+            if (tr.className) {
+                toHide = 0;
+            }
+        }
+        for (var i = 0; i < count; i++) {
+            tid = id_list[i];
+            if (toHide) {
+                document.getElementById('div_'+tid).style.display = 'none'
+                document.getElementById(tid).className = 'hiddenRow';
+            }
+            else {
+                document.getElementById(tid).className = '';
+            }
+        }
+    }
+    function showTestDetail(div_id){
+        var details_div = document.getElementById(div_id)
+        var displayState = details_div.style.display
+        // alert(displayState)
+        if (displayState != 'block' ) {
+            displayState = 'block'
+            details_div.style.display = 'block'
+        }
+        else {
+            details_div.style.display = 'none'
+        }
+    }
+    function html_escape(s) {
+        s = s.replace(/&/g,'&amp;');
+        s = s.replace(/</g,'&lt;');
+        s = s.replace(/>/g,'&gt;');
+        return s;
+    }
+    /* obsoleted by detail in <div>
+    function showOutput(id, name) {
+        var w = window.open("", //url
+                        name,
+                        "resizable,scrollbars,status,width=800,height=450");
+        d = w.document;
+        d.write("<pre>");
+        d.write(html_escape(output_list[id]));
+        d.write("\n");
+        d.write("<a href='javascript:window.close()'>close</a>\n");
+        d.write("</pre>\n");
+        d.close();
+    }
+    */
+    --></script>
+    <div id="div_base">
+        
+    <div class='page-header'>
+        <h1>Test Report</h1>
+    <p class='attribute'><strong>开始时间:</strong> 2020-06-17 16:06:49</p>
+<p class='attribute'><strong>运行时长:</strong> 0:01:40.869798</p>
+<p class='attribute'><strong>状态:</strong> 通过 24 失败 73 错误 1</p>
+
+    </div>
+    <div style="float: left;width:50%;"><p class='description'>Test Description</p></div>
+    <div id="chart" style="width:50%;height:400px;float:left;"></div>
+
+        
+    <div class="btn-group btn-group-sm">
+        <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button>
+        <button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>
+        <button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>
+    </div>
+    <p></p>
+    <table id='result_table' class="table table-bordered">
+        <colgroup>
+            <col align='left' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+        </colgroup>
+        <tr id='header_row'>
+            <td>测试套件/测试用例</td>
+            <td>总数</td>
+            <td>通过</td>
+            <td>失败</td>
+            <td>错误</td>
+            <td>查看</td>
+        </tr>
+        
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',1)">详情</a></td>
+    </tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+    <div id='div_pt1.1' class="popup_window">
+        <pre>pt1.1: url和参数都正确测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c2',1)">详情</a></td>
+    </tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        通过</a>
+    <div id='div_pt2.1' class="popup_window">
+        <pre>pt2.1: url填写错误测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
+    </tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        通过</a>
+    <div id='div_pt3.1' class="popup_window">
+        <pre>pt3.1: type填写为空测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_11</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c4',1)">详情</a></td>
+    </tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        通过</a>
+    <div id='div_pt4.1' class="popup_window">
+        <pre>pt4.1: number为0测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_12</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
+    </tr>
+
+<tr id='ft5.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        失败</a>
+    <div id='div_ft5.1' class="popup_window">
+        <pre>ft5.1: number为50000测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 54, in test2_01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 98, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '200316' != '000000'
+- 200316
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_13</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c6',1)">详情</a></td>
+    </tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.1')" >
+        通过</a>
+    <div id='div_pt6.1' class="popup_window">
+        <pre>pt6.1: number为50001测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_14</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c7',1)">详情</a></td>
+    </tr>
+
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.1')" >
+        通过</a>
+    <div id='div_pt7.1' class="popup_window">
+        <pre>pt7.1: number为错误测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_15</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c8',1)">详情</a></td>
+    </tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.1')" >
+        通过</a>
+    <div id='div_pt8.1' class="popup_window">
+        <pre>pt8.1: number为空测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c9',1)">详情</a></td>
+    </tr>
+
+<tr id='pt9.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt9.1')" >
+        通过</a>
+    <div id='div_pt9.1' class="popup_window">
+        <pre>pt9.1: url为空测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c10',1)">详情</a></td>
+    </tr>
+
+<tr id='ft10.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.1')" >
+        失败</a>
+    <div id='div_ft10.1' class="popup_window">
+        <pre>ft10.1: goodsId为空测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 54, in test2_01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 80, in checkResult
+    self.assertEqual(ss['code'], "900006")
+AssertionError: '200316' != '900006'
+- 200316
++ 900006
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c11',1)">详情</a></td>
+    </tr>
+
+<tr id='pt11.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt11.1')" >
+        通过</a>
+    <div id='div_pt11.1' class="popup_window">
+        <pre>pt11.1: goodsId填写错误测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c12',1)">详情</a></td>
+    </tr>
+
+<tr id='ft12.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft12.1')" >
+        失败</a>
+    <div id='div_ft12.1' class="popup_window">
+        <pre>ft12.1: type为普通测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 54, in test2_01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 84, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '200316' != '000000'
+- 200316
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c13',1)">详情</a></td>
+    </tr>
+
+<tr id='ft13.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft13.1')" >
+        失败</a>
+    <div id='div_ft13.1' class="popup_window">
+        <pre>ft13.1: type为特卖测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 54, in test2_01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 86, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '200316' != '000000'
+- 200316
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_7</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c14',1)">详情</a></td>
+    </tr>
+
+<tr id='pt14.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt14.1')" >
+        通过</a>
+    <div id='div_pt14.1' class="popup_window">
+        <pre>pt14.1: type为秒杀测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c15',1)">详情</a></td>
+    </tr>
+
+<tr id='ft15.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft15.1')" >
+        失败</a>
+    <div id='div_ft15.1' class="popup_window">
+        <pre>ft15.1: type为阶梯价测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 54, in test2_01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 90, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '200316' != '000000'
+- 200316
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_9</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c16',1)">详情</a></td>
+    </tr>
+
+<tr id='ft16.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_01case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft16.1')" >
+        失败</a>
+    <div id='div_ft16.1' class="popup_window">
+        <pre>ft16.1: type填写错误测试开始前准备
+{'hesytoken': '7e0bbf6a-b06b-11ea-8ad6-0a0027000008'}
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 54, in test2_01case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_01case.py", line 92, in checkResult
+    self.assertEqual(ss['code'], "900007")
+AssertionError: '200725' != '900007'
+- 200725
++ 900007
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c17',1)">详情</a></td>
+    </tr>
+
+<tr id='ft17.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.1')" >
+        失败</a>
+    <div id='div_ft17.1' class="popup_window">
+        <pre>ft17.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 74, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900000' != '000000'
+- 900000
+? ^
++ 000000
+? ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c18',1)">详情</a></td>
+    </tr>
+
+<tr id='ft18.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft18.1')" >
+        失败</a>
+    <div id='div_ft18.1' class="popup_window">
+        <pre>ft18.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 76, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900000' != '900004'
+- 900000
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_10</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c19',1)">详情</a></td>
+    </tr>
+
+<tr id='pt19.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt19.1')" >
+        通过</a>
+    <div id='div_pt19.1' class="popup_window">
+        <pre>pt19.1: type填写为空测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_11</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c20',1)">详情</a></td>
+    </tr>
+
+<tr id='pt20.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt20.1')" >
+        通过</a>
+    <div id='div_pt20.1' class="popup_window">
+        <pre>pt20.1: number为0测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_12</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c21',1)">详情</a></td>
+    </tr>
+
+<tr id='ft21.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft21.1')" >
+        失败</a>
+    <div id='div_ft21.1' class="popup_window">
+        <pre>ft21.1: number为50000测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 98, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900000' != '000000'
+- 900000
+? ^
++ 000000
+? ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_13</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c22',1)">详情</a></td>
+    </tr>
+
+<tr id='pt22.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt22.1')" >
+        通过</a>
+    <div id='div_pt22.1' class="popup_window">
+        <pre>pt22.1: number为50001测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_14</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c23',1)">详情</a></td>
+    </tr>
+
+<tr id='pt23.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt23.1')" >
+        通过</a>
+    <div id='div_pt23.1' class="popup_window">
+        <pre>pt23.1: number为错误测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_15</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c24',1)">详情</a></td>
+    </tr>
+
+<tr id='pt24.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt24.1')" >
+        通过</a>
+    <div id='div_pt24.1' class="popup_window">
+        <pre>pt24.1: number为空测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_16</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c25',1)">详情</a></td>
+    </tr>
+
+<tr id='pt25.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.1')" >
+        通过</a>
+    <div id='div_pt25.1' class="popup_window">
+        <pre>pt25.1: oldBasketType为普通测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_17</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c26',1)">详情</a></td>
+    </tr>
+
+<tr id='pt26.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt26.1')" >
+        通过</a>
+    <div id='div_pt26.1' class="popup_window">
+        <pre>pt26.1: oldBasketType为特卖测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_18</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c27',1)">详情</a></td>
+    </tr>
+
+<tr id='pt27.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt27.1')" >
+        通过</a>
+    <div id='div_pt27.1' class="popup_window">
+        <pre>pt27.1: oldBasketType为秒杀测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_19</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c28',1)">详情</a></td>
+    </tr>
+
+<tr id='pt28.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt28.1')" >
+        通过</a>
+    <div id='div_pt28.1' class="popup_window">
+        <pre>pt28.1: oldBasketType为阶梯价测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c29',1)">详情</a></td>
+    </tr>
+
+<tr id='ft29.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft29.1')" >
+        失败</a>
+    <div id='div_ft29.1' class="popup_window">
+        <pre>ft29.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 78, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900000' != '900004'
+- 900000
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_20</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c30',1)">详情</a></td>
+    </tr>
+
+<tr id='pt30.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt30.1')" >
+        通过</a>
+    <div id='div_pt30.1' class="popup_window">
+        <pre>pt30.1: oldBasketType填写错误测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_21</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c31',1)">详情</a></td>
+    </tr>
+
+<tr id='pt31.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt31.1')" >
+        通过</a>
+    <div id='div_pt31.1' class="popup_window">
+        <pre>pt31.1: oldBasketType填写为空测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c32',1)">详情</a></td>
+    </tr>
+
+<tr id='ft32.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft32.1')" >
+        失败</a>
+    <div id='div_ft32.1' class="popup_window">
+        <pre>ft32.1: goodsId为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 80, in checkResult
+    self.assertEqual(ss['code'], "900006")
+AssertionError: '200316' != '900006'
+- 200316
++ 900006
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_4</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c33',1)">详情</a></td>
+    </tr>
+
+<tr id='ft33.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft33.1')" >
+        失败</a>
+    <div id='div_ft33.1' class="popup_window">
+        <pre>ft33.1: goodsId填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 82, in checkResult
+    self.assertEqual(ss['code'], "200316")
+AssertionError: '900006' != '200316'
+- 900006
++ 200316
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_5</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c34',1)">详情</a></td>
+    </tr>
+
+<tr id='pt34.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt34.1')" >
+        通过</a>
+    <div id='div_pt34.1' class="popup_window">
+        <pre>pt34.1: type为普通测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c35',1)">详情</a></td>
+    </tr>
+
+<tr id='ft35.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft35.1')" >
+        失败</a>
+    <div id='div_ft35.1' class="popup_window">
+        <pre>ft35.1: type为特卖测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 86, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900000' != '000000'
+- 900000
+? ^
++ 000000
+? ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_7</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c36',1)">详情</a></td>
+    </tr>
+
+<tr id='pt36.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt36.1')" >
+        通过</a>
+    <div id='div_pt36.1' class="popup_window">
+        <pre>pt36.1: type为秒杀测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c37',1)">详情</a></td>
+    </tr>
+
+<tr id='ft37.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft37.1')" >
+        失败</a>
+    <div id='div_ft37.1' class="popup_window">
+        <pre>ft37.1: type为阶梯价测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 90, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '200701' != '000000'
+- 200701
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_9</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c38',1)">详情</a></td>
+    </tr>
+
+<tr id='ft38.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_02case: 修改购物车商品数量接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft38.1')" >
+        失败</a>
+    <div id='div_ft38.1' class="popup_window">
+        <pre>ft38.1: type填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 55, in test2_02case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_02case.py", line 92, in checkResult
+    self.assertEqual(ss['code'], "900007")
+AssertionError: '200725' != '900007'
+- 200725
++ 900007
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='errorClass'>
+        <td>unittest.loader._FailedTest</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="javascript:showClassDetail('c39',1)">详情</a></td>
+    </tr>
+
+<tr id='ft39.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test2_03case</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft39.1')" >
+        错误</a>
+    <div id='div_ft39.1' class="popup_window">
+        <pre>ft39.1: ImportError: Failed to import test module: settle.test2_03case
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\xlrd\book.py", line 474, in sheet_by_name
+    sheetx = self._sheet_names.index(sheet_name)
+ValueError: '3修改购物车商品数量' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_03case.py", line 16, in &lt;module&gt;
+    login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '3修改购物车商品数量')
+  File "F:\pyhcarm\hezongyy\API-Auto\readExcel.py", line 14, in get_xls
+    sheet = file.sheet_by_name(sheet_name)#获得打开Excel的sheet
+  File "F:\pyhcarm\hezongyy\venv_python3.7\lib\site-packages\xlrd\book.py", line 476, in sheet_by_name
+    raise XLRDError('No sheet named &lt;%r&gt;' % sheet_name)
+xlrd.biffh.XLRDError: No sheet named &lt;'3修改购物车商品数量'&gt;
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c40',1)">详情</a></td>
+    </tr>
+
+<tr id='ft40.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 4查询普通购物车</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft40.1')" >
+        失败</a>
+    <div id='div_ft40.1' class="popup_window">
+        <pre>ft40.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_04case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_04case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c41',1)">详情</a></td>
+    </tr>
+
+<tr id='ft41.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 4查询普通购物车</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft41.1')" >
+        失败</a>
+    <div id='div_ft41.1' class="popup_window">
+        <pre>ft41.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_04case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_04case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c42',1)">详情</a></td>
+    </tr>
+
+<tr id='ft42.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 4查询普通购物车</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft42.1')" >
+        失败</a>
+    <div id='div_ft42.1' class="popup_window">
+        <pre>ft42.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_04case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_04case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c43',1)">详情</a></td>
+    </tr>
+
+<tr id='ft43.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 5查询阶梯价商品购物车</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft43.1')" >
+        失败</a>
+    <div id='div_ft43.1' class="popup_window">
+        <pre>ft43.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_05case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_05case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c44',1)">详情</a></td>
+    </tr>
+
+<tr id='ft44.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 5查询阶梯价商品购物车</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft44.1')" >
+        失败</a>
+    <div id='div_ft44.1' class="popup_window">
+        <pre>ft44.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_05case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_05case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c45',1)">详情</a></td>
+    </tr>
+
+<tr id='ft45.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 5查询阶梯价商品购物车</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft45.1')" >
+        失败</a>
+    <div id='div_ft45.1' class="popup_window">
+        <pre>ft45.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_05case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_05case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c46',1)">详情</a></td>
+    </tr>
+
+<tr id='ft46.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 6获取特卖商品购物车接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft46.1')" >
+        失败</a>
+    <div id='div_ft46.1' class="popup_window">
+        <pre>ft46.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_06case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_06case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c47',1)">详情</a></td>
+    </tr>
+
+<tr id='ft47.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 6获取特卖商品购物车接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft47.1')" >
+        失败</a>
+    <div id='div_ft47.1' class="popup_window">
+        <pre>ft47.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_06case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_06case.py", line 79, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c48',1)">详情</a></td>
+    </tr>
+
+<tr id='ft48.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 6获取特卖商品购物车接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft48.1')" >
+        失败</a>
+    <div id='div_ft48.1' class="popup_window">
+        <pre>ft48.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_06case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_06case.py", line 81, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c49',1)">详情</a></td>
+    </tr>
+
+<tr id='ft49.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft49.1')" >
+        失败</a>
+    <div id='div_ft49.1' class="popup_window">
+        <pre>ft49.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_07case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_07case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c50',1)">详情</a></td>
+    </tr>
+
+<tr id='ft50.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft50.1')" >
+        失败</a>
+    <div id='div_ft50.1' class="popup_window">
+        <pre>ft50.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_07case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_07case.py", line 79, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c51',1)">详情</a></td>
+    </tr>
+
+<tr id='ft51.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft51.1')" >
+        失败</a>
+    <div id='div_ft51.1' class="popup_window">
+        <pre>ft51.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_07case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_07case.py", line 81, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c52',1)">详情</a></td>
+    </tr>
+
+<tr id='ft52.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 8获取是否拦截最低起购金额接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft52.1')" >
+        失败</a>
+    <div id='div_ft52.1' class="popup_window">
+        <pre>ft52.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_08case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_08case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c53',1)">详情</a></td>
+    </tr>
+
+<tr id='ft53.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 8获取是否拦截最低起购金额接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft53.1')" >
+        失败</a>
+    <div id='div_ft53.1' class="popup_window">
+        <pre>ft53.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_08case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_08case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c54',1)">详情</a></td>
+    </tr>
+
+<tr id='ft54.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 8获取是否拦截最低起购金额接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft54.1')" >
+        失败</a>
+    <div id='div_ft54.1' class="popup_window">
+        <pre>ft54.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_08case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_08case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c55',1)">详情</a></td>
+    </tr>
+
+<tr id='ft55.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft55.1')" >
+        失败</a>
+    <div id='div_ft55.1' class="popup_window">
+        <pre>ft55.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_09case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_09case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c56',1)">详情</a></td>
+    </tr>
+
+<tr id='ft56.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft56.1')" >
+        失败</a>
+    <div id='div_ft56.1' class="popup_window">
+        <pre>ft56.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_09case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_09case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c57',1)">详情</a></td>
+    </tr>
+
+<tr id='ft57.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft57.1')" >
+        失败</a>
+    <div id='div_ft57.1' class="popup_window">
+        <pre>ft57.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_09case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_09case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c58',1)">详情</a></td>
+    </tr>
+
+<tr id='ft58.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft58.1')" >
+        失败</a>
+    <div id='div_ft58.1' class="popup_window">
+        <pre>ft58.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_10case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_10case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c59',1)">详情</a></td>
+    </tr>
+
+<tr id='ft59.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft59.1')" >
+        失败</a>
+    <div id='div_ft59.1' class="popup_window">
+        <pre>ft59.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_10case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_10case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c60',1)">详情</a></td>
+    </tr>
+
+<tr id='ft60.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 7获取秒杀商品购物车列表</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft60.1')" >
+        失败</a>
+    <div id='div_ft60.1' class="popup_window">
+        <pre>ft60.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_10case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_10case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c61',1)">详情</a></td>
+    </tr>
+
+<tr id='ft61.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft61.1')" >
+        失败</a>
+    <div id='div_ft61.1' class="popup_window">
+        <pre>ft61.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c62',1)">详情</a></td>
+    </tr>
+
+<tr id='ft62.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft62.1')" >
+        失败</a>
+    <div id='div_ft62.1' class="popup_window">
+        <pre>ft62.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_10</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c63',1)">详情</a></td>
+    </tr>
+
+<tr id='ft63.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft63.1')" >
+        失败</a>
+    <div id='div_ft63.1' class="popup_window">
+        <pre>ft63.1: invoice为字纸发票测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 93, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_11</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c64',1)">详情</a></td>
+    </tr>
+
+<tr id='ft64.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft64.1')" >
+        失败</a>
+    <div id='div_ft64.1' class="popup_window">
+        <pre>ft64.1: invoice为增值专用税发票测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 95, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_12</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c65',1)">详情</a></td>
+    </tr>
+
+<tr id='ft65.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft65.1')" >
+        失败</a>
+    <div id='div_ft65.1' class="popup_window">
+        <pre>ft65.1: invoice填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 97, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_13</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c66',1)">详情</a></td>
+    </tr>
+
+<tr id='ft66.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft66.1')" >
+        失败</a>
+    <div id='div_ft66.1' class="popup_window">
+        <pre>ft66.1: invoice为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 99, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_14</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c67',1)">详情</a></td>
+    </tr>
+
+<tr id='ft67.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft67.1')" >
+        失败</a>
+    <div id='div_ft67.1' class="popup_window">
+        <pre>ft67.1: remark填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 101, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_15</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c68',1)">详情</a></td>
+    </tr>
+
+<tr id='ft68.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft68.1')" >
+        失败</a>
+    <div id='div_ft68.1' class="popup_window">
+        <pre>ft68.1: remark为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 103, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_16</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c69',1)">详情</a></td>
+    </tr>
+
+<tr id='ft69.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft69.1')" >
+        失败</a>
+    <div id='div_ft69.1' class="popup_window">
+        <pre>ft69.1: goodsId填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 105, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_17</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c70',1)">详情</a></td>
+    </tr>
+
+<tr id='ft70.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft70.1')" >
+        失败</a>
+    <div id='div_ft70.1' class="popup_window">
+        <pre>ft70.1: goodsId为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 107, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_18</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c71',1)">详情</a></td>
+    </tr>
+
+<tr id='ft71.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft71.1')" >
+        失败</a>
+    <div id='div_ft71.1' class="popup_window">
+        <pre>ft71.1: type为普通测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 109, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_19</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c72',1)">详情</a></td>
+    </tr>
+
+<tr id='ft72.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft72.1')" >
+        失败</a>
+    <div id='div_ft72.1' class="popup_window">
+        <pre>ft72.1: type为特卖测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 111, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c73',1)">详情</a></td>
+    </tr>
+
+<tr id='ft73.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft73.1')" >
+        失败</a>
+    <div id='div_ft73.1' class="popup_window">
+        <pre>ft73.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_20</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c74',1)">详情</a></td>
+    </tr>
+
+<tr id='ft74.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft74.1')" >
+        失败</a>
+    <div id='div_ft74.1' class="popup_window">
+        <pre>ft74.1: type为秒杀测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 113, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_21</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c75',1)">详情</a></td>
+    </tr>
+
+<tr id='ft75.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft75.1')" >
+        失败</a>
+    <div id='div_ft75.1' class="popup_window">
+        <pre>ft75.1: type为阶梯价测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 115, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_22</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c76',1)">详情</a></td>
+    </tr>
+
+<tr id='ft76.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft76.1')" >
+        失败</a>
+    <div id='div_ft76.1' class="popup_window">
+        <pre>ft76.1: type填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 117, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_23</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c77',1)">详情</a></td>
+    </tr>
+
+<tr id='ft77.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft77.1')" >
+        失败</a>
+    <div id='div_ft77.1' class="popup_window">
+        <pre>ft77.1: type填写为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 119, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_24</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c78',1)">详情</a></td>
+    </tr>
+
+<tr id='ft78.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft78.1')" >
+        失败</a>
+    <div id='div_ft78.1' class="popup_window">
+        <pre>ft78.1: number填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 121, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_25</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c79',1)">详情</a></td>
+    </tr>
+
+<tr id='ft79.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft79.1')" >
+        失败</a>
+    <div id='div_ft79.1' class="popup_window">
+        <pre>ft79.1: number为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 123, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c80',1)">详情</a></td>
+    </tr>
+
+<tr id='ft80.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft80.1')" >
+        失败</a>
+    <div id='div_ft80.1' class="popup_window">
+        <pre>ft80.1: channel为PC端测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 79, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_4</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c81',1)">详情</a></td>
+    </tr>
+
+<tr id='ft81.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft81.1')" >
+        失败</a>
+    <div id='div_ft81.1' class="popup_window">
+        <pre>ft81.1: channel为APP端测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 81, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c82',1)">详情</a></td>
+    </tr>
+
+<tr id='ft82.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft82.1')" >
+        失败</a>
+    <div id='div_ft82.1' class="popup_window">
+        <pre>ft82.1: channel填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 83, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c83',1)">详情</a></td>
+    </tr>
+
+<tr id='ft83.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft83.1')" >
+        失败</a>
+    <div id='div_ft83.1' class="popup_window">
+        <pre>ft83.1: channel为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 85, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900006' != '900004'
+- 900006
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_7</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c84',1)">详情</a></td>
+    </tr>
+
+<tr id='ft84.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft84.1')" >
+        失败</a>
+    <div id='div_ft84.1' class="popup_window">
+        <pre>ft84.1: type为转账测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 87, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c85',1)">详情</a></td>
+    </tr>
+
+<tr id='ft85.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft85.1')" >
+        失败</a>
+    <div id='div_ft85.1' class="popup_window">
+        <pre>ft85.1: type为在线支付测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 89, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_9</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c86',1)">详情</a></td>
+    </tr>
+
+<tr id='ft86.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 11提交订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft86.1')" >
+        失败</a>
+    <div id='div_ft86.1' class="popup_window">
+        <pre>ft86.1: invoice为增值普通发票测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_11case.py", line 91, in checkResult
+    self.assertEqual(ss['code'], "000000")
+AssertionError: '900006' != '000000'
+- 900006
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c87',1)">详情</a></td>
+    </tr>
+
+<tr id='ft87.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft87.1')" >
+        失败</a>
+    <div id='div_ft87.1' class="popup_window">
+        <pre>ft87.1: url和参数都正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 73, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900007' != '000000'
+- 900007
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c88',1)">详情</a></td>
+    </tr>
+
+<tr id='ft88.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft88.1')" >
+        失败</a>
+    <div id='div_ft88.1' class="popup_window">
+        <pre>ft88.1: url填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 75, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900007' != '900004'
+- 900007
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c89',1)">详情</a></td>
+    </tr>
+
+<tr id='ft89.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft89.1')" >
+        失败</a>
+    <div id='div_ft89.1' class="popup_window">
+        <pre>ft89.1: url为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900007' != '900004'
+- 900007
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c90',1)">详情</a></td>
+    </tr>
+
+<tr id='ft90.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft90.1')" >
+        失败</a>
+    <div id='div_ft90.1' class="popup_window">
+        <pre>ft90.1: orderId填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 79, in checkResult
+    self.assertEqual(ss['code'], "900006")
+AssertionError: '900007' != '900006'
+- 900007
+?      ^
++ 900006
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>paramunittest.testSettleAddGoodsCart_4</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c91',1)">详情</a></td>
+    </tr>
+
+<tr id='pt91.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt91.1')" >
+        通过</a>
+    <div id='div_pt91.1' class="popup_window">
+        <pre>pt91.1: orderId为空测试开始前准备
+测试结束，输出log完结
+
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_5</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c92',1)">详情</a></td>
+    </tr>
+
+<tr id='ft92.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft92.1')" >
+        失败</a>
+    <div id='div_ft92.1' class="popup_window">
+        <pre>ft92.1: payableAmount填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 83, in checkResult
+    self.assertEqual(ss['code'], "900006")
+AssertionError: '900007' != '900006'
+- 900007
+?      ^
++ 900006
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c93',1)">详情</a></td>
+    </tr>
+
+<tr id='ft93.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft93.1')" >
+        失败</a>
+    <div id='div_ft93.1' class="popup_window">
+        <pre>ft93.1: payableAmount为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 85, in checkResult
+    self.assertEqual(ss['code'], "200814")
+AssertionError: '900007' != '200814'
+- 900007
++ 200814
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_7</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c94',1)">详情</a></td>
+    </tr>
+
+<tr id='ft94.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft94.1')" >
+        失败</a>
+    <div id='div_ft94.1' class="popup_window">
+        <pre>ft94.1: orderNumber填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 87, in checkResult
+    self.assertEqual(ss['code'], "900006")
+AssertionError: '900007' != '900006'
+- 900007
+?      ^
++ 900006
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c95',1)">详情</a></td>
+    </tr>
+
+<tr id='ft95.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 12支付订单</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft95.1')" >
+        失败</a>
+    <div id='div_ft95.1' class="popup_window">
+        <pre>ft95.1: orderNumber为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 54, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_12case.py", line 89, in checkResult
+    self.assertEqual(ss['code'], "200814")
+AssertionError: '900007' != '200814'
+- 900007
++ 200814
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c96',1)">详情</a></td>
+    </tr>
+
+<tr id='ft96.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 13是否完成支付接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft96.1')" >
+        失败</a>
+    <div id='div_ft96.1' class="popup_window">
+        <pre>ft96.1: orderId填写正确测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_13case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_13case.py", line 77, in checkResult
+    self.assertEqual(ss['code'], '000000')
+AssertionError: '900005' != '000000'
+- 900005
++ 000000
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c97',1)">详情</a></td>
+    </tr>
+
+<tr id='ft97.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 13是否完成支付接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft97.1')" >
+        失败</a>
+    <div id='div_ft97.1' class="popup_window">
+        <pre>ft97.1: orderId填写错误测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_13case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_13case.py", line 79, in checkResult
+    self.assertEqual(ss['code'], "200814")
+AssertionError: '900005' != '200814'
+- 900005
++ 200814
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+    <tr class='failClass'>
+        <td>paramunittest.testSettleAddGoodsCart_2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c98',1)">详情</a></td>
+    </tr>
+
+<tr id='ft98.1' class='none'>
+    <td class='failCase'><div class='testcase'>test2_04case: 13是否完成支付接口</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft98.1')" >
+        失败</a>
+    <div id='div_ft98.1' class="popup_window">
+        <pre>ft98.1: orderId为空测试开始前准备
+测试结束，输出log完结
+
+
+Traceback (most recent call last):
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_13case.py", line 58, in test2_04case
+    self.checkResult()
+  File "F:\pyhcarm\hezongyy\API-Auto\testCase\settle\test2_13case.py", line 81, in checkResult
+    self.assertEqual(ss['code'], "900004")
+AssertionError: '900005' != '900004'
+- 900005
+?      ^
++ 900004
+?      ^
+
+</pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+</tr>
+
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>98</td>
+            <td>24</td>
+            <td>73</td>
+            <td>1</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+        <div id='ending'>&nbsp;</div>
+        
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart'));
+        // 指定图表的配置项和数据
+        var option = {
+            title : {
+                text: '测试执行情况',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            color: ['#95b75d', 'grey', '#b64645'],
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['通过','失败','错误']
+            },
+            series : [
+                {
+                    name: '测试执行情况',
+                    type: 'pie',
+                    radius : '60%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:24, name:'通过'},
+                        {value:73, name:'失败'},
+                        {value:1, name:'错误'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    </div>
+</body>
+</html>

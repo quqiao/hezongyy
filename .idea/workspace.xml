@@ -2,98 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API-Auto/LOG/logs.2020-06-10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/result/report_2020-06-16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_01case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_02case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_03case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_04case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_05case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/ad/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/ad/test8_01case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/ad/test8_02case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_05case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_06case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_07case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_08case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_09case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_10case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_11case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_12case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_13case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_14case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_15case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_16case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_17case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_18case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_19case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_20case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_21case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/testFile/case/页面广告.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/SaveParam/GetParam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/report_2020-06-17.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/LOG/logs" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/LOG/logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/caselist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_01case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_02case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_03case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_04case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_05case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_06case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_06case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_07case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_07case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_08case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_08case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_09case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_09case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_10case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_10case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_11case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_12case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_13case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_13case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_14case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_14case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_15case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_15case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_16case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_16case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_17case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_17case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_18case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_18case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_19case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_19case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_20case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_20case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_21case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_21case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_22case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_22case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_23case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_23case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_24case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_24case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_25case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_25case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_26case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_26case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_27case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_27case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_28case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_28case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_29case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_29case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_30case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_30case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_31case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_31case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_32case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_32case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_33case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_33case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_34case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_34case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_35case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_35case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_36case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_36case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_37case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_37case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_38case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_38case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_39case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_39case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_40case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_40case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_41case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_41case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_42case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_42case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_43case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_43case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_44case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_44case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_45case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_45case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_46case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_46case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_47case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_47case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_48case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_48case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_49case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_49case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_50case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_50case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_51case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_51case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_52case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_52case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_53case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_53case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_54case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_54case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_55case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_55case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_56case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_56case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_57case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_57case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_58case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_58case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_59case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_59case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/common1/configHttp.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/common1/configHttp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/demo/test01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/demo/test01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_02case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_03case.py" afterDir="false" />
@@ -107,8 +23,7 @@
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_11case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_12case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_01case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_03case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_04case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_02case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_02case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_03case.py" afterDir="false" />
@@ -127,10 +42,9 @@
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_11case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_12case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_13case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_13case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_03case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/业务员APP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/业务员APP.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/商品信息.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/商品信息.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/用户API.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/用户API.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +102,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_crawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/API-Auto/testCase/demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -198,12 +112,6 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\pyhcarm\hezongyy\web_crawler" />
-      <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\ScrapyProject" />
-      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto\common" />
-      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\pyhcarm\hezongyy\API-Auto\testCase\user" />
       <recent name="F:\pyhcarm\hezongyy\API-Auto\testCase\demo" />
@@ -211,9 +119,16 @@
       <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\crawlerPage" />
       <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\crawlerPage\crawlerPage" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\pyhcarm\hezongyy\API-Auto\testCase\demo" />
+      <recent name="F:\pyhcarm\hezongyy\web_crawler" />
+      <recent name="F:\pyhcarm\hezongyy\DjangoScrapy\ScrapyProject" />
+      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto\common" />
+      <recent name="C:\Users\Administrator\PycharmProjects\hezongyy\Android-Auto" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.runAll">
-    <configuration name="configHttp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GetParam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,32 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/common1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/SaveParam" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/common1/configHttp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="getpathInfo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hezongyy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/getpathInfo.py" />
+      <option name="SCRIPT_NAME" value="F:\pyhcarm\hezongyy\API-Auto\SaveParam\GetParam.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -298,7 +192,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test2_01case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test01case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hezongyy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,17 +200,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/testCase/settle" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/testCase/demo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/testCase/settle/test2_01case.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/API-Auto/testCase/demo/test01case.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test2_01case.testSettleAddGoodsCart" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="hezongyy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/API-Auto/testCase/settle" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test2_01case.testSettleAddGoodsCart&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test2_01case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -336,18 +244,18 @@
     <list>
       <item itemvalue="Python.runTest" />
       <item itemvalue="Python.runAll" />
-      <item itemvalue="Python.test2_01case" />
-      <item itemvalue="Python.getpathInfo" />
-      <item itemvalue="Python.configHttp" />
+      <item itemvalue="Python.test01case" />
+      <item itemvalue="Python.GetParam" />
       <item itemvalue="Python tests.Unittests in test2_01case.py" />
+      <item itemvalue="Python tests.Unittests for test2_01case.testSettleAddGoodsCart" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.runAll" />
-        <item itemvalue="Python.configHttp" />
-        <item itemvalue="Python.getpathInfo" />
-        <item itemvalue="Python.test2_01case" />
         <item itemvalue="Python tests.Unittests in test2_01case.py" />
+        <item itemvalue="Python tests.Unittests for test2_01case.testSettleAddGoodsCart" />
+        <item itemvalue="Python.test01case" />
+        <item itemvalue="Python.GetParam" />
       </list>
     </recent_temporary>
   </component>
@@ -429,13 +337,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00047" summary="20200207提交">
-      <created>1581068702100</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1581068702100</updated>
     </task>
     <task id="LOCAL-00048" summary="20200210提交">
       <created>1581329333607</created>
@@ -773,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592213396345</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="20200612 增加业务员APP判断脚本并优化该模块测试用例">
+      <created>1592299485157</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1592299485157</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -797,7 +705,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200313提交" />
     <MESSAGE value="20200316提交" />
     <MESSAGE value="20200318提交" />
     <MESSAGE value="20200323提交" />
@@ -822,45 +729,62 @@
     <MESSAGE value="20200608 增加购物车与结算测试用例判断脚本及用例更新" />
     <MESSAGE value="20200612 增加商品搜索和商品判断脚本和用例优化" />
     <MESSAGE value="20200612 增加个人中心判断脚本和用例优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200612 增加个人中心判断脚本和用例优化" />
+    <MESSAGE value="20200612 增加业务员APP判断脚本并优化该模块测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200612 增加业务员APP判断脚本并优化该模块测试用例" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1592213356979">
+    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1592299449215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592213356979" />
+    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592299449215" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="617" y="182" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586403125640" />
-    <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1592299036898">
+    <state width="949" height="213" key="GridCell.Tab.0.bottom" timestamp="1592381169328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592299036898" />
-    <state width="949" height="213" key="GridCell.Tab.0.center" timestamp="1592299036898">
+    <state width="949" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592381169328" />
+    <state width="949" height="213" key="GridCell.Tab.0.center" timestamp="1592381169328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592299036898" />
-    <state width="949" height="213" key="GridCell.Tab.0.left" timestamp="1592299036898">
+    <state width="949" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592381169328" />
+    <state width="949" height="213" key="GridCell.Tab.0.left" timestamp="1592381169328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592299036898" />
-    <state width="949" height="213" key="GridCell.Tab.0.right" timestamp="1592299036898">
+    <state width="949" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592381169328" />
+    <state width="949" height="213" key="GridCell.Tab.0.right" timestamp="1592381169328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592299036898" />
+    <state width="949" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592381169328" />
+    <state width="949" height="348" key="GridCell.Tab.1.bottom" timestamp="1592377437491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592377437491" />
+    <state width="949" height="348" key="GridCell.Tab.1.center" timestamp="1592377437491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592377437491" />
+    <state width="949" height="348" key="GridCell.Tab.1.left" timestamp="1592377437491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592377437491" />
+    <state width="949" height="348" key="GridCell.Tab.1.right" timestamp="1592377437491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592377437491" />
     <state x="337" y="247" key="SettingsEditor" timestamp="1590565870318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590565870318" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1592213515490">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1592299604026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592213515490" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1592267681389">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592299604026" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1592353992052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592267681389" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592353992052" />
     <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1591348823043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -12,18 +12,18 @@ class RunMain():
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
 
-    def send_get(self, url, data):
-        result = requests.get(url=url, data=data).json()
+    def send_get(self, url, data, header):
+        result = requests.get(url=url, data=data, headers=header).json()
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
 
-    def send_put(self, url, data):
-        result = requests.put(url=url, data=data).json()
+    def send_put(self, url, data, header):
+        result = requests.put(url=url, data=data, headers=header).json()
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
 
-    def send_delete(self, url, data):
-        result = requests.delete(url=url, data=data).json()
+    def send_delete(self, url, data, header):
+        result = requests.delete(url=url, data=data, headers=header).json()
         res = json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2)
         return res
 
@@ -33,13 +33,13 @@ class RunMain():
             result = self.send_post(url, data, headers)
             logger.info(str(result))
         elif method == 'get':
-            result = self.send_get(url, data)
+            result = self.send_get(url, data, headers)
             logger.info(str(result))
         elif method == 'put':
-            result = self.send_put(url, data)
+            result = self.send_put(url, data, headers)
             logger.info(str(result))
         elif method == 'delete':
-            result = self.send_delete(url, data)
+            result = self.send_delete(url, data, headers)
             logger.info(str(result))
         else:
             print("method值错误！！！")

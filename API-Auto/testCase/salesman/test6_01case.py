@@ -12,7 +12,7 @@ import time
 
 time.sleep(3)
 url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('业务员APP.xlsx', '2app登出 ')
+login_xls = readExcel.readExcel().get_xls('业务员APP.xlsx', '1app登录')
 
 @paramunittest.parametrized(*login_xls)
 class testSettleAddGoodsCart(unittest.TestCase):
@@ -49,7 +49,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
         print(self.case_name+"测试开始前准备")
 
     def test2_04case(self):
-        """2app登出接口"""
+        """1app登录接口"""
         self.checkResult()
 
     def tearDown(self):
@@ -68,7 +68,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
         ss = json.loads(info)  # 将响应转换为字典格式
         if self.case_name == 'username正确':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], '000000')
-            with open('./SaveParam/UserLoginToken.txt', 'w') as f:
+            with open('F:/pyhcarm/hezongyy/API-Auto/SaveParam/SalesmanToken.txt', 'w') as f:
                 f.write(ss['content'])
                 f.close()
         if self.case_name == 'username错误':  # 同上

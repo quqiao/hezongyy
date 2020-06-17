@@ -2,6 +2,7 @@ import json
 import unittest
 from common1.configHttp import RunMain
 import paramunittest
+from SaveParam.GetParam import SalesmanToken
 import geturlParams
 import urllib.parse
 # import pythoncom
@@ -10,7 +11,7 @@ import readExcel
 # pythoncom.CoInitialize()
 
 # url = geturlParams.geturlParams().get_Url1_3()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('业务员APP.xlsx', '用户登录')
+login_xls = readExcel.readExcel().get_xls('业务员APP.xlsx', '2app登出 ')
 
 @paramunittest.parametrized(*login_xls)
 class testUserLogin(unittest.TestCase):
@@ -49,7 +50,7 @@ class testUserLogin(unittest.TestCase):
         print(url)
 
     def test1_02case(self):
-        """用户登录接口"""
+        """2app登出 接口"""
         self.checkResult()
 
     def tearDown(self):
@@ -62,8 +63,11 @@ class testUserLogin(unittest.TestCase):
         """
         # url1 = "http://www.xxx.com/login?"
         # new_url = url1 + self.query
-        # data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}
-        url = 'http://' + self.url + ':' + self.port + self.path
+        # data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}=
+        if self.query == "salesmanToken":
+            url = 'http://' + self.url + ':' + self.port + self.path + SalesmanToken()
+        else:
+            url = 'http://' + self.url + ':' + self.port + self.path + self.query
         data1 = self.query.encode('utf-8')
         info = RunMain().run_main(self.method, url, data1)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式

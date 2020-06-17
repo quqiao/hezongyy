@@ -6,13 +6,14 @@ import geturlParams
 import urllib.parse
 # import pythoncom
 import readExcel
+from SaveParam.GetParam import UserLoginToken
 # pythoncom.CoInitialize()
 
 # url = geturlParams.geturlParams().get_Url1_1()  # 调用我们的geturlParams获取我们拼接的URL
 login_xls = readExcel.readExcel().get_xls('用户API.xlsx', '注销登录')
 
 @paramunittest.parametrized(*login_xls)
-class testUserFind(unittest.TestCase):
+class testUserLogout(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -62,7 +63,10 @@ class testUserFind(unittest.TestCase):
         # new_url = url1 + self.query
         # data1 = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(new_url).query))# 将一个完整的URL中的name=&pwd=转换为{'name':'xxx','pwd':'bbb'}
         # data1 = self.query.encode('utf-8')
-        url = 'http://' + self.url + ':' + self.port + self.path
+        if self.query == "hesytoken":
+            url = 'http://' + self.url + ':' + self.port + self.path + UserLoginToken()
+        else:
+            url = 'http://' + self.url + ':' + self.port + self.path + self.query
         info = RunMain().run_main(self.method, url)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
         if self.case_name == '用户票据填写正确':  # 如果case_name是login，说明合法，返回的code应该为200
@@ -75,5 +79,5 @@ class testUserFind(unittest.TestCase):
             self.assertEqual(ss['code'], '900004')
 
 if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
-    print(testUserFind().description())
+    print(testUserLogout().description())
 
