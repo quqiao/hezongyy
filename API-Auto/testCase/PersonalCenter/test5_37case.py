@@ -13,10 +13,6 @@ import time
 time.sleep(3)
 url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获取我们拼接的URL
 login_xls = readExcel.readExcel().get_xls('个人中心.xlsx', '33用户提现记录')
-with open('./SaveParam/login_token.txt', 'r', encoding='utf-8') as f:
-    hesytoken = f.read()  # 获取cookies
-    f.close()
-
 
 @paramunittest.parametrized(*login_xls)
 class testSettleAddGoodsCart(unittest.TestCase):
