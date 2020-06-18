@@ -355,13 +355,6 @@
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
     </task>
-    <task id="LOCAL-00049" summary="20200211提交">
-      <created>1581416839891</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1581416839891</updated>
-    </task>
     <task id="LOCAL-00050" summary="20200212提交">
       <created>1581557566932</created>
       <option name="number" value="00050" />
@@ -698,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592386035042</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="20200617 封装登录token参数化函数，判断脚本便于调用">
+      <created>1592448912659</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1592448912659</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +722,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200318提交" />
     <MESSAGE value="20200323提交" />
     <MESSAGE value="20200324提交" />
     <MESSAGE value="20200325提交" />
@@ -747,13 +746,14 @@
     <MESSAGE value="20200612 增加个人中心判断脚本和用例优化" />
     <MESSAGE value="20200612 增加业务员APP判断脚本并优化该模块测试用例" />
     <MESSAGE value="20200617 优化判断脚本中的执行方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200617 优化判断脚本中的执行方式" />
+    <MESSAGE value="20200617 封装登录token参数化函数，判断脚本便于调用" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200617 封装登录token参数化函数，判断脚本便于调用" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1592448872458">
+    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1592472615956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592448872458" />
+    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592472615956" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -802,10 +802,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592439975042" />
-    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1591348823043">
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1592470652043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591348823043" />
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592470652043" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
