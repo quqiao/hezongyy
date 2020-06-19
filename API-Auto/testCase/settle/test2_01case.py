@@ -17,6 +17,7 @@ login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '1添加商
 
 @paramunittest.parametrized(*login_xls)
 class testSettleAddGoodsCart(unittest.TestCase):
+    """"""
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -47,7 +48,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name+"测试开始前准备")
+        print("执行用例：" + self.case_name)
 
     def test2_01case(self):
         """修改购物车商品数量接口"""

@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/API-Auto/LOG/logs.2020-06-17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/report_2020-06-19.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/LOG/logs" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/LOG/logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/caselist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_03case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_04case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_05case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_02case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_03case.py" afterDir="false" />
@@ -62,7 +72,63 @@
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_57case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_57case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_58case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_58case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_59case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/PersonalCenter/test5_59case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/个人中心.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/个人中心.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/ad/test8_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/ad/test8_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/ad/test8_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/ad/test8_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_03case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_04case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_05case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_06case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_06case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_07case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_07case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_08case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_08case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_09case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_09case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_10case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_10case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_11case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_12case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_03case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_04case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_05case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_06case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_06case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_07case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_07case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_08case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_08case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_09case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_09case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_10case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_10case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_11case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_12case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_13case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_13case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_14case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_14case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_15case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_15case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_16case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_16case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_17case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_17case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_18case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_18case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_19case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_19case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_20case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_20case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_21case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/salesman/test6_21case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_03case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_04case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/search/test4_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/search/test4_05case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_03case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_04case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_05case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_06case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_06case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_07case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_07case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_08case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_08case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_09case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_09case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_10case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_10case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_11case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_12case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_13case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/settle/test2_13case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_03case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/页面广告.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/页面广告.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,13 +420,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00050" summary="20200212提交">
-      <created>1581557566932</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1581557566933</updated>
     </task>
     <task id="LOCAL-00051" summary="20200213提交">
       <created>1581646506763</created>
@@ -698,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592448912659</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="20200617 修改个人中心中url地址脚本">
+      <created>1592472641815</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1592472641815</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +788,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200323提交" />
     <MESSAGE value="20200324提交" />
     <MESSAGE value="20200325提交" />
     <MESSAGE value="20200326提交" />
@@ -747,13 +812,14 @@
     <MESSAGE value="20200612 增加业务员APP判断脚本并优化该模块测试用例" />
     <MESSAGE value="20200617 优化判断脚本中的执行方式" />
     <MESSAGE value="20200617 封装登录token参数化函数，判断脚本便于调用" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200617 封装登录token参数化函数，判断脚本便于调用" />
+    <MESSAGE value="20200617 修改个人中心中url地址脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200617 修改个人中心中url地址脚本" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="8" key="CommitChangelistDialog2" timestamp="1592472615956">
+    <state x="866" y="105" key="CommitChangelistDialog2" timestamp="1592545912865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592472615956" />
+    <state x="866" y="105" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592545912865" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -794,14 +860,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590565870318" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1592386045902">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1592472649259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592386045902" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1592439975042">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592472649259" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1592525960528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592439975042" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592525960528" />
     <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1592470652043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -44,7 +44,7 @@ class testUserLogout(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name)
+        print("执行用例：" + self.case_name)
 
     def test1_01(self):
         """注销登录接口"""

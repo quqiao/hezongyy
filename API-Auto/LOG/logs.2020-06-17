@@ -1,0 +1,2048 @@
+2020-06-16 17:14:49,399 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-16.html
+2020-06-16 17:14:49,401 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-16 17:14:49,401 - logs… - INFO - caseList[]
+2020-06-16 17:14:52,336 - logs… - INFO - {
+  "code": "000000",
+  "content": "d6e4d083-afb1-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-16 17:14:53,347 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogin/login1111"
+}
+2020-06-16 17:14:54,367 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-16 17:14:55,376 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-16 17:14:56,386 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-16 17:14:57,394 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-16 17:14:58,404 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-16 17:14:59,417 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-16 17:15:00,424 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-16 17:15:01,434 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-16 17:15:02,452 - logs… - INFO - {
+  "code": "000000",
+  "content": "dcecbdac-afb1-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-16 17:15:03,472 - logs… - INFO - {
+  "code": "000000",
+  "content": "dd884c20-afb1-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-16 17:15:04,481 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-16 17:15:05,492 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-16 17:15:06,498 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/1111.0"
+}
+2020-06-16 17:15:07,508 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-16 17:15:08,515 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/"
+}
+2020-06-16 17:17:17,257 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-16.html
+2020-06-16 17:17:17,258 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-16 17:17:17,258 - logs… - INFO - caseList[]
+2020-06-16 17:17:19,849 - logs… - INFO - {
+  "code": "000000",
+  "content": "2ed1878d-afb2-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-16 17:17:20,860 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogin/login1111"
+}
+2020-06-16 17:17:21,867 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-16 17:17:22,874 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-16 17:17:23,881 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-16 17:17:24,888 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-16 17:17:25,894 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-16 17:17:26,905 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-16 17:17:27,911 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-16 17:17:28,926 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-16 17:17:29,945 - logs… - INFO - {
+  "code": "000000",
+  "content": "34d64544-afb2-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-16 17:17:30,969 - logs… - INFO - {
+  "code": "000000",
+  "content": "3571cb2e-afb2-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-16 17:17:31,975 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-16 17:17:32,982 - logs… - INFO - {
+  "code": "000000",
+  "content": {
+    "channel": 1,
+    "id": 3442,
+    "username": "药易购测试-张芮豪"
+  },
+  "message": "操作成功"
+}
+2020-06-16 17:17:33,989 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/1111.0"
+}
+2020-06-16 17:17:34,999 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-16 17:17:36,006 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/"
+}
+2020-06-17 14:12:12,782 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 14:12:12,789 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 14:12:12,789 - logs… - INFO - caseList[]
+2020-06-17 14:12:15,898 - logs… - INFO - {
+  "code": "000000",
+  "content": "7ebbcc1b-b061-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:12:16,906 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogin/login1111"
+}
+2020-06-17 14:12:17,915 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 14:12:18,922 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-17 14:12:19,929 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-17 14:12:20,935 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 14:12:21,943 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-17 14:12:22,954 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 14:12:23,961 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-17 14:12:24,972 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 14:12:25,988 - logs… - INFO - {
+  "code": "000000",
+  "content": "84bfa123-b061-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:12:27,009 - logs… - INFO - {
+  "code": "000000",
+  "content": "855ad12a-b061-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:12:28,016 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 14:12:29,023 - logs… - INFO - {
+  "code": "000000",
+  "content": {
+    "channel": 1,
+    "id": 3442,
+    "username": "药易购测试-张芮豪"
+  },
+  "message": "操作成功"
+}
+2020-06-17 14:12:30,029 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/1111.0"
+}
+2020-06-17 14:12:31,039 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:12:32,046 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/"
+}
+2020-06-17 14:12:33,072 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 14:12:34,078 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogout/logout/1111.0"
+}
+2020-06-17 14:12:35,084 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:12:36,090 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogout/logout/"
+}
+2020-06-17 14:28:45,156 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 14:28:45,156 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 14:28:45,157 - logs… - INFO - caseList[]
+2020-06-17 14:28:50,908 - logs… - INFO - {
+  "code": "000000",
+  "content": "cfcf037f-b063-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:28:51,916 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogin/login1111"
+}
+2020-06-17 14:28:52,923 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 14:28:53,931 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-17 14:28:54,939 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-17 14:28:55,945 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 14:28:56,953 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-17 14:28:57,960 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 14:28:58,968 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-17 14:28:59,977 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 14:29:00,994 - logs… - INFO - {
+  "code": "000000",
+  "content": "d5d24a5b-b063-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:29:02,010 - logs… - INFO - {
+  "code": "000000",
+  "content": "d66d45ef-b063-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:29:03,018 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 14:29:04,023 - logs… - INFO - {
+  "code": "000000",
+  "content": {
+    "channel": 1,
+    "id": 3442,
+    "username": "药易购测试-张芮豪"
+  },
+  "message": "操作成功"
+}
+2020-06-17 14:29:05,030 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/1111.0"
+}
+2020-06-17 14:29:06,039 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:07,046 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/"
+}
+2020-06-17 14:29:08,061 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 14:29:09,068 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogout/logout/1111.0"
+}
+2020-06-17 14:29:10,074 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:11,081 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogout/logout/"
+}
+2020-06-17 14:29:12,120 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:13,129 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:14,137 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:15,143 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:16,152 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:17,161 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:18,167 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:19,175 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:20,183 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:21,190 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:22,198 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:23,206 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:24,214 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:25,221 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:26,229 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:29:27,235 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:59:29,489 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 14:59:29,489 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 14:59:29,489 - logs… - INFO - caseList[]
+2020-06-17 14:59:35,326 - logs… - INFO - {
+  "code": "000000",
+  "content": "1b2956a8-b068-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:59:36,341 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogin/login1111"
+}
+2020-06-17 14:59:37,378 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 14:59:38,391 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-17 14:59:39,404 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-17 14:59:40,416 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 14:59:41,428 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-17 14:59:42,447 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 14:59:43,457 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-17 14:59:44,472 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 14:59:45,498 - logs… - INFO - {
+  "code": "000000",
+  "content": "213bb7a3-b068-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:59:46,526 - logs… - INFO - {
+  "code": "000000",
+  "content": "21d85bec-b068-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 14:59:47,538 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 14:59:48,550 - logs… - INFO - {
+  "code": "000000",
+  "content": {
+    "channel": 1,
+    "id": 3442,
+    "username": "药易购测试-张芮豪"
+  },
+  "message": "操作成功"
+}
+2020-06-17 14:59:49,561 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/1111.0"
+}
+2020-06-17 14:59:50,577 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:59:51,584 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/SingleSignOn/find/"
+}
+2020-06-17 14:59:52,617 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 14:59:53,628 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogout/logout/1111.0"
+}
+2020-06-17 14:59:54,637 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:59:55,649 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogout/logout/"
+}
+2020-06-17 14:59:56,682 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:59:57,696 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:59:58,709 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 14:59:59,721 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:00,731 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:01,745 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:02,757 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:03,765 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:04,777 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:05,790 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:06,803 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:07,815 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:08,828 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:09,842 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:10,855 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:00:11,864 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:01,155 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:02,173 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:03,186 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:04,199 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:05,208 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:06,221 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:07,234 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:08,244 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:09,254 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:10,267 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:11,278 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:12,291 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:13,305 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:14,320 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:15,333 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:04:16,347 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:19,317 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:05:19,318 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:05:19,318 - logs… - INFO - caseList[]
+2020-06-17 15:05:24,878 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:25,887 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:26,895 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:27,902 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:28,910 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:29,918 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:30,926 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:31,950 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:32,956 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:33,962 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:34,970 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:35,978 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:36,987 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:37,995 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:39,003 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:05:40,011 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:10:45,148 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%223%22,%0A%20%20%22type%22:%221%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:46,163 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234%7B%0A%20%20%22goodsId%22:%223%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:47,171 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%22%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:48,184 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%220%22%0A%7D"
+}
+2020-06-17 15:10:49,192 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%2250000%22%0A%7D"
+}
+2020-06-17 15:10:50,205 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%2250001%22%0A%7D"
+}
+2020-06-17 15:10:51,218 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%22xxx%22%0A%7D"
+}
+2020-06-17 15:10:52,231 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%22%22%0A%7D"
+}
+2020-06-17 15:10:53,278 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:54,290 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22111111%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:55,304 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%221%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:56,312 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%222%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:57,325 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%223%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:58,338 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%224%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:10:59,351 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart%7B%0A%20%20%22goodsId%22:%22123456%22,%0A%20%20%22type%22:%225%22,%0A%20%20%22number%22:%2250%22%0A%7D"
+}
+2020-06-17 15:11:23,059 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:11:23,060 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:11:23,060 - logs… - INFO - caseList[]
+2020-06-17 15:11:28,751 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 15:11:29,759 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:11:30,777 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 15:11:31,787 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 15:11:32,807 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:11:33,815 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "商品的数量单次允许不超过5万"
+}
+2020-06-17 15:11:34,823 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 4, column: 12] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"number\"])"
+}
+2020-06-17 15:11:35,832 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 15:11:36,840 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:11:37,861 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:11:38,885 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:11:39,903 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:11:40,927 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:11:41,935 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 15:11:42,959 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:11:43,967 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 15:13:01,807 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:13:01,808 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:13:01,808 - logs… - INFO - caseList[]
+2020-06-17 15:13:07,377 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:08,385 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:13:09,394 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:10,402 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:11,409 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:12,417 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:13,425 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:14,433 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:15,442 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:13:16,449 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:17,458 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:18,465 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:19,473 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:20,481 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:21,489 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:13:22,497 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:11,413 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:14:11,414 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:14:11,414 - logs… - INFO - caseList[]
+2020-06-17 15:14:17,057 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:18,065 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:14:19,073 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:20,082 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:21,090 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:22,098 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:23,104 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:24,112 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:25,120 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:14:26,129 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:27,135 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:28,141 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:29,150 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:30,158 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:31,166 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:14:32,175 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:35,401 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:15:35,402 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:15:35,402 - logs… - INFO - caseList[]
+2020-06-17 15:15:41,013 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:42,021 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:15:43,028 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:44,035 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:45,044 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:46,053 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:47,060 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:48,069 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:49,077 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:15:50,083 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:51,091 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:52,098 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:53,106 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:54,113 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:55,121 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:15:56,127 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:44,098 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:17:44,098 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:17:44,099 - logs… - INFO - caseList[]
+2020-06-17 15:17:49,660 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:50,668 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:17:51,675 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:52,682 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:53,690 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:54,697 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:55,706 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:56,713 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:57,721 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:17:58,727 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:17:59,734 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:18:00,742 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:18:01,750 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:18:02,759 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:18:03,767 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:18:04,773 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:23:44,068 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:23:44,069 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:23:44,069 - logs… - INFO - caseList[]
+2020-06-17 15:23:49,691 - logs… - INFO - {
+  "code": "000000",
+  "content": "7e0bbf6a-b06b-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 15:23:50,698 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/UserLogin/login1111"
+}
+2020-06-17 15:23:51,706 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 15:23:52,714 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "超时时间最小28800秒（8小时）"
+}
+2020-06-17 15:23:53,723 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"@#￥%\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 5, column: 12] (through reference chain: com.hesybase.userapi.UserLogin[\"timeout\"])"
+}
+2020-06-17 15:23:54,730 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:23:55,738 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "用户名或手机号不能为空"
+}
+2020-06-17 15:23:56,753 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 15:23:57,761 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "密码不能为空"
+}
+2020-06-17 15:23:58,776 - logs… - INFO - {
+  "code": "200001",
+  "content": null,
+  "message": "账号或密码错误"
+}
+2020-06-17 15:23:59,799 - logs… - INFO - {
+  "code": "000000",
+  "content": "84115fde-b06b-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 15:24:00,817 - logs… - INFO - {
+  "code": "000000",
+  "content": "84ad7da0-b06b-11ea-8ad6-0a0027000008",
+  "message": "操作成功"
+}
+2020-06-17 15:24:01,826 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "渠道类型不正确"
+}
+2020-06-17 15:24:02,848 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:03,856 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:24:04,862 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:05,869 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:06,876 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:07,884 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:08,892 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:09,898 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:10,903 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:24:11,911 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:12,918 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:13,926 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:14,934 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:15,942 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:16,948 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:24:17,955 - logs… - INFO - {
+  "code": "900024",
+  "content": null,
+  "message": "无效的票据"
+}
+2020-06-17 15:26:27,177 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 15:26:27,178 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 15:26:27,178 - logs… - INFO - caseList[]
+2020-06-17 15:26:32,863 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 15:26:33,872 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 15:26:34,880 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 15:26:35,896 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 15:26:36,922 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:26:37,932 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "商品的数量单次允许不超过5万"
+}
+2020-06-17 15:26:38,940 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 4, column: 12] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"number\"])"
+}
+2020-06-17 15:26:39,955 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 15:26:40,962 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 15:26:41,980 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:26:43,000 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:26:44,021 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:26:45,037 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:26:46,045 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 15:26:47,064 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 15:26:48,072 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:06:09,705 - logs… - INFO - resultPathF:\pyhcarm\hezongyy\API-Auto\result\report_2020-06-17.html
+2020-06-17 16:06:09,705 - logs… - INFO - caseListFileF:\pyhcarm\hezongyy\API-Auto\caselist.txt
+2020-06-17 16:06:09,705 - logs… - INFO - caseList[]
+2020-06-17 16:06:52,158 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:06:53,168 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/goodsCart/addGoodsCart1234"
+}
+2020-06-17 16:06:54,187 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:06:55,199 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 16:06:56,230 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:06:57,241 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "商品的数量单次允许不超过5万"
+}
+2020-06-17 16:06:58,253 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 4, column: 12] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"number\"])"
+}
+2020-06-17 16:06:59,271 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 16:07:00,278 - logs… - INFO - {
+  "code": "900004",
+  "content": null,
+  "message": "URL请求地址错误/"
+}
+2020-06-17 16:07:01,300 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:07:02,324 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:07:03,344 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:07:04,382 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:07:05,393 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:06,415 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:07:07,432 - logs… - INFO - {
+  "code": "200725",
+  "content": null,
+  "message": "不存在的随机特价商品！"
+}
+2020-06-17 16:07:08,475 - logs… - INFO - {
+  "code": "900000",
+  "content": null,
+  "message": "系统异常"
+}
+2020-06-17 16:07:09,516 - logs… - INFO - {
+  "code": "900000",
+  "content": null,
+  "message": "系统异常"
+}
+2020-06-17 16:07:10,527 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:07:11,536 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 16:07:12,566 - logs… - INFO - {
+  "code": "900000",
+  "content": null,
+  "message": "系统异常"
+}
+2020-06-17 16:07:13,578 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "商品的数量单次允许不超过5万"
+}
+2020-06-17 16:07:14,587 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 4, column: 12] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"number\"])"
+}
+2020-06-17 16:07:15,603 - logs… - INFO - {
+  "code": "200702",
+  "content": null,
+  "message": "购物车数量不正确"
+}
+2020-06-17 16:07:16,652 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:17,708 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:18,776 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:19,826 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:20,857 - logs… - INFO - {
+  "code": "900000",
+  "content": null,
+  "message": "系统异常"
+}
+2020-06-17 16:07:21,917 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:22,972 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:23,999 - logs… - INFO - {
+  "code": "200316",
+  "content": null,
+  "message": "没有查询到商品基本的信息！"
+}
+2020-06-17 16:07:25,009 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Cannot deserialize value of type `int` from String \"xxxx\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"xxxx\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 2, column: 13] (through reference chain: com.hesyproj.settleaccounts.dto.GoodsCartParam[\"goodsId\"])"
+}
+2020-06-17 16:07:26,062 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:27,098 - logs… - INFO - {
+  "code": "900000",
+  "content": null,
+  "message": "系统异常"
+}
+2020-06-17 16:07:28,107 - logs… - INFO - {
+  "code": "000000",
+  "content": true,
+  "message": "操作成功"
+}
+2020-06-17 16:07:29,152 - logs… - INFO - {
+  "code": "200701",
+  "content": null,
+  "message": "无效的阶梯价商品或商品数量未达到任何阶梯阀值!"
+}
+2020-06-17 16:07:30,170 - logs… - INFO - {
+  "code": "200725",
+  "content": null,
+  "message": "不存在的随机特价商品！"
+}
+2020-06-17 16:07:31,181 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:32,190 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:33,199 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:34,208 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:35,215 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:36,226 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:37,235 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:38,244 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:39,253 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:40,263 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:41,270 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:42,279 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:43,288 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:44,298 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:45,308 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:46,316 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:47,325 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:48,334 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:49,344 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:50,354 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:51,362 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:07:52,372 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:53,383 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:54,393 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:55,402 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:56,413 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:57,424 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:58,433 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:07:59,443 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:00,453 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:01,463 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:02,474 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:03,484 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:04,492 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:05,502 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:06,512 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:07,521 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:08,530 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:09,541 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:10,551 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:11,562 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:12,573 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:13,583 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:14,592 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:15,601 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:16,611 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:17,621 - logs… - INFO - {
+  "code": "900006",
+  "content": null,
+  "message": "JSON parse error: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('ï' (code 239)): was expecting a colon to separate field name and value\n at [Source: (PushbackInputStream); line: 2, column: 13]"
+}
+2020-06-17 16:08:18,631 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:19,641 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:20,653 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:21,661 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:22,671 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:23,681 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:24,692 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:25,702 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:26,712 - logs… - INFO - {
+  "code": "900007",
+  "content": null,
+  "message": "类型不正确"
+}
+2020-06-17 16:08:27,718 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:08:28,728 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}
+2020-06-17 16:08:29,736 - logs… - INFO - {
+  "code": "900005",
+  "content": null,
+  "message": "HTTP Method不匹配"
+}

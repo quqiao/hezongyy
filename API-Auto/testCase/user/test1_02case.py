@@ -45,7 +45,7 @@ class testUserFind(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name)
+        print("执行用例：" + self.case_name)
 
     def test1_01(self):
         """通过票据获取平台用户信息接口"""

@@ -47,7 +47,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name+"测试开始前准备")
+        print("执行用例：" + self.case_name)
 
     def test2_04case(self):
         """36安全设置修改密码接口"""

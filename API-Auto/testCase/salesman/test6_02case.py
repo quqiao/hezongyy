@@ -45,7 +45,7 @@ class testUserLogin(unittest.TestCase):
 
         :return:
         """
-        print(self.case_name+"测试开始前准备")
+        print("执行用例：" + self.case_name)
         url = 'http://' + self.url + ':' + self.port + self.path
         print(url)
 
