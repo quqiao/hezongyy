@@ -76,6 +76,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], '200002')
         if self.case_name == 'userName为空':  # 如果case_name是login，说明合法，返回的code应该为200
             self.assertEqual(ss['code'], '900007')
+        print("返回信息：" + ss['message'])
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
 #     testUserLogin().checkResult()

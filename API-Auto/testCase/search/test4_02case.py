@@ -13,10 +13,10 @@ import time
 
 time.sleep(3)
 url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获取我们拼接的URL
-login_xls = readExcel.readExcel().get_xls('商品.xlsx', '2关键字下拉提示')
+login_xls = readExcel.readExcel().get_xls('商品搜索API.xlsx', '2关键字下拉提示')
 
 @paramunittest.parametrized(*login_xls)
-class testSettleAddGoodsCart(unittest.TestCase):
+class testSettleSuggest(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -105,6 +105,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], '000000')
         if self.case_name == 'keyWords为空':
             self.assertEqual(ss['code'], '000000')
+        print("返回信息：" + ss['message'])
 
 
 

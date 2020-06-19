@@ -20,7 +20,7 @@ with open('./SaveParam/login_token.txt', 'r', encoding='utf-8') as f:
 
 
 @paramunittest.parametrized(*login_xls)
-class testSettleAddGoodsCart(unittest.TestCase):
+class testSettleGetSpecialSaleBasket(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -79,6 +79,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], "900004")
         if self.case_name == 'url为空':  # 同上
             self.assertEqual(ss['code'], "900004")
+        print("返回信息：" + ss['message'])
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
 #     testUserLogin().checkResult()

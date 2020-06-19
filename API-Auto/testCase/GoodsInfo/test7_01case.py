@@ -209,6 +209,7 @@ class testUserLogin(unittest.TestCase):
             self.assertEqual(ss['code'], "900000")
         if self.case_name == 'category为空':  # 同上
             self.assertEqual(ss['code'], "900000")
+        print("返回信息：" + ss['message'])
 
 
 

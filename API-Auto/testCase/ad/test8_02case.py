@@ -13,7 +13,7 @@ import readExcel
 login_xls = readExcel.readExcel().get_xls('页面广告.xlsx', '2根据页面和广告位请求对应的广告列表')
 
 @paramunittest.parametrized(*login_xls)
-class testUserLogin(unittest.TestCase):
+class testAdPositionName(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -73,6 +73,7 @@ class testUserLogin(unittest.TestCase):
             self.assertEqual(ss['code'], "900004")
         if self.case_name == 'url为空':  # 同上
             self.assertEqual(ss['code'], "900004")
+        print("返回信息：" + ss['message'])
 
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用

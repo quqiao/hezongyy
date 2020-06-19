@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API-Auto/LOG/logs.2020-06-17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API-Auto/result/report_2020-06-19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/LOG/logs_2020-06-19" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API-Auto/result/report_2020-06-18.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/LOG/logs" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/LOG/logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/LOG/logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/LOG/logs.2020-06-10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/LOG/logs.2020-06-17" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/SaveParam/UserLoginToken.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/caselist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/common1/Log.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/common1/Log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Auto/result/report_2020-06-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/result/report_2020-06-19.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_02case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/GoodsInfo/test7_03case.py" afterDir="false" />
@@ -128,7 +137,6 @@
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_01case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_02case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API-Auto/testCase/user/test1_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/user/test1_03case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/页面广告.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/页面广告.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,13 +428,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00051" summary="20200213提交">
-      <created>1581646506763</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1581646506764</updated>
     </task>
     <task id="LOCAL-00052" summary="20200217提交">
       <created>1581931617406</created>
@@ -764,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592472641815</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="20200617 修改用例中setUp的输出描述">
+      <created>1592546030571</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1592546030571</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,7 +796,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200324提交" />
     <MESSAGE value="20200325提交" />
     <MESSAGE value="20200326提交" />
     <MESSAGE value="20200402提交" />
@@ -813,33 +820,34 @@
     <MESSAGE value="20200617 优化判断脚本中的执行方式" />
     <MESSAGE value="20200617 封装登录token参数化函数，判断脚本便于调用" />
     <MESSAGE value="20200617 修改个人中心中url地址脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200617 修改个人中心中url地址脚本" />
+    <MESSAGE value="20200617 修改用例中setUp的输出描述" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200617 修改用例中setUp的输出描述" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="866" y="105" key="CommitChangelistDialog2" timestamp="1592545912865">
+    <state x="866" y="105" key="CommitChangelistDialog2" timestamp="1592545992307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="866" y="105" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592545912865" />
+    <state x="866" y="105" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592545992307" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="617" y="182" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586403125640" />
-    <state width="949" height="348" key="GridCell.Tab.0.bottom" timestamp="1592386285419">
+    <state width="1899" height="213" key="GridCell.Tab.0.bottom" timestamp="1592554708982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592386285419" />
-    <state width="949" height="348" key="GridCell.Tab.0.center" timestamp="1592386285419">
+    <state width="1899" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592554708982" />
+    <state width="1899" height="213" key="GridCell.Tab.0.center" timestamp="1592554708982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592386285419" />
-    <state width="949" height="348" key="GridCell.Tab.0.left" timestamp="1592386285419">
+    <state width="1899" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592554708982" />
+    <state width="1899" height="213" key="GridCell.Tab.0.left" timestamp="1592554708982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592386285419" />
-    <state width="949" height="348" key="GridCell.Tab.0.right" timestamp="1592386285419">
+    <state width="1899" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592554708982" />
+    <state width="1899" height="213" key="GridCell.Tab.0.right" timestamp="1592554708982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592386285419" />
+    <state width="1899" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592554708982" />
     <state width="949" height="348" key="GridCell.Tab.1.bottom" timestamp="1592386285420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -860,10 +868,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590565870318" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1592472649259">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1592546096151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592472649259" />
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592546096151" />
     <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1592525960528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

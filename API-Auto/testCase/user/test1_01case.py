@@ -94,6 +94,7 @@ class testUserLogin(unittest.TestCase):
             self.assertEqual(ss['code'], '900007')
         if self.case_name == 'timeout为错误':  # 同上
             self.assertEqual(ss['code'], '900006')
+        print("返回信息：" + ss['message'])
 
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用

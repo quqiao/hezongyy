@@ -77,6 +77,7 @@ class testUserLogin(unittest.TestCase):
             self.assertEqual(ss['code'], "900000")
         if self.case_name == 'ids为空':  # 同上
             self.assertEqual(ss['code'], "900000")
+        print("返回信息：" + ss['message'])
 
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用

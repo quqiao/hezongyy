@@ -16,7 +16,7 @@ url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获
 login_xls = readExcel.readExcel().get_xls('商品.xlsx', '1商品信息列表')
 
 @paramunittest.parametrized(*login_xls)
-class testSettleAddGoodsCart(unittest.TestCase):
+class testSettleGoodsInfo(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -85,6 +85,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], "000000")
         if self.case_name == 'id列表为错误':  # 同上
             self.assertEqual(ss['code'], "000000")
+        print("返回信息：" + ss['message'])
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
 #     testUserLogin().checkResult()

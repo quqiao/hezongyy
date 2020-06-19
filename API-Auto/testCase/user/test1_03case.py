@@ -77,6 +77,7 @@ class testUserLogout(unittest.TestCase):
             self.assertEqual(ss['code'], '900024')
         if self.case_name == '用户票据填写为空':  # 同上
             self.assertEqual(ss['code'], '900004')
+        print("返回信息：" + ss['message'])
 
 if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
     print(testUserLogout().description())

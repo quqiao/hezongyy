@@ -18,7 +18,7 @@ login_xls = readExcel.readExcel().get_xls('购物车与结算.xlsx', '2修改购
 
 
 @paramunittest.parametrized(*login_xls)
-class testSettleAddGoodsCart(unittest.TestCase):
+class testSettleUpdateGoodsCart(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
@@ -115,6 +115,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], "000000")
         if self.case_name == 'oldBasketType填写为空':  # 同上
             self.assertEqual(ss['code'], "000000")
+        print("返回信息：" + ss['message'])
 
 
 

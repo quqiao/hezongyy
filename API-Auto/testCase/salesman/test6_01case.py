@@ -81,6 +81,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], "200900")
         if self.case_name == 'password为空':  # 同上
             self.assertEqual(ss['code'], "900007")
+        print("返回信息：" + ss['message'])
 
 # if __name__ == '__main__':  # 测试一下，我们读取配置文件的方法是否可用
 #     testUserLogin().checkResult()

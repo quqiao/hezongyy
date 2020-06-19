@@ -68,7 +68,6 @@ class testSettleAddGoodsCart(unittest.TestCase):
         data1 = self.query.encode('utf-8')
         url = 'http://' + self.url + ':' + self.port + self.path
         hearder = {"hesytoken": UserLoginToken()}
-        print(hearder)
         info = RunMain().run_main(self.method, url, data1, hearder)  # 根据Excel中的method调用run_main来进行requests请求，并拿到响应
         ss = json.loads(info)  # 将响应转换为字典格式
         if self.case_name == 'url和参数都正确':  # 如果case_name是login，说明合法，返回的code应该为200
@@ -103,6 +102,7 @@ class testSettleAddGoodsCart(unittest.TestCase):
             self.assertEqual(ss['code'], "900006")
         if self.case_name == 'number为空':  # 同上
             self.assertEqual(ss['code'], "200702")
+        print("返回信息：" + ss['message'])
 
 
 
