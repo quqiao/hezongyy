@@ -20,7 +20,7 @@ with open('./SaveParam/login_token.txt', 'r', encoding='utf-8') as f:
 
 
 @paramunittest.parametrized(*login_xls)
-class testSettleAddGoodsCart(unittest.TestCase):
+class testGoodsinstructionId(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params

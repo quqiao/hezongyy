@@ -16,7 +16,7 @@ url = geturlParams.geturlParams().get_Url2_1()  # 调用我们的geturlParams获
 login_xls = readExcel.readExcel().get_xls('商品.xlsx', '5特卖商品列表')
 
 @paramunittest.parametrized(*login_xls)
-class testSettleAddGoodsCart(unittest.TestCase):
+class testGoodsSpecialSaleGoods(unittest.TestCase):
     def setParameters(self, case_name, url, port,  path, query, method, expected, result):
         """
         set params
