@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="">
+    <list default="true" id="7da75b8a-2db9-4612-ade0-c686efa3273d" name="Default Changelist" comment="20200628 删除早期的一些测试报告文档，优化空间">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_01case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_01case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_02case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_02case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_03case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_03case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_04case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_04case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_05case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_05case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_06case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_06case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_07case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_07case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_08case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_08case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_09case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_09case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_10case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_10case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_11case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_11case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_12case.py" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testCase/goods/test3_12case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API-Auto/testFile/case/购物车与结算.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/API-Auto/testFile/case/购物车与结算.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,13 +294,6 @@
       <workItem from="1579135811752" duration="8024000" />
       <workItem from="1579224021213" duration="10563000" />
       <workItem from="1579308979679" duration="14268000" />
-    </task>
-    <task id="LOCAL-00053" summary="20200219提交">
-      <created>1582103444782</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1582103444785</updated>
     </task>
     <task id="LOCAL-00054" summary="20200221提交">
       <created>1582339933622</created>
@@ -651,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592559217156</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="20200628 删除早期的一些测试报告文档，优化空间">
+      <created>1593326049815</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1593326049815</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +662,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="20200326提交" />
     <MESSAGE value="20200402提交" />
     <MESSAGE value="2020040201提交" />
     <MESSAGE value="20200403提交" />
@@ -700,13 +686,14 @@
     <MESSAGE value="20200617 修改个人中心中url地址脚本" />
     <MESSAGE value="20200617 修改用例中setUp的输出描述" />
     <MESSAGE value="20200617 修改各测试用例脚本类名称" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200617 修改各测试用例脚本类名称" />
+    <MESSAGE value="20200628 删除早期的一些测试报告文档，优化空间" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200628 删除早期的一些测试报告文档，优化空间" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="866" y="105" key="CommitChangelistDialog2" timestamp="1593326003348">
+    <state x="866" y="105" width="723" height="894" key="CommitChangelistDialog2" timestamp="1593326170482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="866" y="105" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326003348" />
+    <state x="866" y="105" width="723" height="894" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326170482" />
     <state x="617" y="182" key="FileChooserDialogImpl" timestamp="1586403125640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -747,14 +734,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="247" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590565870318" />
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1593326011440">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2" timestamp="1593326064839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326011440" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1592787022348">
+    <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326064839" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1593650491107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592787022348" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593650491107" />
     <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1592470652043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
